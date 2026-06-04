@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>筑沙 Tsukasa — Brand System</title>
+<style>
+:root {
+  --bg: #0b0b0b;
+  --surface: #161616;
+  --border: #262626;
+  --ink: #ede8df;
+  --muted: #8a8578;
+  --sand: #d4b896;
+  --sand-light: #e8d5c0;
+  --teal: #3a8a85;
+  --radius: 6px;
+  --font-display: 'Georgia', 'Noto Serif JP', 'Songti SC', serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 32px; }
+
+/* Logo mark */
+.logo-diamond {
+  width: 40px; height: 40px;
+  background: linear-gradient(135deg, var(--sand) 0%, var(--sand-light) 100%);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: inline-flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.logo-diamond.sm { width: 28px; height: 28px; }
+.logo-diamond.lg { width: 60px; height: 60px; }
+.logo-diamond-inner {
+  width: 70%; height: 70%;
+  background: var(--bg);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex; align-items: center; justify-content: center;
+}
+.logo-diamond-char { color: var(--sand); font-family: var(--font-display); font-size: 14px; }
+.logo-diamond.lg .logo-diamond-char { font-size: 22px; }
+
+/* Nav */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(11,11,11,0.94); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border); padding: 16px 0;
+}
+nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-brand { display: flex; align-items: center; gap: 10px; }
+.nav-name { font-family: var(--font-display); font-size: 16px; letter-spacing: 0.08em; }
+.nav-links { display: flex; gap: 28px; }
+.nav-links a { color: var(--muted); text-decoration: none; font-size: 12px; letter-spacing: 0.06em; transition: color 0.2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--sand); }
+
+/* Section */
+.section { padding: 80px 0; }
+.section-num { font-size: 10px; color: var(--sand); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px; }
+.section-title { font-family: var(--font-display); font-size: 32px; margin-bottom: 48px; }
+hr { border: none; border-top: 1px solid var(--border); margin: 0; }
+
+/* Button */
+.btn {
+  display: inline-block; padding: 14px 32px;
+  background: var(--sand); color: var(--bg);
+  font-size: 13px; font-weight: 600; letter-spacing: 0.06em;
+  text-decoration: none; border-radius: 4px; transition: background 0.2s;
+}
+.btn:hover { background: var(--sand-light); }
+.btn-outline {
+  display: inline-block; padding: 14px 32px;
+  border: 1px solid var(--sand); color: var(--sand);
+  font-size: 13px; letter-spacing: 0.06em;
+  text-decoration: none; border-radius: 4px; transition: all 0.2s;
+}
+.btn-outline:hover { background: var(--sand); color: var(--bg); }
+
+/* ==================== LANDING PAGE ==================== */
+.landing {}
+.landing-hero {
+  padding: 120px 0 100px; text-align: center;
+  position: relative;
+  background: url('tsukasaya_assets/01_brand_hero.jpg') center/cover no-repeat;
+}
+.landing-hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(11,11,11,0.45) 0%, rgba(11,11,11,0.82) 60%, var(--bg) 100%);
+}
+.landing-hero > * { position: relative; z-index: 1; }
+.landing-hero .hero-mark { margin-bottom: 32px; }
+.landing-hero h1 { font-family: var(--font-display); font-size: clamp(48px, 10vw, 96px); letter-spacing: 0.04em; margin-bottom: 8px; }
+.landing-hero .sub { color: var(--sand); font-size: 18px; letter-spacing: 0.08em; margin-bottom: 16px; }
+.landing-hero .desc { color: var(--muted); font-size: 14px; max-width: 480px; margin: 0 auto 40px; line-height: 1.8; }
+.landing-hero .cta-row { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+.landing-services { padding: 80px 0; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.service-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 40px 32px; transition: border-color 0.3s;
+}
+.service-card:hover { border-color: var(--sand); }
+.service-card .svc-icon { font-size: 28px; margin-bottom: 20px; }
+.service-card .svc-title { font-family: var(--font-display); font-size: 20px; margin-bottom: 12px; letter-spacing: 0.04em; }
+.service-card .svc-desc { font-size: 13px; color: var(--muted); line-height: 1.7; }
+
+.landing-about { padding: 80px 0; }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+.about-text h2 { font-family: var(--font-display); font-size: 28px; margin-bottom: 20px; }
+.about-text p { color: var(--muted); font-size: 14px; line-height: 1.9; margin-bottom: 16px; }
+.about-visual {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  aspect-ratio: 1; overflow: hidden; position: relative;
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 20px;
+}
+.about-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.45; }
+.about-visual > * { position: relative; z-index: 1; }
+.about-visual .big-kanji { font-family: var(--font-display); font-size: 80px; color: var(--sand); font-weight: 700; text-shadow: 0 2px 20px rgba(0,0,0,0.8); }
+
+.landing-cta { padding: 100px 0; text-align: center; }
+.landing-cta h2 { font-family: var(--font-display); font-size: 36px; margin-bottom: 16px; }
+.landing-cta p { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+
+.landing-footer { padding: 40px 0; border-top: 1px solid var(--border); }
+.landing-footer .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.landing-footer .fl-brand { display: flex; align-items: center; gap: 8px; }
+.landing-footer .fl-text { font-size: 12px; color: var(--muted); }
+
+/* ==================== GALLERY ==================== */
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.gallery-grid .gallery-item {
+  aspect-ratio: 1; border-radius: var(--radius); overflow: hidden;
+  border: 1px solid var(--border); position: relative; cursor: pointer;
+  transition: border-color 0.3s, transform 0.3s;
+}
+.gallery-grid .gallery-item:hover { border-color: var(--sand); transform: scale(1.02); }
+.gallery-grid .gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+.gallery-grid .gallery-item .gallery-label {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 12px 16px;
+  background: linear-gradient(transparent, rgba(11,11,11,0.9));
+  font-size: 11px; color: var(--muted);
+}
+.gallery-grid .gallery-item:first-child { grid-column: span 2; grid-row: span 2; }
+
+/* ==================== BUSINESS CARDS ==================== */
+.card-showcase { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.biz-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 24px; aspect-ratio: 1.75;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.biz-card .bc-top { display: flex; justify-content: space-between; align-items: flex-start; }
+.biz-card .bc-name { font-family: var(--font-display); font-size: 22px; letter-spacing: 0.06em; }
+.biz-card .bc-sand { color: var(--sand); }
+.biz-card .bc-info { font-size: 11px; color: var(--muted); line-height: 2; }
+.biz-card .bc-info strong { color: var(--ink); font-weight: 500; }
+.biz-card .bc-tags { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.biz-card .bc-tag {
+  font-size: 9px; text-transform: uppercase; letter-spacing: 0.08em;
+  padding: 3px 8px; border: 1px solid var(--border); border-radius: 2px; color: var(--muted);
+}
+.biz-card.front { background: linear-gradient(145deg, #1c1c1c 0%, #222 100%); }
+.biz-card.back {
+  background: linear-gradient(145deg, #141414 0%, #1a1a1a 100%);
+  display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+}
+.biz-card.back::before {
+  content: ''; position: absolute; inset: 0;
+  background: url('tsukasaya_assets/10_card_texture.jpg') center/cover no-repeat;
+  opacity: 0.15;
+}
+.biz-card .bc-back-mark { text-align: center; position: relative; z-index: 1; }
+.biz-card .bc-back-char { font-family: var(--font-display); font-size: 36px; color: var(--sand); letter-spacing: 0.12em; }
+.biz-card .bc-back-sub { font-size: 9px; color: var(--muted); letter-spacing: 0.12em; margin-top: 4px; }
+
+.biz-specs { margin-top: 40px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 32px; }
+.biz-specs h4 { font-size: 12px; color: var(--sand); letter-spacing: 0.08em; margin-bottom: 12px; }
+.biz-specs p { font-size: 12px; color: var(--muted); line-height: 1.8; }
+
+/* ==================== INSTAGRAM TEMPLATES ==================== */
+.ig-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.ig-post {
+  aspect-ratio: 0.8; border-radius: 8px; overflow: hidden; position: relative;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  background-size: cover; background-position: center;
+}
+.ig-post .ig-overlay {
+  padding: 28px 22px;
+  background: linear-gradient(transparent 0%, rgba(11,11,11,0.92) 100%);
+}
+.ig-post .ig-mark-sm { width: 14px; height: 14px; background: var(--sand); clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); margin-bottom: 10px; }
+.ig-post .ig-head { font-size: 20px; font-weight: 700; line-height: 1.2; margin-bottom: 6px; }
+.ig-post .ig-sub { font-size: 10px; color: rgba(255,255,255,0.55); }
+
+.ig-post.v1 { background-image: url('tsukasaya_assets/07_ig_teal.jpg'); }
+.ig-post.v2 { background-image: url('tsukasaya_assets/08_ig_warm.jpg'); }
+.ig-post.v3 { background-image: url('tsukasaya_assets/09_ig_cool.jpg'); }
+
+.ig-labels { display: flex; gap: 24px; margin-top: 16px; justify-content: center; }
+.ig-labels span { font-size: 10px; color: var(--muted); letter-spacing: 0.08em; }
+
+/* Footer */
+.page-footer { padding: 60px 0; border-top: 1px solid var(--border); text-align: center; }
+.page-footer .ft-logo { font-family: var(--font-display); font-size: 18px; color: var(--sand); letter-spacing: 0.1em; margin-bottom: 6px; }
+.page-footer .ft-sub { font-size: 10px; color: var(--muted); }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+.anim { animation: fadeUp 0.8s ease-out both; }
+.d1 { animation-delay: 0.1s; }
+.d2 { animation-delay: 0.2s; }
+.d3 { animation-delay: 0.3s; }
+
+@media (max-width: 768px) {
+  .services-grid, .ig-grid, .gallery-grid { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
+  .card-showcase { grid-template-columns: 1fr; }
+  .landing-hero h1 { font-size: 40px; }
+  .section { padding: 48px 0; }
+  .gallery-grid .gallery-item:first-child { grid-column: span 1; grid-row: span 1; }
+}
+</style>
+</head>
+<body>
+
+<!-- ==================== NAV ==================== -->
+<nav>
+  <div class="container">
+    <div class="nav-brand">
+      <div class="logo-diamond sm"><div class="logo-diamond-inner"><span class="logo-diamond-char" style="font-size:10px;">筑</span></div></div>
+      <span class="nav-name">筑沙 TSUKASA</span>
+    </div>
+    <div class="nav-links">
+      <a href="#landing">Website</a>
+      <a href="#card">Cards</a>
+      <a href="#instagram">Instagram</a>
+      <a href="#gallery">Gallery</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ==================== LANDING PAGE ==================== -->
+<section class="landing" id="landing">
+  <div class="landing-hero">
+    <div class="container">
+      <div class="hero-mark">
+        <div class="logo-diamond lg" style="width:80px;height:80px;"><div class="logo-diamond-inner" style="width:70%;height:70%;"><span class="logo-diamond-char" style="font-size:28px;">筑</span></div></div>
+      </div>
+      <h1 class="anim">筑沙</h1>
+      <p class="sub anim d1">Tsukasa</p>
+      <p class="desc anim d1">Where construction precision meets modern style. AI-driven real estate and building solutions for Southern California.</p>
+      <div class="cta-row anim d2">
+        <a href="#" class="btn">Get in Touch</a>
+        <a href="#" class="btn-outline">View Projects</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="landing-services">
+    <div class="container">
+      <div class="section-num">What We Do</div>
+      <div class="section-title">Services</div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="svc-icon">🏠</div>
+          <div class="svc-title">Real Estate</div>
+          <div class="svc-desc">Data-driven residential and commercial real estate services across Walnut, Diamond Bar, Chino Hills, Rancho Cucamonga, and Fontana. Market intelligence powered by AI.</div>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">🏗️</div>
+          <div class="svc-title">Construction</div>
+          <div class="svc-desc">Design-build services bridging Japanese craftsmanship with California innovation. From concept to completion, every project reflects precision and care.</div>
+        </div>
+        <div class="service-card">
+          <div class="svc-icon">⚡</div>
+          <div class="svc-title">AI Solutions</div>
+          <div class="svc-desc">Custom AI tools for property valuation, market forecasting, and construction optimization. Technology that makes buildings smarter and decisions sharper.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About -->
+  <div class="landing-about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2>The Meaning of 筑沙</h2>
+          <p><strong style="color:var(--sand);">筑 (Build)</strong> — The act of construction. From ancient foundations to modern structures, 筑 represents bringing vision into physical form with precision and care.</p>
+          <p><strong style="color:var(--sand);">沙 (Sand)</strong> — Granular, fluid, modern. The silicon in AI chips, the grains in concrete, the shifting landscape of style. 沙 embodies sophistication at the cutting edge.</p>
+          <p>Together, pronounced <em>Tsukasa</em>, 筑沙 stands for building the future with intelligence and style.</p>
+        </div>
+        <div class="about-visual">
+          <img src="tsukasaya_assets/03_sand_crystal.jpg" alt="Sand Crystal">
+          <div class="logo-diamond" style="width:100px;height:100px;"><div class="logo-diamond-inner"><span class="logo-diamond-char" style="font-size:34px;">筑</span></div></div>
+          <div class="big-kanji">筑沙</div>
+          <div style="color:var(--muted);font-size:12px;letter-spacing:0.08em;">Build & Style</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="landing-cta">
+    <div class="container">
+      <h2>Let's Build Together</h2>
+      <p>Whether you're buying, selling, or building — Tsukasa brings AI precision to every decision.</p>
+      <a href="#" class="btn">Contact Us</a>
+    </div>
+  </div>
+
+  <div class="landing-footer">
+    <div class="container">
+      <div class="fl-brand">
+        <div class="logo-diamond sm"><div class="logo-diamond-inner"><span class="logo-diamond-char" style="font-size:9px;">筑</span></div></div>
+        <span style="font-family:var(--font-display);font-size:13px;letter-spacing:0.06em;">筑沙 TSUKASA</span>
+      </div>
+      <div class="fl-text">Southern California · © 2026</div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- ==================== GALLERY ==================== -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-num">Brand Assets</div>
+    <div class="section-title">Visual Gallery</div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="tsukasaya_assets/01_brand_hero.jpg" alt="Brand Hero">
+        <div class="gallery-label">01 · Brand Hero</div>
+      </div>
+      <div class="gallery-item">
+        <img src="tsukasaya_assets/02_architecture.jpg" alt="Architecture">
+        <div class="gallery-label">02 · Architecture & Form</div>
+      </div>
+      <div class="gallery-item">
+        <img src="tsukasaya_assets/03_sand_crystal.jpg" alt="Sand Crystal">
+        <div class="gallery-label">03 · Sand Crystal Detail</div>
+      </div>
+      <div class="gallery-item">
+        <img src="tsukasaya_assets/05_tech_build.jpg" alt="Tech Build">
+        <div class="gallery-label">05 · Tech × Construction</div>
+      </div>
+      <div class="gallery-item">
+        <img src="tsukasaya_assets/06_cali_japan.jpg" alt="California Japan">
+        <div class="gallery-label">06 · California × Japan</div>
+      </div>
+      <div class="gallery-item">
+        <img src="tsukasaya_assets/07_ig_teal.jpg" alt="IG Teal">
+        <div class="gallery-label">07 · IG Template — Teal</div>
+      </div>
+      <div class="gallery-item">
+        <img src="tsukasaya_assets/08_ig_warm.jpg" alt="IG Warm">
+        <div class="gallery-label">08 · IG Template — Warm</div>
+      </div>
+      <div class="gallery-item">
+        <img src="tsukasaya_assets/09_ig_cool.jpg" alt="IG Cool">
+        <div class="gallery-label">09 · IG Template — Cool</div>
+      </div>
+      <div class="gallery-item">
+        <img src="tsukasaya_assets/10_card_texture.jpg" alt="Card Texture">
+        <div class="gallery-label">10 · Card Texture</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- ==================== BUSINESS CARDS ==================== -->
+<section class="section" id="card">
+  <div class="container">
+    <div class="section-num">Stationery</div>
+    <div class="section-title">Business Cards</div>
+    <div class="card-showcase">
+      <!-- Front -->
+      <div class="biz-card front">
+        <div class="bc-top">
+          <div>
+            <div class="bc-name"><span class="bc-sand">筑</span>沙</div>
+            <div style="font-size:9px;color:var(--muted);letter-spacing:0.1em;margin-top:2px;">TSUKASA</div>
+          </div>
+          <div class="logo-diamond sm"><div class="logo-diamond-inner"><span class="logo-diamond-char" style="font-size:9px;">筑</span></div></div>
+        </div>
+        <div>
+          <div class="bc-info">
+            <strong>Motoki Sadashige</strong><br>
+            Founder & CEO
+          </div>
+          <div class="bc-tags">
+            <span class="bc-tag">AI</span>
+            <span class="bc-tag">Real Estate</span>
+            <span class="bc-tag">Construction</span>
+          </div>
+        </div>
+      </div>
+      <!-- Back with texture -->
+      <div class="biz-card back">
+        <div class="bc-back-mark">
+          <div class="logo-diamond" style="width:64px;height:64px;margin:0 auto 16px;"><div class="logo-diamond-inner"><span class="logo-diamond-char" style="font-size:20px;">筑</span></div></div>
+          <div class="bc-back-char">筑 沙</div>
+          <div class="bc-back-sub">BUILD & STYLE</div>
+        </div>
+      </div>
+      <!-- Alt dark -->
+      <div class="biz-card front" style="background:linear-gradient(145deg,#0d0d0d 0%,#1a1a1a 100%);">
+        <div class="bc-top">
+          <div>
+            <div class="bc-name"><span class="bc-sand">筑</span>沙</div>
+            <div style="font-size:9px;color:var(--muted);letter-spacing:0.1em;margin-top:2px;">TSUKASA</div>
+          </div>
+          <div class="logo-diamond sm"><div class="logo-diamond-inner"><span class="logo-diamond-char" style="font-size:9px;">筑</span></div></div>
+        </div>
+        <div>
+          <div class="bc-info">
+            <strong>Motoki Sadashige</strong><br>
+            Real Estate Agent · Developer
+          </div>
+          <div class="bc-tags">
+            <span class="bc-tag">Walnut</span>
+            <span class="bc-tag">Diamond Bar</span>
+            <span class="bc-tag">SoCal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="biz-specs">
+      <h4>Print Specs</h4>
+      <p>Size: 3.5″ × 2″ (standard US) · Paper: 16pt matte black + foil stamp (Sand #D4B896) · Rounded corners</p>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<!-- ==================== INSTAGRAM ==================== -->
+<section class="section" id="instagram">
+  <div class="container">
+    <div class="section-num">Social Media</div>
+    <div class="section-title">Instagram Templates</div>
+    <div class="ig-grid">
+      <div class="ig-post v1">
+        <div class="ig-overlay">
+          <div class="ig-mark-sm"></div>
+          <div class="ig-head">Building the Future.<br>AI × Real Estate.</div>
+          <div class="ig-sub">筑沙 Tsukasa · Southern California</div>
+        </div>
+      </div>
+      <div class="ig-post v2">
+        <div class="ig-overlay">
+          <div class="ig-mark-sm"></div>
+          <div class="ig-head">From Sand to Structure.<br>Precision in Every Grain.</div>
+          <div class="ig-sub">筑沙 Tsukasa · Construction</div>
+        </div>
+      </div>
+      <div class="ig-post v3">
+        <div class="ig-overlay">
+          <div class="ig-mark-sm"></div>
+          <div class="ig-head">筑 = Build<br>沙 = Style<br>Tsukasa = You.</div>
+          <div class="ig-sub">筑沙 Tsukasa · Brand Story</div>
+        </div>
+      </div>
+    </div>
+    <div class="ig-labels">
+      <span>Template 1 · Brand Intro</span>
+      <span>Template 2 · Construction</span>
+      <span>Template 3 · Philosophy</span>
+    </div>
+  </div>
+</section>
+
+<hr>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="ft-logo">筑 沙 TSUKASA</div>
+    <div class="ft-sub">AI · Real Estate · Construction — Brand System v3 — 2026</div>
+  </div>
+</footer>
+
+</body>
+</html>
