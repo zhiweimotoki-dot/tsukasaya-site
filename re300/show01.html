@@ -1,0 +1,3224 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="加州房地产执照考试中文深度教程 — Patrick J. Hogarty RE 300 第1讲：课程导览与全章概览。含2026年最新DRE数据、执照新规、15章速览及完整术语对照。">
+<meta property="og:title" content="加州房产执照考试｜中文精讲 EP01 — 筑沙 Tsukasa">
+<meta property="og:description" content="Patrick Hogarty《California Real Estate Principles》中文精讲第1集：课程总览 + 2026年行业数据 + 15章速览 + 完整术语对照">
+<meta property="og:type" content="article">
+<title>EP01 课程导览 — RE300 加州房地产原理 — 筑沙 Tsukasa</title>
+<style>
+:root {
+  --bg: #0b0b0b;
+  --surface: #161616;
+  --border: #262626;
+  --ink: #ede8df;
+  --muted: #8a8578;
+  --sand: #d4b896;
+  --sand-light: #e8d5c0;
+  --teal: #3a8a85;
+  --radius: 6px;
+  --font-display: 'Georgia', 'Noto Serif JP', 'Songti SC', serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+.container { max-width: 860px; margin: 0 auto; padding: 0 32px; }
+
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(11,11,11,0.94); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border); padding: 16px 0;
+}
+nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.logo-diamond {
+  width: 28px; height: 28px;
+  background: linear-gradient(135deg, var(--sand) 0%, var(--sand-light) 100%);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.logo-diamond-inner {
+  width: 70%; height: 70%; background: var(--bg);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex; align-items: center; justify-content: center;
+}
+.logo-diamond-char { color: var(--sand); font-family: var(--font-display); font-size: 9px; }
+.nav-name { font-family: var(--font-display); font-size: 16px; letter-spacing: 0.08em; }
+.nav-links { display: flex; gap: 24px; }
+.nav-links a { color: var(--muted); text-decoration: none; font-size: 12px; letter-spacing: 0.06em; transition: color 0.2s; }
+.nav-links a:hover { color: var(--sand); }
+
+.article-header {
+  padding: 80px 0 48px; border-bottom: 1px solid var(--border); text-align: center;
+}
+.article-header .ep-label {
+  display: inline-block; font-size: 10px; color: var(--sand);
+  letter-spacing: 0.14em; text-transform: uppercase;
+  border: 1px solid var(--sand); padding: 6px 16px; border-radius: 2px; margin-bottom: 20px;
+}
+.article-header .breadcrumb { font-size: 11px; color: var(--muted); margin-bottom: 32px; }
+.article-header .breadcrumb a { color: var(--muted); text-decoration: none; }
+.article-header .breadcrumb a:hover { color: var(--sand); }
+.article-header h1 {
+  font-family: var(--font-display); font-size: clamp(24px, 5vw, 40px);
+  letter-spacing: 0.04em; line-height: 1.4; margin-bottom: 24px;
+}
+.article-header .meta {
+  display: flex; gap: 28px; justify-content: center; flex-wrap: wrap;
+  font-size: 11px; color: var(--muted); letter-spacing: 0.06em;
+}
+
+.article-layout { display: flex; gap: 48px; padding: 48px 0; align-items: flex-start; }
+.article-toc {
+  position: sticky; top: 100px; width: 200px; flex-shrink: 0;
+  font-size: 12px; line-height: 2;
+}
+.article-toc .toc-title {
+  font-family: var(--font-display); font-size: 13px;
+  color: var(--sand); letter-spacing: 0.08em; margin-bottom: 16px;
+}
+.article-toc a {
+  display: block; color: var(--muted); text-decoration: none;
+  padding: 2px 0; transition: color 0.2s;
+  border-left: 2px solid transparent; padding-left: 12px;
+}
+.article-toc a:hover, .article-toc a.active {
+  color: var(--ink); border-left-color: var(--sand);
+}
+.article-body { flex: 1; min-width: 0; }
+
+.article-section { margin-bottom: 48px; }
+.article-section h2 {
+  font-family: var(--font-display); font-size: 26px;
+  margin-bottom: 20px; padding-bottom: 12px;
+  border-bottom: 1px solid var(--border); letter-spacing: 0.04em;
+}
+.article-section h3 {
+  font-family: var(--font-display); font-size: 19px;
+  margin: 28px 0 12px; color: var(--sand); letter-spacing: 0.03em;
+}
+.article-section h4 {
+  font-size: 15px; margin: 20px 0 8px; color: var(--sand-light);
+}
+.article-section p {
+  font-size: 15px; color: var(--muted); line-height: 1.85; margin-bottom: 14px;
+}
+.article-section p strong { color: var(--ink); font-weight: 600; }
+.article-section ul, .article-section ol {
+  margin: 12px 0 16px 24px; font-size: 14px; color: var(--muted); line-height: 1.9;
+}
+.article-section li { margin-bottom: 4px; }
+.article-section li strong { color: var(--ink); font-weight: 600; }
+.article-section code {
+  background: var(--surface); padding: 2px 6px;
+  border-radius: 3px; font-size: 13px; color: var(--sand);
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+.article-section blockquote {
+  border-left: 3px solid var(--sand);
+  padding: 16px 20px; margin: 20px 0;
+  background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 14px; color: var(--sand-light); line-height: 1.8; font-style: italic;
+}
+.article-section hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+.article-section table {
+  width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13px;
+}
+.article-section th {
+  background: var(--surface); color: var(--sand);
+  padding: 10px 14px; text-align: left; font-weight: 600; font-size: 11px;
+  letter-spacing: 0.06em; text-transform: uppercase; border-bottom: 2px solid var(--border);
+}
+.article-section td {
+  padding: 10px 14px; border-bottom: 1px solid var(--border);
+  color: var(--muted); line-height: 1.6;
+}
+.article-section td strong { color: var(--ink); }
+.article-section tr:hover td { background: var(--surface); }
+
+.page-footer { padding: 60px 0; border-top: 1px solid var(--border); text-align: center; }
+.page-footer .ft-nav { display: flex; gap: 32px; justify-content: center; margin-bottom: 24px; }
+.page-footer .ft-nav a { color: var(--muted); font-size: 13px; text-decoration: none; transition: color 0.2s; }
+.page-footer .ft-nav a:hover { color: var(--sand); }
+.page-footer .ft-logo { font-family: var(--font-display); font-size: 18px; color: var(--sand); letter-spacing: 0.1em; margin-bottom: 6px; }
+.page-footer .ft-sub { font-size: 10px; color: var(--muted); }
+
+@media (max-width: 900px) {
+  .article-layout { flex-direction: column; }
+  .article-toc { position: static; width: 100%; margin-bottom: 32px; }
+  .article-toc a { display: inline-block; border-left: none; border-bottom: 2px solid transparent; padding: 4px 8px; margin-right: 8px; }
+  .article-toc a:hover, .article-toc a.active { border-left: none; border-bottom-color: var(--sand); }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="../index.html" class="nav-brand">
+      <div class="logo-diamond"><div class="logo-diamond-inner"><span class="logo-diamond-char">筑</span></div></div>
+      <span class="nav-name">筑沙 TSUKASA</span>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="index.html">RE300</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <div class="ep-label">EPISODE 01</div>
+    <div class="breadcrumb">
+      <a href="../index.html">筑沙</a> · 
+      <a href="index.html">RE300 系列</a> · 
+      第1讲
+    </div>
+    <h1>加州房地产经纪人考试教程<br>课程导览与全章概览</h1>
+    <div class="meta">
+      <span>📚 36,000 字</span>
+      <span>🎙️ Patrick J. Hogarty</span>
+      <span>📅 2026 年 6 月</span>
+      <span>⏱️ 阅读约 45 分钟</span>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="article-layout">
+    <aside class="article-toc">
+      <div class="toc-title">目录</div>
+      <a href="#section-0">前言</a>
+      <a href="#section-1">第一部分：课前说明 —— 如何学习这门课</a>
+      <a href="#section-2">第二部分：课程大纲现场演示</a>
+      <a href="#section-3">第三部分：📊 加州房地产行业现状（2026 年数据）</a>
+      <a href="#section-4">第四部分：十五个章节逐一速览</a>
+      <a href="#section-5">第五部分：📌 2026 年执照路径速查（完整版）</a>
+      <a href="#section-6">第六部分：完整术语表中英文对照</a>
+      <a href="#section-7">第七部分：课程结语</a>
+
+    </aside>
+    <main class="article-body">
+<section class="article-section">
+
+
+
+<p><strong>原始讲师：</strong> Patrick J. Hogarty, MA（Sacramento City College）</p>
+
+
+
+<p><strong>课程编号：</strong> RE 300 — California Real Estate Principles</p>
+
+
+
+<p><strong>原始播出：</strong> 2009 年 12 月 31 日 · <strong>时长：</strong> 59 分钟</p>
+
+
+
+<p><strong>本文整理：</strong> 2026 年 6 月</p>
+
+
+
+<p><strong>数据来源：</strong> 加州房地产局 DRE 官网（dre.ca.gov）2026 年 4 月官方统计 · NAR 2026 年 5 月市场报告 · 美联储官网 2026 年 5 月 28 日更新</p>
+
+
+
+<p><strong>内容说明：</strong> 本文基于播客 Show 01 完整录音逐段整理，所有 Pat Hogerty 的讲解、案例、类比、忠告均已收录。文中以 📌 标注依据 2026 年最新法规与数据进行的更新，以 💡 标注 Pat 的经典原文内容（因录制于 2009 年，部分技术细节已过时，但教学逻辑完全有效）。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+</section>
+
+<section class="article-section">
+<h2 id="section-0">前言</h2>
+
+
+
+<p>2009 年 12 月的一个晚上，Pat Hogerty 坐在 Sacramento City College 的演播室里，对着镜头说出了这句话：</p>
+
+
+
+<blockquote>&quot;Good evening, everybody. My name is Pat Hogerty, and welcome to California Real Estate Principles, Real Estate 300.&quot;</blockquote>
+
+
+
+
+
+
+<p>这是 RE 300「加州房地产原理」课程的第一节课。当天，Pat 和同事们实际上举行了两场新生说明会——上午 10 点到 11 点为日间学生举办了一场，下午 4 点到 5 点为晚间学生举办了另一场。需要特别说明的是，这次说明会同时涵盖了 RE 300（房地产原理）、RE 310（房地产实践）和 RE 320（房地产金融）三门课程。三者在同一场地连续进行，方便需要选修多门课程的学生一次性完成全部说明，而不必来来回回跑好几趟。</p>
+
+
+
+
+
+
+<p>📌 <strong>2026 年读者须知：</strong> 本文基于 Pat 2009 年的原始教学内容逐段整理。今天的学习环境已经发生了巨大变化——线上录播课程（Canvas 等 LMS 平台）、Zoom 直播和 YouTube 已成为主流，但 Pat 的教学核心——术语、原理、场景演练和行业思维方式——在 2026 年仍然完全有效。本文在保留 Pat 全部原始教学内容的基础上，在每个相关位置以 📌 标注了 2026 年的最新法规、数据和行业变化。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+</section>
+
+<section class="article-section">
+<h2 id="section-1">第一部分：课前说明 —— 如何学习这门课</h2>
+
+
+
+<h3>五种参与方式</h3>
+
+
+
+
+
+
+<p>Pat 在这一部分花了相当多的时间来解释学习渠道，因为他的课程服务的是一群背景各异、时间安排不同的人——有全职工作者、有需要长距离通勤的学生、有住在偏远地区的同学。因此他提供了五种灵活的学习方式：</p>
+
+
+
+
+
+
+<p><strong>方式一：现场听课。</strong> 每周二和周四下午 5:30 到 6:30，在 Sacramento City College 的演播室进行直播。现场有真实的学生——Pat 开玩笑道：&quot;我们有一些真正的明星学员在现场。我看到他们在电视上了。不过注意，不要带水瓶进来——上面有水杯警察。&quot;</p>
+
+
+
+
+
+
+<p><strong>方式二：图书馆借录像带。</strong> 每节课结束后大约 15 分钟，高级工程师 Bob Bickley 会将录制好的节目送到图书馆（就在演播室走廊对面）。学生可以随时到图书馆坐下来观看。💡 这是典型的 2009 年技术方案——VHS 磁带。今天这一环节的功能已被 LMS（学习管理系统，如 Canvas、Blackboard 等）的录播功能完全取代。</p>
+
+
+
+
+
+
+<p><strong>方式三：互联网点播。</strong> 课程结束后，视频被编码上传至网络。学生将在随后一至两天内收到 Pat 的电子邮件通知，附有观看链接。&quot;这个链接全年无休，一天 24 小时、一周 7 天、一年 365 天你都可以看。我在今天的新生说明会上已经演示过怎么访问了。&quot;📌 今天这已成为最主流的学习方式。</p>
+
+
+
+
+
+
+<p><strong>方式四：有线电视重播。</strong> 如果学生订阅了 Comcast 或 SureWest 有线电视服务，可以在随后周末收看重播。💡 这一渠道今天已被 YouTube 等流媒体平台替代。</p>
+
+
+
+
+
+
+<p><strong>方式五：Podcast 音频下载。</strong> 这是最具前瞻性的一个安排。Pat 解释道：每期节目结束后，制作团队会将音频压缩为 MP3 格式，上传到网络供下载。&quot;Podcasting 这个名字其实来自苹果的 iPod——就是大家戴着白色耳塞在街上手舞足蹈的那个小玩意儿。但你不是非得有 iPod 才能用，任何 MP3 播放器都行。&quot;</p>
+
+
+
+
+
+
+<p>这一功能源于学生的直接反馈。Pat 特意讲述了背后的故事：&quot;有两个年轻女生找到我，说她们花大量时间开车跑业务，如果能在车里听讲座就好了。我们就专门为她们做了这个安排。&quot;</p>
+
+
+
+
+
+
+<p>他还幽默地补充：&quot;如果你不知道怎么操作 MP3 播放器，去找你的孙子孙女——他们对这个可擅长了。把文件下载到 MP3 播放器里，你就可以开车听、健身听，爱怎么听都行。&quot;</p>
+
+
+
+
+
+
+<p>📌 今天，Podcast 已全面演变为 Apple Podcasts、Spotify、YouTube 等流媒体平台。Pat 在 2009 年做出的这个前瞻性安排，恰好预示了整个教育内容分发的未来方向。</p>
+
+
+
+
+
+
+<h3>分校安排</h3>
+
+
+
+
+
+
+<p>对于居住在偏远地区的学生，Pat 的课程在 Davis、West Sacramento 和 Downtown Sacramento 三个地点设有分校。学生可以去这些地点观看课程录像，但有一个前提条件：<strong>必须提前打电话预约。</strong> 不是因为对方不愿意接待，而是因为他们需要确保有工作人员在场、场地已经开放。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+</section>
+
+<section class="article-section">
+<h2 id="section-2">第二部分：课程大纲现场演示</h2>
+
+
+
+<p>讲完参与方式后，Pat 在直播中做了一件在 2009 年来说相当&quot;高科技&quot;的事情——他现场登录了学校的学习管理系统 Blackboard，当着镜头的面下载并打开了课程大纲文件，逐项向学生解释。</p>
+
+
+
+
+
+
+<p>💡 他使用的平台是 Blackboard，今天许多学校已改用 Canvas。但操作逻辑完全一致：登录系统 → 找到对应课程 → 进入课程材料区 → 下载课程大纲文件。</p>
+
+
+
+
+
+
+<p>&quot;We&#x27;re doing this show in such a way that we&#x27;re going to be reusing the material again.&quot; Pat 特别说明，这些课程录像将被重复使用给未来的学生。因此他不会提及具体的日期、天气或者&quot;今天真热&quot;之类的话。他的目标是让教学内容具有&quot;永久性&quot;。这也是为什么这档播客能在录制十几年后仍然有价值。</p>
+
+
+
+
+
+
+<h3>课程描述</h3>
+
+
+
+
+
+
+<p>课程大纲中的官方描述是：</p>
+
+
+
+<blockquote>&quot;This is a fundamental course in real estate covering the basic laws and principles of California real estate, giving understanding and background to the terminology necessary for more advanced study in specialized classes.&quot;</blockquote>
+
+
+
+
+
+
+<p>翻译为：&quot;这是一门基础性房地产课程，涵盖加州房地产的基本法律和原理，帮助学生建立理解和背景知识，掌握进一步深造所需的专业术语。&quot;</p>
+
+
+
+
+
+
+<p>Pat 对这个官方描述做了一个非常重要的解读——他说，进入任何一个新领域，<strong>最大的挑战就是学习行业术语（lingo）。</strong> 他指了指课堂上一位做电视和音响系统安装的学生说：&quot;这位同学脑子里装着几千个行业术语，外人完全不懂。医生也一样、律师也一样、会计师也一样——每个行业都有自己的专属词汇，你懂了就懂了，不懂就完全不懂。&quot;</p>
+
+
+
+
+
+
+<p>所以在接下来的课程中，Pat 反复强调：我们不会在每个领域钻得非常深——实际上，课程中的每一章在更高级别的课程中都是一门完整的独立课。比如：</p>
+
+<ul>
+<li>房地产估价（Appraisal）在进阶阶段有两门深入课程</li>
+
+<li>房地产金融（Real Estate Finance）、Escrow、Title 等也分别有独立的深入课程</li>
+
+
+</ul>
+
+
+
+<p>RE 300 的任务是让学生<strong>对每个领域都有初步的接触和理解</strong>，掌握行业术语，为以后的深入学习和执照考试打好基础。</p>
+
+
+
+
+
+
+<h3>Pat 的学习策略：用 Study Guide 当考卷准备</h3>
+
+
+
+
+
+
+<p>Pat 提出了一个非常高效的学习策略，这一策略至今完全有效：</p>
+
+
+
+
+<ol>
+<li><strong>下载 Study Guide。</strong> Pat 说他放在网上的 Study Guide"本质上和考题 99.99% 完全一致"。</li>
+
+<li><strong>花时间去查资料、找答案。</strong> 抱着"我可以拿 100 分"的心态来准备。</li>
+
+<li><strong>诚实面对自己。</strong> 如果你蒙对了某道题但其实并不理解为什么对——标记出来，回到教材中去弄懂。</li>
+
+
+</ol>
+
+
+
+<p>Pat 将这种方法类比为备考州政府考试的准备方式：&quot;每个人进入房地产行业时，都有自己擅长的领域和自己的盲区。你可能金融背景很强，但一碰到法定描述就懵了；或者你在产权保险公司工作过，对法定描述了如指掌，但碰到估价就一头雾水。关键是诚实地找到自己不懂的地方，然后学懂它。&quot;</p>
+
+
+
+
+
+
+<p>💡 Pat 课程中有三次校内考试（两次期中考和一次期末考），使用的是 Scantron 882 答题卡和 #2 铅笔。这是他个人课程的具体安排，不是 DRE 州考试的形式。但 Pat 这种&quot;先自我测试→发现盲点→针对学习&quot;的方法，对于备考 DRE 的 150 题选择题考试完全适用。</p>
+
+
+
+
+
+
+<p>📌 <strong>2026 年 DRE Salesperson 州考试格式：</strong></p>
+
+<ul>
+<li>150 道选择题</li>
+
+<li>及格线：70%（即 105/150 题正确）</li>
+
+<li>考试方式：全电子化机考</li>
+
+<li>考试费用：$60</li>
+
+<li>五个考点：Sacramento、Oakland、Fresno、La Palma（橙县）、San Diego</li>
+
+<li>附带要求：必须完成 Live Scan 指纹采集及 FBI/DOJ 背景调查</li>
+
+
+</ul>
+
+
+
+<h3>考核与作业</h3>
+
+
+
+
+
+
+<p>Pat 的课程包含三次考试：</p>
+
+<ul>
+<li>第一次期中考：覆盖前 5 章</li>
+
+<li>第二次期中考：覆盖第 6–10 章，同时提交职业访谈报告</li>
+
+<li>期末考：覆盖后 5 章</li>
+
+
+</ul>
+
+
+
+<p><strong>职业访谈（Professional Interview）：</strong> Pat 称之为&quot;从来没有人完不成&quot;的一项简单作业。学生需要在学期中找一位自己感兴趣的房地产领域从业者——可以是经纪人、估价师、贷款专员等——预约一次面谈。在面谈中，你需要问对方：</p>
+
+<ul>
+<li>你日常的工作具体做些什么？</li>
+
+<li>这个行业的真实面貌是怎样的？</li>
+
+<li>你认为这个行业真正需要哪些技能？</li>
+
+<li>当前和未来面临哪些挑战？</li>
+
+
+</ul>
+
+
+
+<p>然后写一份两页纸的报告，在第二次期中考时提交。📌 这个作业在今天的对应做法是：LinkedIn 上联系业内人士请求一次 informational interview。这项作业的价值完全不减。</p>
+
+
+
+
+
+
+<h3>联系方式</h3>
+
+
+
+
+
+
+<p>Pat 给出了自己的办公室地址——Sacramento City College 商学院二楼，学习资源中心（Learning Resource Center）东侧。然后他说了一段堪称经典的话：</p>
+
+
+
+<blockquote>&quot;Now, one thing I want to mention about my office phone — now that you know what it is, don&#x27;t ever call me there.&quot;</blockquote>
+
+
+
+
+
+
+<p>不要打我的办公室电话。为什么？两个原因：</p>
+
+
+
+
+
+
+<p><strong>第一，时间同步问题。</strong> 你有你的日程，我有我的。你早上 6 点醒来突然想到要问我一件事——如果你打电话，我肯定接不到。但如果你发邮件，我早上 8 点打开邮箱时就能看到你的邮件，然后立刻回给你。这样我们不用玩&quot;电话捉迷藏&quot;。</p>
+
+
+
+
+
+
+<p><strong>第二，语音留言听不清。</strong> Pat 描述了一个非常生动的场景：&quot;现在很多人开车的时候打电话留言——我能听到他们在高速公路上以 50、60、70 英里的时速飞驰，但我完全听不懂他们在说什么。因为没有我在电话那头说&#x27;等一下、你刚才说什么、我听不清、你在断线&#x27;——他们以为留言已经成功传达了，但其实并没有。&quot;</p>
+
+
+
+
+
+
+<p>所以结论很简单：<strong>发邮件。</strong> 我会回复你。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+</section>
+
+<section class="article-section">
+<h2 id="section-3">第三部分：📊 加州房地产行业现状（2026 年数据）</h2>
+
+
+
+<p>在进入 Pat 的章节速览之前，先让我们了解一下你即将进入的这个行业在 2026 年的真实面貌。以下数据全部来自加州房地产局（DRE）官网发布的 2026 年 4 月官方统计。</p>
+
+
+
+
+
+
+<h3>持牌人数统计</h3>
+
+
+
+<table><tr><th>指标</th><th>2026 年 4 月</th><th>2025 年 4 月</th><th>2024 年 4 月</th><th>变化趋势</th></tr><tr><td>Broker（经纪人）</td><td>117,423</td><td>121,404</td><td>124,264</td><td>↓ 两年累计 −5.5%</td></tr><tr><td>Salesperson（销售员）</td><td>293,077</td><td>306,403</td><td>310,654</td><td>↓ 两年累计 −5.7%</td></tr><tr><td>**加州持牌总人数**</td><td>**410,500**</td><td>**427,807**</td><td>**434,918**</td><td>**↓ 两年累计 −5.6%**</td></tr><tr><td>每月新增 Salesperson 执照</td><td>1,404</td><td>1,415</td><td>—</td><td>基本稳定</td></tr><tr><td>每月 Salesperson 考试人次</td><td>2,546</td><td>2,404</td><td>—</td><td>基本稳定</td></tr></table>
+
+
+
+
+
+
+<p><strong>解读：</strong> 加州房地产持牌总人数从两年前的近 43.5 万人下降到 2026 年 4 月的约 41 万人，两年净减少约 24,000 人，降幅为 5.6%。这一趋势反映了高利率环境下的行业出清——与 Pat 在 2009 年描述的次贷危机后市场收缩本质相同，但原因已从金融危机转变为利率上升导致的市场成交量下降。</p>
+
+
+
+
+
+
+<p>但这不意味着行业没有新人进入。每个月仍然有大约 1,400 人获得新的 Salesperson 执照，约 2,500 人参加考试。竞争依然存在。而且——最重要的一点——入行门槛已经从 Pat 时代的&quot;先通过考试、再补修课程&quot;提高为&quot;三门课程全部修完才能拿执照&quot;。这意味着进入这个行业的人已经具备了更扎实的基础。</p>
+
+
+
+
+
+
+<h3>全国市场背景</h3>
+
+
+
+
+
+
+<p>以下数据来自全美房地产经纪人协会（NAR）2026 年 5 月发布的报告：</p>
+
+
+
+
+<ul>
+<li>全美成屋销售年化速率：417 万套</li>
+
+<li>全美成屋中位售价：<strong>$429,300</strong></li>
+
+<li>30 年期固定利率按揭：约 6.5%–7.0%</li>
+
+<li>联邦基金利率：5.25%–5.50%（美联储自 2022–23 年急速加息周期后维持高位，当前处于缓慢下降通道）</li>
+
+
+</ul>
+
+
+
+<h3>2026 年 Salesperson 州考试内容权重</h3>
+
+
+
+
+
+
+<p>DRE 官方公布了州考试七大领域的权重分布。以下表格特别标注了每个领域在考试中的占比，以及它们在 Pat 的课程中对应的章节：</p>
+
+
+
+<table><tr><th>考试领域（英文）</th><th>考试领域（中文）</th><th>占比</th><th>Pat 课程对应章节</th></tr><tr><td>Practice of Real Estate &amp; Disclosures</td><td>房地产实务与披露</td><td>**~25%**</td><td>第 9–11 章</td></tr><tr><td>Laws of Agency &amp; Fiduciary Duties</td><td>代理法与诚信义务</td><td>~17%</td><td>第 11 章</td></tr><tr><td>Property Ownership &amp; Land Use Controls</td><td>产权与土地用途管制</td><td>~15%</td><td>第 1–3、7–8 章</td></tr><tr><td>Property Valuation &amp; Financial Analysis</td><td>物业估价与财务分析</td><td>~14%</td><td>第 16、19 章</td></tr><tr><td>Contracts</td><td>合同</td><td>~12%</td><td>第 12–13 章</td></tr><tr><td>Financing</td><td>金融</td><td>~9%</td><td>第 15 章</td></tr><tr><td>Transfer of Property</td><td>产权转让</td><td>~8%</td><td>第 4–5、14 章</td></tr></table>
+
+
+
+
+
+
+<p>从这个权重表可以看出：<strong>实务操作与披露（25%）</strong> 和 <strong>代理法（17%）</strong> 占据总分的 42%，是两大核心。剩余的产权、估价、合同、金融、转让等内容覆盖了总分的 58%。Pat 在本讲中对所有七大领域都做了完整的预览——你在学习中会发现，他重点讲解的内容恰好与考试权重完全对应。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+</section>
+
+<section class="article-section">
+<h2 id="section-4">第四部分：十五个章节逐一速览</h2>
+<blockquote>以下内容是 Pat 对全部十五个章节的逐一预览。他描述这些内容的目的是让学生在开学之初就能&quot;对整个学期的内容有一个大致的印象&quot;。他在讲解过程中来往于等离子屏幕和自己面对镜头的演讲之间——先屏幕展示章节标题，再转身面对镜头解释。我们已将整个讲解过程整理为完整的文字记录。</blockquote>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<h3>第一章：房地产导论（Introduction to Real Estate）</h3>
+
+
+
+
+
+
+<h4>一、加州房地产的历史背景</h4>
+
+
+
+
+
+
+<p>Pat 首先指出，加州成为美国一个州之前，这片土地曾先后属于不同的政权——西班牙和墨西哥。因此在实际的房地产交易中，你可能会遇到一些在别的州很少见到的历史性土地权属文件：</p>
+
+
+
+
+<ul>
+<li><strong>Spanish Land Grants（西班牙土地授予）</strong></li>
+
+<li><strong>Mexican Land Grants（墨西哥土地授予）</strong></li>
+
+<li><strong>US Land Patents（美国土地专利）</strong></li>
+
+
+</ul>
+
+
+
+<p>理解这些术语对于在加州从事房地产业务非常重要。&quot;你不需要成为历史学家，&quot;Pat 说，&quot;但你需要在碰到这些词的时候知道它们是什么意思。&quot;</p>
+
+
+
+
+
+
+<h4>二、不动产 vs. 动产——经纪人最实用的基本功</h4>
+
+
+
+
+
+
+<p>这是 Pat 花费了大量篇幅讲解的内容。他认为区分不动产（Real Property）与动产（Personal Property）是每一个房地产经纪人需要掌握的最基本、最实用的技能。</p>
+
+
+
+
+
+
+<p>Pat 给出的场景是：<strong>你去挂牌出售一套房屋。</strong> 你陪同卖家逐间巡视整栋房子，在这个过程中，你需要逐一确认——哪些东西留？哪些东西带走？</p>
+
+
+
+
+
+
+<p>他以两个最常见的物品举例：</p>
+
+
+
+
+
+
+<p><strong>窗帘（Drapes）。</strong> 窗帘可能是不动产，也可能是动产。你需要弄清楚它到底是&quot;附着在物业上的&quot;还是&quot;可以随时拿走的&quot;。这不是一个一目了然的问题。</p>
+
+
+
+
+
+
+<p><strong>冰箱（Refrigerator）。</strong> 有嵌入式冰箱（built-in），它是物业的一部分，属于不动产。也有独立式冰箱，它属于动产，卖家可以带走。但如果你不问，而合同里也没写清楚，买家和卖家之间就可能产生纠纷——&quot;我以为冰箱是包含在房价里的！&quot;&quot;没有啊，我以为你要自己买。&quot;</p>
+
+
+
+
+
+
+<p><strong>判断标准的核心是&quot;附着方式&quot;（Method of Attachment）：</strong></p>
+
+<ul>
+<li>它是否被螺栓固定在地面或墙面上？</li>
+
+<li>它是否被水泥或灌浆固定？</li>
+
+<li>它可以被轻易移走吗？移走会不会损坏物业结构？</li>
+
+
+</ul>
+
+
+
+<h4>三、住宅物业 vs. 商业物业——关键区别</h4>
+
+
+
+
+
+
+<p>Pat 进一步指出：你必须在住宅物业和商业物业之间做出区分。在住宅中，大量物品（窗帘、嵌入式家电、固定灯具等）可能被视为不动产。但如果你的客户是一间录像带出租店、一家冰淇淋店或一家餐厅——那些家具、货架、油炸锅、炉灶、展示柜，全部是动产。</p>
+
+
+
+
+
+
+<p>为什么？因为商户在最初租赁这个空间时，征得了物业主的许可才安装了这些设备。当租约结束、商户准备搬走时，租约可能还要求他们将物业恢复到原始状态——把墙上的洞补好、把地面恢复到原来的样子。</p>
+
+
+
+
+
+
+<p><strong>对于考试而言，&quot;附着方式&quot;这个判断标准是核心考点。</strong> 对于实务而言，Pat 的建议很简单：挂牌之前，陪同卖家走一遍整栋房子，逐件确认。不要假设——问清楚，写下来。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<h3>第二章与第三章：法定描述（Legal Descriptions）</h3>
+
+
+
+
+
+
+<p>Pat 开门见山地提出一个许多人从未认真思考过的问题：</p>
+
+
+
+
+
+
+<p>&quot;你家的地址是 2795 Wentworth Row，或者是 123 Main Street——这个地址告诉你什么了？&quot;</p>
+
+
+
+
+
+
+<p>答案是——<strong>它只告诉你邮递员应该把信件送到哪里。</strong> 这个地址&quot;不描述物业的边界&quot;。它不会告诉你这块地有多宽、有多深、具体范围从哪里开始到哪里结束。&quot;对于邮递员来说，2795 Wentworth Row 已经足够了。但对于房地产交易来说——远远不够。&quot;</p>
+
+
+
+
+
+
+<p>因此，我们需要<strong>法定描述（Legal Description）</strong>——一种法律上有效的方式，来精确地界定一块不动产的范围。</p>
+
+
+
+
+
+
+<h4>三种基本的法定描述方式</h4>
+
+
+
+
+
+
+<p><strong>1. Lot and Block（地块与街区描述法，又称 Recorded Map 法）</strong></p>
+
+
+
+
+
+
+<p>这是现代最常见的方式，广泛用于住宅小区。Pat 的表述非常直白：&quot;你拥有某小区第 25 号地块。&quot; 一份记录在县政府的地图（Plat Map）上已经画好了每一块地的边界，你只需要引用地块编号和地图编号即可。</p>
+
+
+
+
+
+
+<p><strong>2. Metes and Bounds（边界描述法）</strong></p>
+
+
+
+
+
+
+<p>这是一种更古老的方式。Pat 描述道：&quot;你听说过这样的话吧？&#x27;从那棵老橡树开始，向北走多少英尺，然后转向东走多少英尺……&#x27;&quot; 这种方法通过逐段描述边界路径来界定物业范围。它在早期土地测绘中被广泛使用，今天仍然会出现在一些老旧物业的产权文件中。</p>
+
+
+
+
+
+
+<p><strong>3. Government Survey（政府测量法）</strong></p>
+
+
+
+
+
+
+<p>基于美国政府建立的土地测量体系进行描述。这套体系将土地划分为镇区（Township）和区间（Range），形成网格状的参考系统。</p>
+
+
+
+
+
+
+<h4>为什么经纪人必须懂法定描述？</h4>
+
+
+
+
+
+
+<p>Pat 的答案是：因为当你在工作中陪同客户审阅产权报告时，你会面对地役权（Easements）、通行权（Rights of Way）等问题。你必须能够读懂这些报告，并向客户解释。&quot;客户不会自己去查——他们依赖你来告诉他们这些信息。&quot;</p>
+
+
+
+
+
+
+<p>📌 2026 年考试的「产权与土地用途管制」领域（占总分 15%）直接覆盖法定描述这一考点。特别是三种描述方式之间的区别、各自的应用场景，是选择题中的常见考点。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<h3>第四章与第五章：产权、转让与持有方式（Estates, Transfers &amp; Titles）</h3>
+
+
+
+
+
+
+<p>Pat 在这一部分的开头做了一个非常重要的区分：Estates、Transfers、Titles 这三个词经常被混为一谈，但它们的含义截然不同。</p>
+
+
+
+
+
+
+<h4>第一部分：Estates（产权类型）——你拥有的是&quot;什么&quot;</h4>
+
+
+
+
+
+
+<p><strong>Fee Estate（完整产权，也称 Fee Simple）</strong></p>
+
+
+
+
+
+
+<p>这是最完整、最常见的产权形式。你不仅可以住在里面——你可以把它卖掉、拿去抵押贷款、在遗嘱里留给你的子女。&quot;你用你家的房子拥有的就是 Fee Estate。&quot;这是产权的最高形式。</p>
+
+
+
+
+
+
+<p><strong>Life Estate（终身产权）</strong></p>
+
+
+
+
+
+
+<p>Pat 给出了一个经典场景：&quot;你决定在去世后，让你儿子在有生之年可以住在那处物业里。他可以在里面住、在里面生活、使用和享用一切——但这是有期限的。等他去世后，这处物业会转给其他人。&quot;这个&quot;他在世期间&quot;拥有的就是 Life Estate。它的特点是明确的期限性——以人的寿命为限。</p>
+
+
+
+
+
+
+<p><strong>Leasehold Estate（租赁产权）</strong></p>
+
+
+
+
+
+
+<p>Pat 指出，很多人本能地以为&quot;租约&quot;就是每月一签或每年一签的公寓——但实际上存在极长周期的商业租约。&quot;加州政府、Home Depot、Lowe&#x27;s 这样的机构——他们租赁物业的合同可能是 25 年的。在这 25 年内，那块物业虽然不属于他们，但他们有排他性的使用权。&quot;</p>
+
+
+
+
+
+
+<p>📌 这里需要特别注意：关于 Estates 的这三种类型（Fee / Life / Leasehold），考试中经常以场景题的形式出现——&quot;某人拥有以下哪种产权……&quot;——而准确区分这三个概念是正确答题的前提。</p>
+
+
+
+
+
+
+<h4>第二部分：Transfers（转让方式）——产权如何从一个人转到另一个人</h4>
+
+
+
+
+
+
+<p>Pat 在这里使用了一个非常巧妙的类比——<strong>汽车过户。</strong></p>
+
+
+
+
+
+
+<p>在加州，汽车的所有权证是那张&quot;粉红单&quot;。如果你已经付清了车贷、完全拥有这辆车，当你要卖车时：你签一张卖据（Bill of Sale），买方给你钱，你在粉红单上签字并交给买方，买方拿着粉红单到 DMV（车辆管理局）办理过户——产权就从你转移到了买方名下。这就是汽车过户的流程。</p>
+
+
+
+
+
+
+<p>但在房地产领域，转让方式完全不同。最常用的是：</p>
+
+
+
+
+
+
+<p><strong>Grant Deed（转让契据）</strong></p>
+
+
+
+
+
+
+<p>这是买卖中最常用的契据。&quot;Grant&quot;这个词的字面意思是&quot;授予&quot;。卖方通过 Grant Deed 将产权正式&quot;授予&quot;给买方。它包含了卖方对产权的一项重要保证——卖方承诺在此之前没有将该物业转让给其他人。</p>
+
+
+
+
+
+
+<p><strong>Quitclaim Deed（免责契据）</strong></p>
+
+
+
+
+
+
+<p>它和 Grant Deed 有本质区别。Pat 的解释是：&quot;签署 Quitclaim Deed 的人不是在&#x27;授予&#x27;什么——他是在说：不论我对这处物业拥有什么权益（如果有的话），我全部放弃。&quot;</p>
+
+
+
+
+
+
+<p>Pat 给出了最常见的应用场景：<strong>离婚。</strong></p>
+
+
+
+
+
+
+<p>在加州这个&quot;共同财产州&quot;（Community Property State），如果一方在离婚最终判决下达之前购买了物业，他/她需要让另一方（即法律上的配偶）签署一份 Quitclaim Deed，声明&quot;我对这处物业没有任何权益&quot;。这不是因为另一方真的有什么权益——而是因为法律上需要确保产权清晰。</p>
+
+
+
+
+
+
+<p><strong>其他契据类型：</strong></p>
+
+<ul>
+<li>Sheriff's Deed（法警契据）：通过执法拍卖转让</li>
+
+<li>Trustee's Deed（受托人契据）：通过止赎程序中的 Trustee 转让</li>
+
+
+</ul>
+
+
+
+<p>💡 Pat 用&quot;粉红单&quot;做类比非常巧妙。📌 加州 DMV 已逐步推行电子产权（Electronic Title），纸质粉红单正在被淘汰。但 Pat 类比中传递的逻辑——产权转移需要有正式的法律文件、需要经过第三方机构的登记——在房地产领域完全不变。甚至可以说，这种逻辑比粉红单本身更值得记住。</p>
+
+
+
+
+
+
+<h4>第三部分：Titles（持有方式）——你的名字以什么形式出现在契据上</h4>
+
+
+
+
+
+
+<p>Pat 要学生思考一个问题：如果你和你的配偶一起买房，契据上是&quot;Pat Hogerty 和 Mary Hogerty&quot;——这两个名字之间是什么关系？法律上如何界定你们对物业的权益？</p>
+
+
+
+
+<ul>
+<li><strong>Joint Tenants（共同共有）：</strong> 两个或多个人的名字在契据上，具有"生存者权利"（Right of Survivorship）。如果一方去世，他的份额自动归属幸存的一方。不需要走遗嘱认证（Probate）程序。</li>
+
+
+</ul>
+
+<ul>
+<li><strong>Community Property（共同财产）：</strong> 加州默认的婚姻财产制度。婚姻期间获得的财产原则上属于夫妻共同所有。离婚时进行分割。</li>
+
+
+</ul>
+
+<ul>
+<li><strong>Separate Property（独立财产）：</strong> 你结婚之前就已经拥有的财产，或婚姻期间通过继承、赠与获得的财产。它不自动属于夫妻共同所有。</li>
+
+
+</ul>
+
+<ul>
+<li><strong>Tenants in Common（按份共有）：</strong> 多个人的名字在契据上，但各自拥有独立的、可以单独转让的份额。一方去世，他的份额进入遗嘱认证，而不是自动归另一位共有人。</li>
+
+
+</ul>
+
+
+
+<p>📌 AB 2170（2025 年生效）对机构投资者购买止赎物业（REO）后的产权持有方式进行了约束——虽然这不直接影响个人购房者，但体现了加州对产权制度持续的法律关注。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<h3>第六章：房东与租客（Landlord &amp; Tenant）</h3>
+
+
+
+
+
+
+<h4>为什么跳两章先讲这个？</h4>
+
+
+
+
+
+
+<p>Pat 做了一个有趣的解释：大多数人对房地产的最初体验不是买房——而是租房。你去看过多套公寓、交了押金、签了租赁协议、做了搬入检查。你知道——至少在理论上知道——你不能擅自把公寓的墙刷成粉红色。</p>
+
+
+
+
+
+
+<p>所以 Pat 决定从学生最熟悉的场景入手。&quot;租房是你第一次涉足房地产。&quot;</p>
+
+
+
+
+
+
+<p>但紧接着他强调：房东与租客关系绝不仅限于住宅。这个领域同样涵盖：</p>
+
+<ul>
+<li>购物中心</li>
+
+<li>办公楼</li>
+
+<li>工业仓储</li>
+
+<li>各类商业物业</li>
+
+
+</ul>
+
+
+
+<p>所有这些都涉及租赁关系。而在商业租赁中，条款往往远比住宅租赁复杂——租期可能长达十几年甚至二十五年，维护责任的划分也非常详细。</p>
+
+
+
+
+
+
+<p>📌 加州是全美租客保护法规最严格的州。以下是 2026 年经纪人必须了解的核心法规：</p>
+
+<ul>
+<li><strong>AB 1482（2019 年通过）：</strong> 全州范围的租金管制（年租金涨幅上限为 5% + CPI，最高不超过 10%）+ Just Cause Eviction（"正当理由驱逐"——房东不能随意终止租约，必须有法律认可的理由）。</li>
+
+<li><strong>2024 年新法案：</strong> 进一步限制驱逐条件，特别是在租客面临临时经济困难的情况下。</li>
+
+<li><strong>当地 Rent Control 条例：</strong> 部分城市（如旧金山、洛杉矶、奥克兰等）有比州法更严格的租金管制规定。经纪人必须了解自己服务区域的当地法规。</li>
+
+
+</ul>
+
+
+
+<hr>
+
+
+
+
+
+
+<h3>第七章与第八章：产权负担（Encumbrances）</h3>
+
+
+
+
+
+
+<h4>什么是 Encumbrance？</h4>
+
+
+
+
+
+
+<p>Pat 给出的定义非常直观：<strong>某样东西挡在你和你的物业之间，阻止或限制你对物业的完全使用。</strong></p>
+
+
+
+
+
+
+<p>他做了这样一个对比：</p>
+
+
+
+
+
+
+<p><strong>理想状态：Fee Simple Absolute（绝对完整产权）</strong></p>
+
+
+
+
+
+
+<p>&quot;在概念上，你拥有这块土地从地球中心一直到外太空的一切。没有人有权对你说不。&quot;这是产权的终极形式——尽管现实中几乎不存在。</p>
+
+
+
+
+
+
+<p><strong>现实状态：各种 Encumbrances</strong></p>
+
+
+
+
+
+
+<p>随着时间推移和社会的发展，各种法律、合同和实际情况在你的产权上加上了限制。这些 Encumbrances 分为两大类。</p>
+
+
+
+
+
+
+<h4>第一类：物理性负担（Physical Encumbrances）</h4>
+
+
+
+
+
+
+<p><strong>公共事业地役权（Utility Easements）</strong></p>
+
+
+
+
+
+
+<p>Pat 要学生做一个简单的思想实验：开车穿过任何一个住宅小区，仔细观察路边。你会看到很多绿色的小箱子——有些写着&quot;变压器&quot;、有些是电视线缆接线箱、有些是电话接线箱。这些不是随便摆在那里的装饰品。</p>
+
+
+
+
+
+
+<p>它们的存在是因为：当电力公司、有线电视公司、电话公司为你提供服务时，你的产权上就相应地给他们留出了一块空间——一块用来安装设备、铺设线缆的空间。这块空间就是 Easement。</p>
+
+
+
+
+
+
+<p>&quot;你不能说：&#x27;我不喜欢这个变压器挡着我的玫瑰花，我要把它挖掉挪到别的地方。&#x27; 不行。这是法律确认的——它是你物业产权的一部分，也是你产权报告上的一部分。&quot;</p>
+
+
+
+
+
+
+<p><strong>通行权（Right of Way）</strong></p>
+
+
+
+
+
+
+<p>Pat 给出了另一个场景：&quot;你可能住在一个相对偏僻的地方。老爷爷有一块地，地后面是 Joe 的房子。Joe 的土地被完全包围了（landlocked）——他没有其他的路可以进自己家。所以 Joe 每天开车穿过老爷爷的车道。这就是 Right of Way。&quot;</p>
+
+
+
+
+
+
+<p>这种情况在城市规划良好的新建住宅小区中较为少见，但在远郊地区和老地块中仍然存在。Right of Way 同样是产权报告上的正式条目。</p>
+
+
+
+
+
+
+<h4>第二类：金钱性负担（Monetary Encumbrances）</h4>
+
+
+
+
+
+
+<p><strong>Deed of Trust（信托契据）——加州的主流抵押方式</strong></p>
+
+
+
+
+
+
+<p>Pat 用汽车贷款做了一个非常贴切的类比：你买车时向银行贷款。银行在你还清贷款之前保管着你的&quot;粉红单&quot;。如果你不按时还款，银行叫来拖车把你的车拖走（Repo）。在房地产领域，这个&quot;保管粉红单&quot;的机制叫 <strong>Deed of Trust</strong>。</p>
+
+
+
+
+
+
+<p>Deed of Trust 引入了三个角色：</p>
+
+<ol>
+<li><strong>Trustor（委托人 / 借款人）：</strong> 你，房屋的买家。</li>
+
+<li><strong>Beneficiary（受益人 / 贷款人）：</strong> 银行或贷款机构。</li>
+
+<li><strong>Trustee（受托人）：</strong> 一个中立的第三方，持有"裸产权"（bare legal title），在借款人正常还款时不执行任何权力；一旦借款人断供（default），贷款人可以要求 Trustee 启动止赎程序（Foreclosure），通过 Trustee's Sale（受托人拍卖）将物业公开拍卖，用拍卖所得偿还贷款。</li>
+
+
+</ol>
+
+
+
+<p>📌 加州仍为非 Judicial Foreclosure 州——即止赎不需要经过法院（Judicial Foreclosure），而是通过 Trustee&#x27;s Sale 完成。这一区别是考试的核心考点之一。&quot;Judicial vs. Non-Judicial Foreclosure&quot;作为概念经常出现在选择题中。</p>
+
+
+
+
+
+
+<p><strong>Mechanic&#x27;s Lien（技工留置权）</strong></p>
+
+
+
+
+
+
+<p>这是另一个 Pat 花费了不少篇幅解释的概念。场景是这样的：你请人来修房顶。活干完了，你和工头发生了争执——&quot;这活我不满意，我不付钱。&quot;</p>
+
+
+
+
+
+
+<p>那么这位屋顶工人（在法律上他被称为&quot;Mechanic&quot;——注意，不仅仅指汽车修理工，而是泛指提供劳力或材料来改善物业的人——包括水管工、电工、木匠、建材供应商甚至 Home Depot 这样的商家）有权做什么？</p>
+
+
+
+
+
+
+<p>他的权利是：对该物业登记一份 <strong>Mechanic&#x27;s Lien</strong>。</p>
+
+
+
+
+
+
+<p>这份留置权会产生一个非常直接的后果——<strong>它&quot;玷污&quot;了产权（Cloud the Title）。</strong> 什么意思？如果有 Mechanic&#x27;s Lien 附着在产权上，任何贷款机构都不会在留置权解除之前批出新的贷款。这意味着你无法再融资、也基本上无法出售这处物业。结果就是——你被&quot;逼着&quot;去把这笔钱付清。</p>
+
+
+
+
+
+
+<p>📌 加州法律对 Mechanic&#x27;s Lien 的登记时效有严格的规定，这是考试中可能出现的细节考点。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<h3>第九章与第十章：执照、教育与协会（Licensing, Education &amp; Associations）</h3>
+
+
+
+
+
+
+<p>&quot;这部分是开学第一天学生最关心的问题——我到底需要做什么才能拿到执照？&quot;Pat 在这里把话题分成了三个子主题：执照（Licensing）、教育（Education）和协会（Associations）。</p>
+
+
+
+
+
+
+<h4>⚠️ 执照路径：2009 vs. 2026（本教程最重要的更新）</h4>
+
+
+
+
+
+
+<p><strong>💡 Pat 在 2009 年描述的旧制度：</strong></p>
+
+
+
+
+
+
+<p>Pat 当时的讲法是：你修完这门 RE 300 课程后，就可以申请参加州政府考试。通过考试后，你将获得一个&quot;18 个月的临时执照&quot;（Probationary License）。在这 18 个月内，你必须再完成两门课程——Real Estate Practice（必修）加一门选修。完成后，你的执照转为 4 年有效期的正式执照。如果 18 个月内你没做到——&quot;你的执照就蒸发了，你只能从头再来。&quot;</p>
+
+
+
+
+
+
+<p><strong>📌 2026 年现行制度（依据 DRE 官网）：</strong></p>
+
+
+
+
+
+
+<p>2026 年的制度与 Pat 当年描述的旧制度有<strong>本质性差异</strong>。现行要求如下：</p>
+
+
+
+
+
+
+<p><strong>第一步：完成三门 45 小时课程（共 135 小时）。</strong></p>
+
+
+
+<p>这三门课程必须在申请考试之前全部完成。你不能再像 Pat 当年那样&quot;先通过考试，拿 18 个月临时执照再补课&quot;。三门课程是：</p>
+
+<ol>
+<li><strong>Real Estate Principles（房地产原理）</strong>——必修，45 小时</li>
+
+<li><strong>Real Estate Practice（房地产实践）</strong>——必修，45 小时</li>
+
+<li><strong>一门选修</strong>——45 小时，从以下 8 门中选择：</li>
+
+<li>Real Estate Finance（房地产金融）</li>
+
+<li>Real Estate Economics（房地产经济学）</li>
+
+<li>Real Estate Appraisal（房地产估价）</li>
+
+<li>Real Estate Law（房地产法）</li>
+
+<li>Escrow（托管）</li>
+
+<li>Title（产权）</li>
+
+<li>Property Management（物业管理）</li>
+
+<li>Computer Applications in Real Estate（房地产计算机应用）</li>
+
+
+</ol>
+
+
+
+<p>⚠️ <strong>2024 年 1 月 1 日起的额外要求：</strong> Real Estate Practice 课程必须包含两个新增模块：</p>
+
+<ul>
+<li><strong>Implicit Bias（隐式偏见）培训</strong></li>
+
+<li><strong>Fair Housing（公平住房）培训</strong>——且公平住房部分必须包含互动式角色扮演：学员必须分别以消费者和房地产专业人士的身份参与模拟场景。你不能只是"看视频"——你必须"做"。</li>
+
+
+</ul>
+
+
+
+<p><strong>第二步：申请并参加州考试。</strong></p>
+
+<ul>
+<li>150 道选择题</li>
+
+<li>70%（105/150）为及格线</li>
+
+<li>全电子化机考</li>
+
+<li>考试费用：$60</li>
+
+<li>必须在五个指定考点之一参加：Sacramento、Oakland、Fresno、La Palma（橙县）、San Diego</li>
+
+<li>同时必须完成 Live Scan 指纹采集，用于 FBI 和加州司法部（DOJ）的背景调查</li>
+
+
+</ul>
+
+
+
+<p><strong>第三步：找到持牌 Broker 挂靠。</strong></p>
+
+
+
+<p>任何 Salesperson 都必须在一名 Broker 的管理和监管下工作。Pat 当年的类比在今天仍然非常准确：</p>
+
+
+
+<blockquote>&quot;这就像飞行学校——我可以坐下来教你飞机的飞行原理。学期结束后我说：&#x27;给你钥匙，去飞吧。&#x27;你会说：&#x27;等一下，这肯定不对。&#x27;你需要学术部分——理解飞机为什么能飞起来、Deed of Trust 是如何运作的——但你也需要那个坐在副驾驶舱里的教练，在你第一次出门挂牌时说：&#x27;先等一下，让我带着你把整个流程走一遍。&#x27;&quot;</blockquote>
+
+
+
+
+
+
+<p>换言之：通过考试 ≠ 可以独立执业。你需要一个 Broker 在你拿到执照后继续指导你的实际操作。</p>
+
+
+
+
+
+
+<p><strong>第四步：续牌。</strong></p>
+
+
+
+<p>执照有效期为 4 年。每次续牌需要完成 45 小时 DRE 批准的继续教育。这一数字与 Pat 当年描述的完全一致，至今未变。</p>
+
+
+
+
+
+
+<h4>特殊豁免</h4>
+
+
+
+
+
+
+<p><strong>加州执业律师（California State Bar 成员）</strong>：法定豁免全部预许可课程的要求，只需直接参加考试。</p>
+
+
+
+
+
+
+<p><strong>Salesperson → Broker 的晋升条件：</strong></p>
+
+<ul>
+<li>无大学学位：至少 2 年全职销售经验（以执照持有时间为准）</li>
+
+<li>副学士学位（2-year college degree）：至少 1 年全职销售经验</li>
+
+<li>学士学位（任何专业均可）：自动满足经验要求</li>
+
+
+</ul>
+
+
+
+<h4>教育与协会</h4>
+
+
+
+
+
+
+<p><strong>两种教育：</strong></p>
+
+<ul>
+<li><strong>资格教育：</strong> 你正在修读的 Principles、Practice 等课程。</li>
+
+<li><strong>继续教育（Continuing Education）：</strong> 每 4 年续牌时需完成 45 小时 DRE 批准的课程。Pat 的建议至今仍然实用——"不要拖到续牌前最后一刻才匆忙选一些你完全不感兴趣的课。在 4 年时间里分散学习，选那些真正对你有用的主题。"当地房地产协会（如 Sacramento Association of Realtors）通常会提供大量价格合理的 CE 课程。</li>
+
+
+</ul>
+
+
+
+<p><strong>三层协会体系：</strong></p>
+
+<ul>
+<li><strong>SAR（Sacramento Association of Realtors）</strong>：地方层级，约 7,000+ 会员，提供 MLS 系统、房屋参观活动、教育项目。</li>
+
+<li><strong>CAR（California Association of Realtors）</strong>：全州层级。</li>
+
+<li><strong>NAR（National Association of Realtors）</strong>：全国层级，截至 2025 年底约有 155 万会员。</li>
+
+
+</ul>
+
+
+
+<p>📌 协会的功能远不止社交和教育。Pat 说：&quot;每次国会有人提出要取消住房贷款利息抵扣（Mortgage Interest Deduction）时，猜猜谁在华盛顿跟他们斗争？正是建筑业协会和房地产经纪人协会。&quot;这一情况在 2026 年依然如故。</p>
+
+
+
+
+
+
+<p>📌 2024 年的一个重大事件改变了协会运作的一个重要方面：<strong>NAR 在全国性的反垄断集体诉讼（Sitzer/Burnett 案）中达成和解。</strong> 该和解改变了买方代理佣金的传统结构——我们将在第十一章详细讨论这一变化。这一变化在 Pat 讲课的 2009 年是完全没有的。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<h3>第十一章：代理关系与责任（Agency &amp; Responsibilities）</h3>
+
+
+
+
+
+
+<p>Pat 在这一部分用非常清晰的语言定义了 Agency 关系。他说：</p>
+
+
+
+
+
+
+<p>&quot;当你作为一名房地产经纪人，去挂牌出售一处物业，你签下了那份 Listing Agreement 的时刻——你和卖方之间就建立了一种<strong>法律上的代理关系（Agency Relationship）。</strong> 这远远不只是&#x27;帮忙卖房子&#x27;那么简单。你承诺：卖方利益高于一切——高于买家、高于你自己。&quot;</p>
+
+
+
+
+
+
+<p>这就是 <strong>Fiduciary Duty（诚信义务）</strong> 的核心——代理人必须对委托人（Principal）保持最高标准的诚信和忠诚。</p>
+
+
+
+
+
+
+<p>Pat 接着描述了三种基本代理关系：</p>
+
+<ul>
+<li><strong>卖方代理（Seller's Agency）：</strong> 你只为卖方工作，你的义务是保护卖方的利益。</li>
+
+<li><strong>买方代理（Buyer's Agency）：</strong> 你只为买方工作，你的义务是保护买方的利益。</li>
+
+<li><strong>双边代理（Dual Agency）：</strong> 你同时代表买卖双方。这意味着两边的利益你都需要保护，相应地，你必须对两边都做出充分的信息披露。</li>
+
+
+</ul>
+
+
+
+<p>📌 <strong>2024 年的重大变化——这可能是整个教程中最重要的一条行业更新：</strong></p>
+
+
+
+
+
+
+<p>2024 年，NAR 在 Sitzer/Burnett 等全国性反垄断集体诉讼中达成和解。这一和解直接改变了买方代理佣金的传统运作方式。具体变化包括：</p>
+
+
+
+
+<ol>
+<li><strong>买方经纪人必须在开始向买方提供服务之前，与买方签署一份书面的买方代理协议（Buyer-Broker Agreement）。</strong> 这份协议必须明确约定买方向经纪人支付的佣金金额。在此之前，买方经纪人通常不需要在服务开始时与买方签署佣金协议——佣金在交易结束时由卖方通过 Listing Broker 支付给买方 Broker。</li>
+
+
+</ol>
+
+<ol>
+<li><strong>MLS（多重上市服务）系统不再显示卖方愿意向买方经纪人支付的佣金金额。</strong> 在此之前，MLS 上的每一条房源信息都包含一个字段——"Cooperating Broker Compensation"——它明确标示了卖方愿意为买方经纪人支付多少佣金。这一做法在和解后已经终止。</li>
+
+
+</ol>
+
+
+
+<p>在 Pat 讲课的 2009 年，佣金结构的惯例完全不受这些约束。今天任何新入行的经纪人都需要了解这些已经发生的变化。在考试中，代理法和 Fiduciary Duty 相关的题目占总分的 17%，是所有领域中第二高的权重。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<h3>第十二章与第十三章：合同（Contracts）</h3>
+
+
+
+
+
+
+<h4>&quot;进入房地产行业 = 进入合同制定行业&quot;</h4>
+
+
+
+
+
+
+<p>Pat 在这里给出了一个可能出乎很多人意料的论断：</p>
+
+
+
+<blockquote>&quot;你可能没有意识到的是：当你进入房地产这个行业时，你同时就进入了合同制定行业。在房地产领域，一切事情都必须以书面形式记录下来。&quot;</blockquote>
+
+
+
+
+
+
+<p>他接着列举了经纪人实际工作中会遇到的各种合同：</p>
+
+
+
+
+
+
+<p><strong>1. 与 Broker 的雇佣合同。</strong> 这是你职业生涯的第一个合同。你决定为某位 Broker 工作后，你们会签署一份法律文件，里面涵盖了：你的行为规范、你的值班安排（Floor Time）、你对房源的管理责任、佣金如何分成、各项费用（如广告费）由谁承担。所有这些细节都必须白纸黑字写清楚。</p>
+
+
+
+
+
+
+<p><strong>2. 挂牌协议（Listing Agreement）。</strong> 当你去挂牌出售一处物业时，你填写的那份文件就是一份具有法律约束力的合同。里面会涉及：挂牌价格、挂牌时间、随物业一起出售的物品（洗衣机要不要留下？烘干机呢？）、需要披露的物业状况（屋顶漏水吗？有白蚁问题吗？）。Pat 的经验之谈是：在 Broker 的指导下，你可能会花四到八小时只听 Listing Agreement 一项。&quot;因为里面涉及的法律条文太多了。&quot;</p>
+
+
+
+
+
+
+<p><strong>3. 购买要约（Purchase Offer）。</strong> 买方看中了房子、向你提交一份书面要约——里面写明了出价金额、交割时间、附带条件（Contingencies，如贷款批准、房屋检查满意等）。</p>
+
+
+
+
+
+
+<p><strong>4. 租赁协议（Lease/Rental Agreement）。</strong></p>
+
+
+
+
+
+
+<h4>合同的五大基本要素</h4>
+
+
+
+
+
+
+<p>Pat 特别讲解了构成一个有效合同必须具备的五个基本要素。这些要素在房地产考试中是核心考点（合同领域占总分的 12%）：</p>
+
+
+
+
+
+
+<p><strong>1. Capacity（缔约能力）</strong>——Pat 在这里用他标志性的黑色幽默展示了这个要素的重要性。</p>
+
+
+
+
+
+
+<p>&quot;如果有人走进你的办公室要签一份挂牌协议，这个人看起来不像有 18 岁——他能签吗？&quot;</p>
+
+
+
+
+
+
+<p>&quot;如果你们夫妻俩都列在产权上——但你告诉我你太太在监狱里？我能直接去监狱说&#x27;不好意思，请在这份挂牌协议上签个字&#x27;吗？不——你需要通过司法系统确认。&quot;</p>
+
+
+
+
+
+
+<p>&quot;最极端的情况：你坐在谈判桌前，本来应该有两个人在产权上——但其中一个人已经不在了。不是出差了——是去世了。而且产权从来没有被正确地重新登记过。你总不能去把他从地里挖出来签字吧？你需要知道在合同法律框架下该如何处理这种情况。&quot;</p>
+
+
+
+
+
+
+<p><strong>2. Mutual Consent（双方合意）</strong>——双方都必须自愿地、明确地同意合同的条款。一方被迫签署的合同是可撤销的。</p>
+
+
+
+
+
+
+<p><strong>3. Legality（合法目的）</strong>——合同的内容必须是合法的。你不能签一份&quot;出售不属于你的物业&quot;的合同。</p>
+
+
+
+
+
+
+<p><strong>4. Consideration（对价）</strong>——这是法律术语，但 Pat 的翻译很简单：合同必须有&quot;某种有价值的东西&quot;在其中交换。可以是钱、可以是一份期票（Promissory Note）、也可以是某种承诺——比如&quot;你承诺做某事&quot;或&quot;你承诺不做某事&quot;。没有对价的合同原则上无效。</p>
+
+
+
+
+
+
+<p><strong>5. Proper Writing（适当书面形式）</strong>——在房地产领域，口头约定不构成有效的房地产合同（这是 Statute of Frauds 的核心规定）。必须使用书面形式。</p>
+
+
+
+
+
+
+<p><strong>Pat 的最后一个合同忠告（关于精神能力受损的当事人）：</strong></p>
+
+
+
+
+
+
+<p>&quot;假设一个人签署了合同，看起来一切正常——然后他突然停下来说：&#x27;你刚才有没有看到一个火星人从窗户外面飞过去？&#x27;……除非这个人是我表哥 Leonard——你可能需要问一句：&#x27;你还好吗？&#x27;因为如果一个人没有签署法律文件的精神能力（Mental Capacity），这份合同在法律上是无效的（Voidable）。&quot;</p>
+
+
+
+
+
+
+<p>📌 今天的合同实践中需要知道的几个要点：</p>
+
+<ul>
+<li>CAR（加州房地产经纪人协会）定期更新 <strong>Residential Purchase Agreement（RPA）</strong> 等标准表格。经纪人必须使用最新版本。</li>
+
+<li><strong>电子签名（DocuSign、Adobe Sign 等）</strong> 在加州房地产交易中已完全合法有效。</li>
+
+<li>但合同五大要素（Capacity / Mutual Consent / Legality / Consideration / Proper Writing）在法律上没有任何变化——Pat 的讲解在 2026 年完全适用。</li>
+
+
+</ul>
+
+
+
+<hr>
+
+
+
+
+
+
+<h3>第十四章：Escrow 与产权保险（Escrow &amp; Title Insurance）</h3>
+
+
+
+
+
+
+<h4>Escrow（第三方托管）——加州的特色制度</h4>
+
+
+
+
+
+
+<p>Pat 用一个警世故事来引出这个话题：</p>
+
+
+
+
+
+
+<p>&quot;你周末去看 Open House，看到一个看起来不错的房子。一个陌生人走过来对你说：&#x27;这房子平时卖 40 万，今天只要你 20 万——现金支票给我，房子就是你的。&#x27;你把支票给他，然后这个人——就消失了。这种事真的发生过，而且不止一次。&quot;</p>
+
+
+
+
+
+
+<p>这就是为什么我们需要 Escrow。</p>
+
+
+
+
+
+
+<p><strong>加州独家使用 Escrow Officer。</strong></p>
+
+
+
+
+
+
+<p>加州的房地产交易不是通过律师来交割的。其他州——比如纽约——的惯例是买卖双方去律师办公室进行交割和签字。但加州有自己的特色制度：你把签署好的 Purchase Offer 副本、买方支付的定金支票交给一家 Escrow 公司。接下来，Escrow Officer 的职责非常明确，也非常简单：</p>
+
+
+
+
+
+
+<p><strong>在合同规定的所有条件百分之百满足之前，不放一分钱出去，也不转移任何产权。</strong></p>
+
+
+
+
+
+
+<p>这意味着什么？在 Escrow 进行过程中，以下所有环节都必须按合同要求逐一完成：</p>
+
+<ul>
+<li>白蚁检查（Termite Inspection）✓</li>
+
+<li>房屋估价（Appraisal）✓</li>
+
+<li>买方贷款到账 ✓</li>
+
+<li>合同中要求的物业瑕疵修复 ✓</li>
+
+<li>除非买卖双方共同签署书面指示变更条件，否则一切严格按照原始合同执行</li>
+
+
+</ul>
+
+
+
+<p>只有当所有条件全部满足，Escrow 才会&quot;关闭&quot;——将款项支付给卖方、将产权转移给买方。</p>
+
+
+
+
+
+
+<p>📌 加州 Escrow 系统的独特性是州考试中的重点考点。&quot;加州使用 Escrow 而其他一些州使用律师交割&quot;这一区别经常出现在选择题中。</p>
+
+
+
+
+
+
+<h4>Title Insurance（产权保险）——回答一个根本问题</h4>
+
+
+
+
+
+
+<p>&quot;你花了那么多钱买房子——你最需要确定的一件事是什么？答案是：<strong>这个人真的拥有这处物业吗？</strong>&quot;</p>
+
+
+
+
+
+
+<p>Title 公司的工作流程：</p>
+
+<ol>
+<li>打开一份 <strong>Title Search（产权检索）</strong>。</li>
+
+<li>审查产权历史链条：当前业主是什么时候、以什么方式取得产权的？</li>
+
+<li>检查是否存在未解除的 Mechanic's Lien、法院判决（Judgments）、税务留置权（Tax Liens）、或其他任何可能阻止产权顺利转移的负担。</li>
+
+<li>出具一份 <strong>Preliminary Report（初步产权报告）</strong>。</li>
+
+
+</ol>
+
+
+
+<p>买方在最终决定购买之前，必须仔细审阅这份 Preliminary Report。Pat 的警告直截了当：&quot;你可不想在买房之后才发现自己背上了 IRS（国税局）的留置权——或者发现上一任房主还欠着某个人的钱没还，现在轮到你来还。&quot;</p>
+
+
+
+
+
+
+<p>一旦产权被确认为&quot;干净&quot;，Title 公司出具 Title Insurance Policy（产权保险单）——保证产权如报告所述。</p>
+
+
+
+
+
+
+<p>📌 <strong>2026 年新风险——卖方假冒诈骗（Seller Impersonation Fraud）：</strong> DRE 在 2026 年 4 月发布了专门的安全公告，警告一种日益猖獗的新型诈骗——骗子盗用真实房地产经纪人的身份和执照信息，冒充经纪人与毫无防备的买家进行虚拟交易。Title 公司在这个过程中扮演了越来越重要的防范角色——通过严格核实交易各方的身份来防止这种诈骗。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<h3>第十五章：房地产金融（Real Estate Finance）</h3>
+
+
+
+
+
+
+<p>Pat 在这一部分首先用他亲身经历的 2007–2008 年美国房市危机来说明金融的力量。</p>
+
+
+
+
+
+
+<h4>💡 Pat 的历史案例：次贷危机前后的市场对比</h4>
+
+
+
+
+
+
+<p>&quot;两三年前（指 2006–2007 年前后），你翻开报纸，会看到人们周末在新建小区的样板房前搭帐篷排队。不是排队进去看房子——是排队把名字放进抽奖箱，希望自己被抽中买下一套房子！&quot;</p>
+
+
+
+
+
+
+<p>为什么会这样？因为当时利率极低——购房者能以约 4% 的利率获得 30 年期固定利率按揭贷款。低成本资金 = 大量人口买得起房 = 需求激增 = 房价飙升。</p>
+
+
+
+
+
+
+<p>然后美联储介入了。在时任主席格林斯潘（Alan Greenspan）和继任者伯南克（Ben Bernanke）的先后领导下，美联储为了遏制通货膨胀，连续 13 到 15 次提高联邦基金利率。结果是：当初能以 4% 利率买 30 万美元房子的人，在利率涨到 6–7% 以后，对同一套房子已经负担不起了。房屋滞销——卖家被迫降价——市面出现越来越多&quot;Price Reduced&quot;的标识——越来越多的人进入止赎程序。</p>
+
+
+
+
+
+
+<p>这就是金融。</p>
+
+
+
+
+
+
+<h4>📌 2026 年的金融环境对比</h4>
+
+
+
+<table><tr><th>对比维度</th><th>Pat 时代（2009 年前后）</th><th>2026 年</th></tr><tr><td>美联储主席</td><td>Ben Bernanke（伯南克）</td><td>**Kevin Warsh**（2026 年就任）</td></tr><tr><td>标志性事件</td><td>次贷危机 / 大衰退</td><td>COVID 后通胀飙升 + 2022–2023 年急速加息周期</td></tr><tr><td>联邦基金利率</td><td>危机后接近 0%</td><td>5.25–5.50%（2023 年中触及峰值，此后缓慢进入降息通道）</td></tr><tr><td>30 年期固定按揭利率</td><td>4%–7%</td><td>约 6.5%–7.0%（2026 年）</td></tr><tr><td>全美成屋中位售价</td><td>约 $200,000</td><td>$429,300（NAR 2026 年 5 月数据）</td></tr><tr><td>加州持牌总人数</td><td>历史高峰约 55 万</td><td>410,500（持续下降中）</td></tr></table>
+
+
+
+
+
+
+<p>历史不会简单重复，但金融的逻辑是一致的：利率是房地产市场最大的单一外部驱动力。</p>
+
+
+
+
+
+
+<h4>金融机构与二级市场</h4>
+
+
+
+
+
+
+<p>Pat 列出的金融机构类型今天依然适用：</p>
+
+<ul>
+<li>商业银行（Commercial Banks）</li>
+
+<li>储蓄与贷款协会（Savings & Loans）</li>
+
+<li>抵押贷款银行家（Mortgage Bankers）</li>
+
+<li>抵押贷款经纪人（Mortgage Brokers）</li>
+
+
+</ul>
+
+
+
+<p><strong>二级市场：Fannie Mae、Freddie Mac、Ginnie Mae</strong></p>
+
+
+
+
+
+
+<p>Pat 用一个名为 Georgetown 的小镇来讲解二级市场的作用——这个比喻是整节课中最出色的教学案例之一：</p>
+
+
+
+
+
+
+<p>假设 Georgetown 镇上只有一家银行——比如 Wells Fargo。所有储户把钱存在这家银行。当有人要借 30 万美元买房时，这家银行手头上有足够的存款直接借给他吗？很可能不够——因为存款的总量远远小于贷款需求的总量。</p>
+
+
+
+
+
+
+<p>那银行怎么办？银行不会拒绝放贷。它会继续放出贷款，然后把一批贷款（比如 100 万美元一包）打包卖给二级市场的机构——Fannie Mae（房利美）、Freddie Mac（房地美）或 Ginnie Mae（吉利美）。二级市场机构把钱返还给银行，银行拿着这笔钱继续放贷给下一个购房者。这个循环让整个系统拥有流动性。</p>
+
+
+
+
+
+
+<p>二级市场的另一个关键功能是<strong>分散风险。</strong> 回到 Georgetown 的例子——如果一场大山火烧掉了整个小镇，镇上所有人同时违约，集中在该地的这家银行就会破产。但因为全国各地的贷款被打包在一起、由全国乃至全球的投资者（养老基金如 CalPERS、CalSTRS、保险公司等）分散持有，任何单一地区的灾难都不会摧毁整个系统。</p>
+
+
+
+
+
+
+<p>📌 <strong>2026 年新增考点——非银行金融机构与 NMLS：</strong></p>
+
+
+
+
+
+
+<p>在 Pat 录制课程的 2009 年，传统的银行和 S&amp;L 是住房按揭的主要提供者。到了 2026 年，格局已经根本性改变：<strong>非银行金融机构（Non-Bank Lenders）——</strong> 如 Rocket Mortgage、LoanDepot、United Wholesale Mortgage 等——占据了美国按揭贷款发放总量的 60% 以上。这一变化源于 2008 年 SAFE Act（Secure and Fair Enforcement for Mortgage Licensing Act）的通过和实施。</p>
+
+
+
+
+
+
+<p>SAFE Act 要求所有从事按揭贷款发放的个人（Mortgage Loan Originator，MLO）必须通过 <strong>NMLS（Nationwide Multistate Licensing System &amp; Registry，全国多州按揭牌照系统）</strong> 单独注册并持有执照。这一制度在 Pat 的讲课时代尚未存在。今天 MLO 和 NMLS 已经成为加州房地产考试中金融领域的固定考点。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<h3>第十六章：房地产估价（Appraisal）</h3>
+
+
+
+
+
+
+<p>Pat 开宗明义：<strong>估价不是科学，而是艺术。</strong></p>
+
+
+
+
+
+
+<p>&quot;你可能会本能地认为估价是一个非常精确、非常科学的过程——但事实恰好相反。它依赖于经验丰富的专业人士在审查了大量物业和大量数据之后，做出一个专业判断。贷款机构不会自己跑出来看房子值不值 30 万——他们完全依赖估价师的专业意见。&quot;</p>
+
+
+
+
+
+
+<h4>三种基本估价方法</h4>
+
+
+
+
+
+
+<p>Pat 用极其生活化的例子来讲解三种方法：</p>
+
+
+
+
+
+
+<p><strong>1. 市场比较法（Market Approach）</strong></p>
+
+
+
+
+
+
+<p>&quot;你每天都在用市场比较法，你自己可能都没意识到。你今天去超市买东西——一夸脱牛奶、一条面包、一台新音响、一辆新车——你会货比三家。多比较几次之后，你自然就会形成一种感觉：&#x27;这个东西大概值多少钱。&#x27;这就是市场比较法。&quot;</p>
+
+
+
+
+
+
+<p>应用到房地产估价中：你要估价的物业位于一个拥有大量近期可比销售数据的区域。你找到几套在大小、房龄、位置等方面与待估物业相似的房子，查看它们近期的成交价。然后你根据待估物业与可比物业之间的特征差异（面积更大？有游泳池？装修程度？）进行向上或向下的调整。最终根据调整后的数据，得出你的专业估价意见。</p>
+
+
+
+
+
+
+<p><strong>2. 成本法（Cost Approach）</strong></p>
+
+
+
+
+
+
+<p>当你面临的是一个不太可能有大量近期销售可比数据的物业——比如一座教堂、一个消防站、或者一间独特的定制住宅时——你怎么估价？</p>
+
+
+
+
+
+
+<p>成本法的思路很简单：算一下如果我从零开始建一栋完全一样的新建筑，需要花多少钱。然后扣除从建成以来因使用年限导致的物理折旧（Physical Deterioration）。剩下就是估值。</p>
+
+
+
+
+
+
+<p>成本法不仅用于买卖估价。Pat 举例说明：房子被烧了——保险公司需要知道重建成本。离婚案件中的财产分割——法院需要知道这处物业到底值多少钱。这些场景下，成本法往往是唯一可行的选择。</p>
+
+
+
+
+
+
+<p><strong>3. 收益法（Income Approach）</strong></p>
+
+
+
+
+
+
+<p>&quot;用收益法的时候，你不在乎别人以前出过什么价，也不在乎建这个东西花了多少钱——你只关心一件事：这个东西能给我赚多少？&quot;</p>
+
+
+
+
+
+
+<p>收益法的核心逻辑是：分析一处物业产生的现金流。比如一栋出租公寓楼——你计算它每月的总租金收入，减去运营费用、物业管理费、偿债支出。剩下的净收入（Net Operating Income，NOI），你用一个资本化率（Capitalization Rate，Cap Rate）去把它&quot;折现&quot;为这栋楼在当前的价值。</p>
+
+
+
+
+
+
+<p>收益法最常用于：出租公寓楼、购物中心、办公楼、工业仓库——任何以产生持续收入为主要目的的物业类型。</p>
+
+
+
+
+
+
+<p>Pat 提醒：一个估价师对同一个物业使用三种不同方法，结果可能是三个不同的数字。估价师的任务是基于自己的专业判断，选择最能反映该物业真实市场价值的那个指标，并在估价报告中明确说明选择理由。</p>
+
+
+
+
+
+
+<p>📌 2026 年新趋势：<strong>自动估价模型（Automated Valuation Model, AVM）</strong>——如 Zillow 的 Zestimate——和 AI 驱动的估价辅助工具越来越普及。但<strong>持牌估价师（Licensed Appraiser）在法律上的地位和在贷款审批流程中的角色完全不变。</strong> 贷款机构在正式放贷时仍然需要持牌估价师出具签字的正式估价报告。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<h3>第十七章：土地分割与政府管制（Subdivisions &amp; Government Control）</h3>
+
+
+
+
+
+
+<h4>一块土地变成一个小区的漫长旅程</h4>
+
+
+
+
+
+
+<p>&quot;绝大多数人没有意识到——你今天开车经过的那个崭新住宅小区，不是开发商两个月前才拍脑袋决定建的。&quot;</p>
+
+
+
+
+
+
+<p>Pat 描述了这个过程的完整时间线：</p>
+
+
+
+
+<ol>
+<li>某人拥有大约 50 英亩（或更大）的土地。要么他自己想做开发，要么他把地卖给了一个开发商。</li>
+
+<li>开发商雇佣<strong>持牌工程师</strong>进行测量、规划和设计——街道怎么布局？路缘和排水沟怎么设置？地块怎么划分？</li>
+
+<li>工程师绘制出法定的地图（Plat Map），这份地图上精确地标注了每一块地的边界和尺寸。</li>
+
+<li>地图提交给管辖机构审批——如果这块地属于县管辖范围，就要过县政府；如果在市辖区内，就要过市政府。市政工程部门、规划部门会逐项审查。</li>
+
+<li>通常不会第一轮就通过。地图会经过多次修改（Revision），每一轮修改都需要时间。</li>
+
+<li>最终版本获得批准并登记备案（Recorded）。</li>
+
+<li>这个时候——<strong>已经过去了几个月、甚至几年。</strong></li>
+
+
+</ol>
+
+
+
+<h4>核心法规</h4>
+
+
+
+
+<ul>
+<li><strong>Subdivision Map Act（土地分割地图法）：</strong> 因为你实质上是在"绘制和登记一份新的地图"——把一块大地分割成很多块小地。这个过程受到严格的法定程序管控。</li>
+
+<li><strong>Subdivided Lands Act（分割土地法）：</strong> 由此产生了一份对消费者至关重要的文件——<strong>Public Report（公共报告）。</strong></li>
+
+
+</ul>
+
+
+
+<h4>Public Report（公共报告）</h4>
+
+
+
+
+
+
+<p>Public Report 由加州房地产局（Department of Real Estate，简称 DRE）出具。每当买方购买一套全新的共管公寓（Condominium）、联排别墅（Townhouse）或独栋住宅——这些物业此前没有人住过——买方都会收到这份 Public Report。</p>
+
+
+
+
+
+
+<p>报告涵盖了对购房者有实质影响的各种条件：小区的业主委员会（Homeowners Association，HOA）是怎样的？最近的消防站在哪里？有没有什么特别的条件约束？</p>
+
+
+
+
+
+
+<p>买方必须在法律上签署确认&quot;我已经阅读了这份文件&quot;。你不需要参加一场针对这份报告的考试，但你的签名在法律上表示你已经知悉了其中的内容。</p>
+
+
+
+
+
+
+<h4>Zoning（用地分区）</h4>
+
+
+
+
+
+
+<p>Pat 特别强调了 Zoning 知识对经纪人的重要性：你需要会查。</p>
+
+
+
+
+
+
+<p>&quot;如果你在跟客户说&#x27;这块地是商业用地&#x27;——你需要知道它真的是商业用地。而不仅仅是听别人说它是商业用地。你要知道怎么去县政府或市政府的规划部门查。这是做房地产经纪人的基本功课。&quot;</p>
+
+
+
+
+
+
+<p>而且需要知道的不仅仅是这块地是什么分区——还需要知道这个分区下到底有哪些允许的用途和限制条件。有些看似&quot;商业&quot;的地块可能有大量的附带条件。</p>
+
+
+
+
+
+
+<p>📌 <strong>2026 年加州 Zoning 的最大趋势——ADU（附属住宅单元，Accessory Dwelling Unit）：</strong> 加州政府为了应对住房供给危机，近年来持续放宽 ADU 法规。ADU 俗称&quot;后院小屋&quot;或&quot;奶奶房&quot;——在现有住宅的地块上增建一个独立的居住单元。法规简化了审批流程，大大降低了建设门槛，并限制了地方政府拒绝 ADU 申请的权力。同时，<strong>包容性分区（Inclusionary Zoning）</strong>——即要求新建住宅项目中必须包含一定比例的可负担住房——在越来越多的加州城市成为强制性要求。这些都会在考试中作为&quot;政府管制&quot;领域的延伸考点出现。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<h3>第十八章：房地产税务（Taxation of Real Estate）</h3>
+
+
+
+
+
+
+<h4>每次交易都是税务事件</h4>
+
+
+
+
+
+
+<p>Pat 的一个重要观点是：每一次房地产交易都会<strong>触发一个税务事件（Tax Event）。</strong> 你必须意识到这一点——即使你不负责提供税务建议。</p>
+
+
+
+
+
+
+<h4>自住房资本利得豁免——Section 121</h4>
+
+
+
+
+
+
+<p>如果一处物业是你的主要居所（Primary Residence），并且你在出售前的五年中累计在该物业中<strong>实际居住满两年</strong>，那么：</p>
+
+
+
+
+<ul>
+<li>单身纳税人：你在出售中获得的资本利得（Capital Gain）中有上限 <strong>$250,000</strong> 可以免税。</li>
+
+<li>已婚联合申报纳税人：免税额为 <strong>$500,000</strong>。</li>
+
+
+</ul>
+
+
+
+<p>&quot;但这是有严格条件的，&quot;Pat 补充道，&quot;你需要满足一系列的资格要求。&quot;📌 Section 121 豁免自 1997 年通过以来基本未变，2026 年仍然有效。</p>
+
+
+
+
+
+
+<h4>投资物业——完全不同的规则</h4>
+
+
+
+
+
+
+<p>上述的 $250K / $500K 豁免只适用于你的主要居所。如果你出售的是一套投资物业（出租屋、Flip 翻修转售等），适用完全不同的税务规则。</p>
+
+
+
+
+
+
+<h4>📌 加州特有的税务要点（2026 年补充）</h4>
+
+
+
+
+
+
+<p>加州的税务环境在全美独树一帜。以下是你需要了解的关键框架：</p>
+
+
+
+<table><tr><th>税种</th><th>2026 年要点</th></tr><tr><td>联邦资本利得税</td><td>根据你的收入层级，适用 0%、15% 或 20% 的税率</td></tr><tr><td>联邦 NIIT（净投资收入税）</td><td>高收入纳税人（单身 MAGI &gt; $20 万 / 夫妻 &gt; $25 万）额外缴纳 3.8%</td></tr><tr><td>加州州所得税</td><td>加州将资本利得视为普通收入征税——**最高边际税率达 13.3%**（全美最高）</td></tr><tr><td>Prop 13（1978 年第 13 号提案）</td><td>物业税的基础价值被锁定在购买时的价格上，此后每年评估价值的增幅上限为 2%</td></tr><tr><td>Prop 19（2020 年第 19 号提案）</td><td>55 岁及以上的房主、重度残疾人士、自然灾害受害者可在加州境内**三次**将原有物业的税务基数转移到换购的新物业上（旧 Prop 60/90 仅允许一次且仅在部分县之间转移，已被 Prop 19 取代）</td></tr></table>
+
+
+
+
+
+
+<h4>Pat 最重要的忠告</h4>
+
+
+
+
+
+
+<p>Pat 在整个第一节课中，语气最严肃的一刻发生在这个话题上。他说：</p>
+
+
+
+<blockquote>&quot;Do not ever, under any circumstance, take what anybody else says is law and follow it.&quot;</blockquote>
+
+
+
+
+
+
+<p>在任何情况下，永远不要把别人的说法当作法律来执行。</p>
+
+
+
+
+
+
+<p>&quot;我们十个人可以拥有完全相同的物业——在同一个区域、居住了同样的时间——但我们每个人面对的税务后果可能完全不同。为什么？因为区别在于——我们是单身还是已婚？我们当前的收入所得税情况如何？我们总共赚多少钱？&quot;</p>
+
+
+
+
+
+
+<p>&quot;这就是为什么，到了今天，我还有一个会计师。每当我要做一个重要的财务决策时，我不是先做再问——我是先坐下来跟会计师谈。我把所有文件摆在他面前，问他：&#x27;如果我这么做，后果是什么？&#x27;我建议你也这么做。做事之前先问清楚——不要做了之后才发现自己背上了一笔巨大的税单，然后眼泪哗哗地流。&quot;</p>
+
+
+
+
+
+
+<p><strong>作为房地产经纪人，你的职责是：</strong> 提醒客户——每一次房地产交易都会触发税务事件。然后建议他们去咨询自己的会计师或税务专业人士。你<strong>不提供税务建议</strong>——但你必须<strong>知道</strong>税务是交易中不可忽视的一环。</p>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<h3>第十九章：房地产数学（Real Estate Math）</h3>
+
+
+
+
+
+
+<h4>好消恵：你不需要微积分</h4>
+
+
+
+
+
+
+<p>Pat 一上来先安抚学生：&quot;加、减、乘、除——仅此而已。你不需要三角函数、不需要几何证明。&quot;</p>
+
+
+
+
+
+
+<h4>坏消息：难点根本不是计算</h4>
+
+
+
+
+
+
+<p>&quot;每个人都会按计算器。真正的难点是——<strong>搞清楚题目到底在问什么。</strong>&quot;</p>
+
+
+
+
+
+
+<p>他以真实的挂牌场景做说明：</p>
+
+
+
+
+
+
+<p>&quot;你去挂牌出售一处物业。你走进客户家，十几分钟后对方就会问一个看似简单的问题——&#x27;我这房子能卖多少钱？&#x27;&quot;</p>
+
+
+
+
+
+
+<p>&quot;但你真正需要知道的问题是——这不是对方正在问你的问题。对方真正想知道的是：&#x27;在一切费用结清之后，我能揣着多少钱离开这里——用于买下一套房子，或者干别的？&#x27;也就是说，他实际想知道的是扣除所有费用后的净收益。&quot;</p>
+
+
+
+
+
+
+<p>这意味着你坐下来开始计算：</p>
+
+<ul>
+<li>预期售价多少？</li>
+
+<li>佣金是多少？</li>
+
+<li>Escrow 费用是多少？</li>
+
+<li>Title 费用是多少？</li>
+
+<li>如果对方还有按揭没还清——剩余贷款本金是多少？</li>
+
+<li>有没有其他需要清付的留置权或费用？</li>
+
+
+</ul>
+
+
+
+<h4>Pat 最严肃的警告：这道坎最容易摔</h4>
+
+
+
+
+
+
+<p>&quot;每年我都看到——学生前面几章的成绩都在高分区域，平平稳稳。到了这一章——啪，直直掉下来。不是因为他们不懂数学——而是因为他们没有认真地去搞清楚题目在问什么。你算了一圈，得到了一个数字——但那是错误路径的对应答案。而出题人恰好把这个错误答案放在了选项里。&quot;</p>
+
+
+
+
+
+
+<p>📌 2026 年 DRE 考试中最常见的数学题型包括：</p>
+
+<ul>
+<li><strong>Proration（费用按时间比例分摊）：</strong> 如物业税在买卖双方之间按交割日期分摊。</li>
+
+<li><strong>Commission calculation（佣金计算）：</strong> 给定售价和佣金比例，计算经纪人佣金。</li>
+
+<li><strong>Loan-to-Value ratio（贷款价值比 LTV）：</strong> 贷款金额 / 物业价值。</li>
+
+<li><strong>Discount points（折扣点）：</strong> 1 point = 贷款金额的 1%，用于预先支付以降低利率。</li>
+
+<li><strong>Cap Rate / Net Operating Income（资本化率 / 净营业收入）：</strong> 收益法估价的核心计算。</li>
+
+<li><strong>面积换算：</strong> 1 acre = 43,560 平方英尺；1 平方英里 = 640 英亩。这些基本换算必须烂熟于心。</li>
+
+
+</ul>
+
+
+
+<hr>
+
+
+
+</section>
+
+<section class="article-section">
+<h2 id="section-5">第五部分：📌 2026 年执照路径速查（完整版）</h2>
+
+
+
+<p>```</p>
+
+
+
+<p>┌──────────────────────────────────────────────────┐</p>
+
+
+
+<p>│                                                   │</p>
+
+
+
+<p>│   第 1 步：完成三门预许可课程（135 小时总课时）       │</p>
+
+
+
+<p>│   ┌─────────────────────────────────────────┐    │</p>
+
+
+
+<p>│   │ ① Real Estate Principles（45 小时）       │    │</p>
+
+
+
+<p>│   │ ② Real Estate Practice（45 小时）         │    │</p>
+
+
+
+<p>│   │    ⚠️ 2024 年起必须包含：                  │    │</p>
+
+
+
+<p>│   │      · Implicit Bias（隐式偏见）培训        │    │</p>
+
+
+
+<p>│   │      · Fair Housing（公平住房）培训         │    │</p>
+
+
+
+<p>│   │        含互动式角色扮演                     │    │</p>
+
+
+
+<p>│   │ ③ 选修 1 门（45 小时，8 选 1）             │    │</p>
+
+
+
+<p>│   └─────────────────────────────────────────┘    │</p>
+
+
+
+<p>│                                                   │</p>
+
+
+
+<p>│   第 2 步：申请并参加 DRE 州考试                    │</p>
+
+
+
+<p>│   ┌─────────────────────────────────────────┐    │</p>
+
+
+
+<p>│   │ · 150 道选择题                            │    │</p>
+
+
+
+<p>│   │ · 及格线：70%（105/150）                  │    │</p>
+
+
+
+<p>│   │ · 考试费：$60                             │    │</p>
+
+
+
+<p>│   │ · 全电子化机考                             │    │</p>
+
+
+
+<p>│   │ · 5 个考点：Sacramento / Oakland /       │    │</p>
+
+
+
+<p>│   │   Fresno / La Palma / San Diego          │    │</p>
+
+
+
+<p>│   │ · 同步完成 Live Scan 指纹采集              │    │</p>
+
+
+
+<p>│   │ · FBI + DOJ 背景调查                      │    │</p>
+
+
+
+<p>│   └─────────────────────────────────────────┘    │</p>
+
+
+
+<p>│                                                   │</p>
+
+
+
+<p>│   第 3 步：找到持牌 Broker 挂靠                    │</p>
+
+
+
+<p>│   ┌─────────────────────────────────────────┐    │</p>
+
+
+
+<p>│   │ Salesperson 必须在 Broker 监管下工作        │    │</p>
+
+
+
+<p>│   └─────────────────────────────────────────┘    │</p>
+
+
+
+<p>│                                                   │</p>
+
+
+
+<p>│   第 4 步：领取执照 → 每 4 年续牌                  │</p>
+
+
+
+<p>│   ┌─────────────────────────────────────────┐    │</p>
+
+
+
+<p>│   │ 每 4 年完成 45 小时 DRE 批准的 CE 课程      │    │</p>
+
+
+
+<p>│   └─────────────────────────────────────────┘    │</p>
+
+
+
+<p>│                                                   │</p>
+
+
+
+<p>└──────────────────────────────────────────────────┘</p>
+
+
+
+<p>```</p>
+
+
+
+
+
+
+<h3>2009 vs. 2026：核心区别</h3>
+
+
+
+<table><tr><th>Pat 时代的旧制度（2009 年）</th><th>现行制度（2026 年）</th></tr><tr><td>课程顺序</td><td>可以先考后补课</td><td>**必须先完成三门课程才能拿执照**</td></tr><tr><td>临时执照</td><td>有 18 个月临时执照</td><td>**无临时执照机制**</td></tr><tr><td>考试时机</td><td>修完 RE 300 即可申请</td><td>三门课全修完方可</td></tr><tr><td>Practice 课内容</td><td>标准内容</td><td>新增 Implicit Bias + Fair Housing + 角色扮演</td></tr></table>
+
+
+
+
+
+
+<h3>Salesperson → Broker 晋升条件</h3>
+
+
+
+<table><tr><th>条件</th><th>要求</th></tr><tr><td>无大学学位</td><td>至少 2 年全职销售经验（以执照有效期为证）</td></tr><tr><td>副学士学位（2 年制）</td><td>至少 1 年全职销售经验</td></tr><tr><td>学士学位（任何专业均可）</td><td>自动满足经验要求</td></tr></table>
+
+
+
+
+
+
+<hr>
+
+
+
+</section>
+
+<section class="article-section">
+<h2 id="section-6">第六部分：完整术语表中英文对照</h2>
+
+
+
+<p>以下术语涵盖了 Pat 在本讲中提及的全部核心概念，以及 2026 年考试新增的考点术语。标注 ⭐ 的数量表示在考试中出现频率的重要性（⭐⭐⭐ = 高频考点）。</p>
+
+
+
+
+
+
+<h3>基础概念</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Real Property</td><td>不动产</td><td>⭐⭐⭐</td></tr><tr><td>Personal Property</td><td>动产</td><td>⭐⭐⭐</td></tr><tr><td>Fixture</td><td>附着物</td><td>⭐⭐⭐</td></tr><tr><td>Improvement</td><td>改良物（土地上的人工建筑物或设施）</td><td>⭐⭐</td></tr></table>
+
+
+
+
+
+
+<h3>法定描述</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Legal Description</td><td>法定描述</td><td>⭐⭐⭐</td></tr><tr><td>Metes and Bounds</td><td>边界描述法</td><td>⭐⭐⭐</td></tr><tr><td>Lot and Block</td><td>地块街区描述法</td><td>⭐⭐</td></tr><tr><td>Government Survey (Rectangular Survey)</td><td>政府测量法（矩形测量法）</td><td>⭐⭐</td></tr><tr><td>Plat Map</td><td>地块平面图</td><td>⭐⭐</td></tr></table>
+
+
+
+
+
+
+<h3>产权类型</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Estate</td><td>产权；地产权</td><td>⭐⭐⭐</td></tr><tr><td>Fee Estate / Fee Simple Absolute</td><td>完整产权 / 绝对完整产权</td><td>⭐⭐⭐</td></tr><tr><td>Life Estate</td><td>终身产权</td><td>⭐⭐</td></tr><tr><td>Leasehold Estate</td><td>租赁产权</td><td>⭐⭐⭐</td></tr><tr><td>Remainder Interest</td><td>剩余权益（终身产权终止后的归属权益）</td><td>⭐⭐</td></tr></table>
+
+
+
+
+
+
+<h3>产权转让与契据</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Grant Deed</td><td>转让契据</td><td>⭐⭐⭐</td></tr><tr><td>Quitclaim Deed</td><td>免责契据</td><td>⭐⭐⭐</td></tr><tr><td>Sheriff&#x27;s Deed</td><td>法警契据</td><td>⭐⭐</td></tr><tr><td>Trustee&#x27;s Deed</td><td>受托人契据</td><td>⭐⭐</td></tr><tr><td>Deed of Trust</td><td>信托契据</td><td>⭐⭐⭐</td></tr><tr><td>Alienation</td><td>产权转让（泛指）</td><td>⭐⭐</td></tr></table>
+
+
+
+
+
+
+<h3>持有方式</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Joint Tenancy</td><td>共同共有（含 Right of Survivorship）</td><td>⭐⭐⭐</td></tr><tr><td>Community Property</td><td>共同财产（加州婚姻默认制度）</td><td>⭐⭐⭐</td></tr><tr><td>Separate Property</td><td>独立财产</td><td>⭐⭐</td></tr><tr><td>Tenants in Common</td><td>按份共有</td><td>⭐⭐</td></tr><tr><td>Right of Survivorship</td><td>生存者权利</td><td>⭐⭐⭐</td></tr></table>
+
+
+
+
+
+
+<h3>产权负担</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Encumbrance</td><td>产权负担</td><td>⭐⭐⭐</td></tr><tr><td>Easement</td><td>地役权</td><td>⭐⭐⭐</td></tr><tr><td>Right of Way</td><td>通行权</td><td>⭐⭐</td></tr><tr><td>Mechanic&#x27;s Lien</td><td>技工留置权</td><td>⭐⭐⭐</td></tr><tr><td>Cloud on Title</td><td>产权瑕疵 / &quot;被玷污&quot;的产权</td><td>⭐⭐</td></tr></table>
+
+
+
+
+
+
+<h3>止赎</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Foreclosure</td><td>止赎</td><td>⭐⭐⭐</td></tr><tr><td>Judicial Foreclosure</td><td>司法止赎（需经法院）</td><td>⭐⭐⭐</td></tr><tr><td>Non-Judicial Foreclosure</td><td>非司法止赎（加州=Trustee&#x27;s Sale）</td><td>⭐⭐⭐</td></tr><tr><td>Trustee&#x27;s Sale</td><td>受托人拍卖</td><td>⭐⭐⭐</td></tr></table>
+
+
+
+
+
+
+<h3>执照与协会</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Salesperson</td><td>销售人员</td><td>⭐⭐</td></tr><tr><td>Broker</td><td>经纪人</td><td>⭐⭐</td></tr><tr><td>Probationary License</td><td>临时执照（⚠️ 已废除）</td><td>—</td></tr><tr><td>Continuing Education (CE)</td><td>继续教育</td><td>⭐⭐</td></tr><tr><td>DRE (Department of Real Estate)</td><td>加州房地产局</td><td>⭐⭐</td></tr><tr><td>SAR (Sacramento Association of Realtors)</td><td>萨克拉门托房地产经纪人协会</td><td>⭐</td></tr><tr><td>CAR (California Association of Realtors)</td><td>加州房地产经纪人协会</td><td>⭐⭐</td></tr><tr><td>NAR (National Association of Realtors)</td><td>全美房地产经纪人协会</td><td>⭐⭐</td></tr><tr><td>MLS (Multiple Listing Service)</td><td>多重上市服务</td><td>⭐⭐</td></tr></table>
+
+
+
+
+
+
+<h3>代理关系</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Agency Relationship</td><td>代理关系</td><td>⭐⭐⭐</td></tr><tr><td>Fiduciary Duty</td><td>诚信义务</td><td>⭐⭐⭐</td></tr><tr><td>Principal</td><td>委托人</td><td>⭐⭐⭐</td></tr><tr><td>Agent</td><td>代理人</td><td>⭐⭐⭐</td></tr><tr><td>Seller&#x27;s Agency</td><td>卖方代理</td><td>⭐⭐⭐</td></tr><tr><td>Buyer&#x27;s Agency</td><td>买方代理</td><td>⭐⭐⭐</td></tr><tr><td>Dual Agency</td><td>双边代理</td><td>⭐⭐⭐</td></tr><tr><td>Buyer-Broker Agreement</td><td>买方代理协议（📌 2024 年新规）</td><td>⭐⭐⭐</td></tr></table>
+
+
+
+
+
+
+<h3>合同</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Contract</td><td>合同</td><td>⭐⭐⭐</td></tr><tr><td>Capacity</td><td>缔约能力</td><td>⭐⭐⭐</td></tr><tr><td>Mutual Consent</td><td>双方合意</td><td>⭐⭐⭐</td></tr><tr><td>Legality</td><td>合法目的</td><td>⭐⭐</td></tr><tr><td>Consideration</td><td>对价</td><td>⭐⭐⭐</td></tr><tr><td>Statute of Frauds</td><td>防止欺诈法（要求土地合同以书面形式）</td><td>⭐⭐⭐</td></tr><tr><td>Listing Agreement</td><td>挂牌协议</td><td>⭐⭐</td></tr><tr><td>Purchase Offer (RPA)</td><td>购买要约（住宅购买协议）</td><td>⭐⭐⭐</td></tr><tr><td>Voidable Contract</td><td>可撤销合同</td><td>⭐⭐</td></tr></table>
+
+
+
+
+
+
+<h3>Escrow 与 Title</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Escrow</td><td>第三方托管（加州特有）</td><td>⭐⭐⭐</td></tr><tr><td>Escrow Officer</td><td>托管官</td><td>⭐⭐</td></tr><tr><td>Title Insurance</td><td>产权保险</td><td>⭐⭐⭐</td></tr><tr><td>Title Search</td><td>产权检索</td><td>⭐⭐</td></tr><tr><td>Preliminary Report</td><td>初步产权报告</td><td>⭐⭐⭐</td></tr></table>
+
+
+
+
+
+
+<h3>金融</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Primary Market</td><td>一级市场</td><td>⭐⭐</td></tr><tr><td>Secondary Market</td><td>二级市场</td><td>⭐⭐⭐</td></tr><tr><td>Fannie Mae</td><td>房利美</td><td>⭐⭐⭐</td></tr><tr><td>Freddie Mac</td><td>房地美</td><td>⭐⭐⭐</td></tr><tr><td>Ginnie Mae</td><td>吉利美</td><td>⭐⭐</td></tr><tr><td>Federal Reserve (The Fed)</td><td>美联储</td><td>⭐⭐</td></tr><tr><td>Federal Funds Rate</td><td>联邦基金利率</td><td>⭐⭐</td></tr><tr><td>Non-Bank Lender</td><td>非银行金融机构（📌 2026 考点）</td><td>⭐⭐</td></tr><tr><td>MLO (Mortgage Loan Originator)</td><td>按揭贷款发放人</td><td>⭐⭐</td></tr><tr><td>NMLS</td><td>全国多州按揭牌照系统（📌 2026 考点）</td><td>⭐⭐</td></tr><tr><td>SAFE Act</td><td>按揭牌照安全与公平执法法案</td><td>⭐⭐</td></tr></table>
+
+
+
+
+
+
+<h3>估价</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Appraisal</td><td>估价</td><td>⭐⭐⭐</td></tr><tr><td>Market Approach</td><td>市场比较法</td><td>⭐⭐⭐</td></tr><tr><td>Cost Approach</td><td>成本法</td><td>⭐⭐⭐</td></tr><tr><td>Income Approach</td><td>收益法</td><td>⭐⭐⭐</td></tr><tr><td>Capitalization Rate (Cap Rate)</td><td>资本化率</td><td>⭐⭐⭐</td></tr><tr><td>Net Operating Income (NOI)</td><td>净营业收入</td><td>⭐⭐⭐</td></tr><tr><td>AVM (Automated Valuation Model)</td><td>自动估价模型（📌 2026 趋势）</td><td>⭐</td></tr></table>
+
+
+
+
+
+
+<h3>土地管制与 Zoning</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Subdivision Map Act</td><td>土地分割地图法</td><td>⭐⭐</td></tr><tr><td>Subdivided Lands Act</td><td>分割土地法</td><td>⭐⭐</td></tr><tr><td>Public Report</td><td>公共报告</td><td>⭐⭐⭐</td></tr><tr><td>Zoning</td><td>用地分区</td><td>⭐⭐⭐</td></tr><tr><td>ADU (Accessory Dwelling Unit)</td><td>附属住宅单元（📌 2026 考点）</td><td>⭐⭐</td></tr><tr><td>Inclusionary Zoning</td><td>包容性分区（📌 2026 趋势）</td><td>⭐⭐</td></tr></table>
+
+
+
+
+
+
+<h3>税务</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Capital Gain</td><td>资本利得</td><td>⭐⭐⭐</td></tr><tr><td>Section 121 Exclusion</td><td>第 121 条豁免（$250K/$500K）</td><td>⭐⭐⭐</td></tr><tr><td>NIIT (Net Investment Income Tax)</td><td>净投资收入税（📌 2026 考点）</td><td>⭐⭐</td></tr><tr><td>Prop 13 (1978)</td><td>第 13 号提案（物业税）</td><td>⭐⭐⭐</td></tr><tr><td>Prop 19 (2020)</td><td>第 19 号提案（税务基数转移）</td><td>⭐⭐⭐</td></tr><tr><td>1031 Exchange</td><td>同类交换（延税策略）</td><td>⭐⭐</td></tr></table>
+
+
+
+
+
+
+<h3>数学</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Proration</td><td>费用按比例分摊</td><td>⭐⭐⭐</td></tr><tr><td>LTV (Loan-to-Value Ratio)</td><td>贷款价值比</td><td>⭐⭐⭐</td></tr><tr><td>Discount Points</td><td>折扣点</td><td>⭐⭐</td></tr><tr><td>1 Acre = 43,560 sq ft</td><td>1 英亩 = 43,560 平方英尺</td><td>⭐⭐⭐</td></tr></table>
+
+
+
+
+
+
+<h3>2026 年新增术语</h3>
+
+
+
+<table><tr><th>英文</th><th>中文</th><th>考试重要性</th></tr><tr><td>Implicit Bias</td><td>隐式偏见</td><td>⭐⭐（2024 年起必修）</td></tr><tr><td>AB 1482</td><td>AB 1482 法案（全州租金管制）</td><td>⭐⭐</td></tr><tr><td>Seller Impersonation Fraud</td><td>卖方假冒诈骗</td><td>⭐⭐（2026 年 DRE 警告）</td></tr><tr><td>Live Scan</td><td>指纹采集系统</td><td>⭐⭐</td></tr><tr><td>eLicensing</td><td>电子牌照系统</td><td>⭐</td></tr></table>
+
+
+
+
+
+
+<hr>
+
+
+
+</section>
+
+<section class="article-section">
+<h2 id="section-7">第七部分：课程结语</h2>
+
+
+
+<p>在课程的最后几分钟，Pat 做了几件简单的事：</p>
+
+
+
+
+<ol>
+<li>提醒未参加 Orientation 的同学课后留下，他会做一个简短的补讲。</li>
+
+<li>再三强调要确保 Blackboard 系统中的电子邮箱地址是最新的——因为节目上线通知和所有课程信息都将通过邮件发送。</li>
+
+<li>提醒尽快去书店购买教材和 Scantron 882 答题卡。</li>
+
+<li>以一段幽默的告白结束了第一节课：</li>
+
+
+</ol>
+<blockquote>&quot;如果你能来现场听课，尽量来。我不是在说必须来——但课堂里有一些真实的观众，真的会让讲课效果更好。我们当老师的，说到底也是演员。如果我有好嗓子能唱歌，我早就去干那个了，不会站在这里对着镜头讲话。&quot;</blockquote>
+
+
+
+
+
+
+<p>然后——&quot;你如果有问题，现在就可以上来问我。来吧。&quot;</p>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<p><em>本教程基于 Patrick J. Hogarty, MA 主讲的 &quot;California Real Estate Principles&quot;（RE 300）播客系列 Show 01 完整录音逐段整理而成。教学内容涵盖 Pat 在 59 分钟课程中提及的全部概念、案例、类比和教学要点。2026 年更新和补充内容依据以下来源：</em></p>
+
+
+
+
+<ul>
+<li><em>加州房地产局（DRE）官网 dre.ca.gov — 2026 年 4 月持牌人及考试统计、执照要求页面、考试内容大纲页面</em></li>
+
+<li><em>全美房地产经纪人协会（NAR）nar.realtor — 2026 年 5 月成屋销售及中位价报告</em></li>
+
+<li><em>美联储（Federal Reserve）官网 federalreserve.gov — 理事会成员名单（2026 年 5 月 28 日更新）</em></li>
+
+<li><em>加州议会立法信息 — AB 1482（2019）、AB 2170（2025）、Prop 13（1978）、Prop 19（2020）</em></li>
+
+<li><em>NAR 集体诉讼和解协议（Sitzer/Burnett 案，2024 年）</em></li>
+
+
+</ul>
+
+
+
+<p><em>本文仅供学习参考。所有考试相关信息请以 DRE 官网 (dre.ca.gov) 当前发布的官方文件为准。税务相关内容不构成税务建议——正如 Pat 所说，做任何重大财务决策之前，请咨询你自己的会计师。</em></p>
+
+
+
+
+
+
+<hr>
+
+
+
+
+
+
+<p><em>下讲预告：Show 02 — 房地产概述、加州房地产局（DRE）职能与架构、不动产 vs. 动产的深度解析、三种法定描述方式（Lot &amp; Block / Metes &amp; Bounds / Government Survey）的第一部分详细讲解。</em></p>
+
+
+
+</section>
+
+
+    </main>
+  </div>
+</div>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="ft-nav">
+      <a href="index.html">← RE300 系列首页</a>
+      <a href="../index.html">筑沙首页</a>
+    </div>
+    <div class="ft-logo">筑 沙 TSUKASA</div>
+    <div class="ft-sub">AI · Real Estate · Education — RE300 Series EP01 — 2026</div>
+  </div>
+</footer>
+
+</body>
+</html>
