@@ -3,158 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="加州房地产执照考试中文深度教程 — Patrick J. Hogarty RE 300 第6讲：租赁申请与筛选、租约终止七种方式、七种特殊租赁类型、物业管理基础。含2026年最新数据更新。">
+<meta name="description" content="加州房地产执照考试中文教程 — RE 300 第6讲：租赁申请、租约终止与物业管理。含2026年最新DRE数据更新。">
 <meta property="og:title" content="加州房产执照考试｜中文精讲 EP06 — 筑沙 Tsukasa">
-<meta property="og:description" content="Patrick Hogarty《California Real Estate Principles》中文精讲第6集：租赁申请、租约终止与特殊租赁类型">
+<meta property="og:description" content="Patrick Hogarty RE300 中文精讲第6集：租赁申请、租约终止与物业管理">
 <meta property="og:type" content="article">
-<title>EP06 租赁申请、租约终止与特殊租赁类型 — RE300 加州房地产原理 — 筑沙 Tsukasa</title>
+<title>EP06 租赁申请、租约终止与物业管理 — RE300 加州房地产原理 — 筑沙 Tsukasa</title>
 <style>
 :root {
-  --bg: #0b0b0b;
-  --surface: #161616;
-  --border: #262626;
-  --ink: #ede8df;
-  --muted: #8a8578;
-  --sand: #d4b896;
-  --sand-light: #e8d5c0;
-  --teal: #3a8a85;
+  --bg: #0b0b0b; --surface: #161616; --border: #262626;
+  --ink: #ede8df; --muted: #8a8578; --sand: #d4b896; --sand-light: #e8d5c0; --teal: #3a8a85;
   --radius: 6px;
   --font-display: 'Georgia', 'Noto Serif JP', 'Songti SC', serif;
   --font-body: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans', sans-serif;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: var(--bg); color: var(--ink); font-family: var(--font-body); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); line-height: 1.7; }
 .container { max-width: 860px; margin: 0 auto; padding: 0 32px; }
-
-nav {
-  position: sticky; top: 0; z-index: 100;
-  background: rgba(11,11,11,0.94); backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border); padding: 16px 0;
-}
+nav { position: sticky; top: 0; z-index: 100; background: rgba(11,11,11,0.94); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 16px 0; }
 nav .container { display: flex; justify-content: space-between; align-items: center; }
 .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
-.logo-diamond {
-  width: 28px; height: 28px;
-  background: linear-gradient(135deg, var(--sand) 0%, var(--sand-light) 100%);
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
-}
-.logo-diamond-inner {
-  width: 70%; height: 70%; background: var(--bg);
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  display: flex; align-items: center; justify-content: center;
-}
+.logo-diamond { width: 28px; height: 28px; background: linear-gradient(135deg, var(--sand) 0%, var(--sand-light) 100%); clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.logo-diamond-inner { width: 70%; height: 70%; background: var(--bg); clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); display: flex; align-items: center; justify-content: center; }
 .logo-diamond-char { color: var(--sand); font-family: var(--font-display); font-size: 9px; }
 .nav-name { font-family: var(--font-display); font-size: 16px; letter-spacing: 0.08em; }
 .nav-links { display: flex; gap: 24px; }
 .nav-links a { color: var(--muted); text-decoration: none; font-size: 12px; letter-spacing: 0.06em; transition: color 0.2s; }
 .nav-links a:hover { color: var(--sand); }
-
-.article-header {
-  padding: 80px 0 48px; border-bottom: 1px solid var(--border); text-align: center;
-}
-.article-header .ep-label {
-  display: inline-block; font-size: 10px; color: var(--sand);
-  letter-spacing: 0.14em; text-transform: uppercase;
-  border: 1px solid var(--sand); padding: 6px 16px; border-radius: 2px; margin-bottom: 20px;
-}
-.article-header .breadcrumb { font-size: 11px; color: var(--muted); margin-bottom: 32px; }
-.article-header .breadcrumb a { color: var(--muted); text-decoration: none; }
-.article-header .breadcrumb a:hover { color: var(--sand); }
-.article-header h1 {
-  font-family: var(--font-display); font-size: clamp(24px, 5vw, 40px);
-  letter-spacing: 0.04em; line-height: 1.4; margin-bottom: 24px;
-}
-.article-header .meta {
-  display: flex; gap: 28px; justify-content: center; flex-wrap: wrap;
-  font-size: 11px; color: var(--muted); letter-spacing: 0.06em;
-}
-
-.article-layout { display: flex; gap: 48px; padding: 48px 0; align-items: flex-start; }
-.article-toc {
-  position: sticky; top: 100px; width: 200px; flex-shrink: 0;
-  font-size: 12px; line-height: 2;
-}
-.article-toc .toc-title {
-  font-family: var(--font-display); font-size: 13px;
-  color: var(--sand); letter-spacing: 0.08em; margin-bottom: 16px;
-}
-.article-toc a {
-  display: block; color: var(--muted); text-decoration: none;
-  padding: 2px 0; transition: color 0.2s;
-  border-left: 2px solid transparent; padding-left: 12px;
-}
-.article-toc a:hover, .article-toc a.active {
-  color: var(--ink); border-left-color: var(--sand);
-}
-.article-body { flex: 1; min-width: 0; }
-
-.article-section { margin-bottom: 48px; }
-.article-section h2 {
-  font-family: var(--font-display); font-size: 26px;
-  margin-bottom: 20px; padding-bottom: 12px;
-  border-bottom: 1px solid var(--border); letter-spacing: 0.04em;
-}
-.article-section h3 {
-  font-family: var(--font-display); font-size: 19px;
-  margin: 28px 0 12px; color: var(--sand); letter-spacing: 0.03em;
-}
-.article-section h4 {
-  font-size: 15px; margin: 20px 0 8px; color: var(--sand-light);
-}
-.article-section p {
-  font-size: 15px; color: var(--muted); line-height: 1.85; margin-bottom: 14px;
-}
-.article-section p strong { color: var(--ink); font-weight: 600; }
-.article-section ul, .article-section ol {
-  margin: 12px 0 16px 24px; font-size: 14px; color: var(--muted); line-height: 1.9;
-}
-.article-section li { margin-bottom: 4px; }
-.article-section li strong { color: var(--ink); font-weight: 600; }
-.article-section code {
-  background: var(--surface); padding: 2px 6px;
-  border-radius: 3px; font-size: 13px; color: var(--sand);
-  font-family: 'SF Mono', 'Fira Code', monospace;
-}
-.article-section blockquote {
-  border-left: 3px solid var(--sand);
-  padding: 16px 20px; margin: 20px 0;
-  background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0;
-  font-size: 14px; color: var(--sand-light); line-height: 1.8; font-style: italic;
-}
-.article-section hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
-.article-section table {
-  width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13px;
-}
-.article-section th {
-  background: var(--surface); color: var(--sand);
-  padding: 10px 14px; text-align: left; font-weight: 600; font-size: 11px;
-  letter-spacing: 0.06em; text-transform: uppercase; border-bottom: 2px solid var(--border);
-}
-.article-section td {
-  padding: 10px 14px; border-bottom: 1px solid var(--border);
-  color: var(--muted); line-height: 1.6;
-}
-.article-section td strong { color: var(--ink); }
-.article-section tr:hover td { background: var(--surface); }
-
-.page-footer { padding: 60px 0; border-top: 1px solid var(--border); text-align: center; }
-.page-footer .ft-nav { display: flex; gap: 32px; justify-content: center; margin-bottom: 24px; }
-.page-footer .ft-nav a { color: var(--muted); font-size: 13px; text-decoration: none; transition: color 0.2s; }
-.page-footer .ft-nav a:hover { color: var(--sand); }
-.page-footer .ft-logo { font-family: var(--font-display); font-size: 18px; color: var(--sand); letter-spacing: 0.1em; margin-bottom: 6px; }
-.page-footer .ft-sub { font-size: 10px; color: var(--muted); }
-
-@media (max-width: 900px) {
-  .article-layout { flex-direction: column; }
-  .article-toc { position: static; width: 100%; margin-bottom: 32px; }
-  .article-toc a { display: inline-block; border-left: none; border-bottom: 2px solid transparent; padding: 4px 8px; margin-right: 8px; }
-  .article-toc a:hover, .article-toc a.active { border-left: none; border-bottom-color: var(--sand); }
-}
+.article-header { padding: 80px 0 48px; border-bottom: 1px solid var(--border); text-align: center; }
+.article-header .ep-label { display: inline-block; font-size: 10px; color: var(--sand); letter-spacing: 0.14em; border: 1px solid var(--sand); padding: 6px 16px; border-radius: 2px; margin-bottom: 20px; }
+.article-header h1 { font-family: var(--font-display); font-size: clamp(24px, 5vw, 42px); letter-spacing: 0.04em; line-height: 1.4; margin-bottom: 16px; }
+.article-header .byline { color: var(--muted); font-size: 13px; }
+.byline span { color: var(--sand); }
+.article-body { padding: 60px 0 80px; }
+.article-body h1 { font-family: var(--font-display); font-size: 28px; margin: 48px 0 20px; }
+.article-body h2 { font-family: var(--font-display); font-size: 22px; margin: 40px 0 16px; color: var(--sand); }
+.article-body h3 { font-size: 17px; margin: 32px 0 12px; color: var(--sand-light); }
+.article-body p { margin-bottom: 18px; font-size: 15px; line-height: 1.85; }
+.article-body blockquote { border-left: 3px solid var(--sand); margin: 24px 0; padding: 16px 24px; background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0; }
+.article-body blockquote p { color: var(--sand-light); font-style: italic; margin-bottom: 8px; }
+.article-body ul, .article-body ol { margin: 16px 0 24px 24px; }
+.article-body li { font-size: 14px; line-height: 1.9; margin-bottom: 6px; }
+.article-body code { background: var(--surface); padding: 2px 6px; border-radius: 3px; font-size: 13px; color: var(--sand-light); }
+.article-body hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+.article-body strong { color: var(--sand-light); }
+.disclaimer { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 28px; margin: 60px 0; }
+.disclaimer p { font-size: 12px; color: var(--muted); margin-bottom: 8px; line-height: 1.8; }
+.article-footer { padding: 60px 0; border-top: 1px solid var(--border); text-align: center; }
+.article-footer a { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; text-decoration: none; transition: color 0.2s; }
+.article-footer a:hover { color: var(--sand); }
+.article-footer .ft-brand { font-family: var(--font-display); font-size: 16px; color: var(--sand); letter-spacing: 0.1em; margin-top: 20px; }
+@media (max-width: 768px) { .container { padding: 0 20px; } .article-body h1 { font-size: 22px; } .article-body h2 { font-size: 18px; } }
 </style>
 </head>
 <body>
-
 <nav>
   <div class="container">
     <a href="../index.html" class="nav-brand">
@@ -167,75 +68,39 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
     </div>
   </div>
 </nav>
-
 <header class="article-header">
   <div class="container">
     <div class="ep-label">EPISODE 06</div>
-    <div class="breadcrumb">
-      <a href="../index.html">筑沙</a> · 
-      <a href="index.html">RE300 系列</a> · 
-      第6讲
-    </div>
-    <h1>加州房地产经纪人考试教程<br>租赁申请、租约终止与特殊租赁类型</h1>
-    <div class="meta">
-      <span>📚 25,000 字</span>
-      <span>🎙️ Patrick J. Hogarty</span>
-      <span>📅 2026 年 7 月</span>
-      <span>⏱️ 阅读约 40 分钟</span>
+    <h1>租赁申请、租约终止与物业管理</h1>
+    <div class="byline">
+      原始讲师：<span>Patrick J. Hogarty, MA</span> · Sacramento City College · 中文整理：<span>MOTOKI SADASHIGE · 筑沙 Tsukasa inc</span> · 2026年7月
     </div>
   </div>
 </header>
+<article class="article-body">
+  <div class="container">
+<p>本资料不以盈利为目的，完全免费提供，仅供学习参考。</p>
 
-<div class="container">
-  <div class="article-layout">
-    <aside class="article-toc">
-      <div class="toc-title">目录</div>
-      <a href="#section-1">一、开场：重要行政提醒</a>
-      <a href="#section-2">二、租赁申请与筛选费（Application to Rent / Screening Fee）</a>
-      <a href="#section-3">三、租约与租赁协议的终止方式</a>
-      <a href="#section-4">四、关于安静享用权与房东进入权的深入讲解</a>
-      <a href="#section-5">五、可居住性标准：房东与租客的各自义务</a>
-      <a href="#section-6">六、驱逐流程的现实面貌</a>
-      <a href="#section-7">七、特殊租赁类型</a>
-      <a href="#section-8">八、物业管理（Property Management）</a>
-      <a href="#section-9">九、全讲总结与复习要点</a>
-      <a href="#section-10">📝 2026 年补充学习资源与数据参考</a>
-    </aside>
-    <main class="article-body">
+<h1>加州房地产经纪人考试教程 — 第 6 讲：租赁申请、租约终止与特殊租赁类型</h1>
 
 <hr>
-<section class="article-section">
+
 <h2>📋 文章元信息</h2>
-<table>
-<thead><tr>
-<th>项目</th>
-<th>内容</th>
-</tr></thead><tbody>
-<tr>
-<td><strong>原始讲师</strong></td>
-<td>Patrick J. Hogarty, MA（Sacramento City College）</td>
-</tr>
-<tr>
-<td><strong>课程编号</strong></td>
-<td>RE 300 — California Real Estate Principles</td>
-</tr>
-<tr>
-<td><strong>本讲主题</strong></td>
-<td>租赁申请与筛选、租约终止方式、特殊租赁类型、物业管理基础</td>
-</tr>
-<tr>
-<td><strong>时长</strong></td>
-<td>约 55–65 分钟（基于内容量估算）</td>
-</tr>
-<tr>
-<td><strong>本文整理</strong></td>
-<td>2026 年 7 月</td>
-</tr>
-</tbody></table>
+
+<p>| 项目 | 内容 |</p>
+<p>|------|------|</p>
+<p>| <strong>原始讲师</strong> | Patrick J. Hogarty, MA（Sacramento City College） |</p>
+<p>| <strong>课程编号</strong> | RE 300 — California Real Estate Principles |</p>
+<p>| <strong>本讲主题</strong> | 租赁申请与筛选、租约终止方式、特殊租赁类型、物业管理基础 |</p>
+<p>| <strong>时长</strong> | 约 55–65 分钟（基于内容量估算） |</p>
+<p>| <strong>本文整理</strong> | 2026 年 7 月 |</p>
+
 <hr>
-<section class="article-section">
+
 <h2>📌 2026 年数据更新总览</h2>
+
 <p>在 Pat 原始教学内容的基础上，本文在关键位置标注了 <strong>📌 2026 年最新数据更新</strong>，涵盖以下方面：</p>
+
 <ul>
 <li>加州租赁市场租金中位数与空置率</li>
 <li>加州驱逐（Unlawful Detainer）最新统计数据</li>
@@ -244,179 +109,288 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>加州民法典（Civil Code）关于可居住性的最新司法解释</li>
 <li>2026 年全国房地产经纪人协会（NAR）关于物业管理的行业数据</li>
 </ul>
+
 <hr>
-<section class="article-section">
+
 <h2>💡 Pat 教学逻辑提示</h2>
+
 <p>本讲 Pat 的教学逻辑呈现「先实务后理论」的结构：</p>
-<ol>
+<ul>
 <li>从租赁申请表单的逐项讲解入手（实务操作层面）</li>
 <li>引申至租约终止的各种法律情形（理论框架）</li>
 <li>通过真实案例说明驱逐流程的复杂性（经验分享）</li>
 <li>最后系统性地介绍七种特殊租赁类型和物业管理基础知识（知识拓展）</li>
-</ol>
+</ul>
+
 <p>在整个教学过程中，Pat 反复强调两个贯穿始终的核心概念：</p>
 <ul>
 <li><strong>「诚实测试」</strong>：申请表不仅是收集信息的工具，更是一个验证申请人诚信度的机制。「如果一个人一开始就对你说谎，那么未来对你说谎的概率非常高。」</li>
 <li><strong>「源头把关优于事后补救」</strong>：花一个小时认真筛选租客，远比花六个月走驱逐流程划算得多。</li>
 </ul>
+
 <p>此外，Pat 本人拥有数十年的物业管理亲身经验，他在本讲中分享的案例——从帮租客搬家具、跑垃圾场以加速周转，到在咖啡店遇到那个被「职业租霸」折磨了五六个月的房东——都来自于他本人的真实经历，而非教科书上的抽象理论。这使得本讲内容兼具理论框架和实操温度。</p>
+
 <hr>
-<section class="article-section">
+
 <h2>一、开场：重要行政提醒</h2>
+
 <h3>1.1 期中考试复习指南</h3>
+
 <p>Pat 在第六讲的一开始，再次强调了期中考试复习准备工作。他说自己可能会像「坏掉的唱片」一样反复唠叨，但这件事情确实至关重要。他坦言，甚至他的儿子都告诉他「你听起来像一张坏掉的唱片」——但 Pat 认为，有些事情值得反复强调，直到它深深印入学生的脑海。</p>
-<blockquote><strong>💡 Pat 的比喻</strong>：Pat 用一个非常生动的类比来解释「主动学习」与「被动学习」之间的本质区别——如果有人口头告诉你从他所在的位置到他家怎么走，你可能只能在脑海中模糊地勾勒出路线，这就像被动地听老师讲课。但如果你亲自开车来回往返四五趟，你基本上就能完全记住这条路了，这就像亲手翻书查找答案、亲手写下笔记。这就是为什么他坚持让学生们亲手去翻书、亲手去查找答案、亲手写下笔记——这种<strong>机械性的动手过程</strong>有助于将信息从短期记忆转移到长期记忆。他称之为「开发这些帮助你进入书本、查找答案的学习习惯」。</blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 的比喻</strong>：Pat 用一个非常生动的类比来解释「主动学习」与「被动学习」之间的本质区别——如果有人口头告诉你从他所在的位置到他家怎么走，你可能只能在脑海中模糊地勾勒出路线，这就像被动地听老师讲课。但如果你亲自开车来回往返四五趟，你基本上就能完全记住这条路了，这就像亲手翻书查找答案、亲手写下笔记。这就是为什么他坚持让学生们亲手去翻书、亲手去查找答案、亲手写下笔记——这种<strong>机械性的动手过程</strong>有助于将信息从短期记忆转移到长期记忆。他称之为「开发这些帮助你进入书本、查找答案的学习习惯」。</p>
+</blockquote>
+
 <p>具体来说，Pat 要求每位学生做以下事情：</p>
-<ol>
+
+<ul>
 <li><strong>登录 Blackboard 网站</strong>，下载第一份期中考试复习指南（Study Guide）</li>
 <li><strong>打印出来</strong>，逐题查找答案</li>
 <li><strong>记录每个答案的出处</strong>——在哪一页、哪一段找到的，方便日后复查</li>
 <li><strong>反复练习</strong>，熟记每一道题的答案——因为考试时不能携带复习指南进入考场</li>
-</ol>
+</ul>
+
 <p>Pat 特别强调了他的教学目标：「我们不希望看到 85 分、90 分——我们希望你们每个人都拿 100 分。」他的逻辑是，期中考试本质上就是那份复习指南的内容，只要认真准备了，拿满分是完全可行的。「我们不喜欢那些满足于 85 分、90 分的人，我们想要 100 分。」</p>
+
 <p>Pat 还解释了为什么他不直接告诉学生答案，而是让他们自己去查找：「我认为查找、阅读、书写这个机械性的过程，本身就是帮助你记忆的工具。」</p>
+
 <h3>1.2 计算机资源与技能的重要性</h3>
+
 <p>Pat 特别回应了一个可能的问题：如果有人觉得需要专门去买一台电脑才能完成这些下载和在线学习任务，答案是「不需要」。他指出：</p>
+
 <ul>
 <li><strong>校园资源</strong>： Sacramento City College 的 <strong>学习资源中心（Learning Resource Center）</strong> 和 <strong>商学院大楼（Business Building）</strong> 都设有计算机实验室</li>
 <li><strong>免费使用</strong>：这些设施的费用已经包含在你缴纳的学费中，使用计算机完全免费（打印可能需要少量费用）</li>
 <li><strong>辅导支持</strong>：实验室里有教学助理（Instructional Assistants），可以反复指导学生，直到他们完全掌握所需技能</li>
 </ul>
-<blockquote><strong>📌 2026 年数据更新</strong>：截至 2026 年，Sacramento City College 已全面升级其计算机实验室设施，所有商学院大楼的计算机均预装了房地产行业常用的 WinForms、ZipForms 和 DocuSign 等专业软件。此外，学校自 2025 年秋季起为学生提供免费的 LinkedIn Learning 账户，涵盖房地产技术应用课程。</blockquote>
+
+<blockquote>
+<p><strong>📌 2026 年数据更新</strong>：截至 2026 年，Sacramento City College 已全面升级其计算机实验室设施，所有商学院大楼的计算机均预装了房地产行业常用的 WinForms、ZipForms 和 DocuSign 等专业软件。此外，学校自 2025 年秋季起为学生提供免费的 LinkedIn Learning 账户，涵盖房地产技术应用课程。</p>
+</blockquote>
+
 <h3>1.3 房地产计算机应用课程</h3>
+
 <p>Pat 提到了一个重要的课程信息：Sacramento City College 从下一个春季学期开始，将<strong>首次开设</strong>一门名为「<strong>房地产计算机应用</strong>」（Computer Applications in Real Estate）的新课程。他特别指出：</p>
+
 <ul>
 <li>这是加州所有社区学院中<strong>独一无二</strong>的课程，只有 Sacramento City College 提供</li>
 <li>这门课程可以计入房地产销售执照或经纪人执照的学分要求</li>
 <li>开设这门课的原因正是因为：<strong>当今房地产行业的每一个环节都离不开计算机</strong></li>
 </ul>
+
 <p>Pat 强调，无论你是要带客户看房、在线搜索房源、还是处理合同文件，你都必须熟练掌握计算机操作。这是现代房地产经纪人最基本的职业技能之一。</p>
+
 <hr>
-<section class="article-section">
+
 <h2>二、租赁申请与筛选费（Application to Rent / Screening Fee）</h2>
+
 <h3>2.1 从租约合同到租赁申请</h3>
+
 <p>在第五讲中，Pat 花了大段时间逐页讲解了<strong>住宅租赁或租用协议</strong>（Residential Lease or Rental Agreement）的合同内容。他特别强调了两个关键点：</p>
+
 <ul>
 <li><strong>始终使用最新版本的合同</strong>：加州房地产经纪人协会（California Association of Realtors，简称 C.A.R.）大约有六到八名专职律师，他们的工作就是持续审查所有标准文件，确保内容符合最新法律，保证客户签署的每份文件都是合法的、最新的</li>
 <li><strong>合同适用范围</strong>：这份协议不仅适用于一年期或以上的<strong>租赁</strong>（Lease），也适用于<strong>按月租用</strong>（Month-to-Month Rental）。另外，商业物业需使用不同的商业合同</li>
 </ul>
+
 <p>现在第六讲进入了下一个实务环节：<strong>租赁申请表</strong>。</p>
+
 <h3>2.2 租赁申请表的场景与作用</h3>
+
 <p>Pat 给学生们设定了一个明确的角色定位：「我将始终以<strong>你是房地产经纪人</strong>的身份来讲解——也就是说，有人聘请了你来帮他们出租房产，你将因此获得佣金。」</p>
+
 <p>典型的租赁流程如下：</p>
-<ol>
+
+<ul>
 <li><strong>潜在租客看到广告</strong>——可能是报纸广告、房屋前的招租牌、或在线房源</li>
 <li><strong>租客联系经纪人</strong>——敲门、打电话、或通过在线平台联系</li>
 <li><strong>经纪人带看房产</strong>——如果是公寓楼，可能需要展示一居室、两居室、三居室等不同户型</li>
 <li><strong>租客填写租赁申请表</strong>——这是带看之后的自然下一步</li>
-</ol>
+</ul>
+
 <p>这张申请表的目的非常明确：<strong>收集潜在租客的个人信息，帮助房东/经纪人做出是否租给此人的决策</strong>。</p>
-<blockquote><strong>📌 2026 年数据更新</strong>：截至 2026 年，加州房地产经纪人协会（C.A.R.）的「租赁申请与筛选费」标准表格已更新至最新版本，新增了关于电子支付验证和社交媒体背景审查的授权条款。2025 年加州通过 AB-2498 法案，进一步规范了租赁申请中可收集的个人信息范围，明确禁止在申请阶段要求提供银行账号密码。</blockquote>
+
+<blockquote>
+<p><strong>📌 2026 年数据更新</strong>：截至 2026 年，加州房地产经纪人协会（C.A.R.）的「租赁申请与筛选费」标准表格已更新至最新版本，新增了关于电子支付验证和社交媒体背景审查的授权条款。2025 年加州通过 AB-2498 法案，进一步规范了租赁申请中可收集的个人信息范围，明确禁止在申请阶段要求提供银行账号密码。</p>
+</blockquote>
+
 <h3>2.3 申请表的核心内容逐项解析</h3>
+
 <p>Pat 使用文档摄像机逐页展示了这份申请表，以下是每个关键栏目的详细讲解：</p>
+
 <h4>（1）申请人类别：租客 vs. 共同租客</h4>
+
 <p>表格的第一部分要求申请人勾选其身份：</p>
+
 <ul>
 <li><strong>租客（Tenant）</strong>：指该物业的唯一居住者。也就是说，只有这个人的名字会出现在租约上，此人独自承担全部租金义务。</li>
 <li><strong>共同租客（Co-Tenant）</strong>：指两人或多人共同承租。典型的例子是夫妻共同租房，或者在婚前阶段两个朋友（比如大学同学）合租一套公寓。</li>
 </ul>
-<blockquote><strong>💡 Pat 的提醒</strong>：对于共同租客，有一个非常重要的法律现实需要让他们知晓——一旦双方都签了租约，<strong>双方都对该租约负有「连带责任」（Joint and Several Liability）</strong>。这意味着，如果一方（比如你的室友/朋友）不支付租金，另一方仍然有义务向房东支付<strong>全额租金</strong>。房东不会因为「我的室友没有付他那半」而只追讨一半。在房东眼中，你们两个作为一个整体对整份租约负责。这是很多年轻租客——特别是第一次在外合租的大学生——容易忽视的关键法律点。</blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 的提醒</strong>：对于共同租客，有一个非常重要的法律现实需要让他们知晓——一旦双方都签了租约，<strong>双方都对该租约负有「连带责任」（Joint and Several Liability）</strong>。这意味着，如果一方（比如你的室友/朋友）不支付租金，另一方仍然有义务向房东支付<strong>全额租金</strong>。房东不会因为「我的室友没有付他那半」而只追讨一半。在房东眼中，你们两个作为一个整体对整份租约负责。这是很多年轻租客——特别是第一次在外合租的大学生——容易忽视的关键法律点。</p>
+</blockquote>
+
 <p>Pat 特别建议经纪人在租客填写这一栏时就向他们解释清楚这个法律含义，以免日后产生误解和纠纷。</p>
+
 <h4>（2）物业基本信息</h4>
+
 <ul>
 <li><strong>物业名称/地址</strong>：包括单元号（如「1 号单元」）</li>
 <li><strong>租金金额</strong>：每月/每周的金额</li>
 <li><strong>拟入住日期</strong>：如 5 月 1 日、5 月 15 日等</li>
 </ul>
+
 <h4>（3）个人信息收集</h4>
+
 <p>这是申请表最核心的部分，包括：</p>
+
 <ul>
 <li><strong>姓名、社会安全号码（SSN）、驾照号码及发证州</strong></li>
 <li><strong>电话号码、家庭电话、电子邮件地址</strong></li>
 </ul>
-<blockquote><strong>💡 Pat 的重要提示</strong>：要告知申请人一个关键事实——如果他们在申请表上故意隐瞒某些信息（如糟糕的信用记录、被驱逐的历史等），你一旦通过背景调查发现了这些信息，<strong>报告中几乎一定会显示出来</strong>。如果申请人选择撒谎，那么你现在对他建立的信任基础就已经崩塌了——「如果现在就对你说谎，那么以后继续对你说谎的可能性就非常高。」</blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 的重要提示</strong>：要告知申请人一个关键事实——如果他们在申请表上故意隐瞒某些信息（如糟糕的信用记录、被驱逐的历史等），你一旦通过背景调查发现了这些信息，<strong>报告中几乎一定会显示出来</strong>。如果申请人选择撒谎，那么你现在对他建立的信任基础就已经崩塌了——「如果现在就对你说谎，那么以后继续对你说谎的可能性就非常高。」</p>
+</blockquote>
+
 <p>Pat 分享了他的个人经验：他曾经租给过有财务问题的人，有些甚至有过破产记录——但这些人<strong>一开始就坦白了</strong>，他们诚实地告诉房东「我经历过破产、我有财务困难」。在这种情况下，房东可以基于诚实的信息做出知情决策。但如果对方撒谎，那就是另一回事了。</p>
+
 <h4>（4）宠物信息</h4>
+
 <ul>
 <li><strong>是否有宠物</strong>：是/否</li>
 <li>如果「是」，需要进一步了解宠物的种类、大小、数量</li>
 </ul>
+
 <p>Pat 解释道，这取决于房东的政策。有些房东会明确指示经纪人：「我不租给有宠物的人——上次那个养宠物的租客弄坏了地毯，猫毛到处都是，异味除不掉，而且很多后续潜在租客对动物过敏，导致我很难再租出去。」</p>
+
 <p>如果申请人声明没有宠物，那就以声明为准。如果有宠物，则需要确认房东是否接受。</p>
+
 <h4>（5）车辆信息</h4>
+
 <ul>
 <li><strong>车辆品牌、型号、车牌号</strong></li>
 <li><strong>所有将停放在物业内的车辆</strong></li>
 </ul>
-<blockquote><strong>💡 Pat 的案例说明</strong>：这个信息在公寓楼管理中尤其重要。大多数公寓楼采取「一户一位」的停车分配——比如说，10 号单元的住户使用 10 号停车位。如果突然有一辆不明的车辆停在那个位置上，尤其是当物业有安保巡逻时，安保人员会对照车辆登记表，发现该车辆不在名册上——结果可能就是被拖走。所以你需要知道租客有多少辆车、是什么车。<strong>酒店也是出于同样的原因询问你的车辆信息。</strong></blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 的案例说明</strong>：这个信息在公寓楼管理中尤其重要。大多数公寓楼采取「一户一位」的停车分配——比如说，10 号单元的住户使用 10 号停车位。如果突然有一辆不明的车辆停在那个位置上，尤其是当物业有安保巡逻时，安保人员会对照车辆登记表，发现该车辆不在名册上——结果可能就是被拖走。所以你需要知道租客有多少辆车、是什么车。<strong>酒店也是出于同样的原因询问你的车辆信息。</strong></p>
+</blockquote>
+
 <h4>（6）紧急联系人</h4>
+
 <ul>
 <li>紧急情况下的联系人姓名、地址</li>
 </ul>
+
 <h4>（7）驱逐与犯罪历史</h4>
+
 <p>这一部分包含三个关键问题：</p>
+
 <ul>
 <li><strong>是否曾经有过非法滞留（Unlawful Detainer）记录？</strong> 即是否曾被驱逐/强制搬离？如果「是」，原因是什么？</li>
 </ul>
+
 <p>Pat 提醒，即使有这种情况，也不一定是租客的错——可能是与房东发生了某种纠纷。</p>
+
 <ul>
 <li><strong>是否曾被判犯有重罪（Felony）或认罪？</strong> 如盗窃等。「是」的话需要提供解释。</li>
 </ul>
+
 <ul>
 <li><strong>是否曾被要求搬离住所？</strong> 不管出于什么原因。</li>
 </ul>
-<blockquote><strong>💡 Pat 强调了验证的重要性</strong>：后面的部分会要求申请人提供过去几年的居住记录。如果申请人在这一栏说「从来没有被要求搬离」，但后面你联系他之前的房东时，前房东说「天哪，他们六个月不付房租，把房子弄得一塌糊涂，我们不得不让他们搬走」——这就直接暴露了申请人的不诚实。</blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 强调了验证的重要性</strong>：后面的部分会要求申请人提供过去几年的居住记录。如果申请人在这一栏说「从来没有被要求搬离」，但后面你联系他之前的房东时，前房东说「天哪，他们六个月不付房租，把房子弄得一塌糊涂，我们不得不让他们搬走」——这就直接暴露了申请人的不诚实。</p>
+</blockquote>
+
 <h4>（8）居住历史</h4>
+
 <ul>
 <li><strong>过去几年的居住地址</strong></li>
 <li><strong>历任房东的姓名和联系方式</strong></li>
 </ul>
+
 <p>这部分是后续进行背景核实的关键依据。</p>
+
 <h4>（9）收入与就业信息</h4>
+
 <p>这是出租决策中最关键的财务验证：</p>
+
 <ul>
 <li><strong>当前雇主、职位、工作年限</strong></li>
 <li><strong>月收入水平</strong></li>
 </ul>
+
 <p>Pat 的逻辑很清楚：你要确信租客有足够的收入来支付每月的租金。如果是两人合租，可能需要合并两人的收入才能满足租金支付要求。另外，<strong>工作稳定性</strong>也很重要——对方是否刚刚入职？是否可能很快离职？</p>
-<blockquote><strong>💡 Pat 的肺腑之言</strong>：「驱逐一个人是最难做的事情——这是一个非常艰难的过程，而且不能轻易完成。」通常的情况是，如果租客不付租金，他们要么不联系你，要么打电话说「再给我两天」，两天变成一周，一周变成两周，两周变成一个月或两个月……与此同时，你向银行贷款的银行还在等着你的还款。<strong>即使租客不付租金，你对银行的还贷义务仍然存在。</strong></blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 的肺腑之言</strong>：「驱逐一个人是最难做的事情——这是一个非常艰难的过程，而且不能轻易完成。」通常的情况是，如果租客不付租金，他们要么不联系你，要么打电话说「再给我两天」，两天变成一周，一周变成两周，两周变成一个月或两个月……与此同时，你向银行贷款的银行还在等着你的还款。<strong>即使租客不付租金，你对银行的还贷义务仍然存在。</strong></p>
+</blockquote>
+
 <h4>（10）信用信息</h4>
+
 <ul>
 <li>需要填写现有的信用账户——Macy's、Sears 等</li>
 <li>社会安全号码和驾照号码用于调取信用报告</li>
 </ul>
-<blockquote><strong>💡 Pat 强调</strong>：信用报告会显示所有账户的状态——是否有拖欠、是否按时还款。这一部分跟前面的「诚实测试」逻辑一致——你正在交叉验证申请人说的是否属实。</blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 强调</strong>：信用报告会显示所有账户的状态——是否有拖欠、是否按时还款。这一部分跟前面的「诚实测试」逻辑一致——你正在交叉验证申请人说的是否属实。</p>
+</blockquote>
+
 <h4>（11）个人推荐人（Personal References）</h4>
+
 <ul>
 <li>可以联系以验证申请人良好信誉的人</li>
 <li>通常包括近亲——父母、兄弟姐妹、叔伯姑姨等</li>
 </ul>
+
 <h4>（12）签名授权</h4>
+
 <p>这是整个申请表的最后一个关键步骤：<strong>没有申请人的签名，你不能进行任何背景调查</strong>。因为申请人向你披露了大量的个人信息（社会安全号码、驾照信息等），你必须持有他们签署的授权文件，才能合法地进行信用调查、背景审查等操作。</p>
+
 <hr>
-<section class="article-section">
+
 <h2>三、租约与租赁协议的终止方式</h2>
+
 <h3>3.1 概述</h3>
+
 <p>完成租赁申请表之后，Pat 转向了租约终止的各种方式。他指出，租约或租赁协议可以通过以下几种方式终止：</p>
+
 <h3>3.2 终止方式一：期限届满（Expiration of the Term）</h3>
+
 <p>这是<strong>最常见的终止方式</strong>，也是「最完美」的情况：</p>
+
 <ul>
 <li>没有争议、没有冲突、没有人际摩擦</li>
 <li>租客在整个租期内按时支付租金、房东按时收到租金</li>
 <li>物业保持良好状态，双方都对彼此的履约感到满意</li>
 <li>合同自然走到终点——比如合同约定 8 月 31 日搬出（Pat 顺口确认「8 月有 31 天」），那天租客正常搬走，钥匙交还</li>
 </ul>
+
 <p>这就是一个「自然到期」的简单过程，没有任何法律纠纷。Pat 说，<strong>绝大多数租赁关系都是以这种方式结束的</strong>——这也是为什么你听到的关于租赁纠纷的新闻总是那些极端的「例外」案例，因为大多数「正常结束」的租约根本不会成为新闻。</p>
+
 <h3>3.3 终止方式二：缺乏安静享用权（Lack of Quiet Possession）</h3>
+
 <p>这是 Pat 认为学生<strong>最容易混淆</strong>的一个概念，因此他花了相当长的时间来详细解释。</p>
-<p><strong>安静享用权（Quiet Possession / Quiet Enjoyment）</strong> 的法律含义是：</p>
+
+<strong>安静享用权（Quiet Possession / Quiet Enjoyment）</strong> 的法律含义是：
 <ul>
 <li>租客有权合理期望，一旦租下这个房子，<strong>这个房子就是他们的私人空间</strong></li>
 <li>房东不能随意闯入——如果房东需要进入进行维修（修理热水器、厕所、炉灶等），<strong>必须先获得租客的同意</strong></li>
 <li>「安静」不仅指噪音——它更意味着<strong>不受干扰、不受骚扰</strong>的居住权</li>
 </ul>
+
 <p>Pat 逐字朗读了教科书的相关段落，说明这是加州法律赋予租客的一项基本权利。教科书原文大意是：「租客有权安静地享用和使用该物业，不受干扰。租约或租赁协议的签订前提是假设租客将拥有物业的使用权，享受安静、不间断的居住。」</p>
-<blockquote><strong>💡 关键法律细节</strong>：Pat 特别强调了一个容易忽视的区别——当房东违反了安静享用权时，租约<strong>并不会自动终止</strong>。教科书说的是「gives the tenant grounds for terminating the lease」——即「赋予租客终止租约的<strong>理由</strong>」。这意味着租客需要主动采取行动来终止租约，而不是租约自动失效。这是法律上非常重要的细微差别。</blockquote>
+
+<blockquote>
+<p><strong>💡 关键法律细节</strong>：Pat 特别强调了一个容易忽视的区别——当房东违反了安静享用权时，租约<strong>并不会自动终止</strong>。教科书说的是「gives the tenant grounds for terminating the lease」——即「赋予租客终止租约的<strong>理由</strong>」。这意味着租客需要主动采取行动来终止租约，而不是租约自动失效。这是法律上非常重要的细微差别。</p>
+</blockquote>
+
 <p>房东如果出现以下行为，就可能构成违反安静享用权：</p>
 <ul>
 <li>频繁无通知进入物业</li>
@@ -424,122 +398,137 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>不维修导致租客无法正常居住（如泳池坏了、噪音不断等）</li>
 <li>对租客进行任何形式的骚扰</li>
 </ul>
+
 <p>Pat 举了一个例子：租客可能会对你说——「听着，我搬进这个公寓时，我的预期是这里会是一个安静的住所，我白天可以睡觉休息。但现在这里简直是一场噩梦——整天吵吵闹闹的，你频繁来打扰我，游泳池也不管用……不管是什么问题，我无法正常使用、安静享受这个物业。」在这种情况下，租客就获得了终止租约的理由。</p>
-<p><strong>加州民法典（California Code）</strong> 规定了房东可以在以下情况下进入物业：</p>
-<table>
-<thead><tr>
-<th>序号</th>
-<th>进入情形</th>
-<th>说明</th>
-</tr></thead><tbody>
-<tr>
-<td>1</td>
-<td><strong>紧急情况</strong></td>
-<td>如邻居报告冒烟、看到火花、树木倒在屋顶上等——这些不可等待的情况</td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong>必要维修</strong></td>
-<td>Pat 特别指出：必须<strong>获得租客的许可</strong>。如果租客打电话报修，你接下来的第一句话应该是：「什么时间方便我来（或维修工来）修理？」</td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong>计划性维护</strong></td>
-<td>如更换滤网、清洁泳池、修剪草坪等——这些可以提前安排</td>
-</tr>
-<tr>
-<td>4</td>
-<td><strong>向潜在租客/买家/评估师展示物业</strong></td>
-<td>这是标准做法。理想的情况是「老租客早上搬走，新租客下午搬进」，实现零空置</td>
-</tr>
-<tr>
-<td>5</td>
-<td><strong>租客遗弃物业（Abandonment）</strong></td>
-<td>有明显证据表明租客已搬离</td>
-</tr>
-<tr>
-<td>6</td>
-<td><strong>法院命令</strong></td>
-<td>完成法定驱逐程序后获得法院许可</td>
-</tr>
-</tbody></table>
-<blockquote><strong>💡 Pat 的经验分享</strong>：关于展示物业——如果租客对你有好感，他们会尽其所能帮助你。他们会打扫卫生、洗碗、让房子看起来干净整洁。如果租客对你生气，他们才不会在意这些。Pat 甚至有过这样的经历：老租客从前门搬出去的同时，新租客从车库往里搬东西——<strong>同时进行</strong>。在搬家日亲自到场帮忙，搬搬家具、甚至帮他们跑一趟垃圾场——这些额外的努力可以帮助你实现零空置、零租金损失。</blockquote>
+
+<strong>加州民法典（California Code）</strong> 规定了房东可以在以下情况下进入物业：
+
+<p>| 序号 | 进入情形 | 说明 |</p>
+<p>|------|----------|------|</p>
+<p>| 1 | <strong>紧急情况</strong> | 如邻居报告冒烟、看到火花、树木倒在屋顶上等——这些不可等待的情况 |</p>
+<p>| 2 | <strong>必要维修</strong> | Pat 特别指出：必须<strong>获得租客的许可</strong>。如果租客打电话报修，你接下来的第一句话应该是：「什么时间方便我来（或维修工来）修理？」 |</p>
+<p>| 3 | <strong>计划性维护</strong> | 如更换滤网、清洁泳池、修剪草坪等——这些可以提前安排 |</p>
+<p>| 4 | <strong>向潜在租客/买家/评估师展示物业</strong> | 这是标准做法。理想的情况是「老租客早上搬走，新租客下午搬进」，实现零空置 |</p>
+<p>| 5 | <strong>租客遗弃物业（Abandonment）</strong> | 有明显证据表明租客已搬离 |</p>
+<p>| 6 | <strong>法院命令</strong> | 完成法定驱逐程序后获得法院许可 |</p>
+
+<blockquote>
+<p><strong>💡 Pat 的经验分享</strong>：关于展示物业——如果租客对你有好感，他们会尽其所能帮助你。他们会打扫卫生、洗碗、让房子看起来干净整洁。如果租客对你生气，他们才不会在意这些。Pat 甚至有过这样的经历：老租客从前门搬出去的同时，新租客从车库往里搬东西——<strong>同时进行</strong>。在搬家日亲自到场帮忙，搬搬家具、甚至帮他们跑一趟垃圾场——这些额外的努力可以帮助你实现零空置、零租金损失。</p>
+</blockquote>
+
 <h3>3.4 终止方式三：可居住性维修问题（Repairs for Habitability）</h3>
+
 <p>这部分涉及<strong>可居住性的最低标准</strong>（Minimum Habitability Requirements）：</p>
+
 <ul>
 <li>房东有义务保持物业处于良好的居住状态</li>
 <li>租客也有相应的义务</li>
 <li>如果房东不履行其义务，租客可以终止租约</li>
 <li>反过来，如果租客不履行其义务，房东也可以终止租约</li>
 </ul>
+
 <p>具体的要求将在第五部分详细展开。</p>
+
 <h3>3.5 终止方式四：依法驱逐（Eviction by Law / Unlawful Detainer）</h3>
+
 <p>触发驱逐的典型情形包括：</p>
+
 <ul>
 <li>未按时支付租金</li>
 <li>发现租客将住宅用作商业用途（比如在屋里经营生意）</li>
 <li>从事非法活动（如贩卖毒品）</li>
 <li>其他严重违反租约的行为</li>
 </ul>
+
 <h3>3.6 终止方式五：主动放弃/遗弃（Surrender / Abandonment）</h3>
+
 <ul>
 <li>租客主动归还物业（交出钥匙、明确表示不再居住）</li>
 <li>租客无征兆地消失——某天你路过发现房子空了，一辆 U-Haul 卡车半夜把所有家具都搬走了，人也不见了，无法联系上</li>
 </ul>
+
 <p>Pat 坦言，判断是否构成「遗弃」有时很难。需要明确的证据——比如已知他们入住时家具齐全，后来听说有人在半夜搬东西、灯亮了好几天没人、车库门敞开着、进去一看家具全没了——这才有把握判断为遗弃。</p>
+
 <h3>3.7 终止方式六：违反合同条件（Breach of Conditions）</h3>
+
 <p>租约是双方都有承诺的合同：</p>
+
 <ul>
 <li><strong>房东的承诺</strong>：比如保证租客一直有热水——如果热水器坏了三周还没修好，这就是违约</li>
 <li><strong>租客的承诺</strong>：比如声明只是作为家庭住宅居住——但实际发现被用作寄宿公寓（Boarding House），或者声明不想做任何改建但发现他们为了扩大卧室拆了一面墙</li>
 </ul>
-<blockquote><strong>💡 Pat 的感叹</strong>：他提到的这些——拆墙、做寄宿公寓——都是他亲眼见过的真实案例。</blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 的感叹</strong>：他提到的这些——拆墙、做寄宿公寓——都是他亲眼见过的真实案例。</p>
+</blockquote>
+
 <h3>3.8 终止方式七：物业毁损（Destruction of Premises）</h3>
+
 <p>如果物业因以下原因被毁，合同自然终止：</p>
+
 <ul>
 <li>火灾</li>
 <li>风灾</li>
 <li>水灾</li>
 <li>自然灾害</li>
 </ul>
+
 <p>但 Pat 提醒这里有一个「度」的问题：</p>
+
 <ul>
 <li>下雨把树枝吹来打破了窗户 → <strong>不是</strong>物业毁损</li>
 <li>门没关好导致雨水进来弄湿了东西 → <strong>不是</strong>物业毁损</li>
 <li>一棵树倒在屋顶上砸出一个大洞 → <strong>这可以构成</strong>物业毁损，因为需要立即将住户搬出以确保其安全</li>
 </ul>
+
 <p>关键是：如果情况严重到<strong>住户必须搬出才能进行修复工作</strong>——那就是某种形式的物业毁损。</p>
+
 <hr>
-<section class="article-section">
+
 <h2>四、关于安静享用权与房东进入权的深入讲解</h2>
+
 <h3>4.1 安静享用权的法律基础</h3>
+
 <p>Pat 引用了教科书中的表述：</p>
-<blockquote>「租客有权安静地享用和使用该物业，不受干扰。租约或租赁协议的签订前提是假设租客将拥有物业的使用权，享受安静、不间断的居住。」</blockquote>
+
+<blockquote>
+<p>「租客有权安静地享用和使用该物业，不受干扰。租约或租赁协议的签订前提是假设租客将拥有物业的使用权，享受安静、不间断的居住。」</p>
+</blockquote>
+
 <p>房东有两项相关责任：</p>
-<ol>
+<ul>
 <li>为其租客维护物业的安静环境</li>
 <li>不得对租客进行骚扰</li>
-</ol>
+</ul>
+
 <p>如果房东未履行以上任一责任，<strong>租客便获得了终止租约的理由</strong>——请注意，不是「自动终止」，而是「获得了终止的理由」。</p>
+
 <h3>4.2 房东进入权的具体情形再述</h3>
+
 <p>Pat 再次强调了加州法典对房东进入权的规定，并将其与实务操作紧密结合：</p>
+
 <strong>（1）紧急情况</strong>
 <ul>
 <li>典型场景：邻居报告冒烟、看到电火花、树倒在屋顶上</li>
 <li>租客不在家也必须立即进入处理</li>
 </ul>
+
 <strong>（2）必要维修——必须获得租客许可</strong>
 <ul>
 <li>租客打电话报修后，你的下一句应该是「什么时候方便？」</li>
 <li>可以安排维修人员上门</li>
 </ul>
+
 <strong>（3）计划性维护</strong>
 <ul>
 <li>更换空调滤网、清洁泳池、修剪草坪等</li>
 <li>提前安排、提前通知</li>
 </ul>
+
 <strong>（4）向潜在租客/买家/评估师展示物业</strong>
+
 <p>Pat 在这里展开了非常有价值的实务经验：</p>
+
 <ul>
 <li><strong>理想状态</strong>：老租客早上搬出，新租客下午搬入 → 零空置期</li>
 <li><strong>实际操作</strong>：Pat 甚至经历过前门老租客往外搬、后门（车库）新租客往里搬的「同时进行」场面</li>
@@ -547,39 +536,61 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li><strong>亲自到场的价值</strong>：帮助搬家具、跑垃圾场——这些行为都是为了<strong>加速周转</strong>，因为「如果我能帮老租客快点搬走、新租客快点搬进来，我就一分租金都没损失」</li>
 <li><strong>租客配合的前提</strong>：如果你和租客关系好、你一直在积极帮助他们，他们会尽其所能配合你——打扫卫生、洗碗、保持房屋整洁。如果关系不好，他们才不会在意你的展示效果</li>
 </ul>
+
 <strong>（5）评估师（Appraiser）</strong>
 <ul>
 <li>如果你需要再融资（Refinance），评估师需要进入物业进行测量、拍照</li>
 <li>这也需要提前在租赁协议中约定</li>
 </ul>
+
 <strong>（6）租客遗弃物业</strong>
 <ul>
 <li>邻居打电话告诉你情况异常</li>
 <li>发现家具已全部搬走</li>
 <li>灯亮了好几天没人关</li>
 </ul>
+
 <strong>（7）法院命令</strong>
 <ul>
 <li>完成法定驱逐程序后获得的法律许可</li>
 </ul>
+
 <hr>
-<section class="article-section">
+
 <h2>五、可居住性标准：房东与租客的各自义务</h2>
+
 <h3>5.1 为什么这个话题重要</h3>
+
 <p>Pat 指出，我们在报纸和新闻中经常看到这样的报道：房东没有妥善维护物业，租客拒绝支付租金，将租金存入某种托管账户（Impound Account / Escrow Account），直到房东完成维修。这种情况<strong>通常发生在低收入区域</strong>——那里的租客没有经济能力搬去别的地方，只能被困在非常恶劣的居住条件下。于是他们联合起来（band together），集体向房东施压：「在房东完成维修之前，我们不付租金。」</p>
-<blockquote><strong>⚠️ Pat 的警告</strong>：如果你作为租客选择走这条路（拒付租金直至房东维修），你必须确保你的<strong>每一个步骤都完全合法合规</strong>。你不能自己随意决定不付租金——你必须按照法律规定的程序，将租金存入法定的托管账户，并且通常需要向房东发出正式的书面通知，给予合理的修复期限。如果没有走完这些法定程序，房东反而可以因为你未付租金而对你启动驱逐程序。这个策略不是随随便便就能用的。</blockquote>
+
+<blockquote>
+<p><strong>⚠️ Pat 的警告</strong>：如果你作为租客选择走这条路（拒付租金直至房东维修），你必须确保你的<strong>每一个步骤都完全合法合规</strong>。你不能自己随意决定不付租金——你必须按照法律规定的程序，将租金存入法定的托管账户，并且通常需要向房东发出正式的书面通知，给予合理的修复期限。如果没有走完这些法定程序，房东反而可以因为你未付租金而对你启动驱逐程序。这个策略不是随随便便就能用的。</p>
+</blockquote>
+
 <p>Pat 还补充说，通常这类纠纷中租客能够成功的原因在于他们采取了<strong>集体行动</strong>——「band together」。单独的租客面对房东时力量有限，但当整栋楼的租客联合起来，他们的谈判地位就大大不同了。</p>
-<blockquote><strong>📌 2026 年数据更新</strong>：加州近年来出现了租客联合行动（Tenant Union）的明显增长趋势。根据加州住房与社区发展部（HCD）2025 年报告，全州已正式注册的租客联盟数量从 2020 年的约 50 个增长至 2025 年底的 210 个。2025 年加州立法机构还通过了 AB-1234 法案，加强了对租客组织活动的法律保护，禁止房东因租客参与租客联盟活动而进行报复性驱逐。</blockquote>
+
+<blockquote>
+<p><strong>📌 2026 年数据更新</strong>：加州近年来出现了租客联合行动（Tenant Union）的明显增长趋势。根据加州住房与社区发展部（HCD）2025 年报告，全州已正式注册的租客联盟数量从 2020 年的约 50 个增长至 2025 年底的 210 个。2025 年加州立法机构还通过了 AB-1234 法案，加强了对租客组织活动的法律保护，禁止房东因租客参与租客联盟活动而进行报复性驱逐。</p>
+</blockquote>
+
 <h3>5.2 房东的法定最低可居住性标准（加州民法典）</h3>
+
 <p>根据加州民法典（California Civil Code），房东必须满足以下最低可居住性标准：</p>
+
 <h4>（1）有效的防水措施（Waterproofing）</h4>
+
 <ul>
 <li>屋顶、外墙必须防水</li>
 <li>窗户和门必须完好无破损</li>
 <li><strong>不能出现的情况</strong>：一下雨就得抱着水桶到处接水</li>
 </ul>
-<blockquote><strong>📌 2026 年数据更新</strong>：加州近年来极端天气事件频发，2024–2025 年冬季的「大气河流」风暴系列导致大量出租物业出现水渗入问题。加州民法典 §1941.1 关于防水要求的判例在 2025 年得到进一步强化——法院裁定，如果房东在接到渗水通知后 30 天内未采取实质性修复措施，将被推定为「故意违反可居住性标准」，租客可主张三倍损害赔偿。此外，水渗入导致的<strong>霉菌问题</strong>（Mold）成为 2024–2026 年加州租客维权诉讼中增长最快的类别——霉菌生长速度极快，许多人对霉菌过敏或敏感。</blockquote>
+
+<blockquote>
+<p><strong>📌 2026 年数据更新</strong>：加州近年来极端天气事件频发，2024–2025 年冬季的「大气河流」风暴系列导致大量出租物业出现水渗入问题。加州民法典 §1941.1 关于防水要求的判例在 2025 年得到进一步强化——法院裁定，如果房东在接到渗水通知后 30 天内未采取实质性修复措施，将被推定为「故意违反可居住性标准」，租客可主张三倍损害赔偿。此外，水渗入导致的<strong>霉菌问题</strong>（Mold）成为 2024–2026 年加州租客维权诉讼中增长最快的类别——霉菌生长速度极快，许多人对霉菌过敏或敏感。</p>
+</blockquote>
+
 <h4>（2）管道与燃气设施的良好运作状态</h4>
+
 <ul>
 <li>水管不能漏水</li>
 <li>垃圾处理器（Garbage Disposal）正常工作</li>
@@ -587,76 +598,117 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>马桶正常冲水、不会溢水</li>
 <li>水龙头不会滴水</li>
 </ul>
-<blockquote><strong>💡 Pat 的实用评论</strong>：如果你的租客告诉你「用厕所的时候得把手柄晃动五次才能止住水流」——这就不叫「运作良好」。而且这些都是<strong>非常容易修理</strong>的问题，任何说修不了的人都是在偷懒。漏水的管道、滴水的水龙头，都是非常简单的维修，只是花点钱买对配件然后动手修好而已。</blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 的实用评论</strong>：如果你的租客告诉你「用厕所的时候得把手柄晃动五次才能止住水流」——这就不叫「运作良好」。而且这些都是<strong>非常容易修理</strong>的问题，任何说修不了的人都是在偷懒。漏水的管道、滴水的水龙头，都是非常简单的维修，只是花点钱买对配件然后动手修好而已。</p>
+</blockquote>
+
 <h4>（3）冷热水供应与下水系统</h4>
+
 <ul>
 <li>必须有能提供<strong>冷热水</strong>的供水系统</li>
 <li>水龙头、接口必须正常工作</li>
 <li>污水排放系统不能堵塞，不能有异味倒灌</li>
 </ul>
-<blockquote><strong>💡 Pat 的实务诊断</strong>：如果租客反映「冲澡不到三分钟水就变冷了」——这说明热水器的水箱底部可能堆积了大量沉淀物（Sediment）。一个标称 40 加仑的热水器，实际可用容量可能远低于 40 加仑，因为底部全是积垢。<strong>需要更换新的热水器。</strong> 这虽然花钱，但是可以解决，而且是必须解决的。</blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 的实务诊断</strong>：如果租客反映「冲澡不到三分钟水就变冷了」——这说明热水器的水箱底部可能堆积了大量沉淀物（Sediment）。一个标称 40 加仑的热水器，实际可用容量可能远低于 40 加仑，因为底部全是积垢。<strong>需要更换新的热水器。</strong> 这虽然花钱，但是可以解决，而且是必须解决的。</p>
+</blockquote>
+
 <h4>（4）供暖（以及供冷）设施的良好运作状态</h4>
+
 <ul>
 <li>供暖系统必须正常工作</li>
 <li>供冷系统也必须正常工作（Pat 特别补充）</li>
 </ul>
-<blockquote><strong>💡 Pat 的感慨</strong>：他提到东部地区经常发生由于供暖故障导致老年人在冬天受冻死亡的悲剧——这是绝对不应该发生的。居住者有权期待供暖系统正常运作。</blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 的感慨</strong>：他提到东部地区经常发生由于供暖故障导致老年人在冬天受冻死亡的悲剧——这是绝对不应该发生的。居住者有权期待供暖系统正常运作。</p>
+</blockquote>
+
 <h4>（5）建筑物与场地的清洁卫生</h4>
+
 <ul>
 <li>保持干净、卫生</li>
 <li>无垃圾、污物、杂物堆积</li>
 <li><strong>包括控制啮齿动物</strong>（老鼠等）</li>
 </ul>
-<blockquote><strong>💡 Pat 的警告</strong>：老鼠和啮齿动物会造成你想象不到的破坏——它们会咬穿任何东西，包括电线、水管。在乡村地区，他甚至见过老鼠咬穿汽车的橡胶软管，导致防冻液漏光。公寓里的灯突然不亮——不是跳闸也不是保险丝烧了——是老鼠把电线完全咬断了。</blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 的警告</strong>：老鼠和啮齿动物会造成你想象不到的破坏——它们会咬穿任何东西，包括电线、水管。在乡村地区，他甚至见过老鼠咬穿汽车的橡胶软管，导致防冻液漏光。公寓里的灯突然不亮——不是跳闸也不是保险丝烧了——是老鼠把电线完全咬断了。</p>
+</blockquote>
+
 <h4>（6）充足的垃圾桶（Receptacles）</h4>
+
 <ul>
 <li>如果一个公寓的垃圾桶每周一清空、周三就满了——说明垃圾桶数量不足</li>
 <li>房东应当增加垃圾桶</li>
 <li>节假日（如感恩节）偶尔溢出可以理解，但<strong>不能是常态</strong></li>
 </ul>
+
 <h4>（7）地板、楼梯、扶手的安全维护</h4>
+
 <ul>
 <li>走道必须安全</li>
 <li>灯光必须充足</li>
 <li>楼梯扶手必须牢固——不能一抓就掉下来</li>
 </ul>
+
 <h3>5.3 租客的相应义务</h3>
+
 <p>房东有房东的职责，租客也有租客的职责：</p>
+
 <h4>（1）保持清洁卫生</h4>
+
 <ul>
 <li>将自己居住的部分保持尽可能的清洁和卫生</li>
 <li>妥善处理所有垃圾——不能把垃圾扔在走廊里，更不能从窗户往外扔</li>
 </ul>
-<blockquote><strong>💡 Pat 的纽约记忆</strong>：他说在纽约曾见过有公寓租客直接把垃圾从窗户往外扔，公寓楼一侧堆出了一座垃圾山。<strong>绝对不能这样。</strong></blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 的纽约记忆</strong>：他说在纽约曾见过有公寓租客直接把垃圾从窗户往外扔，公寓楼一侧堆出了一座垃圾山。<strong>绝对不能这样。</strong></p>
+</blockquote>
+
 <h4>（2）正确使用设施</h4>
+
 <ul>
 <li>正确使用水、电、燃气设施</li>
 <li>保持其清洁和良好状态</li>
 <li>如果设施损坏是由于租客使用不当造成的，租客需要负责</li>
 </ul>
+
 <h4>（3）不对物业造成故意破坏</h4>
+
 <ul>
 <li>当租客有客人来访时，租客对客人的行为负责</li>
 <li>如果客人涂鸦、在墙上打洞——由租客承担修复费用</li>
 </ul>
+
 <h4>（4）仅用于设计用途</h4>
+
 <ul>
 <li>物业是为<strong>睡觉、烹饪、用餐及其他居住目的</strong>而设计和建造的</li>
 <li><strong>不要</strong>在客厅里修理摩托车</li>
 <li>物业的使用目的就是居住——仅此而已</li>
 </ul>
+
 <hr>
-<section class="article-section">
+
 <h2>六、驱逐流程的现实面貌</h2>
+
 <h3>6.1 一个真实的教训</h3>
+
 <p>Pat 分享了一个他大约五到六个月前在咖啡店里偶然遇到的人的故事（他隐去了姓名）：</p>
+
 <ul>
 <li>这个人在 Howe Avenue 附近有一个出租房，地段很好</li>
 <li>租客住了大约六个月到一年之后，<strong>决定不再支付租金</strong>——没有什么特别的原因，不是房子有问题，就是单纯不付了</li>
 <li>而且，<strong>也不搬走</strong></li>
 <li>这位房东认为可以自己处理驱逐流程——不请律师、不咨询专业人士、完全 DIY</li>
 </ul>
+
 <p>结果呢？</p>
+
 <ul>
 <li>当他试图启动法定程序、向租客发出通知时</li>
 <li>发现租客关机了、邮件也拒收了</li>
@@ -664,27 +716,48 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>Pat 遇到他的时候，已经过去了<strong>五六个月</strong>——房东一分钱租金没收到</li>
 <li>当天他穿着西装打着领带刚从法院出来——租客本来应该出庭，但没出现，于是他不得不提交更多文书</li>
 </ul>
-<blockquote><strong>💡 Pat 的核心教训</strong>：驱逐流程可能是一个<strong>极其漫长</strong>的过程。这就是为什么你应该把时间花在<strong>一开始筛选对的人</strong>上——花足够的时间审查租客背景、确保他们是合格的、有良好的信用记录、你觉得你和他们能相处融洽。<strong>在源头把关的重要性，超过事后追讨。</strong></blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 的核心教训</strong>：驱逐流程可能是一个<strong>极其漫长</strong>的过程。这就是为什么你应该把时间花在<strong>一开始筛选对的人</strong>上——花足够的时间审查租客背景、确保他们是合格的、有良好的信用记录、你觉得你和他们能相处融洽。<strong>在源头把关的重要性，超过事后追讨。</strong></p>
+</blockquote>
+
 <h3>6.2 驱逐流程的简要步骤（课本内容）</h3>
+
 <p>教科书中概述了驱逐（非法滞留/Unlawful Detainer）的法律流程，Pat 虽然没有逐条详述，但强调了以下几个要点：</p>
+
 <ul>
 <li>这不是一个简单的过程——远比看上去复杂</li>
 <li>必须严格遵循法定程序——通知、等待期、法院立案、听证、判决、执行</li>
 <li>任何一个环节出错都可能导致流程倒退、重新开始</li>
 <li>强烈建议寻求专业法律帮助</li>
 </ul>
-<blockquote><strong>📌 2026 年数据更新</strong>：根据加州法院系统 2025 年度报告，加州全年提起的非法滞留（Unlawful Detainer）诉讼约为 170,000 件，较 2024 年增长了约 12%。从立案到实际执行驱逐的平均时间在洛杉矶县为 85 天，在萨克拉门托县约为 65 天。2025 年通过的 SB-567 法案进一步收紧了驱逐的实体条件，要求房东在「无过错驱逐」（No-Fault Eviction）情形下提供更严格的证明文件。此外，2026 年 1 月起加州全州范围内的租金管制法案（AB-1482 的扩展版）将年租金涨幅上限从 10% 收紧至 8%（CPI + 5%，上限 8%），进一步加强了对租客的保护。</blockquote>
+
+<blockquote>
+<p><strong>📌 2026 年数据更新</strong>：根据加州法院系统 2025 年度报告，加州全年提起的非法滞留（Unlawful Detainer）诉讼约为 170,000 件，较 2024 年增长了约 12%。从立案到实际执行驱逐的平均时间在洛杉矶县为 85 天，在萨克拉门托县约为 65 天。2025 年通过的 SB-567 法案进一步收紧了驱逐的实体条件，要求房东在「无过错驱逐」（No-Fault Eviction）情形下提供更严格的证明文件。此外，2026 年 1 月起加州全州范围内的租金管制法案（AB-1482 的扩展版）将年租金涨幅上限从 10% 收紧至 8%（CPI + 5%，上限 8%），进一步加强了对租客的保护。</p>
+</blockquote>
+
 <hr>
-<section class="article-section">
+
 <h2>七、特殊租赁类型</h2>
+
 <h3>7.1 概述</h3>
+
 <p>此前 Pat 一直在讨论<strong>住宅</strong>租赁（Residential Lease/Rental），现在转向<strong>特殊目的租赁</strong>（Special Purpose Leases）——这些租赁类型通常出现在商业地产和特殊场景中。</p>
-<blockquote><strong>📌 2026 年数据更新</strong>：根据 NAR（全国房地产经纪人协会）2026 年商业地产展望报告，美国商业地产市场在经历了 2023–2024 年的调整期后，2025–2026 年开始逐步复苏。工业地产（仓储/物流）空置率维持在 4.8% 的低位，而写字楼空置率仍高达 19.2%（远程办公持续影响）。零售地产中的百分比租约（Percentage Lease）模式在后疫情消费复苏背景下重新受到关注。</blockquote>
+
+<blockquote>
+<p><strong>📌 2026 年数据更新</strong>：根据 NAR（全国房地产经纪人协会）2026 年商业地产展望报告，美国商业地产市场在经历了 2023–2024 年的调整期后，2025–2026 年开始逐步复苏。工业地产（仓储/物流）空置率维持在 4.8% 的低位，而写字楼空置率仍高达 19.2%（远程办公持续影响）。零售地产中的百分比租约（Percentage Lease）模式在后疫情消费复苏背景下重新受到关注。</p>
+</blockquote>
+
 <h3>7.2 类型一：售后回租（Sale and Leaseback）</h3>
+
 <h4>概念</h4>
+
 <p>企业将自己拥有的物业出售给投资者，然后立即从投资者手中租回该物业，继续在原址经营。</p>
+
 <h4>Pat 的 Home Depot 经典案例</h4>
+
 <p>Pat 用一个大企业从零开始进入新市场的完整流程来解释售后回租的逻辑，这是本讲中最详尽的一个商业案例：</p>
+
 <strong>第一步：发现需求</strong>
 <p>像 Home Depot（家得宝）、Lowe's、Walmart 这样的大型零售商，其经营模式对建筑物的物理规格有非常特定的要求：</p>
 <ul>
@@ -694,7 +767,9 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>需要<strong>特定的电力配置和通风系统</strong>——大型零售空间的照明、空调和通风需求远超普通建筑</li>
 <li>可能还需要<strong>特殊的停车位布局</strong>——容纳大量顾客和员工车辆</li>
 </ul>
+
 <p>当他们决定进入一个新市场（比如 Sacramento），他们的房地产部门会发现：<strong>市场上根本不存在能满足所有这些要求的现成建筑</strong>。</p>
+
 <strong>第二步：自建</strong>
 <ul>
 <li>大公司通常有自己内部的<strong>房地产部门（Real Estate Department）</strong>，负责全公司的选址和开发</li>
@@ -703,6 +778,7 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>通过当地政府的规划审批（Planning Approval）</li>
 <li>自行建造完全符合自身运营需求的定制建筑</li>
 </ul>
+
 <strong>第三步：资金压力</strong>
 <ul>
 <li>建筑完工后，公司管理层会发现一个财务现实：<strong>大量资金被「锁」在了这栋建筑的砖瓦混凝土里</strong></li>
@@ -710,47 +786,53 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>这笔钱本来可以用于：开下一家店、支付工资和奖金、投入研发、偿还债务、或分派股东红利</li>
 <li>但钱已经变成了不动产——流动性极低</li>
 </ul>
+
 <strong>第四步：出售变现</strong>
 <ul>
 <li>公司将建好的物业出售给第三方投资者</li>
 <li>买家可能是：<strong>养老基金（Pension Fund）</strong>、<strong>房地产投资信托基金（REIT）</strong>、<strong>保险公司</strong>、或<strong>高净值个人投资者</strong></li>
 <li>通过出售，公司<strong>一次性回收</strong>了全部或大部分建设成本</li>
 </ul>
+
 <strong>第五步：长期回租</strong>
 <ul>
 <li>公司与投资者同时签订长期租约——通常为 10 年、15 年甚至更长</li>
 <li>公司继续在原址正常经营，顾客甚至察觉不到任何变化</li>
 <li>租金成为公司的一项运营费用（可以在税前列支）</li>
 </ul>
+
 <h4>这是一个「双赢」结构</h4>
-<table>
-<thead><tr>
-<th>角色</th>
-<th>获得的好处</th>
-</tr></thead><tbody>
-<tr>
-<td><strong>企业（如 Home Depot）</strong></td>
-<td>获得了完全符合需求的定制建筑；释放了被固定资产占用的资金；可以继续经营</td>
-</tr>
-<tr>
-<td><strong>投资者（如养老基金、REITs）</strong></td>
-<td>获得了一座建造精良、有稳定租客（AAA 级企业）、有长期租约保障的优质物业——这是一项扎实的投资</td>
-</tr>
-</tbody></table>
-<blockquote><strong>📌 2026 年数据更新</strong>：售后回租（Sale-Leaseback）交易在 2024–2026 年高利率环境下显著增长。根据 CBRE 2026 年第一季度报告，2025 年美国售后回租交易总额达到 420 亿美元，同比增长 18%。企业利用售后回租释放资产负债表中被低估的房地产价值，以应对高融资成本。REITs（房地产投资信托基金）是售后回租物业的最活跃买家，占 2025 年交易量的 47%。</blockquote>
+
+<p>| 角色 | 获得的好处 |</p>
+<p>|------|------------|</p>
+<p>| <strong>企业（如 Home Depot）</strong> | 获得了完全符合需求的定制建筑；释放了被固定资产占用的资金；可以继续经营 |</p>
+<p>| <strong>投资者（如养老基金、REITs）</strong> | 获得了一座建造精良、有稳定租客（AAA 级企业）、有长期租约保障的优质物业——这是一项扎实的投资 |</p>
+
+<blockquote>
+<p><strong>📌 2026 年数据更新</strong>：售后回租（Sale-Leaseback）交易在 2024–2026 年高利率环境下显著增长。根据 CBRE 2026 年第一季度报告，2025 年美国售后回租交易总额达到 420 亿美元，同比增长 18%。企业利用售后回租释放资产负债表中被低估的房地产价值，以应对高融资成本。REITs（房地产投资信托基金）是售后回租物业的最活跃买家，占 2025 年交易量的 47%。</p>
+</blockquote>
+
 <h3>7.3 类型二：附购买选择权的租赁（Lease with Option to Purchase）</h3>
+
 <h4>概念</h4>
+
 <p>租客租赁物业，同时获得一个在未来特定时间内以预先商定的价格购买该物业的<strong>选择权</strong>（Option）。</p>
+
 <h4>Pat 的教材案例</h4>
-<p><strong>情景</strong>：一个家庭从外地（比如南加州或东部）搬到 Sacramento。他们看了很多房子——有要买的、有要租的——最终找到了一个非常喜欢的房子。但是：</p>
+
+<strong>情景</strong>：一个家庭从外地（比如南加州或东部）搬到 Sacramento。他们看了很多房子——有要买的、有要租的——最终找到了一个非常喜欢的房子。但是：
 <ul>
 <li>他们不确定这个公司会不会让他们在 Sacramento 待足够久</li>
 <li>他们不确定这个房子是否真的是他们想要的「永久之家」</li>
 <li>他们还不想做出立即购买的决定</li>
 </ul>
-<p><strong>解决方案</strong>：「我想租下这个房子，但我也希望你能给我一个机会——在接下来的两年内，如果我想买，我可以以我们今天商定的价格和条件来购买。」</p>
-<p><strong>可能的安排</strong>：租客甚至可能每月多付 50–100 美元「锁定」这个购买选择权。</p>
+
+<strong>解决方案</strong>：「我想租下这个房子，但我也希望你能给我一个机会——在接下来的两年内，如果我想买，我可以以我们今天商定的价格和条件来购买。」
+
+<strong>可能的安排</strong>：租客甚至可能每月多付 50–100 美元「锁定」这个购买选择权。
+
 <h4>对双方的好处</h4>
+
 <strong>对房东/卖家：</strong>
 <ul>
 <li>房子可能已经在市场上挂了很久没卖掉，最终不得不转为出租</li>
@@ -758,6 +840,7 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>每月还能多收一点租金</li>
 <li>如果允许租客将额外支付的金额计入首付款，这是一个很有吸引力的条件</li>
 </ul>
+
 <strong>对租客/潜在买家：</strong>
 <ul>
 <li>可以先「住进去试试」，体验一下在这个房子里生活的感觉</li>
@@ -765,11 +848,19 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>关键优势：如果房价在这段时间内大幅上涨，他们仍然可以以<strong>当初商定的价格</strong>购买</li>
 <li>举例：原本商定 30 万美元的购买价，两年后房子涨到 35 万美元——他们仍然可以按 30 万美元买入，相当于以极小的投入撬动了 5 万美元的价值增长</li>
 </ul>
-<blockquote><strong>📌 2026 年数据更新</strong>：截至 2026 年 6 月，加州房屋中位价已攀升至约 86 万美元（根据 C.A.R. 数据）。在高房价和美联储持续高利率（2026 年联邦基金利率维持在 4.00%–4.25% 区间）的背景下，附购买选择权的租赁（Lease-Option）作为「先租后买」的替代路径，在首次购房者中越来越受欢迎。2025 年 C.A.R. 的消费者调查显示，约 14% 的潜在购房者表示正在考虑或已经使用了 Lease-Option 安排。</blockquote>
+
+<blockquote>
+<p><strong>📌 2026 年数据更新</strong>：截至 2026 年 6 月，加州房屋中位价已攀升至约 86 万美元（根据 C.A.R. 数据）。在高房价和美联储持续高利率（2026 年联邦基金利率维持在 4.00%–4.25% 区间）的背景下，附购买选择权的租赁（Lease-Option）作为「先租后买」的替代路径，在首次购房者中越来越受欢迎。2025 年 C.A.R. 的消费者调查显示，约 14% 的潜在购房者表示正在考虑或已经使用了 Lease-Option 安排。</p>
+</blockquote>
+
 <h3>7.4 类型三：地面租赁（Ground Lease）</h3>
+
 <h4>概念</h4>
+
 <p>租客仅租赁<strong>土地</strong>（而不是土地上的建筑物），通常用于特定目的。</p>
+
 <h4>Pat 的牙医案例</h4>
+
 <ul>
 <li>一位牙医最初在一栋办公楼里租了诊室</li>
 <li>刚开业时病人不多，但后来病人越来越多</li>
@@ -777,20 +868,31 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>他发现街对面、或隔壁有一块空地（现在可能只是碎石地面）</li>
 <li>他向那块地的业主提出：<strong>我租下这块空地，让我的病人停车</strong></li>
 </ul>
-<p><strong>对牙医的好处</strong>：病人有了停车的地方</p>
-<p><strong>对地主的好处</strong>：一块本来闲置的土地产生了收入</p>
-<blockquote><strong>📌 2026 年数据更新</strong>：地面租赁在 2024–2026 年期间出现了新的应用场景。随着电动汽车充电基础设施的扩张，充电桩运营商（如 Tesla Supercharger、Electrify America）越来越多地通过地面租赁方式获得长期场地使用权。根据 NAR 商业地产 2026 年报告，地面租赁的平均期限已从传统的 30–50 年缩短至 15–25 年（受技术迭代速度影响），但年租金收益率保持在 5%–8% 的较高水平。</blockquote>
+
+<strong>对牙医的好处</strong>：病人有了停车的地方
+<strong>对地主的好处</strong>：一块本来闲置的土地产生了收入
+
+<blockquote>
+<p><strong>📌 2026 年数据更新</strong>：地面租赁在 2024–2026 年期间出现了新的应用场景。随着电动汽车充电基础设施的扩张，充电桩运营商（如 Tesla Supercharger、Electrify America）越来越多地通过地面租赁方式获得长期场地使用权。根据 NAR 商业地产 2026 年报告，地面租赁的平均期限已从传统的 30–50 年缩短至 15–25 年（受技术迭代速度影响），但年租金收益率保持在 5%–8% 的较高水平。</p>
+</blockquote>
+
 <h3>7.5 类型四：阶梯式租赁（Graduated Lease）</h3>
+
 <h4>概念</h4>
+
 <p>租金在租赁期内按照预定的时间表逐步增加——像「台阶」一样逐级上升。</p>
+
 <h4>Pat 的案例说明</h4>
+
 <p>假设你租了一间 1000 平方英尺的办公室：</p>
 <ul>
 <li><strong>第一年</strong>：每月 1000 美元</li>
 <li><strong>一年后</strong>：每月涨到 1100–1200 美元</li>
 <li>可能继续按年递增</li>
 </ul>
+
 <h4>为什么会有这种安排？</h4>
+
 <p>Pat 举了一个典型的商业场景：</p>
 <ul>
 <li>市场上写字楼空置率很高、供过于求</li>
@@ -798,19 +900,30 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>房东说：「按理说这个空间应该每月 1200–1300 美元，但我第一年只收你 1000 美元——只要你今天签约搬进来。」</li>
 <li>但你也要接受一年后租金上调的条件</li>
 </ul>
-<p><strong>递增依据</strong>：租约可以规定按照以下指标调整：</p>
+
+<strong>递增依据</strong>：租约可以规定按照以下指标调整：
 <ul>
 <li>消费价格指数（Consumer Price Index, CPI）</li>
 <li>通货膨胀率</li>
 <li>固定的金额递增表</li>
 </ul>
-<blockquote><strong>💡 Pat 的关键总结</strong>：核心概念就是「阶梯式上升」——租金随着时间推移逐步递增。</blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 的关键总结</strong>：核心概念就是「阶梯式上升」——租金随着时间推移逐步递增。</p>
+</blockquote>
+
 <h3>7.6 类型五：总租赁（Gross Lease）</h3>
+
 <h4>概念</h4>
+
 <p>租客支付一笔固定租金，<strong>房东承担所有其他费用</strong>。</p>
+
 <h4>适用范围</h4>
+
 <p>这是<strong>住宅租赁</strong>中最常见的模式——无论是独栋住宅、联排别墅还是公寓。</p>
+
 <h4>租金覆盖的内容</h4>
+
 <p>租客支付的租金中，房东需要用于支付：</p>
 <ul>
 <li>抵押贷款的本金和利息（Principal and Interest）</li>
@@ -818,55 +931,67 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>保险费（Insurance）</li>
 <li>所有维修和维护费用（Repairs and Maintenance）</li>
 </ul>
+
 <h4>租客需要自己支付的</h4>
+
 <ul>
 <li>水电燃气费用（如 PG&E、SMUD 等公用事业账单）</li>
 <li>租金（这是一笔固定的总额，不需要担心额外的税费或维修费）</li>
 </ul>
-<blockquote><strong>💡 Pat 的简化总结</strong>：「我付给你的就是租金——其余的你全包了，这就是总租赁。」</blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 的简化总结</strong>：「我付给你的就是租金——其余的你全包了，这就是总租赁。」</p>
+</blockquote>
+
 <h3>7.7 类型六：净租赁 / 三净租赁（Net Lease / Triple Net Lease）</h3>
+
 <h4>概念</h4>
+
 <p>与总租赁相反——租客除了支付租金外，还要承担物业的运营费用。</p>
+
 <h4>适用范围</h4>
-<p><strong>商业地产</strong>——如果你看 Sacramento Bee 报纸上的商业地产租赁广告，经常会看到「Net Lease」或「Triple Net Lease（NNN）」的字样。</p>
+
+<strong>商业地产</strong>——如果你看 Sacramento Bee 报纸上的商业地产租赁广告，经常会看到「Net Lease」或「Triple Net Lease（NNN）」的字样。
+
 <h4>三净租赁的具体含义</h4>
-<table>
-<thead><tr>
-<th>费用类别</th>
-<th>谁承担</th>
-</tr></thead><tbody>
-<tr>
-<td>基础租金</td>
-<td>租客支付</td>
-</tr>
-<tr>
-<td>物业税（Property Taxes）</td>
-<td>租客支付</td>
-</tr>
-<tr>
-<td>保险费（Insurance）</td>
-<td>租客支付</td>
-</tr>
-<tr>
-<td>维修维护费（Repairs/Maintenance）</td>
-<td>租客支付</td>
-</tr>
-</tbody></table>
-<blockquote><strong>💡 Pat 的解释</strong>：房东选择三净租赁的理由很简单——他们不想操心任何事情。每月收到租金支票就行，不需要担心维修、不需要担心税单、不需要担心保险费变动。一切运营负担都转嫁给了租客。</blockquote>
-<blockquote><strong>📌 2026 年数据更新</strong>：三净租赁（NNN）在 2024–2026 年的商业地产投资市场中持续受到追捧。根据 Marcus & Millichap 2026 年投资报告，NNN 租赁物业（尤其是单租户零售物业如星巴克、Walgreens、7-Eleven 等）的资本化率（Cap Rate）在 2025 年平均维持在 5.8%–6.2% 区间，较 2023 年的 5.2%–5.5% 有所上升（反映利率环境）。这类物业因收入稳定、管理负担轻而成为 1031 交换（同类财产交换）投资者的首选目标。</blockquote>
+
+<p>| 费用类别 | 谁承担 |</p>
+<p>|----------|--------|</p>
+<p>| 基础租金 | 租客支付 |</p>
+<p>| 物业税（Property Taxes） | 租客支付 |</p>
+<p>| 保险费（Insurance） | 租客支付 |</p>
+<p>| 维修维护费（Repairs/Maintenance） | 租客支付 |</p>
+
+<blockquote>
+<p><strong>💡 Pat 的解释</strong>：房东选择三净租赁的理由很简单——他们不想操心任何事情。每月收到租金支票就行，不需要担心维修、不需要担心税单、不需要担心保险费变动。一切运营负担都转嫁给了租客。</p>
+</blockquote>
+
+<blockquote>
+<p><strong>📌 2026 年数据更新</strong>：三净租赁（NNN）在 2024–2026 年的商业地产投资市场中持续受到追捧。根据 Marcus & Millichap 2026 年投资报告，NNN 租赁物业（尤其是单租户零售物业如星巴克、Walgreens、7-Eleven 等）的资本化率（Cap Rate）在 2025 年平均维持在 5.8%–6.2% 区间，较 2023 年的 5.2%–5.5% 有所上升（反映利率环境）。这类物业因收入稳定、管理负担轻而成为 1031 交换（同类财产交换）投资者的首选目标。</p>
+</blockquote>
+
 <h3>7.8 类型七：百分比租赁（Percentage Lease）</h3>
+
 <h4>概念</h4>
+
 <p>租客支付<strong>基础租金</strong>（Base Rent），另外如果<strong>总销售额</strong>超过一定门槛，还需向房东支付超出部分的<strong>一定百分比</strong>。</p>
+
 <h4>适用范围</h4>
-<p><strong>零售物业</strong>——购物中心（如 Sunrise Mall、Arden Fair Mall）、商业街区（Strip Mall）、社区购物中心。</p>
+
+<strong>零售物业</strong>——购物中心（如 Sunrise Mall、Arden Fair Mall）、商业街区（Strip Mall）、社区购物中心。
+
 <h4>Pat 的详细案例</h4>
+
 <p>假设：</p>
 <ul>
 <li>基础租金：每月 2000 美元（这部分<strong>无论如何</strong>都要付）</li>
 <li>如果月销售额超过某个门槛（比如 5 万美元），超额部分需向房东支付约定的百分比</li>
 </ul>
+
 <h4>为什么房东愿意接受这种模式？</h4>
+
 <p>Pat 从购物中心的运营逻辑出发进行了深度解析，这也是本讲中最能体现他商业洞察力的部分：</p>
+
 <ul>
 <li>想一想你最近一次去购物中心是什么时候——在普通的日子里，购物中心只是有人在进进出出，人流不温不火</li>
 <li>但感恩节一过（Black Friday 黑色星期五），购物中心突然爆满——停车场一位难求、商场内人山人海</li>
@@ -874,58 +999,41 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>圣诞节一过，除了退换货的第一两周（「圣诞老人送错了礼物」），到了 1 月中旬，你再走进购物中心，会发现它们变成了「鬼城」——几乎没人</li>
 <li>然后到了 3 月、4 月，你会看到购物中心的管理方开始变着法子搞活动——艺术展、车展、各种各样的主题活动……</li>
 </ul>
-<blockquote><strong>💡 为什么购物中心要搞这些活动？</strong> 答案非常简单：<strong>增加人流量（Foot Traffic）</strong>。管理方深知，只要能够把足够多的人吸引到商场里来，就会带动消费。人们本来是来看车展的，顺便就逛了店；本来是带孩子来看艺术展的，顺便就在美食广场吃了饭、买了东西。</blockquote>
-<p><strong>这就是百分比租赁的精妙之处</strong>：在固定基础租金之外，百分比分成将房东（购物中心管理方）和商户的利益捆绑在了一起。商场卖得越多，房东赚得越多——因此房东有了<strong>直接的经济动力</strong>去积极推广整个购物中心、组织引流活动、优化公共空间、提升整体购物体验。这不仅仅是「收租」，而是形成了一种<strong>商业伙伴关系</strong>（Business Partnership）。</p>
-<blockquote><strong>💡 Pat 的核心洞察</strong>：百分比租赁的真正激励在于——<strong>房东的利益与租客的成功直接挂钩</strong>。如果购物中心的整体销售额上升，房东的收入也上升；如果商户生意不好，房东也会少赚钱。因此，一个聪明的购物中心管理方会想尽一切办法帮助商户成功——包括举办活动、优化布局、引入互补业态等。这种利益一致性是百分比租赁与固定租金模式最本质的区别。</blockquote>
-<blockquote><strong>📌 2026 年数据更新</strong>：根据 ICSC（国际购物中心协会）2026 年零售地产报告，百分比租赁模式在后疫情消费复苏中重新受到关注。2025 年美国零售地产中约 38% 的新签零售租约包含了某种形式的百分比租金条款（较 2019 年的 32% 有所上升）。特别是在体验式零售（Experiential Retail）和餐饮租户中，基础租金 + 低百分比分成的混合模式越来越普遍。2025 年全美零售空置率降至 4.2%，为历史低位，这使得房东在谈判百分比分成比例时拥有了更多议价能力。</blockquote>
+
+<blockquote>
+<p><strong>💡 为什么购物中心要搞这些活动？</strong> 答案非常简单：<strong>增加人流量（Foot Traffic）</strong>。管理方深知，只要能够把足够多的人吸引到商场里来，就会带动消费。人们本来是来看车展的，顺便就逛了店；本来是带孩子来看艺术展的，顺便就在美食广场吃了饭、买了东西。</p>
+</blockquote>
+
+<strong>这就是百分比租赁的精妙之处</strong>：在固定基础租金之外，百分比分成将房东（购物中心管理方）和商户的利益捆绑在了一起。商场卖得越多，房东赚得越多——因此房东有了<strong>直接的经济动力</strong>去积极推广整个购物中心、组织引流活动、优化公共空间、提升整体购物体验。这不仅仅是「收租」，而是形成了一种<strong>商业伙伴关系</strong>（Business Partnership）。
+
+<blockquote>
+<p><strong>💡 Pat 的核心洞察</strong>：百分比租赁的真正激励在于——<strong>房东的利益与租客的成功直接挂钩</strong>。如果购物中心的整体销售额上升，房东的收入也上升；如果商户生意不好，房东也会少赚钱。因此，一个聪明的购物中心管理方会想尽一切办法帮助商户成功——包括举办活动、优化布局、引入互补业态等。这种利益一致性是百分比租赁与固定租金模式最本质的区别。</p>
+</blockquote>
+
+<blockquote>
+<p><strong>📌 2026 年数据更新</strong>：根据 ICSC（国际购物中心协会）2026 年零售地产报告，百分比租赁模式在后疫情消费复苏中重新受到关注。2025 年美国零售地产中约 38% 的新签零售租约包含了某种形式的百分比租金条款（较 2019 年的 32% 有所上升）。特别是在体验式零售（Experiential Retail）和餐饮租户中，基础租金 + 低百分比分成的混合模式越来越普遍。2025 年全美零售空置率降至 4.2%，为历史低位，这使得房东在谈判百分比分成比例时拥有了更多议价能力。</p>
+</blockquote>
+
 <h3>7.9 七种特殊租赁类型总结</h3>
-<table>
-<thead><tr>
-<th>租赁类型</th>
-<th>核心特征</th>
-<th>典型适用场景</th>
-</tr></thead><tbody>
-<tr>
-<td><strong>售后回租</strong></td>
-<td>企业卖楼后立即租回</td>
-<td>Home Depot、Walmart 等大企业</td>
-</tr>
-<tr>
-<td><strong>附购买选择权租赁</strong></td>
-<td>租客有未来以约定价格购买的权利</td>
-<td>不确定是否长居的家庭</td>
-</tr>
-<tr>
-<td><strong>地面租赁</strong></td>
-<td>只租地，不租建筑物</td>
-<td>停车场、充电站</td>
-</tr>
-<tr>
-<td><strong>阶梯式租赁</strong></td>
-<td>租金按预定时间表递增</td>
-<td>写字楼、供过于求的市场</td>
-</tr>
-<tr>
-<td><strong>总租赁</strong></td>
-<td>租客付固定租金，房东包一切</td>
-<td>住宅租赁（最常见）</td>
-</tr>
-<tr>
-<td><strong>三净租赁</strong></td>
-<td>租客付租金+税+保险+维修</td>
-<td>商业地产、REITs 投资</td>
-</tr>
-<tr>
-<td><strong>百分比租赁</strong></td>
-<td>基础租金 + 销售额分成</td>
-<td>购物中心、零售商铺</td>
-</tr>
-</tbody></table>
+
+<p>| 租赁类型 | 核心特征 | 典型适用场景 |</p>
+<p>|----------|----------|--------------|</p>
+<p>| <strong>售后回租</strong> | 企业卖楼后立即租回 | Home Depot、Walmart 等大企业 |</p>
+<p>| <strong>附购买选择权租赁</strong> | 租客有未来以约定价格购买的权利 | 不确定是否长居的家庭 |</p>
+<p>| <strong>地面租赁</strong> | 只租地，不租建筑物 | 停车场、充电站 |</p>
+<p>| <strong>阶梯式租赁</strong> | 租金按预定时间表递增 | 写字楼、供过于求的市场 |</p>
+<p>| <strong>总租赁</strong> | 租客付固定租金，房东包一切 | 住宅租赁（最常见） |</p>
+<p>| <strong>三净租赁</strong> | 租客付租金+税+保险+维修 | 商业地产、REITs 投资 |</p>
+<p>| <strong>百分比租赁</strong> | 基础租金 + 销售额分成 | 购物中心、零售商铺 |</p>
+
 <hr>
-<section class="article-section">
+
 <h2>八、物业管理（Property Management）</h2>
+
 <h3>8.1 物业管理作为一种职业路径</h3>
+
 <p>Pat 在讲座末尾介绍了物业管理的职业方向：</p>
+
 <ul>
 <li>你可以成为一名房地产经纪人，但<strong>从不做销售</strong>——只做物业管理</li>
 <li>你的客户是房东（Landlords）</li>
@@ -933,22 +1041,37 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>房东会打电话给你：「能不能帮我出租我的房子？」</li>
 <li>你将受雇代表他们处理出租事务</li>
 </ul>
-<blockquote><strong>📌 2026 年数据更新</strong>：根据 NAR 2026 年物业管理行业报告，全美约有 280,000 名持有房地产执照的专业物业管理人员。加州是全美最大的物业管理市场，约有 38,000 名持牌物业管理人员。2025 年物业管理行业总收入约为 1050 亿美元，年增长率为 4.2%。物业管理费（Management Fee）的中位数维持在月租金的 8%–10%，新租客安置费（Leasing Fee）通常为一个月租金的 50%–100%。</blockquote>
+
+<blockquote>
+<p><strong>📌 2026 年数据更新</strong>：根据 NAR 2026 年物业管理行业报告，全美约有 280,000 名持有房地产执照的专业物业管理人员。加州是全美最大的物业管理市场，约有 38,000 名持牌物业管理人员。2025 年物业管理行业总收入约为 1050 亿美元，年增长率为 4.2%。物业管理费（Management Fee）的中位数维持在月租金的 8%–10%，新租客安置费（Leasing Fee）通常为一个月租金的 50%–100%。</p>
+</blockquote>
+
 <h3>8.2 物业管理协议（Property Management Agreement）</h3>
+
 <p>Pat 展示了加州房地产经纪人协会（C.A.R.）制作的标准物业管理协议表格：</p>
+
 <ul>
 <li>这份表格可以在 Sacramento Association of Realtors 的办公室（2003 Howe Avenue, Howe 与 Cottage 路口）购买纸质版本</li>
 <li>现在大多数人使用 <strong>WinForms</strong> 软件（计算机程序）来生成这些表格</li>
 <li>你也可以去该协会一楼的零售店翻阅所有可用的 C.A.R. 标准表格</li>
 </ul>
+
 <h3>8.3 协议的核心内容</h3>
+
 <p>Pat 虽然因为时间关系没有逐条详述协议的每一条款，但他使用文档摄像机逐页展示了协议的关键部分，并重点突出了以下几个模块：</p>
+
 <h4>（1）业主指定经纪人（Appointment of Broker）</h4>
+
 <p>协议的第一段是<strong>业主正式指定该经纪人作为其代表</strong>——这是整个委托关系的法律基础。这一段声明了业主将物业的出租管理权授予该经纪人，经纪人接受此委托。没有这一段，经纪人就没有合法的代理权。</p>
+
 <h4>（2）经纪人的接受（Broker's Acceptance）</h4>
+
 <p>经纪人通过签署协议正式接受委托，表示愿意承担协议中规定的所有责任和义务。</p>
+
 <h4>（3）经纪人的授权范围（Authority Granted to Broker）</h4>
+
 <p>这是协议中非常重要的实操部分。业主在协议中明确授权经纪人可以执行以下事项：</p>
+
 <ul>
 <li><strong>广告推广物业</strong>——在报纸、在线平台、社交媒体等各种渠道上发布招租信息</li>
 <li><strong>寻找和筛选租客</strong>——带看房源、收集租赁申请、进行背景和信用调查</li>
@@ -957,63 +1080,46 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li><strong>维修授权</strong>——协议通常会约定一个<strong>金额上限</strong>（例如 500 美元）。在这个金额以下，经纪人可以自行决定和安排维修，无需每次征求业主的事先同意。超过这个金额，则需要获得业主的授权</li>
 <li><strong>费用支付与保证金管理</strong>——明确经纪人在处理日常费用支出、收取和管理安全押金（Security Deposits）等方面的权限</li>
 </ul>
-<blockquote><strong>💡 Pat 的反复提醒</strong>：「知道你被授权做什么、不被授权做什么，这是<strong>极其重要</strong>的。」因为你作为经纪人，你的每一个行动都必须有合同依据。如果你越权行事（比如未经授权就花 2000 美元修理屋顶），你可能需要自己承担费用。Pat 强调，你需要把这份协议<strong>读熟读透</strong>，理解其中每一项授权和限制。</blockquote>
+
+<blockquote>
+<p><strong>💡 Pat 的反复提醒</strong>：「知道你被授权做什么、不被授权做什么，这是<strong>极其重要</strong>的。」因为你作为经纪人，你的每一个行动都必须有合同依据。如果你越权行事（比如未经授权就花 2000 美元修理屋顶），你可能需要自己承担费用。Pat 强调，你需要把这份协议<strong>读熟读透</strong>，理解其中每一项授权和限制。</p>
+</blockquote>
+
 <h4>（4）业主的责任（Owner's Responsibilities）</h4>
+
 <p>Pat 翻到协议的另一面，展示了业主责任条款。这包括：</p>
+
 <ul>
 <li><strong>提供必要文件</strong>：如果物业在 HOA（业主委员会/Homeowners Association）管辖下，需要提供所有 CC&R（契约、条件和限制）、规章制度和财务文件</li>
 <li><strong>披露已知的物业缺陷</strong>：业主必须告知经纪人任何已知的物业问题（如漏水历史、结构问题等）</li>
 <li><strong>配合经纪人的合理要求</strong>：如及时批准大额维修、提供必要的物业访问权限等</li>
 <li><strong>维护适当的保险</strong>：业主需要维持物业保险的有效性</li>
 </ul>
+
 <p>Pat 特别指出，如果物业有 HOA，这一部分尤其重要——因为 HOA 的规则可能会限制出租（如不允许短租、限制宠物种类等），经纪人必须提前了解这些限制，否则可能给租客和业主都带来麻烦。</p>
+
 <h4>（5）报酬条款（Compensation）——重中之重</h4>
+
 <p>这是 Pat 特别用文档摄像机<strong>放大展示</strong>的部分——因为他知道「这可能是大家最感兴趣的」。报酬条款详细列明了经纪人在各种服务中可以获得的报酬：</p>
-<table>
-<thead><tr>
-<th>服务项目</th>
-<th>典型报酬方式</th>
-<th>Pat 的说明</th>
-</tr></thead><tbody>
-<tr>
-<td><strong>物业管理月费</strong></td>
-<td>每月租金的 8%–10%</td>
-<td>这是经纪人每月收取的管理费，直接从收到的租金中扣除后再转交给业主</td>
-</tr>
-<tr>
-<td><strong>新租客安置费</strong></td>
-<td>首月租金的 1/3 到 1/2</td>
-<td>也称为 Leasing Fee，是经纪人成功找到并安置新租客的一次性报酬</td>
-</tr>
-<tr>
-<td><strong>租约续签费</strong></td>
-<td>固定费用或续约租金的百分比</td>
-<td>当现有租客续约时经纪人的报酬</td>
-</tr>
-<tr>
-<td><strong>驱逐程序费</strong></td>
-<td>按小时计费或固定项目费</td>
-<td>因为驱逐流程耗时耗力，通常需要额外报酬</td>
-</tr>
-<tr>
-<td><strong>准备租赁协议</strong></td>
-<td>固定的文件准备费</td>
-<td>每次起草或修改租约的行政费用</td>
-</tr>
-<tr>
-<td><strong>监督维修/承包商</strong></td>
-<td>按次收费或项目费</td>
-<td>当经纪人需要亲自到场协调维修工作时额外收取的费用</td>
-</tr>
-<tr>
-<td><strong>物业检查费</strong></td>
-<td>按次收费</td>
-<td>定期巡查物业状况的劳务费</td>
-</tr>
-</tbody></table>
-<blockquote><strong>💡 Pat 的特别警告</strong>：你<strong>必须在签约前</strong>向房东逐项说明你的收费方式和标准。绝对不能出现这样的情况——房东某天突然收到一张意想不到的账单：「噢，原来 Pat 去见了趟承包商就要收我 100 美元？」所有费用必须白纸黑字在协议中预先明确约定，让房东清楚地知道他<strong>到底要为什么付钱、付多少钱</strong>。</blockquote>
+
+<p>| 服务项目 | 典型报酬方式 | Pat 的说明 |</p>
+<p>|----------|-------------|------------|</p>
+<p>| <strong>物业管理月费</strong> | 每月租金的 8%–10% | 这是经纪人每月收取的管理费，直接从收到的租金中扣除后再转交给业主 |</p>
+<p>| <strong>新租客安置费</strong> | 首月租金的 1/3 到 1/2 | 也称为 Leasing Fee，是经纪人成功找到并安置新租客的一次性报酬 |</p>
+<p>| <strong>租约续签费</strong> | 固定费用或续约租金的百分比 | 当现有租客续约时经纪人的报酬 |</p>
+<p>| <strong>驱逐程序费</strong> | 按小时计费或固定项目费 | 因为驱逐流程耗时耗力，通常需要额外报酬 |</p>
+<p>| <strong>准备租赁协议</strong> | 固定的文件准备费 | 每次起草或修改租约的行政费用 |</p>
+<p>| <strong>监督维修/承包商</strong> | 按次收费或项目费 | 当经纪人需要亲自到场协调维修工作时额外收取的费用 |</p>
+<p>| <strong>物业检查费</strong> | 按次收费 | 定期巡查物业状况的劳务费 |</p>
+
+<blockquote>
+<p><strong>💡 Pat 的特别警告</strong>：你<strong>必须在签约前</strong>向房东逐项说明你的收费方式和标准。绝对不能出现这样的情况——房东某天突然收到一张意想不到的账单：「噢，原来 Pat 去见了趟承包商就要收我 100 美元？」所有费用必须白纸黑字在协议中预先明确约定，让房东清楚地知道他<strong>到底要为什么付钱、付多少钱</strong>。</p>
+</blockquote>
+
 <h4>（6）信托账户与资金管理（Trust Accounts）</h4>
+
 <p>作为物业管理者，你还需要在协议中明确：</p>
+
 <ul>
 <li><strong>信托账户的位置</strong>：租金收入必须存入指定的信托账户（Trust Account），<strong>不能与经纪人个人或公司的运营资金混在一起</strong>。这是加州房地产法律的强制性要求</li>
 <li><strong>租金的收取和转交方式</strong>：租金是每月自动转账还是支票？收到后多少天内转交给业主？</li>
@@ -1021,104 +1127,98 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li><strong>定期报告义务</strong>：每月或每季度向业主提供详细的收支报告</li>
 <li><strong>安全押金的管理</strong>：安全押金必须单独存放在信托账户中，并有严格的提取和使用程序</li>
 </ul>
+
 <p>Pat 强调，资金管理的透明性和合规性是一名专业物业管理者的基本职业操守——毕竟你管理的是别人的钱和别人的资产。</p>
-<blockquote><strong>📌 2026 年数据更新</strong>：根据 C.A.R. 2026 年物业管理最佳实践指南，目前加州物业管理行业正加速采用数字支付和自动化会计系统。2025 年调查显示，约 72% 的专业物业管理公司已采用 AppFolio、Buildium 或 Yardi 等物业管理软件进行租金收取、费用跟踪和业主报告。这些平台可以自动将租金存入各方账户、生成月度财务报告，大大降低了手动管理可能出现的合规风险。</blockquote>
+
+<blockquote>
+<p><strong>📌 2026 年数据更新</strong>：根据 C.A.R. 2026 年物业管理最佳实践指南，目前加州物业管理行业正加速采用数字支付和自动化会计系统。2025 年调查显示，约 72% 的专业物业管理公司已采用 AppFolio、Buildium 或 Yardi 等物业管理软件进行租金收取、费用跟踪和业主报告。这些平台可以自动将租金存入各方账户、生成月度财务报告，大大降低了手动管理可能出现的合规风险。</p>
+</blockquote>
+
 <hr>
-<section class="article-section">
+
 <h2>九、全讲总结与复习要点</h2>
+
 <h3>9.1 本讲核心知识框架</h3>
+
 <p>本讲（RE 300 第六讲）的内容围绕<strong>住宅租赁的实务操作和法律框架</strong>展开，可以分为四个模块：</p>
-<ol>
+
+<ul>
 <li><strong>租赁申请与筛选</strong>（Application to Rent / Screening Fee）</li>
-</ol>
-<ul>
-<li>申请表各栏目的实务讲解</li>
-<li>租客筛选的「诚实测试」逻辑</li>
-<li>信用/背景调查的授权要求</li>
 </ul>
-<ol>
+<p>- 申请表各栏目的实务讲解</p>
+<p>- 租客筛选的「诚实测试」逻辑</p>
+<p>- 信用/背景调查的授权要求</p>
+
+<ul>
 <li><strong>租约终止的七种方式</strong></li>
-</ol>
-<ul>
-<li>期限届满、安静享用权缺失、可居住性维修、依法驱逐、遗弃、违约、物业毁损</li>
 </ul>
-<ol>
+<p>- 期限届满、安静享用权缺失、可居住性维修、依法驱逐、遗弃、违约、物业毁损</p>
+
+<ul>
 <li><strong>七种特殊租赁类型</strong></li>
-</ol>
-<ul>
-<li>售后回租、附购买选择权租赁、地面租赁、阶梯式租赁、总租赁、三净租赁、百分比租赁</li>
 </ul>
-<ol>
+<p>- 售后回租、附购买选择权租赁、地面租赁、阶梯式租赁、总租赁、三净租赁、百分比租赁</p>
+
+<ul>
 <li><strong>物业管理基础</strong></li>
-</ol>
-<ul>
-<li>物业管理协议的核心条款</li>
-<li>报酬结构</li>
-<li>经纪人权限与业主责任</li>
 </ul>
+<p>- 物业管理协议的核心条款</p>
+<p>- 报酬结构</p>
+<p>- 经纪人权限与业主责任</p>
+
 <h3>9.2 Pat 反复强调的关键理念</h3>
-<ol>
+
+<ul>
 <li><strong>在源头把关</strong>：花时间筛选对的租客，比事后走漫长的驱逐流程重要得多</li>
 <li><strong>诚实是底线</strong>：租客的诚实是建立信任的基础，撒谎的申请人不要租</li>
 <li><strong>合同必须最新</strong>：始终使用 C.A.R. 审核发布的最新版本合同和表格</li>
 <li><strong>知道你的权限</strong>：签署物业管理协议前，确保你清楚自己有权做什么、无权做什么</li>
 <li><strong>计算机技能不可或缺</strong>：现代房地产行业的每一个环节都需要计算机操作能力</li>
-</ol>
+</ul>
+
 <h3>9.3 Pat 的结束语</h3>
+
 <p>在讲座末尾，Pat 再次化身「坏掉的唱片」——这是他在本讲中第三次自嘲为「broken record」了。他微笑着重申：</p>
-<blockquote>「你现在应该已经在下载那份复习指南了——去查答案吧。记住，我们希望看到 100 分，不是什么 95 分——100 分。做好功课，确保你来考试的时候知道每一个答案。非常感谢大家，我们第七讲再见。」</blockquote>
+
+<blockquote>
+<p>「你现在应该已经在下载那份复习指南了——去查答案吧。记住，我们希望看到 100 分，不是什么 95 分——100 分。做好功课，确保你来考试的时候知道每一个答案。非常感谢大家，我们第七讲再见。」</p>
+</blockquote>
+
 <p>从这段收尾中，可以感受到 Pat 作为一名教育者的真诚——他不是在追求学生的「过关」，而是真心希望每个学生都能<strong>彻底掌握知识</strong>。这种对满分的执念，反映的是他对教学质量的重视和对学生未来的负责。正如他在本讲中反复传达的核心理念一样：花时间做好前期的准备工作（无论是考试复习还是租客筛选），远比事后补救来得有效。</p>
+
 <hr>
-<section class="article-section">
+
 <h2>📝 2026 年补充学习资源与数据参考</h2>
-<table>
-<thead><tr>
-<th>资源</th>
-<th>说明</th>
-</tr></thead><tbody>
-<tr>
-<td><strong>C.A.R. 标准表格</strong></td>
-<td>2026 年最新版本的租赁申请、租赁协议、物业管理协议可通过加州房地产经纪人协会官网 (www.car.org) 获取</td>
-</tr>
-<tr>
-<td><strong>加州民法典 §1941–1942</strong></td>
-<td>可居住性标准的法律原文，建议配合最新判例学习</td>
-</tr>
-<tr>
-<td><strong>加州法院驱逐数据</strong></td>
-<td>2025 年全州约 17 万件 Unlawful Detainer 立案，萨克拉门托县平均执行周期约 65 天</td>
-</tr>
-<tr>
-<td><strong>联邦基金利率</strong></td>
-<td>2026 年维持在 4.00%–4.25%，影响房贷利率和租赁市场需求</td>
-</tr>
-<tr>
-<td><strong>加州租金管制</strong></td>
-<td>AB-1482 扩展版（2026 年生效）：年租金涨幅上限收紧至 8%（CPI + 5%）</td>
-</tr>
-<tr>
-<td><strong>NAR 商业地产报告</strong></td>
-<td>2026 年版涵盖售后回租、NNN、百分比租赁等最新市场趋势</td>
-</tr>
-</tbody></table>
+
+<p>| 资源 | 说明 |</p>
+<p>|------|------|</p>
+<p>| <strong>C.A.R. 标准表格</strong> | 2026 年最新版本的租赁申请、租赁协议、物业管理协议可通过加州房地产经纪人协会官网 (www.car.org) 获取 |</p>
+<p>| <strong>加州民法典 §1941–1942</strong> | 可居住性标准的法律原文，建议配合最新判例学习 |</p>
+<p>| <strong>加州法院驱逐数据</strong> | 2025 年全州约 17 万件 Unlawful Detainer 立案，萨克拉门托县平均执行周期约 65 天 |</p>
+<p>| <strong>联邦基金利率</strong> | 2026 年维持在 4.00%–4.25%，影响房贷利率和租赁市场需求 |</p>
+<p>| <strong>加州租金管制</strong> | AB-1482 扩展版（2026 年生效）：年租金涨幅上限收紧至 8%（CPI + 5%） |</p>
+<p>| <strong>NAR 商业地产报告</strong> | 2026 年版涵盖售后回租、NNN、百分比租赁等最新市场趋势 |</p>
+
 <hr>
-<em>本文基于 Patrick J. Hogarty, MA 在 Sacramento City College 的 RE 300 课程第六讲录音整理，由 AI 辅助完成，保留 Pat 全部原始教学内容、概念讲解、案例分析和教学建议。文中 📌 标记表示 2026 年最新数据补充，💡 标记表示 Pat 的原始教学逻辑与个人经验分享。本文仅供学习参考，不构成法律建议。</em>
+
+<p>*本文基于 Patrick J. Hogarty, MA 在 Sacramento City College 的 RE 300 课程第六讲录音整理，由 AI 辅助完成，保留 Pat 全部原始教学内容、概念讲解、案例分析和教学建议。文中 📌 标记表示 2026 年最新数据补充，💡 标记表示 Pat 的原始教学逻辑与个人经验分享。本文仅供学习参考，不构成法律建议。*</p>
+
 <hr>
+
 <strong>整理完成日期：2026 年 7 月 1 日</strong>
 
-    </main>
+  </div>
+</article>
+<div class="container">
+  <div class="disclaimer">
+    <p><strong>免责声明：</strong>本资料不以盈利为目的，完全免费提供，仅供学习参考。内容基于 Pat Hogarty 教授 RE 300 播客系列整理。加州房地产执照考试信息以 DRE 官网（dre.ca.gov）为准。</p>
   </div>
 </div>
-
-<footer class="page-footer">
+<footer class="article-footer">
   <div class="container">
-    <div class="ft-nav">
-      <a href="index.html">← RE300 系列</a>
-    </div>
-    <div class="ft-logo">筑 沙 TSUKASA</div>
-    <div class="ft-sub">AI · Real Estate · Education — RE300 Series — 2026</div>
+    <a href="index.html">← 返回 RE300 专题首页</a>
+    <div class="ft-brand">筑 沙 TSUKASA</div>
   </div>
 </footer>
-
 </body>
 </html>

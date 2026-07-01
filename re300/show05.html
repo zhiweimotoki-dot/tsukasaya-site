@@ -3,158 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="加州房地产执照考试中文深度教程 — Patrick J. Hogarty RE 300 第5讲：房东与租客关系。涵盖四种租赁地产权、C.A.R.标准协议、押金管理、调解与仲裁，含2026年最新法规更新。">
+<meta name="description" content="加州房地产执照考试中文教程 — RE 300 第5讲：房东与租客关系。含2026年最新DRE数据更新。">
 <meta property="og:title" content="加州房产执照考试｜中文精讲 EP05 — 筑沙 Tsukasa">
-<meta property="og:description" content="Patrick Hogarty《California Real Estate Principles》中文精讲第5集：房东与租客关系（Landlord and Tenant）">
+<meta property="og:description" content="Patrick Hogarty RE300 中文精讲第5集：房东与租客关系">
 <meta property="og:type" content="article">
-<title>EP05 房东与租客关系（Landlord and Tenant） — RE300 加州房地产原理 — 筑沙 Tsukasa</title>
+<title>EP05 房东与租客关系 — RE300 加州房地产原理 — 筑沙 Tsukasa</title>
 <style>
 :root {
-  --bg: #0b0b0b;
-  --surface: #161616;
-  --border: #262626;
-  --ink: #ede8df;
-  --muted: #8a8578;
-  --sand: #d4b896;
-  --sand-light: #e8d5c0;
-  --teal: #3a8a85;
+  --bg: #0b0b0b; --surface: #161616; --border: #262626;
+  --ink: #ede8df; --muted: #8a8578; --sand: #d4b896; --sand-light: #e8d5c0; --teal: #3a8a85;
   --radius: 6px;
   --font-display: 'Georgia', 'Noto Serif JP', 'Songti SC', serif;
   --font-body: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans', sans-serif;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: var(--bg); color: var(--ink); font-family: var(--font-body); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); line-height: 1.7; }
 .container { max-width: 860px; margin: 0 auto; padding: 0 32px; }
-
-nav {
-  position: sticky; top: 0; z-index: 100;
-  background: rgba(11,11,11,0.94); backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border); padding: 16px 0;
-}
+nav { position: sticky; top: 0; z-index: 100; background: rgba(11,11,11,0.94); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 16px 0; }
 nav .container { display: flex; justify-content: space-between; align-items: center; }
 .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
-.logo-diamond {
-  width: 28px; height: 28px;
-  background: linear-gradient(135deg, var(--sand) 0%, var(--sand-light) 100%);
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
-}
-.logo-diamond-inner {
-  width: 70%; height: 70%; background: var(--bg);
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  display: flex; align-items: center; justify-content: center;
-}
+.logo-diamond { width: 28px; height: 28px; background: linear-gradient(135deg, var(--sand) 0%, var(--sand-light) 100%); clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.logo-diamond-inner { width: 70%; height: 70%; background: var(--bg); clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); display: flex; align-items: center; justify-content: center; }
 .logo-diamond-char { color: var(--sand); font-family: var(--font-display); font-size: 9px; }
 .nav-name { font-family: var(--font-display); font-size: 16px; letter-spacing: 0.08em; }
 .nav-links { display: flex; gap: 24px; }
 .nav-links a { color: var(--muted); text-decoration: none; font-size: 12px; letter-spacing: 0.06em; transition: color 0.2s; }
 .nav-links a:hover { color: var(--sand); }
-
-.article-header {
-  padding: 80px 0 48px; border-bottom: 1px solid var(--border); text-align: center;
-}
-.article-header .ep-label {
-  display: inline-block; font-size: 10px; color: var(--sand);
-  letter-spacing: 0.14em; text-transform: uppercase;
-  border: 1px solid var(--sand); padding: 6px 16px; border-radius: 2px; margin-bottom: 20px;
-}
-.article-header .breadcrumb { font-size: 11px; color: var(--muted); margin-bottom: 32px; }
-.article-header .breadcrumb a { color: var(--muted); text-decoration: none; }
-.article-header .breadcrumb a:hover { color: var(--sand); }
-.article-header h1 {
-  font-family: var(--font-display); font-size: clamp(24px, 5vw, 40px);
-  letter-spacing: 0.04em; line-height: 1.4; margin-bottom: 24px;
-}
-.article-header .meta {
-  display: flex; gap: 28px; justify-content: center; flex-wrap: wrap;
-  font-size: 11px; color: var(--muted); letter-spacing: 0.06em;
-}
-
-.article-layout { display: flex; gap: 48px; padding: 48px 0; align-items: flex-start; }
-.article-toc {
-  position: sticky; top: 100px; width: 200px; flex-shrink: 0;
-  font-size: 12px; line-height: 2;
-}
-.article-toc .toc-title {
-  font-family: var(--font-display); font-size: 13px;
-  color: var(--sand); letter-spacing: 0.08em; margin-bottom: 16px;
-}
-.article-toc a {
-  display: block; color: var(--muted); text-decoration: none;
-  padding: 2px 0; transition: color 0.2s;
-  border-left: 2px solid transparent; padding-left: 12px;
-}
-.article-toc a:hover, .article-toc a.active {
-  color: var(--ink); border-left-color: var(--sand);
-}
-.article-body { flex: 1; min-width: 0; }
-
-.article-section { margin-bottom: 48px; }
-.article-section h2 {
-  font-family: var(--font-display); font-size: 26px;
-  margin-bottom: 20px; padding-bottom: 12px;
-  border-bottom: 1px solid var(--border); letter-spacing: 0.04em;
-}
-.article-section h3 {
-  font-family: var(--font-display); font-size: 19px;
-  margin: 28px 0 12px; color: var(--sand); letter-spacing: 0.03em;
-}
-.article-section h4 {
-  font-size: 15px; margin: 20px 0 8px; color: var(--sand-light);
-}
-.article-section p {
-  font-size: 15px; color: var(--muted); line-height: 1.85; margin-bottom: 14px;
-}
-.article-section p strong { color: var(--ink); font-weight: 600; }
-.article-section ul, .article-section ol {
-  margin: 12px 0 16px 24px; font-size: 14px; color: var(--muted); line-height: 1.9;
-}
-.article-section li { margin-bottom: 4px; }
-.article-section li strong { color: var(--ink); font-weight: 600; }
-.article-section code {
-  background: var(--surface); padding: 2px 6px;
-  border-radius: 3px; font-size: 13px; color: var(--sand);
-  font-family: 'SF Mono', 'Fira Code', monospace;
-}
-.article-section blockquote {
-  border-left: 3px solid var(--sand);
-  padding: 16px 20px; margin: 20px 0;
-  background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0;
-  font-size: 14px; color: var(--sand-light); line-height: 1.8; font-style: italic;
-}
-.article-section hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
-.article-section table {
-  width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13px;
-}
-.article-section th {
-  background: var(--surface); color: var(--sand);
-  padding: 10px 14px; text-align: left; font-weight: 600; font-size: 11px;
-  letter-spacing: 0.06em; text-transform: uppercase; border-bottom: 2px solid var(--border);
-}
-.article-section td {
-  padding: 10px 14px; border-bottom: 1px solid var(--border);
-  color: var(--muted); line-height: 1.6;
-}
-.article-section td strong { color: var(--ink); }
-.article-section tr:hover td { background: var(--surface); }
-
-.page-footer { padding: 60px 0; border-top: 1px solid var(--border); text-align: center; }
-.page-footer .ft-nav { display: flex; gap: 32px; justify-content: center; margin-bottom: 24px; }
-.page-footer .ft-nav a { color: var(--muted); font-size: 13px; text-decoration: none; transition: color 0.2s; }
-.page-footer .ft-nav a:hover { color: var(--sand); }
-.page-footer .ft-logo { font-family: var(--font-display); font-size: 18px; color: var(--sand); letter-spacing: 0.1em; margin-bottom: 6px; }
-.page-footer .ft-sub { font-size: 10px; color: var(--muted); }
-
-@media (max-width: 900px) {
-  .article-layout { flex-direction: column; }
-  .article-toc { position: static; width: 100%; margin-bottom: 32px; }
-  .article-toc a { display: inline-block; border-left: none; border-bottom: 2px solid transparent; padding: 4px 8px; margin-right: 8px; }
-  .article-toc a:hover, .article-toc a.active { border-left: none; border-bottom-color: var(--sand); }
-}
+.article-header { padding: 80px 0 48px; border-bottom: 1px solid var(--border); text-align: center; }
+.article-header .ep-label { display: inline-block; font-size: 10px; color: var(--sand); letter-spacing: 0.14em; border: 1px solid var(--sand); padding: 6px 16px; border-radius: 2px; margin-bottom: 20px; }
+.article-header h1 { font-family: var(--font-display); font-size: clamp(24px, 5vw, 42px); letter-spacing: 0.04em; line-height: 1.4; margin-bottom: 16px; }
+.article-header .byline { color: var(--muted); font-size: 13px; }
+.byline span { color: var(--sand); }
+.article-body { padding: 60px 0 80px; }
+.article-body h1 { font-family: var(--font-display); font-size: 28px; margin: 48px 0 20px; }
+.article-body h2 { font-family: var(--font-display); font-size: 22px; margin: 40px 0 16px; color: var(--sand); }
+.article-body h3 { font-size: 17px; margin: 32px 0 12px; color: var(--sand-light); }
+.article-body p { margin-bottom: 18px; font-size: 15px; line-height: 1.85; }
+.article-body blockquote { border-left: 3px solid var(--sand); margin: 24px 0; padding: 16px 24px; background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0; }
+.article-body blockquote p { color: var(--sand-light); font-style: italic; margin-bottom: 8px; }
+.article-body ul, .article-body ol { margin: 16px 0 24px 24px; }
+.article-body li { font-size: 14px; line-height: 1.9; margin-bottom: 6px; }
+.article-body code { background: var(--surface); padding: 2px 6px; border-radius: 3px; font-size: 13px; color: var(--sand-light); }
+.article-body hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+.article-body strong { color: var(--sand-light); }
+.disclaimer { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 28px; margin: 60px 0; }
+.disclaimer p { font-size: 12px; color: var(--muted); margin-bottom: 8px; line-height: 1.8; }
+.article-footer { padding: 60px 0; border-top: 1px solid var(--border); text-align: center; }
+.article-footer a { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; text-decoration: none; transition: color 0.2s; }
+.article-footer a:hover { color: var(--sand); }
+.article-footer .ft-brand { font-family: var(--font-display); font-size: 16px; color: var(--sand); letter-spacing: 0.1em; margin-top: 20px; }
+@media (max-width: 768px) { .container { padding: 0 20px; } .article-body h1 { font-size: 22px; } .article-body h2 { font-size: 18px; } }
 </style>
 </head>
 <body>
-
 <nav>
   <div class="container">
     <a href="../index.html" class="nav-brand">
@@ -167,49 +68,23 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
     </div>
   </div>
 </nav>
-
 <header class="article-header">
   <div class="container">
     <div class="ep-label">EPISODE 05</div>
-    <div class="breadcrumb">
-      <a href="../index.html">筑沙</a> · 
-      <a href="index.html">RE300 系列</a> · 
-      第5讲
-    </div>
-    <h1>加州房地产经纪人考试教程<br>房东与租客关系（Landlord and Tenant）</h1>
-    <div class="meta">
-      <span>📚 33,000 字</span>
-      <span>🎙️ Patrick J. Hogarty</span>
-      <span>📅 2026 年 7 月</span>
-      <span>⏱️ 阅读约 40 分钟</span>
+    <h1>房东与租客关系</h1>
+    <div class="byline">
+      原始讲师：<span>Patrick J. Hogarty, MA</span> · Sacramento City College · 中文整理：<span>MOTOKI SADASHIGE · 筑沙 Tsukasa inc</span> · 2026年7月
     </div>
   </div>
 </header>
+<article class="article-body">
+  <div class="container">
+<p>本资料不以盈利为目的，完全免费提供，仅供学习参考。</p>
 
-<div class="container">
-  <div class="article-layout">
-    <aside class="article-toc">
-      <div class="toc-title">目录</div>
-      <a href="#section-14">1. 课前事务与课程更新</a>
-      <a href="#section-15">2. 为什么从房东租客关系开始？</a>
-      <a href="#section-16">3. 核心术语：房东、租客、出租人与承租人</a>
-      <a href="#section-17">4. 租赁协议 vs 出租协议</a>
-      <a href="#section-18">5. 四种租赁地产权类型</a>
-      <a href="#section-19">6. 租赁协议的最低法定要求</a>
-      <a href="#section-20">7. 反欺诈法（Statute of Frauds）</a>
-      <a href="#section-21">8. 加州房地产经纪人协会住宅租赁协议详解</a>
-      <a href="#section-22">9. 押金管理——房东租客关系的核心</a>
-      <a href="#section-23">10. 正常磨损（Normal Wear and Tear）</a>
-      <a href="#section-24">11. 租赁协议中的各项关键条款</a>
-      <a href="#section-25">12. 调解与仲裁</a>
-      <a href="#section-26">13. 总结与展望</a>
-      <a href="#section-27">附录：2026年加州租赁法律更新摘要</a>
-      <a href="#section-28">关键术语中英文对照表</a>
-    </aside>
-    <main class="article-body">
+<h1>加州房地产经纪人考试教程 — 第 5 讲：房东与租客关系（Landlord and Tenant）</h1>
 
-<section class="article-section">
 <h2>元信息</h2>
+
 <ul>
 <li><strong>讲师</strong>：Pat Hogarty, MA</li>
 <li><strong>课程</strong>：RE 300 — 加州房地产原理（California Real Estate Principles）</li>
@@ -218,39 +93,55 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li><strong>整理日期</strong>：2026年7月</li>
 <li><strong>原始录制</strong>：Sacramento City College</li>
 </ul>
+
 <hr>
-<section class="article-section">
+
 <h2>目录</h2>
-<ol>
-<li><a href="#1-课前事务与课程更新"&gt;课前事务与课程更新</a></li>
-<li><a href="#2-为什么从房东租客关系开始"&gt;为什么从房东租客关系开始？</a></li>
-<li><a href="#3-核心术语房东租客出租人与承租人"&gt;核心术语：房东、租客、出租人与承租人</a></li>
-<li><a href="#4-租赁协议-vs-出租协议"&gt;租赁协议 vs 出租协议</a></li>
-<li><a href="#5-四种租赁地产权类型"&gt;四种租赁地产权类型</a></li>
-<li><a href="#6-租赁协议的最低法定要求"&gt;租赁协议的最低法定要求</a></li>
-<li><a href="#7-反欺诈法statute-of-frauds"&gt;反欺诈法（Statute of Frauds）</a></li>
-<li><a href="#8-加州房地产经纪人协会住宅租赁协议详解"&gt;加州房地产经纪人协会住宅租赁协议详解</a></li>
-<li><a href="#9-押金管理房东租客关系的核心"&gt;押金管理——房东租客关系的核心</a></li>
-<li><a href="#10-正常磨损normal-wear-and-tear"&gt;正常磨损（Normal Wear and Tear）</a></li>
-<li><a href="#11-租赁协议中的各项关键条款"&gt;租赁协议中的各项关键条款</a></li>
-<li><a href="#12-调解与仲裁"&gt;调解与仲裁</a></li>
-<li><a href="#13-总结与展望"&gt;总结与展望</a></li>
-</ol>
+
+<ul>
+<li>[课前事务与课程更新](#1-课前事务与课程更新)</li>
+<li>[为什么从房东租客关系开始？](#2-为什么从房东租客关系开始)</li>
+<li>[核心术语：房东、租客、出租人与承租人](#3-核心术语房东租客出租人与承租人)</li>
+<li>[租赁协议 vs 出租协议](#4-租赁协议-vs-出租协议)</li>
+<li>[四种租赁地产权类型](#5-四种租赁地产权类型)</li>
+<li>[租赁协议的最低法定要求](#6-租赁协议的最低法定要求)</li>
+<li>[反欺诈法（Statute of Frauds）](#7-反欺诈法statute-of-frauds)</li>
+<li>[加州房地产经纪人协会住宅租赁协议详解](#8-加州房地产经纪人协会住宅租赁协议详解)</li>
+<li>[押金管理——房东租客关系的核心](#9-押金管理房东租客关系的核心)</li>
+<li>[正常磨损（Normal Wear and Tear）](#10-正常磨损normal-wear-and-tear)</li>
+<li>[租赁协议中的各项关键条款](#11-租赁协议中的各项关键条款)</li>
+<li>[调解与仲裁](#12-调解与仲裁)</li>
+<li>[总结与展望](#13-总结与展望)</li>
+</ul>
+
 <hr>
-<section class="article-section">
+
 <h2>1. 课前事务与课程更新</h2>
+
 <p>💡 Pat在课程开场时表示：「Hi everybody, my name is Pat Hogarty and welcome back to California Real Estate Principles, Real Estate 300. This happens to be show number five.」</p>
+
 <p>在正式进入本讲内容之前，Pat首先处理了几项课程管理事务。</p>
+
 <h3>1.1 第四讲已上传</h3>
+
 <p>Pat告知学生，第四讲的视频已经完成编码并上传。他通过两种方式通知了所有学生：一是发送了电子邮件，二是在Blackboard教学网站上发布了公告。Pat建议学生定期查看Blackboard网站上的公告，这是他与学生保持联系、通知课程视频上传进度的主要渠道。</p>
+
 <h3>1.2 学习进度提醒</h3>
+
 <p>💡 Pat强调：「You should be now, for this particular class at least, you should have been reading the chapters. You should have already downloaded the study guide that I keep talking about over and over and over again.」</p>
+
 <p>Pat反复提醒学生，应该已经在阅读教材各章节，并且应该已经下载了他一再强调的学习指南（study guide）。他特别指出，这份学习指南与考试内容高度接近——是他精心编制的、尽可能贴近实际考试的资料。</p>
+
 <h3>1.3 关于考试表现的期望</h3>
+
 <p>💡 Pat分享了他对学生的期望：「Students that are in my class typically usually, even so I know it's 100 questions, usually come in and have that exam done in about 20 to 25 minutes at the most. That's 100 questions. And I expect you all to be getting as close to 100 as possible.」</p>
+
 <p>Pat表示，他的学生在100道题的考试中，通常只需20到25分钟就能完成。他对学生的期望是尽可能接近满分，而不是仅仅满足于90多分。「We really don't like to see people get low 90s and stuff. That's not any good. I want to see you getting 100 on the test. There's really no reason why you shouldn't.」他认为，由于学生可以查阅资料、查找答案，没有理由考不到满分。</p>
+
 <h3>1.4 专业访谈项目</h3>
+
 <p>💡 Pat再次提醒学生关于课程项目——专业访谈（Professional Interview）：「You should have gone to the Blackboard website. You should have gone under course materials. And you should have looked at for that project, which is the professional interview.」</p>
+
 <p>他强调学生现在就应该开始着手这个项目，而不是等到最后一刻。具体要求是：</p>
 <ul>
 <li>联系一位在房地产行业工作的专业人士</li>
@@ -259,74 +150,109 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>也可以是房地产估价师、贷款人等任何相关领域的从业者</li>
 <li>写一份大约两页的报告</li>
 </ul>
+
 <p>Pat还给了学生一个实用的自我介绍模板：</p>
-<blockquote>「Hi. My name is Joe Smith. I attend Sacramento City College. I'm currently enrolled in a real estate principles class and the instructor asked me to go out and meet some people that are in the real estate field and write a short little two-page report on what I found out.」</blockquote>
+<blockquote>
+<p>「Hi. My name is Joe Smith. I attend Sacramento City College. I'm currently enrolled in a real estate principles class and the instructor asked me to go out and meet some people that are in the real estate field and write a short little two-page report on what I found out.」</p>
+</blockquote>
+
 <p>💡 Pat解释了这个项目的重要性：「If you're going to be investing time and effort into taking courses, educational courses in real estate, I think it's probably a good idea for you to find out a little bit about what it's about by talking to people that are in the industry.」</p>
+
 <hr>
-<section class="article-section">
+
 <h2>2. 为什么从房东租客关系开始？</h2>
+
 <p>💡 Pat解释了为什么在课程的这个节点安排房东与租客关系这一主题：「What we want to do now is the reason why we're doing landlord and tenant is because we feel, at this point, I personally feel that this is probably in most cases your first exposure into you as an individual getting involved in real estate.」</p>
+
 <p>Pat认为，对于大多数人来说，房东与租客关系是他们人生中第一次真正接触房地产。他描述了这样一个典型场景：</p>
 <ul>
 <li>年轻人一直住在父母家中</li>
 <li>某一天，要么父母要求他们搬出去，要么他们厌倦了家里的规矩，想要独立生活</li>
 <li>由于没有足够的钱买房，他们要么自己租一套公寓，要么和朋友合租</li>
 </ul>
+
 <p>💡 「So this is going to be your first experience to dealing with real estate, if you will.」——这就是大多数人第一次真正「处理」房地产事务的经历。</p>
+
 <p>因此，Pat认为从房东租客关系入手，既贴近学生的实际生活经验，又为后续更复杂的房地产交易概念打下基础。</p>
+
 <hr>
-<section class="article-section">
+
 <h2>3. 核心术语：房东、租客、出租人与承租人</h2>
+
 <p>Pat在进入详细内容之前，首先介绍了几个基本术语，帮助学生建立概念框架。</p>
+
 <h3>3.1 房东（Landlord / Lessor）</h3>
+
 <p>💡 「When we're talking about a landlord, a landlord keep in mind is the person that actually owns the property. That's the person that owns it. Their name is on the title.」</p>
-<p><strong>房东（Landlord）</strong> 是指拥有房产的人——房产证上是他们的名字。在租赁语境下，房东也可以被称为：</p>
+
+<strong>房东（Landlord）</strong> 是指拥有房产的人——房产证上是他们的名字。在租赁语境下，房东也可以被称为：
 <ul>
 <li><strong>Owner</strong>：房产所有人</li>
 <li><strong>Lessor</strong>：出租人</li>
 </ul>
+
 <h3>3.2 租客（Tenant / Lessee）</h3>
+
 <p>租用房产的人被称为：</p>
 <ul>
 <li><strong>Tenant</strong>：租客</li>
 <li><strong>Lessee</strong>：承租人</li>
 </ul>
+
 <h3>3.3 「-or」与「-ee」的规律</h3>
+
 <p>💡 Pat指出了一个有助于记忆的规律：「If we step back a little bit and look at the forest from the trees, we start to say, you know what, when we hear these 'ors', it looks like they're associated with somebody that owns the property or something and the 'ees' tend to be somebody that's going to buy it or lease it.」</p>
+
 <p>简单来说：</p>
 <ul>
 <li><strong>以「-or」结尾的词</strong>（如 lessor, grantor, vendor）→ 通常是给出或拥有某物的人（出租人、转让人、卖方）</li>
 <li><strong>以「-ee」结尾的词</strong>（如 lessee, grantee, vendee）→ 通常是接收或获得某物的人（承租人、受让人、买方）</li>
 </ul>
+
 <p>Pat提醒学生，这个规律并非绝对统一适用，但在学习中作为记忆辅助非常有用。回想之前讲过的 grantor（转让人）和 grantee（受让人），也是同样的模式。</p>
+
 <hr>
-<section class="article-section">
+
 <h2>4. 租赁协议 vs 出租协议</h2>
+
 <p>这是本节课程的核心概念之一。Pat花了相当多的时间来区分<strong>租赁协议（Lease）</strong>和<strong>出租协议（Rental Agreement）</strong>。</p>
+
 <h3>4.1 租赁协议（Lease）的特征</h3>
+
 <p>💡 「A lease is a contract for a set time. In other words, when we enter into a lease, we have sat down with that person, if we're the tenant, and we've sat down with the landlord and we've agreed to what day we are going to move in and we've agreed to how long we're going to be there and we have agreed to what day we're going to move out and we've agreed to that all in advance.」</p>
+
 <p>租赁协议的核心特征：</p>
-<ol>
+
+<ul>
 <li><strong>有明确的开始和结束日期</strong>：双方在签约时就已经确定了搬入日期、租期长度和搬出日期。</li>
 <li><strong>固定期限</strong>：租赁协议有一个确定的期限（definite beginning and definite ending）。</li>
 <li><strong>无需提前通知终止</strong>：💡 「Unlike a rental agreement, a lease does not require a formal announcement from either the landlord or the tenant that the agreement is coming to the end.」——合同本身已经规定了开始和结束日期，因此不需要房东或租客提前30天或60天发出终止通知。合同到期即自动终止。</li>
-</ol>
+</ul>
+
 <h3>4.2 出租协议（Rental Agreement）的特征</h3>
+
 <p>💡 「A rental agreement is something usually that we're doing on a monthly basis in most cases.」</p>
+
 <p>出租协议的特征：</p>
-<ol>
+
+<ul>
 <li><strong>周期性</strong>：通常以月为单位（month-to-month），但也有周租（week-to-week）、双周租等。</li>
 <li><strong>需要提前通知终止</strong>：与租赁协议不同，出租协议需要一方提前通知另一方才能终止。</li>
 <li><strong>灵活性更高</strong>：适合不确定租期长短的情况。</li>
-</ol>
+</ul>
+
 <h3>4.3 短期出租的实际应用场景</h3>
+
 <p>Pat以加利福尼亚州萨克拉门托（Sacramento）为例，说明了短期出租的市场需求：</p>
+
 <ul>
 <li><strong>建筑工人和承包商</strong>：例如起重机操作员，他们可能在一个城市工作四到六个月建造一座大桥，然后转移到下一个城市。</li>
 <li><strong>工程项目工程师</strong>：Pat谈到他在McClellan空军基地的经历，经常有承包商和工程师来工作三到五个月。</li>
 <li><strong>短期出差人员</strong>：需要配备家具的住处，不需要长期承诺。</li>
 </ul>
+
 <p>💡 「They would rent maybe something on a weekly basis because they weren't sure when the contract was going to end or whatever. And usually what they'll do is they'll look for someplace that's going to be week-to-week so they can cancel it fairly easily, or end it, I'm sorry, end it fairly easily.」</p>
+
 <p>这些短期租客通常寻找的是：</p>
 <ul>
 <li>配备家具的住处（furnished）</li>
@@ -334,25 +260,36 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>可以相对容易地终止协议</li>
 <li>避免长期义务</li>
 </ul>
+
 <p>💡 与普通公寓不同：「Unlike an apartment, where as an apartment you move in, you may find out in an apartment, typically, typically, they're usually rented out without furniture.」——公寓通常是不带家具出租的，而周租单位往往提供家具。</p>
+
 <p>此外，还存在按日计算的出租方式（day-to-day basis），进一步说明了出租市场的多样性。</p>
+
 <hr>
-<section class="article-section">
+
 <h2>5. 四种租赁地产权类型</h2>
+
 <p>Pat详细介绍了四种租赁地产权（leasehold estates），这是房地产考试中的重要知识点。</p>
+
 <h3>5.1 定期租赁地产权（Estate for Years）</h3>
+
 <p>💡 「That lease can go anywhere from a year to 99 years.」</p>
-<p><strong>关键特征</strong>：</p>
+
+<strong>关键特征</strong>：
 <ul>
 <li>期限范围：从一年到99年不等</li>
 <li>有固定的开始和结束日期</li>
 <li>名称中的「years」并不要求必须是整年——即使少于一年，只要期限是确定的，也属于此类</li>
 </ul>
-<p><strong>农业租赁应用</strong>：</p>
+
+<strong>农业租赁应用</strong>：
 <p>💡 Pat强调要跳出单一住宅的思维模式：「Think beyond a single family home or a condo or a townhouse.」</p>
+
 <p>农民经常租赁农业用地。一个农民可能只拥有40到100英亩土地，但在市场行情好、天气条件有利的情况下，他们可能会额外租赁邻居的40、50甚至200英亩土地来扩大种植面积。在收成不好的年份，他们可以选择不再续租，保持经营的灵活性。</p>
+
 <p>牧场土地（ranch land）也存在类似情况，用于放牧马匹和牛群。</p>
-<p><strong>商业地产租赁应用</strong>：</p>
+
+<strong>商业地产租赁应用</strong>：
 <p>Pat列举了多个商业租赁的例子：</p>
 <ul>
 <li><strong>大型零售商</strong>：如Home Depot，可能选择租赁土地30年而非购买，因为不想将大量资金绑定在土地上。他们可以在租赁的土地上自行建造建筑物，30年后将建筑物归还给土地所有者，或者协商拆除。</li>
@@ -360,9 +297,12 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li><strong>零售空间</strong>：咖啡店、冰淇淋店、五金店等。</li>
 <li><strong>工业建筑</strong>：公司可能建造一栋建筑用于特定目的，预期使用一段时间后就不再需要。</li>
 </ul>
+
 <h3>5.2 周期性租赁地产权（Estate from Period to Period）</h3>
+
 <p>💡 「Again, that period to period could be month to month, week to week, year to year.」</p>
-<p><strong>关键特征</strong>：</p>
+
+<strong>关键特征</strong>：
 <ul>
 <li>周期可以是月对月、周对周、年对年</li>
 <li>通常被视为一种出租类型的协议</li>
@@ -370,74 +310,115 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>有预期在特定日期（如每月第一天）支付租金</li>
 <li>如果未按时支付租金，房东可以在宽限期后收取滞纳金</li>
 </ul>
+
 <p>💡 「What it essentially means is that you agree I'm going to rent for on a month to month basis. And what will happen is that we're both agreeing that I'm going to rent on a month to month basis.」</p>
+
 <p>周期到周期的租赁可以通过书面协议确立，也可以口头建立。</p>
+
 <h3>5.3 任意租赁地产权（Estate at Will）</h3>
+
 <p>💡 「A state at will means that I have an agreement and we will continue that agreement as long as we both want to do that.」</p>
-<p><strong>关键特征</strong>：</p>
+
+<strong>关键特征</strong>：
 <ul>
 <li>只要双方都愿意，租赁关系就持续下去</li>
 <li>不一定需要书面形式——口头协议也可以成立</li>
 <li>任何一方都可以随时终止</li>
 </ul>
-<p><strong>实际应用场景</strong>：</p>
+
+<strong>实际应用场景</strong>：
 <p>Pat分享了他的亲身经历：当租客的租约到期后，租客可能会说需要再住一两个月。有时候双方甚至不会坐下来签署正式协议——只需要说一句「再租一个月没问题，寄支票来就行」。如果租客说他们会继续租并寄来支票，而房东接受了支票，那双方就形成了合同关系。</p>
+
 <p>💡 「If they tell me they're going to rent and they send me a check and I accept the check, then I have a contract. It's verbally. It's not in writing.」</p>
+
 <p>值得注意的是，出租协议可以是口头的，但租赁协议（尤其是超过一年的）通常需要书面形式，因为涉及需要记录在案的合同条款。</p>
+
 <h3>5.4 容忍租赁地产权（Estate at Sufferance）</h3>
+
 <p>💡 Pat说：「An estate at sufferance, and I'll read this to you because it sounds sort of terrible, but in reality it's not.」</p>
+
 <p>这个名字听起来有些可怕，但实际并非如此。Pat直接引用了教材中的定义：</p>
-<blockquote>「An estate at sufferance occurs when a lessee, who has rightfully come into possession of the land, retains possession after the expiration of his or her term.」</blockquote>
-<p><strong>关键特征</strong>：</p>
+
+<blockquote>
+<p>「An estate at sufferance occurs when a lessee, who has rightfully come into possession of the land, retains possession after the expiration of his or her term.」</p>
+</blockquote>
+
+<strong>关键特征</strong>：
 <ul>
 <li>租客是<strong>合法</strong>进入房产的（有房东的许可，签署了租赁协议）</li>
 <li>租客按时支付了租金</li>
 <li>租客在租约到期后<strong>继续留在</strong>房产中</li>
 <li>租客最初的入住是合法的（不是擅自占用 squatting）</li>
 </ul>
-<p><strong>典型场景</strong>：</p>
+
+<strong>典型场景</strong>：
 <p>💡 Pat举了一个非常生动的例子：租客签了一年的租约，计划在5月1日搬出。他们的预期是到那时自己的新房子会建好。但正如Pat所说：「Those of us that have been through that in the past know that doesn't always happen all the time.」</p>
+
 <p>建房延迟的原因可能包括：</p>
 <ul>
 <li>恶劣天气（下雨）</li>
 <li>劳动力问题</li>
 <li>材料供应问题</li>
 </ul>
+
 <p>Pat用自己的亲身经历来说明这一点。他在装修出租房时，需要安装一面从洗手台延伸到天花板的大镜子。虽然施工公司非常优秀，但材料供应商那边出了问题：</p>
 <ul>
 <li>第一次：镜子送到了，安装工发现背面有划痕，退回</li>
 <li>第二次：重新订购，新的镜子送到，发现又有划痕，但安装工因为不好意思再拖延，还是装上去了</li>
 <li>第三次：再次订购第三面镜子，结果送到后发现又是划痕</li>
 </ul>
+
 <p>💡 「So we've taken something that maybe would have taken maybe literally a week to turn this whole thing around from the time you order it to the time you receive it. Now it's almost over a month.」</p>
+
 <p>原本可能一周就能完成的事，最终拖了一个多月。同样的情况也会发生在橱柜、地板、材料、屋顶等各个方面。因此租客需要延长租住时间是完全可以理解的。</p>
-<p><strong>容忍租赁地产权的法律后果</strong>：</p>
+
+<strong>容忍租赁地产权的法律后果</strong>：
 <p>💡 「An estate at sufferance does not require notice of termination because the expiration of the lease is the automatic termination. If the landlord accepts any payment of rent, the lease reverts to a periodic tendency.」</p>
+
 <ul>
 <li>租约到期即自动终止，不需另行通知</li>
 <li>如果房东接受了租客的租金支付，则租赁关系转变为周期性租赁（periodic tenancy）——通常是月对月（month-to-month）</li>
 <li>这一过程完全合法且符合道德规范</li>
 </ul>
+
 <hr>
-<section class="article-section">
+
 <h2>6. 租赁协议的最低法定要求</h2>
+
 <p>Pat明确指出，创建租赁协议不需要特定的法律语言。只要存在出租房产的意图（intent to rent），任何形式的表达都可以成立租赁关系。</p>
+
 <p>💡 「As long as there is an intent to rent property, the creation of a lease requires no particular language.」</p>
+
 <p>租赁或出租协议必须至少包含以下四个要素：</p>
+
 <h3>要素一：租期长度（Length or Duration）</h3>
+
 <p>必须明确租赁的时间长度。无论是月对月的出租（月初入住，月底搬出），还是一年期的租赁（今年5月入住，明年5月搬出），双方对此必须有明确的预期。</p>
+
 <h3>要素二：租金金额（Amount of Rent）</h3>
+
 <p>必须明确租金的数额。💡 「You can't say to somebody, oh, but you can't tell them we have a rental agreement and then just let them know at the end of the month and say, well, for this month, I thought it was going to be $400.」</p>
+
 <p>你不能在月底才告诉租客「哦，我以为这个月的租金是400美元」。租金必须在事前协商一致。</p>
+
 <h3>要素三：当事人的身份（Parties Involved）</h3>
+
 <p>必须明确谁是出租人（lessor），谁是承租人（lessee）。双方的身份需要清晰可辨。</p>
+
 <h3>要素四：房产描述（Description of the Property）</h3>
+
 <p>必须对房产进行描述。💡 Pat特别强调：「And we are not talking about a legal description here either. We're talking about a common, everyday, you know, common address, like 123 Main Street.」</p>
+
 <p>这里不需要法律上的正式描述（如地块编号、测绘描述等），只需要一个普通的街道地址即可，例如「123 Main Street」。</p>
+
 <h3>关于书面形式的建议</h3>
+
 <p>💡 「Leases for one year or less do not need to be in writing, but makes good business sense to have all the real estate agreements in writing.」</p>
+
 <p>一年或以下的租赁协议不需要书面形式，但从商业实践的角度，Pat强烈建议将所有房地产协议都以书面形式记录下来。</p>
+
 <p>💡 Pat进一步阐述了为什么书面协议如此重要：「In the real world, you want to have a written agreement. You want to specifically identify all the contractual requirements of the lease. You want to make darn sure that everybody understands what's going on ahead of time.」</p>
+
 <p>在现实世界中：</p>
 <ul>
 <li>你需要书面协议来明确所有合同要求</li>
@@ -446,37 +427,59 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>这就是为什么你对丢失车库门遥控器收费——因为协议中规定了</li>
 <li>这就是为什么租客未经许可不能粉刷房间——因为协议中写明了</li>
 </ul>
+
 <p>💡 Pat说得非常到位：「That way, if you know you're going to have any kind of a disagreement with the tenant or the tenant's going to have a disagreement with the landlord, you get it out front. And maybe the result of that would be, you know, the landlord's an idiot. I'm going to go rent someplace else.」</p>
+
 <p>把问题摆在前面解决——如果发现房东不靠谱，现在知道总比以后知道好。</p>
+
 <hr>
-<section class="article-section">
+
 <h2>7. 反欺诈法（Statute of Frauds）</h2>
+
 <h3>7.1 基本规定</h3>
+
 <p>💡 「Under the Statute of Frauds, any lease lasting more than one year from the date of the signing must be in writing.」</p>
+
 <p>根据反欺诈法，从签署之日起超过一年的任何租赁协议<strong>必须以书面形式</strong>订立。</p>
+
 <h3>7.2 反欺诈法的目的</h3>
+
 <p>💡 「The whole point of the Statute of Frauds is to try to prevent fraud.」</p>
+
 <p>反欺诈法的核心目的是防止欺诈（fraud）。Pat用一个简单的例子解释了什么是欺诈：</p>
-<blockquote>如果有人告诉你「这是一辆装了全新发动机的新车」，但你买了之后发现根本不是新发动机——只是喷了漆、洗了一下看起来不错——这就是欺诈。对方说了谎。</blockquote>
+<blockquote>
+<p>如果有人告诉你「这是一辆装了全新发动机的新车」，但你买了之后发现根本不是新发动机——只是喷了漆、洗了一下看起来不错——这就是欺诈。对方说了谎。</p>
+</blockquote>
+
 <p>反欺诈法通过要求书面形式来防止这种情况：如果有人以书面形式陈述了某事，将来发现是谎言，就可以因此主张合同无效。</p>
+
 <h3>7.3 签署日期的含义</h3>
+
 <p>💡 「Remember the date of the signing is the date that you signed the contract. You may sign the contract today, but not actually start it for maybe another month or two.」</p>
+
 <p>签署日期是你实际签署合同的日期。你可能今天签了合同，但要过一两个月才开始入住。这在房屋出租中非常常见：</p>
+
 <ul>
 <li>房东发布广告招租</li>
 <li>潜在租客来看房</li>
 <li>双方填写租赁申请并签署所有文件</li>
 <li>但租客可能还要一个月才实际搬入</li>
 </ul>
+
 <p>💡 Pat解释了这个时间差的合理性：「It's not uncommon that people are moving into the community or maybe moving out of someplace else.」</p>
+
 <p>这种提前签约的做法对各方都有好处：</p>
 <ul>
 <li>现有的租客知道他们必须在租约结束时搬出</li>
 <li>新租客知道他们有地方住了，可以给自己现在的房东发出搬出通知</li>
 </ul>
+
 <p>反欺诈法中的「从签署之日起超过一年」需要将这个时间差计算在内——计算的是从签署日到租约结束日的总时长。</p>
+
 <h3>7.4 签署要求</h3>
+
 <p>💡 关于签署要求，Pat引用了加州法院的判例：「California courts have held that in the event the lease is written, it must be signed by the lessor. It is not necessary for the lessee to sign the lease has been delivered to and accepted the lessee. The payment of rent and possession of the property is sufficient acceptance.」</p>
+
 <p>关键要点：</p>
 <ul>
 <li>书面租赁协议必须由<strong>出租人（lessor/房东）</strong>签署</li>
@@ -484,52 +487,81 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>如果租客接受了租约、搬入了房产并支付了租金，这个行为本身就构成了足够的「接受」</li>
 <li>支付租金和实际占有房产就是充分的接受行为</li>
 </ul>
+
 <h3>7.5 酒店、汽车旅馆等住宿</h3>
+
 <p>💡 「Hotels, motels and other types of lodging fall into this category of leases, even though the duration of use may be for a month, a month may be for much shorter time and the eviction or termination is handled differently for those from the daily weekly rentals.」</p>
+
 <p>酒店和汽车旅馆等住宿类型也属于租赁范畴，即使使用期可能只有一天或更短。不过，这些类型的驱逐和终止程序与日常/每周出租有所不同。</p>
+
 <p>📌 <strong>2026年更新</strong>：值得注意的是，随着短期租赁平台（如Airbnb、Vrbo等）在过去几年中的蓬勃发展，加州多个城市已经出台了针对短期租赁（少于30天）的专门法规。许多城市要求房东注册并获得许可证，并征收临时占用税（Transient Occupancy Tax）。截至2026年，加州法律将超过30天的租赁视为标准住宅租赁，适用标准租户保护法律。</p>
+
 <hr>
-<section class="article-section">
+
 <h2>8. 加州房地产经纪人协会住宅租赁协议详解</h2>
+
 <p>在这一部分，Pat以California Association of Realtors（加州房地产经纪人协会，简称C.A.R.）的标准住宅租赁协议表格为蓝本，逐项讲解了租赁协议中的重要内容。他强调，他并不是要逐条解释每一个段落，而是要指出他认为学生需要了解的关键点。</p>
+
 <h3>8.1 使用最新版本表格的重要性</h3>
+
 <p>💡 「First of all, I want you to notice that at the top of this, that this agreement was prepared for and by the California Association of Realtors.」</p>
+
 <p>这份协议是由加州房地产经纪人协会（C.A.R.）编制和维护的。Pat特别强调了一个关键原则：</p>
+
 <p>💡 「What's important about this, in my opinion, is the fact that you want to make darn sure that you are using a current legal document when you sign something between a landlord and tenant.」</p>
+
 <strong>为什么必须使用最新版本的表格？</strong>
+
 <ul>
 <li><strong>法律在变化</strong>：租赁法律不断更新。如果使用过时的表格，可能会包含不再适用或不再合法的条款。</li>
 <li><strong>C.A.R.有专业律师团队</strong>：据Pat了解，C.A.R.有大约六到八名律师持续审查所有房地产经纪人使用的各类表格和文件。他们审查：</li>
-<li>挂牌协议（listing agreements）</li>
-<li>购买报价协议（purchase offer agreements）</li>
-<li>出租协议（rental agreements）</li>
-<li>以及所有其他协议</li>
+</ul>
+<p>- 挂牌协议（listing agreements）</p>
+<p>- 购买报价协议（purchase offer agreements）</p>
+<p>- 出租协议（rental agreements）</p>
+<p>- 以及所有其他协议</p>
+<ul>
 <li><strong>确保反映最新法律语言</strong>：律师团队确保所有表格都反映了最新的法律语言。</li>
 </ul>
+
 <p>💡 「What you don't want to do is have where the law has changed and your documents are out of date. And find out that you can no longer enforce those things because you're trying to enforce a law that may or may not be current or legal.」</p>
+
 <p>最糟糕的情况是：法律已经变了，但你的文件还停留在旧版本，导致你试图执行的内容已经不再具有法律效力。</p>
-<p><strong>实际操作建议</strong>：</p>
+
+<strong>实际操作建议</strong>：
 <ul>
 <li>C.A.R.提供了在线获取这些表格的途径</li>
 <li>有专门的软件（如WinForms）可以在电脑上填写和打印这些表格</li>
 <li>经纪人不需要携带大量纸质表格——许多经纪人现在将所有表格存储在电脑上</li>
 <li>C.A.R.会定期发布更新后的表格供下载</li>
 </ul>
+
 <h3>8.2 住宅租赁或月对月协议</h3>
+
 <p>💡 「Notice that this happens to be a residential. It's not commercial. It's built or designed for residential use.」</p>
+
 <p>Pat指出这份表格是专门为<strong>住宅用途</strong>设计的——不是商业用途。表格的名称为「Residential Lease or Month-to-Month Agreement」（住宅租赁或月对月协议），意味着<strong>同一份表格可以同时满足两种租赁形式的需求</strong>——取决于你勾选了哪个选项框。</p>
+
 <h3>8.3 表格的具体内容解析</h3>
+
 <h4>8.3.1 房产与居住人描述</h4>
+
 <p>表格首先声明：「房东将房产出租给租客，租客从房东处承租该房产。」然后描述房产所在地，例如「123 Main Street, Sacramento, California, 邮编XXXXX」。</p>
+
 <p>💡 「The premises are the sole use and personal residence of the following persons. This is where you would describe the names of the people that are entering the agreement.」</p>
+
 <p>这里需要列出所有将居住在该房产中的人员姓名。通常，如果是家庭租赁，会列出所有家庭成员。</p>
+
 <p>💡 Pat解释了为什么这一项如此重要：「What you want to do is that if you're renting a house to somebody, a home, a condominium, a townhouse, whatever, what you want to do is say, I am renting it to you, you and your husband or you and your wife and your two children. This is not a rooming house. It's not a place that you rent out to anybody that happens to come by.」</p>
+
 <p>这段话的核心意思是：</p>
 <ul>
 <li>房产是租给特定的人（租客及其配偶和子女），而不是一个可以任意接纳他人的「寄宿屋」</li>
 <li>明确规定居住人有助于防止未经授权的人员长期居住</li>
 </ul>
+
 <h4>8.3.2 个人财产（Personal Property）</h4>
+
 <p>表格中有一段关于个人财产的内容，列出了租赁中可能包含的个人财产。这些是可以移动的、不属于不动产附着物的物品，例如：</p>
 <ul>
 <li>冰箱（refrigerator）</li>
@@ -537,128 +569,183 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>烘干机（dryer）</li>
 <li>洗碗机（dishwasher）</li>
 </ul>
+
 <p>💡 Pat分享了他在实际出租中的经验：「It's not uncommon, for example, for people to rent an apartment and have a refrigerator or not have a refrigerator.」</p>
-<p><strong>公寓出租</strong>：</p>
+
+<strong>公寓出租</strong>：
 <ul>
 <li>Pat个人通常会为公寓配备冰箱，因为公寓用的冰箱通常比较小，很难找到合适的尺寸</li>
 <li>租公寓的人通常没有经济能力自己购买冰箱、洗衣机和烘干机</li>
 <li>冰箱的尺寸匹配也是一个实际问题</li>
 </ul>
-<p><strong>独立屋出租</strong>：</p>
+
+<strong>独立屋出租</strong>：
 <ul>
 <li>租独立屋的家庭通常已经拥有很多自己的物品——洗衣机、烘干机、冰箱、冷冻柜、床等</li>
 <li>因此独立屋出租通常不提供太多个人财产</li>
 </ul>
+
 <p>💡 Pat还讲了一个有趣的故事来说明独立屋租客的物品之多：</p>
-<blockquote>有一对夫妇和他们的三四个孩子从一栋3,500平方英尺的房子搬出来，正在建一栋超过4,000平方英尺的新房子。但他们租了Pat的一栋只有1,800平方英尺的房子。结果所有搬不进去的东西都堆进了车库。他们搬进来后，第一个坏掉的东西是多年没出过问题的车库门开启器。Pat本来一个小时就能修好，但因为要在堆积如山的物品中穿梭，最终花了大约六个小时。</blockquote>
+
+<blockquote>
+<p>有一对夫妇和他们的三四个孩子从一栋3,500平方英尺的房子搬出来，正在建一栋超过4,000平方英尺的新房子。但他们租了Pat的一栋只有1,800平方英尺的房子。结果所有搬不进去的东西都堆进了车库。他们搬进来后，第一个坏掉的东西是多年没出过问题的车库门开启器。Pat本来一个小时就能修好，但因为要在堆积如山的物品中穿梭，最终花了大约六个小时。</p>
+</blockquote>
+
 <h4>8.3.3 选择租赁类型</h4>
+
 <p>表格中有一个区域，让你勾选是月对月出租（month-to-month）还是租赁（lease）。这是决定整个协议性质的关键选择。</p>
+
 <h4>8.3.4 租金金额</h4>
+
 <p>表格中明确写明了租客需要支付的月租金金额。</p>
+
 <h4>8.3.5 签约前让租客充分理解协议</h4>
+
 <p>💡 Pat分享了一个他强烈推荐的实践做法：「I recommend that you make a, have a copy and leave that lease agreement with them and say to them, this is maybe not the final one. But what I want you to do is go through here and make sure that you understand everything.」</p>
+
 <p>他建议房东在正式签约前：</p>
-<ol>
+<ul>
 <li>给租客一份租约副本（可能不是最终版本）</li>
 <li>让租客仔细阅读，确保理解每一项内容</li>
 <li>如果有不清楚的段落，用高亮标记出来，下次见面时讨论</li>
 <li>目标是让租客完全理解他们即将承担的义务</li>
-</ol>
+</ul>
+
 <p>💡 「I just don't want them signing stuff and getting all done with signing it. And then, you know, six months later, something happens and they go, well, I didn't know that that was covered in the agreement because that causes a problem.」</p>
+
 <p>Pat不希望看到租客在六个月后出了问题才说「我不知道协议里有这一条」。这种情况会引发纠纷。</p>
+
 <p>💡 他还指出，与租客保持良好的工作关系至关重要：「If you really tweak them, they can tweak you. They can make your life a nightmare.」</p>
+
 <p>如果租客对房东不满，他们可以变得非常不合作：</p>
 <ul>
 <li>他们要搬走了，但没有义务让房东进入房屋进行维修</li>
 <li>他们可以让房东的生活变成「噩梦」</li>
 </ul>
+
 <p>因此，Pat认为良好的关系从一份被充分理解的协议开始。</p>
+
 <hr>
-<section class="article-section">
+
 <h2>9. 押金管理——房东租客关系的核心</h2>
+
 <p>💡 「One thing with security deposits I really want to tell you is that you really need to take care of those dead serious like.」</p>
+
 <p>Pat特别强调，押金（security deposit）的管理必须非常认真对待。</p>
+
 <h3>9.1 搬入检查清单（Move-in Checklist）</h3>
+
 <p>💡 Pat的建议非常详细：「When a tenant moves in, I don't care no matter what it is. When a tenant moves in, you should be walking around with that tenant and walking in every single solitary room and opening and closing every single solitary door, drawer.」</p>
+
 <p>当租客搬入时，房东应该：</p>
-<ol>
+<ul>
 <li><strong>与租客一起逐个房间检查</strong></li>
 <li><strong>打开和关闭每一扇门、每一个抽屉</strong></li>
 <li><strong>不仅让租客检查房产是否有问题</strong>，还应该利用这个机会向租客演示各种设备的操作方法</li>
-</ol>
+</ul>
+
 <p>💡 设备操作演示的重要性：「This is how you run the process to clean the oven. This is how the garbage disposal works. This is how the dishwasher works. These are how the lights function.」</p>
+
 <ul>
 <li>如何清洁烤箱</li>
 <li>垃圾处理器如何使用</li>
 <li>洗碗机怎么操作</li>
 <li>灯具如何开关</li>
 </ul>
+
 <p>更重要的是，Pat不仅演示，还让租客亲自操作一遍：「I not only show them, but I say here, I want you to turn them off.」这可以减少后续因不了解设备而引发的问题。</p>
-<p><strong>搬入检查清单（Move-in Checklist）应该记录</strong>：</p>
+
+<strong>搬入检查清单（Move-in Checklist）应该记录</strong>：
 <ul>
 <li>地毯上的污渍</li>
 <li>门或墙上的洞</li>
 <li>任何损坏和缺陷</li>
 <li>维修完成后的确认记录</li>
 </ul>
+
 <h3>9.2 搬出检查与押金退还</h3>
+
 <p>当租客准备搬出时，💡 应该重复相同的流程：「They say, I'm ready to move out, no problem. We have the carpets clean, the walls are painted, everything's cleaned up. You take the same checklist and you walk through the house.」</p>
+
 <p>使用同一份检查清单，逐项对比：</p>
 <ul>
 <li>搬入时没有墙洞的地方，现在有了 → 需要从押金中扣除修理费用</li>
 <li>搬入时地毯没有污渍，现在有了 → 需要专业清洁</li>
 </ul>
+
 <h3>9.3 押金退还流程</h3>
+
 <p>💡 「When you collect the security damage deposit, how much of that they get back is totally dependent upon how close the house is to the condition it was when you rented it out.」</p>
+
 <p>退还金额取决于房产与出租时状况的接近程度。如果需要额外花费来清洁或修复损坏，这些费用将从押金中扣除：</p>
 <ul>
 <li>专业地毯清洁（如Stanley Steemer服务）</li>
 <li>重新粉刷墙壁</li>
 <li>更换损坏的物品</li>
 </ul>
-<p><strong>退还需要文件支持</strong>：</p>
+
+<strong>退还需要文件支持</strong>：
 <p>💡 「I always recommend, and I think it's even law that you have to produce the bills to show them where the money went.」</p>
+
 <ul>
 <li>必须提供逐项列出的费用清单</li>
 <li>需要出示实际支出的账单和收据</li>
 <li>例如：「花了300美元请Stanley Steemer清洁地毯」「花了200美元请粉刷工粉刷那个房间」</li>
 <li>退还金额 = 押金总额 - 修复费用</li>
 </ul>
+
 <p>📌 <strong>2026年更新</strong>：关于加州押金法律的重要变化。自2024年7月1日起，根据AB 12法案（2023年签署），加州将大多数住宅租赁的押金上限从原来的两个月租金（无家具）或三个月租金（有家具）<strong>降低至一个月租金</strong>，无论房产是带家具还是不带家具。但有两个例外：(1) 拥有不超过两处房产、总出租单元不超过四个的自然人房东（小房东豁免），仍可收取最多两个月租金作为押金；(2) 现役军人租客仍受原有保护。</p>
+
 <p>此外，加州法律要求房东在租客搬出后<strong>21个日历日内</strong>退还押金或提供逐项扣除清单。如果房东未能在此期限内完成，租客有权要求全额退还押金，甚至可能获得惩罚性赔偿。截至2026年，这些规定仍然是加州租赁法律的核心内容。</p>
+
 <hr>
-<section class="article-section">
+
 <h2>10. 正常磨损（Normal Wear and Tear）</h2>
+
 <p>💡 「This, by the way, in case you haven't heard it, this is where the tenant will talk to you about something called normal wear and tear. And normal wear and tear to you as a landlord and normal wear and tear to the tenant are two different things.」</p>
+
 <p>正常磨损是房东和租客之间最容易产生分歧的领域。Pat用生动的对比说明了这个问题：</p>
+
 <h3>房东眼中的正常磨损：</h3>
 <ul>
 <li>如果铺了全新的地毯，搬出时地毯应该仍然是可清洁的状态</li>
 <li>用Stanley Steemer清洁一次就能恢复，污渍不会一周后再次渗出</li>
 <li>整体保持良好状态</li>
 </ul>
+
 <h3>租客眼中的正常磨损：</h3>
 <p>💡 「Their definition is, well, my son rode the bike through the house. Yes, there are some track marks in the carpet, but that's normal wear and tear because what we weren't here for a year, we were here for maybe three years and that's kind of normal wear and tear.」</p>
+
 <ul>
 <li>儿子在房子里骑自行车留下了轮胎痕迹</li>
 <li>「我们在这里住了三年，不是一年，所以这属于正常磨损」</li>
 <li>「如果我拥有自己的房子，我儿子也会这么做」</li>
 </ul>
+
 <p>这种认知差异就是为什么搬入和搬出时的检查清单如此重要——它提供了客观的对比基础。</p>
+
 <hr>
-<section class="article-section">
+
 <h2>11. 租赁协议中的各项关键条款</h2>
+
 <p>Pat接下来逐一讲解了租赁协议中的多个关键条款。他特别强调，作为房地产经纪人，你需要能够向客户解释所有这些条款。</p>
+
 <p>💡 「You as the agent need to know and be able to explain all of these different items. You need to be prepared, ready, willing, and able to explain it because some clients will take and read this document and take one glance at it and sign it.」</p>
+
 <p>Pat幽默地指出两种极端的客户类型：</p>
 <ul>
 <li><strong>不看就签型</strong>：即使你告诉他们「签之前要通过考试，考不过我就不租给你」，他们也不会读完整个文件</li>
 <li><strong>逐字审阅型</strong>：通常是工程师或会计师背景，会阅读整个文件，不仅会问问题，还会提出各种假设场景（「如果我儿子半夜和邻居孩子吵架然后扔石头砸了窗户，那怎么办？」）</li>
 </ul>
+
 <h3>11.1 滞纳金（Late Charges）</h3>
+
 <p>协议中规定了租金逾期后的滞纳金处理方式。💡 如前面提到的，这就是房东可以说「回忆一下协议第二段，这就是我收取你滞纳金的原因——因为你没有按时支付」的依据。</p>
+
 <h3>11.2 停车（Parking）</h3>
+
 <p>💡 「Parking is important because of the fact that, you know, we mostly think that if we're going to rent a house that we're going to park in the driveway.」</p>
+
 <p>停车是一个容易产生问题的地方。实际情况往往比预想复杂：</p>
 <ul>
 <li>夫妇各有一辆车</li>
@@ -667,49 +754,64 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>业主协会（HOA）可能禁止在街道停车</li>
 <li>公寓可能只提供每户一个或两个车位</li>
 </ul>
+
 <p>💡 「So you need to talk to them about parking so that they're aware of it, what the rules are, because you will be the one that will get the phone call after a while, or get the notice of their parking in the street and they're not supposed to.」</p>
+
 <p>如果不提前说明停车规则，最终房东会接到投诉电话或收到违规通知，而租客会因为「你从没告诉过我」而感到愤怒。</p>
+
 <h3>11.3 储物空间（Storage）</h3>
+
 <p>需要说明房产是否提供储物空间：</p>
 <ul>
 <li>有些地方有小储物区或公共储物区</li>
 <li>独立屋可能提供额外的储物空间，如房车、船只停放位</li>
 <li>💡 「They may rent from you just because you have that space, because they have a trailer.」——租客可能就是因为你有那个空间才选择租你的房子</li>
 </ul>
+
 <h3>11.4 水电杂费（Utilities）</h3>
+
 <p>💡 Pat分享了他的实用原则：「Typically what ends up happening, the way I like to think about it is anything they have direct control and consume, they're going to pay for.」</p>
-<p><strong>租客通常支付</strong>（他们直接控制和消耗的）：</p>
+
+<strong>租客通常支付</strong>（他们直接控制和消耗的）：
 <ul>
 <li>电费</li>
 <li>电话费</li>
 <li>有线电视费</li>
 <li>独立屋的垃圾处理费</li>
 </ul>
-<p><strong>房东可能支付的</strong>：</p>
+
+<strong>房东可能支付的</strong>：
 <ul>
 <li><strong>水费</strong>：特别是在独立屋出租中。💡 「Why? Because you spend a lot of money to have all the landscaping done and you don't want them to look at the bill and go, oh my god, $100 for a water bill for the month, John, don't turn the water on anymore.」</li>
-<li>如果租客看到高额水费账单，可能会关掉灌溉系统以节省费用</li>
-<li>但房东在景观美化上投入了大量资金——那些植物从一加仑大小长到五加仑或十加仑，价值不菲</li>
-<li>因此房东可能会说「水费我来付」，甚至有园丁维护景观</li>
-<li><strong>污水费</strong>：通常与水费挂钩——因为没有单独的污水计量表，污水费是根据用水量估算的</li>
-<li>💡 「If you have the water bill, guess what, in most cases you're probably also going to be responsible for the sewer bill.」</li>
 </ul>
+<p>- 如果租客看到高额水费账单，可能会关掉灌溉系统以节省费用</p>
+<p>- 但房东在景观美化上投入了大量资金——那些植物从一加仑大小长到五加仑或十加仑，价值不菲</p>
+<p>- 因此房东可能会说「水费我来付」，甚至有园丁维护景观</p>
+<ul>
+<li><strong>污水费</strong>：通常与水费挂钩——因为没有单独的污水计量表，污水费是根据用水量估算的</li>
+</ul>
+<p>- 💡 「If you have the water bill, guess what, in most cases you're probably also going to be responsible for the sewer bill.」</p>
+
 <h3>11.5 维修（Maintenance）</h3>
+
 <p>💡 「One thing with maintenance though, you need to always react to whatever the tenant calls you.」</p>
+
 <p>维修管理的核心原则：</p>
 <ul>
 <li><strong>及时响应</strong>：租客打电话报告问题，你需要立即过去或派人过去，或者至少立即确认收到问题</li>
 <li><strong>小问题可能变成大灾难</strong>：💡 「As an example, a toilet that leaks will eventually, if it continues to leak, cause dry rot in the fall through the floor.」</li>
-<li>一个漏水的马桶如果不修理，会导致地板下的木梁干腐</li>
-<li>花10到20美元就能修好的问题，拖延下去可能需要花5,000美元请木工更换所有地板梁</li>
 </ul>
-<p><strong>关于租客自行维修</strong>：</p>
+<p>- 一个漏水的马桶如果不修理，会导致地板下的木梁干腐</p>
+<p>- 花10到20美元就能修好的问题，拖延下去可能需要花5,000美元请木工更换所有地板梁</p>
+
+<strong>关于租客自行维修</strong>：
 <ul>
 <li>有些租客确实有能力处理小维修——例如，他们会打电话说洒水器有问题，买5美元的材料就能修好，然后从租金中抵扣</li>
 <li>有些租客说「没问题，我来修」，但实际上并不具备相应的能力</li>
 <li>💡 Pat特别警告：「You do not under any circumstance want the tenant to ever do any kind of alterations or repairs without your authorization. Period.」——未经房东授权，绝不允许租客进行任何改造或维修。这是一个不容商量的原则。</li>
 </ul>
-<p><strong>关于租客DIY的风险</strong>：</p>
+
+<strong>关于租客DIY的风险</strong>：
 <p>💡 Pat讲了一个令人警醒的例子：有些租客之所以觉得自己能修东西，是因为他们看了电视广告——比如看了某个品牌车库门开启器的广告，觉得很「容易」。但实际上：</p>
 <ul>
 <li>安装并不像广告里那么简单</li>
@@ -718,25 +820,37 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>结果可能是：合上电闸后，烟雾和火焰从天花板里冒出来</li>
 <li>甚至可能「把吊扇从天花板上炸飞」</li>
 </ul>
+
 <h3>11.6 宠物（Pets）</h3>
+
 <p>💡 「Pets is another thing. Pets, people will rent with pets, without pets. I'm here to tell you that pets can be a problem.」</p>
+
 <p>宠物可能带来严重问题。Pat讲了一个朋友的亲身经历：</p>
-<blockquote>这个朋友在Carmichael买了两栋双拼住宅（duplex），是待修缮的旧房。四个单元中只有一个有租客，另外三个单元的窗户都坏了。他叫来玻璃师傅修好了所有窗户，然后关门出差了三天。回来后一打开门，味道差点把他熏倒在地。原来前租客养了宠物——宠物的排泄物早已渗透到地板、地毯和地毯衬垫里。十分钟后，他就把所有的地毯和衬垫都拖到了门口。</blockquote>
+
+<blockquote>
+<p>这个朋友在Carmichael买了两栋双拼住宅（duplex），是待修缮的旧房。四个单元中只有一个有租客，另外三个单元的窗户都坏了。他叫来玻璃师傅修好了所有窗户，然后关门出差了三天。回来后一打开门，味道差点把他熏倒在地。原来前租客养了宠物——宠物的排泄物早已渗透到地板、地毯和地毯衬垫里。十分钟后，他就把所有的地毯和衬垫都拖到了门口。</p>
+</blockquote>
+
 <p>宠物的具体问题包括：</p>
 <ul>
 <li>气味和异味——很多人对此非常敏感</li>
 <li>💡 猫似乎比狗更容易引发问题：「I don't know why poor cats get a bad rap, but I cannot be around cat hair because it just, you know, my kids are allergic to it.」猫毛过敏是一个常见问题</li>
 <li>损害房产</li>
 </ul>
+
 <h3>11.7 规章制度（Rules and Regulations）</h3>
+
 <p>需要告知租客所有适用的规章制度：</p>
 <ul>
 <li>公寓综合体的规定（游泳池使用时间、网球场、停车规定等）</li>
 <li>业主协会（HOA）的规定</li>
 <li>💡 「Are you in a condominium complex where you need to be aware of condominium rules such as when the pool, you can use the pool, the tennis courts, the parking situation on and on and on.」</li>
 </ul>
+
 <h3>11.8 房东进入权（Entry）</h3>
+
 <p>💡 「Entry, okay, when the landlord can come into the property, typically what you're going to find out is, is the landlord needs to have the permission of the tenant.」</p>
+
 <p>核心原则：</p>
 <ul>
 <li><strong>房东需要获得租客的许可</strong>才能进入房产</li>
@@ -745,33 +859,48 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>租客对房产的占有权和使用权，等同于他们自己是房主</li>
 <li>房东需要敲门、获得许可</li>
 </ul>
+
 <p>💡 如果房东未经许可擅自进入，这被称为「骚扰」（harassment），租客可以因此终止租约。</p>
+
 <p>📌 <strong>2026年更新</strong>：加州民法典第1954条规定了房东进入出租单元的法定条件。在非紧急情况下，房东通常必须提前至少<strong>24小时</strong>给出合理通知，且进入时间必须在正常营业时间内。唯一的例外是：(1) 紧急情况（如水管爆裂、火灾等）；(2) 租客在场并同意；(3) 租客已经搬出或遗弃了房产。值得注意的是，截至2026年，加州的一些城市（如旧金山、洛杉矶、奥克兰等）已经通过了更加严格的租客保护法令，在某些情况下要求更长的通知期或更具体的进入目的说明。</p>
+
 <h3>11.9 转租与转让（Assignment and Subletting）</h3>
+
 <p>💡 「This essentially is letting the tenant know, you know, that you are not going to allow them to sublease.」</p>
-<p><strong>转租（Sublease）</strong>的场景：</p>
+
+<strong>转租（Sublease）</strong>的场景：
 <ul>
 <li>房东最初将房产租给某个人——审查了这个人的信用、收入水平、工作情况</li>
 <li>这个人住了三四五个月后说要搬走，但想转租给别人</li>
 </ul>
+
 <p>💡 Pat明确指出：「You just need to realize the fact that you're letting the tenant know that, you know, you cannot sublease it and you cannot assign it to somebody else without talking to me, period. That's the end of the discussion.」</p>
+
 <ul>
 <li>未经房东同意，不得转租或转让</li>
 <li>如果违反，则构成违约，房东可以终止合同</li>
 </ul>
+
 <p>📌 <strong>2026年更新</strong>：在租金管制城市（rent control cities），转租问题尤为敏感。如果租客不是最初租约上的签字人，新房客搬入后房东可能有机会提高租金至市场水平。因此，房东需要在租约中明确禁止未经授权的转租和转让。另外，AB 1482（2019年《租客保护法》）在全州范围内实施租金涨幅上限（每年不超过5%加通货膨胀率，或总计不超过10%，以较低者为准），这也影响了转租市场的动态。</p>
+
 <h3>11.10 信息披露（Disclosures）</h3>
+
 <p>协议中包含了多项法定披露事项：</p>
+
 <h4>含铅涂料（Lead-Based Paint）</h4>
 <p>联邦法律要求，1978年之前建造的住宅房产必须向租客披露含铅涂料的风险。</p>
+
 <h4>军事弹药（Military Ordnance）</h4>
 <p>💡 「Military ordnance, you may find out that if you're moving into an area, maybe it was used by a military base at one time. Is there any live ordnance that are laying around?」</p>
+
 <p>如果房产所在区域曾经是军事基地，可能存在未爆炸的弹药。这是一项重要的安全披露。</p>
+
 <h4>其他披露</h4>
 <ul>
 <li>儿童虐待犯罪者数据库（database for child abuse）</li>
 <li>租客的义务</li>
 </ul>
+
 <p>📌 <strong>2026年更新</strong>：加州的信息披露要求持续增加。截至2026年，对出租房产的信息披露已扩展到包括：</p>
 <ul>
 <li><strong>床虱（Bed Bug）披露</strong>：房东必须向租客提供有关床虱的信息，包括报告和治理程序</li>
@@ -779,48 +908,69 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li><strong>Megan's Law 披露</strong>：所有住宅租约中必须包含关于加州性犯罪者登记数据库的法定通知语言</li>
 <li><strong>大麻种植披露</strong>：由于加州大麻合法化，一些房东选择在租约中加入关于大麻种植的具体条款</li>
 </ul>
+
 <h3>11.11 违约与提前终止（Breach of Contract / Early Termination）</h3>
+
 <p>💡 「Breach means somebody didn't live up to their obligations.」</p>
+
 <p>当一方未履行其合同义务时，即构成违约。协议中规定了违约发生时的处理方式，包括提前终止合同的条件和后果。</p>
+
 <h3>11.12 保险（Insurance）</h3>
+
 <p>💡 「One of the things that I always do with insurance is to make sure that the tenant understands that their belongings are not covered under my insurance.」</p>
+
 <p>Pat始终确保租客明白一个关键事实：<strong>他们的个人财物不在房东的保险范围内</strong>。</p>
+
 <p>💡 「If the house burns down, if they don't have insurance, which is typically called renter's insurance, their property's gone.」</p>
+
 <ul>
 <li>如果房子烧毁了，没有租客保险（renter's insurance）的租客将失去所有个人财产</li>
 <li>房东无法为租客的财产购买保险，因为房东对租客的财产没有「<strong>可保利益</strong>」（insurable interest）</li>
 </ul>
+
 <p>💡 Pat用一个法学经典考题来解释「可保利益」：「It's the same thing like me going up to you at the airport and saying, oh, by the way, can I buy a life insurance policy on you in case the airplane crashes?」</p>
+
 <p>就像在机场随便找一个人问「我能为你买一份人寿保险吗？万一飞机坠毁了呢？」——你没有可保利益，因此不能为陌生人的生命投保。</p>
+
 <p>同理：</p>
 <ul>
 <li>房子烧毁 → 房东失去了房子本身及其产生的租金收入</li>
 <li>但房东并不因为租客的沙发被烧毁而遭受经济损失</li>
 <li>因此，租客必须自己购买租客保险</li>
 </ul>
+
 <p>📌 <strong>2026年更新</strong>：截至2026年，加州法律允许房东<strong>要求</strong>租客购买租客保险作为租赁条件的一部分，但必须在租约中明确说明。然而，房东不能要求被列为租客保单的额外被保险人，只能被列为「利益相关方」（interested party）以便在保单被取消时收到通知。此外，随着加州野火风险的增加，房屋保险市场在过去几年经历了重大变化——许多保险公司已经停止在加州高火灾风险地区签发新保单。这意味着房东的保险费率可能大幅上升，而租客保险（主要覆盖个人财产和责任）受到的影响相对较小。</p>
+
 <h3>11.13 水床（Water Beds）</h3>
+
 <p>💡 「Water beds is another thing we could go on and on and on about. I don't think they're as popular as they were a number of years ago.」</p>
+
 <p>水床虽然不如过去流行，但在租赁协议中仍值得一提。Pat提到了萨克拉门托曾有一家名为LaBrie's Water Beds的店，老板在深夜电视上做广告卖水床。</p>
+
 <p>水床的两个主要问题：</p>
-<ol>
+<ul>
 <li><strong>漏水</strong>：水床可能泄漏，导致水渗入楼下或造成损坏</li>
 <li><strong>重量</strong>：💡 「Water weighs, I think, the last calculation, about eight pounds per gallon.」</li>
-</ol>
-<ul>
-<li>每加仑水重约8磅</li>
-<li>一个水床可能容纳100加仑水 → 800磅（约363公斤）</li>
-<li>再加上人的重量，可能达到两三百或四百磅</li>
-<li>楼板可能无法承受这种重量</li>
 </ul>
+<p>- 每加仑水重约8磅</p>
+<p>- 一个水床可能容纳100加仑水 → 800磅（约363公斤）</p>
+<p>- 再加上人的重量，可能达到两三百或四百磅</p>
+<p>- 楼板可能无法承受这种重量</p>
+
 <p>因此，有些房东会要求租客购买专门的水床保险。</p>
+
 <hr>
-<section class="article-section">
+
 <h2>12. 调解与仲裁</h2>
+
 <p>💡 「This just talks about mediation and about how if you do have a dispute, remember there's a difference between mediation and arbitration.」</p>
+
 <p>租赁协议中通常包含争议解决条款，涉及两种不同的方式：</p>
+
 <h3>12.1 调解（Mediation）</h3>
+
 <p>💡 「Mediation means we're going to bring somebody in that's going to be kind of like a marriage counselor to kind of help us work out our disputes.」</p>
+
 <p>调解的特点：</p>
 <ul>
 <li>引入第三方（调解员）帮助双方解决争议</li>
@@ -828,8 +978,11 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>调解员<strong>不做决定</strong>，只是促进双方达成共识</li>
 <li>不具约束力——如果调解失败，双方仍可诉诸法院</li>
 </ul>
+
 <h3>12.2 仲裁（Arbitration）</h3>
+
 <p>💡 「Arbitrator is kind of appointing somebody that's going to look at and hear both sides and finally say, you know what? Landlord, you're wrong. Tenant, you're wrong. Pay them, okay? And they're words final.」</p>
+
 <p>仲裁的特点：</p>
 <ul>
 <li>指定仲裁员听取双方意见</li>
@@ -837,280 +990,163 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <li>裁决具有<strong>约束力</strong>，通常不可上诉</li>
 <li>某种程度上替代了法院诉讼</li>
 </ul>
-<h3>12.3 核心理念</h3>
-<p>💡 「What you're trying to do here is to say, you know, listen, if we have a problem, let's try to get it worked out without having to go to court.」</p>
-<p>核心目标是：<strong>尽量在不诉诸法院的情况下解决争议</strong>。这既节省了时间和金钱，也有助于维持双方的关系。</p>
-<hr>
-<section class="article-section">
-<h2>13. 总结与展望</h2>
-<h3>13.1 本讲核心要点回顾</h3>
-<p>在这一讲中，Pat系统地讲解了房东与租客关系的各个方面：</p>
-<ol>
-<li><strong>核心术语</strong>：</li>
-</ol>
-<ul>
-<li>Landlord/Lessor（房东/出租人）→ 拥有房产的一方</li>
-<li>Tenant/Lessee（租客/承租人）→ 租赁房产的一方</li>
-<li>「-or」与「-ee」的记忆规律</li>
-</ul>
-<ol>
-<li><strong>租赁 vs 出租</strong>：</li>
-</ol>
-<ul>
-<li>租赁（Lease）——有固定期限，无需提前通知终止</li>
-<li>出租（Rental Agreement）——周期性，需要提前通知终止</li>
-</ul>
-<ol>
-<li><strong>四种租赁地产权</strong>：</li>
-</ol>
-<ul>
-<li>定期租赁（Estate for Years）——1到99年</li>
-<li>周期性租赁（Estate from Period to Period）——月对月、周对周</li>
-<li>任意租赁（Estate at Will）——双方随时可终止</li>
-<li>容忍租赁（Estate at Sufferance）——合法入住、逾期滞留</li>
-</ul>
-<ol>
-<li><strong>租赁协议四要素</strong>：</li>
-</ol>
-<ul>
-<li>租期长度</li>
-<li>租金金额</li>
-<li>当事人身份</li>
-<li>房产描述（普通地址即可）</li>
-</ul>
-<ol>
-<li><strong>反欺诈法</strong>：超过一年的租赁必须以书面形式订立</li>
-</ol>
-<ol>
-<li><strong>C.A.R.标准表格</strong>：</li>
-</ol>
-<ul>
-<li>必须使用最新版本</li>
-<li>住宅租赁或月对月协议</li>
-<li>包含房产描述、居住人、个人财产、租金、押金等各项内容</li>
-</ul>
-<ol>
-<li><strong>押金管理</strong>：</li>
-</ol>
-<ul>
-<li>搬入和搬出时的检查清单至关重要</li>
-<li>正常磨损的争议处理</li>
-<li>21天内退还或提供逐项扣除清单</li>
-</ul>
-<ol>
-<li><strong>关键条款</strong>：</li>
-</ol>
-<ul>
-<li>滞纳金、停车、储物、水电杂费</li>
-<li>维修（及时响应、未经授权不得擅自改动）</li>
-<li>宠物、规章制度、进入权</li>
-<li>转租与转让（未经同意禁止）</li>
-<li>信息披露、违约与提前终止</li>
-<li>保险（租客必须自购租客保险）</li>
-<li>水床（重量和漏水风险）</li>
-</ul>
-<ol>
-<li><strong>争议解决</strong>：</li>
-</ol>
-<ul>
-<li>调解（无约束力，第三方协助沟通）</li>
-<li>仲裁（有约束力，仲裁员做出最终裁决）</li>
-</ul>
-<h3>13.2 经纪人的角色</h3>
-<p>💡 Pat在课程接近尾声时特别强调了房地产经纪人的角色：「One of the things within real estate that you need to be aware of is that one of the jobs that you're going to be in is the creation of contracts, okay, lease agreements, rental agreements, all kinds of agreements.」</p>
-<p>作为房地产经纪人，你的主要职责之一就是<strong>创建合同</strong>——租赁协议、出租协议、各种协议。Pat给出了一个严肃的警告：</p>
-<p>💡 「I'm here to tell you that if you don't know what you're doing, wait until the day comes and the judge is standing there and saying, Joe, on this date, did you make this contract? You're going to go, God, that stuff comes back to haunt me, doesn't it? Yes, because you need to make sure you understand what's going on with the contract, okay? Very, very important.」</p>
-<p>如果有朝一日你站在法庭上，法官问你「是你制作了这份合同吗？」，你必须确保自己完全理解合同的内容。合同中的东西会回过头来找你——所以你必须彻底理解它。</p>
-<h3>13.3 结语</h3>
-<p>💡 「With that, I want to thank you very much for coming, and we will see you back here the next time for show number six.」</p>
-<p>Pat感谢学生的参与，预告下一讲（第6讲）再见。</p>
-<hr>
-<section class="article-section">
-<h2>附录：2026年加州租赁法律更新摘要</h2>
-<p>以下是截至2026年7月，与本讲内容相关的加州租赁法律重要更新：</p>
-<table>
-<thead><tr>
-<th>更新类别</th>
-<th>具体内容</th>
-<th>影响</th>
-</tr></thead><tbody>
-<tr>
-<td>📌 押金上限</td>
-<td>AB 12法案（2023年签署，2024年7月1日生效）：大多数住宅租赁押金上限为一个月租金（小房东豁免除外）</td>
-<td>减少了租客的初期负担，但房东需更谨慎处理损坏赔偿</td>
-</tr>
-<tr>
-<td>📌 租金管制</td>
-<td>AB 1482《租客保护法》（2019年生效，持续至2030年）：全州租金年涨幅上限5%+CPI或10%，取较低值；要求「正当理由」驱逐</td>
-<td>影响所有受保房产的租金设定和驱逐程序</td>
-</tr>
-<tr>
-<td>📌 短期租赁</td>
-<td>多地出台短期租赁（少于30天）注册和许可要求</td>
-<td>影响通过Airbnb等平台出租的房东</td>
-</tr>
-<tr>
-<td>📌 房东进入权</td>
-<td>民法典§1954：非紧急情况需至少24小时提前通知；部分城市有更严格要求</td>
-<td>强化租客隐私保护</td>
-</tr>
-<tr>
-<td>📌 信息披露</td>
-<td>新增床虱、洪灾区、Megan's Law等披露要求</td>
-<td>增加房东的法定义务</td>
-</tr>
-<tr>
-<td>📌 租客保险</td>
-<td>房东可要求租客购买租客保险，但不得要求列为额外被保险人</td>
-<td>平衡双方利益</td>
-</tr>
-<tr>
-<td>📌 房屋保险市场</td>
-<td>野火风险导致部分保险公司退出加州市场，保费上涨</td>
-<td>增加房东运营成本</td>
-</tr>
-</tbody></table>
-<hr>
-<section class="article-section">
-<h2>关键术语中英文对照表</h2>
-<table>
-<thead><tr>
-<th>英文术语</th>
-<th>中文翻译</th>
-<th>说明</th>
-</tr></thead><tbody>
-<tr>
-<td>Landlord</td>
-<td>房东</td>
-<td>房产所有人</td>
-</tr>
-<tr>
-<td>Tenant</td>
-<td>租客</td>
-<td>租赁房产的人</td>
-</tr>
-<tr>
-<td>Lessor</td>
-<td>出租人</td>
-<td>同Landlord</td>
-</tr>
-<tr>
-<td>Lessee</td>
-<td>承租人</td>
-<td>同Tenant</td>
-</tr>
-<tr>
-<td>Lease</td>
-<td>租赁协议</td>
-<td>固定期限的租赁合同</td>
-</tr>
-<tr>
-<td>Rental Agreement</td>
-<td>出租协议</td>
-<td>周期性（通常月对月）的出租协议</td>
-</tr>
-<tr>
-<td>Estate for Years</td>
-<td>定期租赁地产权</td>
-<td>1至99年的固定期限租赁</td>
-</tr>
-<tr>
-<td>Estate from Period to Period</td>
-<td>周期性租赁地产权</td>
-<td>月对月、周对周等周期租赁</td>
-</tr>
-<tr>
-<td>Estate at Will</td>
-<td>任意租赁地产权</td>
-<td>双方均可随时终止</td>
-</tr>
-<tr>
-<td>Estate at Sufferance</td>
-<td>容忍租赁地产权</td>
-<td>合法入住后逾期滞留</td>
-</tr>
-<tr>
-<td>Statute of Frauds</td>
-<td>反欺诈法</td>
-<td>超过一年租约须书面</td>
-</tr>
-<tr>
-<td>Security Deposit</td>
-<td>押金</td>
-<td>保障房东免受损失的预付款</td>
-</tr>
-<tr>
-<td>Normal Wear and Tear</td>
-<td>正常磨损</td>
-<td>日常使用造成的合理损耗</td>
-</tr>
-<tr>
-<td>Move-in Checklist</td>
-<td>搬入检查清单</td>
-<td>记录入住时房产状况</td>
-</tr>
-<tr>
-<td>Sublease</td>
-<td>转租</td>
-<td>租客将房产转租给他人</td>
-</tr>
-<tr>
-<td>Assignment</td>
-<td>转让</td>
-<td>租客将租赁权转让给他人</td>
-</tr>
-<tr>
-<td>Mediation</td>
-<td>调解</td>
-<td>第三方协助但不做决定的争议解决方式</td>
-</tr>
-<tr>
-<td>Arbitration</td>
-<td>仲裁</td>
-<td>第三方做出有约束力裁决的争议解决方式</td>
-</tr>
-<tr>
-<td>Insurable Interest</td>
-<td>可保利益</td>
-<td>投保人对被保人/物有经济利益关系</td>
-</tr>
-<tr>
-<td>Renter's Insurance</td>
-<td>租客保险</td>
-<td>租客为个人财物和责任购买的保险</td>
-</tr>
-<tr>
-<td>C.A.R.</td>
-<td>加州房地产经纪人协会</td>
-<td>California Association of Realtors</td>
-</tr>
-<tr>
-<td>Grace Period</td>
-<td>宽限期</td>
-<td>租金逾期后可免收滞纳金的期限</td>
-</tr>
-<tr>
-<td>HOA</td>
-<td>业主协会</td>
-<td>Homeowners Association</td>
-</tr>
-</tbody></table>
-<hr>
-<em>本讲内容基于Pat Hogarty, MA在Sacramento City College的RE 300课程第5讲录像整理，并结合2026年加州法律更新进行了补充和标注。本资料不以盈利为目的，完全免费提供，仅供学习参考。</em>
 
-    </main>
+<h3>12.3 核心理念</h3>
+
+<p>💡 「What you're trying to do here is to say, you know, listen, if we have a problem, let's try to get it worked out without having to go to court.」</p>
+
+<p>核心目标是：<strong>尽量在不诉诸法院的情况下解决争议</strong>。这既节省了时间和金钱，也有助于维持双方的关系。</p>
+
+<hr>
+
+<h2>13. 总结与展望</h2>
+
+<h3>13.1 本讲核心要点回顾</h3>
+
+<p>在这一讲中，Pat系统地讲解了房东与租客关系的各个方面：</p>
+
+<ul>
+<li><strong>核心术语</strong>：</li>
+</ul>
+<p>- Landlord/Lessor（房东/出租人）→ 拥有房产的一方</p>
+<p>- Tenant/Lessee（租客/承租人）→ 租赁房产的一方</p>
+<p>- 「-or」与「-ee」的记忆规律</p>
+
+<ul>
+<li><strong>租赁 vs 出租</strong>：</li>
+</ul>
+<p>- 租赁（Lease）——有固定期限，无需提前通知终止</p>
+<p>- 出租（Rental Agreement）——周期性，需要提前通知终止</p>
+
+<ul>
+<li><strong>四种租赁地产权</strong>：</li>
+</ul>
+<p>- 定期租赁（Estate for Years）——1到99年</p>
+<p>- 周期性租赁（Estate from Period to Period）——月对月、周对周</p>
+<p>- 任意租赁（Estate at Will）——双方随时可终止</p>
+<p>- 容忍租赁（Estate at Sufferance）——合法入住、逾期滞留</p>
+
+<ul>
+<li><strong>租赁协议四要素</strong>：</li>
+</ul>
+<p>- 租期长度</p>
+<p>- 租金金额</p>
+<p>- 当事人身份</p>
+<p>- 房产描述（普通地址即可）</p>
+
+<ul>
+<li><strong>反欺诈法</strong>：超过一年的租赁必须以书面形式订立</li>
+</ul>
+
+<ul>
+<li><strong>C.A.R.标准表格</strong>：</li>
+</ul>
+<p>- 必须使用最新版本</p>
+<p>- 住宅租赁或月对月协议</p>
+<p>- 包含房产描述、居住人、个人财产、租金、押金等各项内容</p>
+
+<ul>
+<li><strong>押金管理</strong>：</li>
+</ul>
+<p>- 搬入和搬出时的检查清单至关重要</p>
+<p>- 正常磨损的争议处理</p>
+<p>- 21天内退还或提供逐项扣除清单</p>
+
+<ul>
+<li><strong>关键条款</strong>：</li>
+</ul>
+<p>- 滞纳金、停车、储物、水电杂费</p>
+<p>- 维修（及时响应、未经授权不得擅自改动）</p>
+<p>- 宠物、规章制度、进入权</p>
+<p>- 转租与转让（未经同意禁止）</p>
+<p>- 信息披露、违约与提前终止</p>
+<p>- 保险（租客必须自购租客保险）</p>
+<p>- 水床（重量和漏水风险）</p>
+
+<ul>
+<li><strong>争议解决</strong>：</li>
+</ul>
+<p>- 调解（无约束力，第三方协助沟通）</p>
+<p>- 仲裁（有约束力，仲裁员做出最终裁决）</p>
+
+<h3>13.2 经纪人的角色</h3>
+
+<p>💡 Pat在课程接近尾声时特别强调了房地产经纪人的角色：「One of the things within real estate that you need to be aware of is that one of the jobs that you're going to be in is the creation of contracts, okay, lease agreements, rental agreements, all kinds of agreements.」</p>
+
+<p>作为房地产经纪人，你的主要职责之一就是<strong>创建合同</strong>——租赁协议、出租协议、各种协议。Pat给出了一个严肃的警告：</p>
+
+<p>💡 「I'm here to tell you that if you don't know what you're doing, wait until the day comes and the judge is standing there and saying, Joe, on this date, did you make this contract? You're going to go, God, that stuff comes back to haunt me, doesn't it? Yes, because you need to make sure you understand what's going on with the contract, okay? Very, very important.」</p>
+
+<p>如果有朝一日你站在法庭上，法官问你「是你制作了这份合同吗？」，你必须确保自己完全理解合同的内容。合同中的东西会回过头来找你——所以你必须彻底理解它。</p>
+
+<h3>13.3 结语</h3>
+
+<p>💡 「With that, I want to thank you very much for coming, and we will see you back here the next time for show number six.」</p>
+
+<p>Pat感谢学生的参与，预告下一讲（第6讲）再见。</p>
+
+<hr>
+
+<h2>附录：2026年加州租赁法律更新摘要</h2>
+
+<p>以下是截至2026年7月，与本讲内容相关的加州租赁法律重要更新：</p>
+
+<p>| 更新类别 | 具体内容 | 影响 |</p>
+<p>|---------|---------|------|</p>
+<p>| 📌 押金上限 | AB 12法案（2023年签署，2024年7月1日生效）：大多数住宅租赁押金上限为一个月租金（小房东豁免除外） | 减少了租客的初期负担，但房东需更谨慎处理损坏赔偿 |</p>
+<p>| 📌 租金管制 | AB 1482《租客保护法》（2019年生效，持续至2030年）：全州租金年涨幅上限5%+CPI或10%，取较低值；要求「正当理由」驱逐 | 影响所有受保房产的租金设定和驱逐程序 |</p>
+<p>| 📌 短期租赁 | 多地出台短期租赁（少于30天）注册和许可要求 | 影响通过Airbnb等平台出租的房东 |</p>
+<p>| 📌 房东进入权 | 民法典§1954：非紧急情况需至少24小时提前通知；部分城市有更严格要求 | 强化租客隐私保护 |</p>
+<p>| 📌 信息披露 | 新增床虱、洪灾区、Megan's Law等披露要求 | 增加房东的法定义务 |</p>
+<p>| 📌 租客保险 | 房东可要求租客购买租客保险，但不得要求列为额外被保险人 | 平衡双方利益 |</p>
+<p>| 📌 房屋保险市场 | 野火风险导致部分保险公司退出加州市场，保费上涨 | 增加房东运营成本 |</p>
+
+<hr>
+
+<h2>关键术语中英文对照表</h2>
+
+<p>| 英文术语 | 中文翻译 | 说明 |</p>
+<p>|---------|---------|------|</p>
+<p>| Landlord | 房东 | 房产所有人 |</p>
+<p>| Tenant | 租客 | 租赁房产的人 |</p>
+<p>| Lessor | 出租人 | 同Landlord |</p>
+<p>| Lessee | 承租人 | 同Tenant |</p>
+<p>| Lease | 租赁协议 | 固定期限的租赁合同 |</p>
+<p>| Rental Agreement | 出租协议 | 周期性（通常月对月）的出租协议 |</p>
+<p>| Estate for Years | 定期租赁地产权 | 1至99年的固定期限租赁 |</p>
+<p>| Estate from Period to Period | 周期性租赁地产权 | 月对月、周对周等周期租赁 |</p>
+<p>| Estate at Will | 任意租赁地产权 | 双方均可随时终止 |</p>
+<p>| Estate at Sufferance | 容忍租赁地产权 | 合法入住后逾期滞留 |</p>
+<p>| Statute of Frauds | 反欺诈法 | 超过一年租约须书面 |</p>
+<p>| Security Deposit | 押金 | 保障房东免受损失的预付款 |</p>
+<p>| Normal Wear and Tear | 正常磨损 | 日常使用造成的合理损耗 |</p>
+<p>| Move-in Checklist | 搬入检查清单 | 记录入住时房产状况 |</p>
+<p>| Sublease | 转租 | 租客将房产转租给他人 |</p>
+<p>| Assignment | 转让 | 租客将租赁权转让给他人 |</p>
+<p>| Mediation | 调解 | 第三方协助但不做决定的争议解决方式 |</p>
+<p>| Arbitration | 仲裁 | 第三方做出有约束力裁决的争议解决方式 |</p>
+<p>| Insurable Interest | 可保利益 | 投保人对被保人/物有经济利益关系 |</p>
+<p>| Renter's Insurance | 租客保险 | 租客为个人财物和责任购买的保险 |</p>
+<p>| C.A.R. | 加州房地产经纪人协会 | California Association of Realtors |</p>
+<p>| Grace Period | 宽限期 | 租金逾期后可免收滞纳金的期限 |</p>
+<p>| HOA | 业主协会 | Homeowners Association |</p>
+
+<hr>
+
+<p>*本讲内容基于Pat Hogarty, MA在Sacramento City College的RE 300课程第5讲录像整理，并结合2026年加州法律更新进行了补充和标注。本资料不以盈利为目的，完全免费提供，仅供学习参考。*</p>
+
+  </div>
+</article>
+<div class="container">
+  <div class="disclaimer">
+    <p><strong>免责声明：</strong>本资料不以盈利为目的，完全免费提供，仅供学习参考。内容基于 Pat Hogarty 教授 RE 300 播客系列整理。加州房地产执照考试信息以 DRE 官网（dre.ca.gov）为准。</p>
   </div>
 </div>
-
-<footer class="page-footer">
+<footer class="article-footer">
   <div class="container">
-    <div class="ft-nav">
-      <a href="index.html">← RE300 系列</a>
-    </div>
-    <div class="ft-logo">筑 沙 TSUKASA</div>
-    <div class="ft-sub">AI · Real Estate · Education — RE300 Series — 2026</div>
+    <a href="index.html">← 返回 RE300 专题首页</a>
+    <div class="ft-brand">筑 沙 TSUKASA</div>
   </div>
 </footer>
-
 </body>
 </html>

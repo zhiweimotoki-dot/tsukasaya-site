@@ -3,127 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="加州房地产执照考试中文深度教程 — Patrick J. Hogarty RE 300 第4讲：产权转移方式与持有方式。Grant Deed 隐含保证、Quit Claim Deed、Adverse Possession、六种 Vesting 方式、登记制度详解。含2026年最新数据更新。">
+<meta name="description" content="加州房地产执照考试中文教程 — RE 300 第4讲：产权转移方式与持有形式。含2026年最新DRE数据更新。">
 <meta property="og:title" content="加州房产执照考试｜中文精讲 EP04 — 筑沙 Tsukasa">
-<meta property="og:description" content="Patrick Hogarty《California Real Estate Principles》中文精讲第4集：产权转移方式 + 六种持有方式 + 登记制度详解">
+<meta property="og:description" content="Patrick Hogarty RE300 中文精讲第4集：产权转移方式与持有形式">
 <meta property="og:type" content="article">
-<title>EP04 产权转移方式与持有方式 — RE300 加州房地产原理 — 筑沙 Tsukasa</title>
+<title>EP04 产权转移方式与持有形式 — RE300 加州房地产原理 — 筑沙 Tsukasa</title>
 <style>
 :root {
-  --bg: #0b0b0b;
-  --surface: #161616;
-  --border: #262626;
-  --ink: #ede8df;
-  --muted: #8a8578;
-  --sand: #d4b896;
-  --sand-light: #e8d5c0;
-  --teal: #3a8a85;
+  --bg: #0b0b0b; --surface: #161616; --border: #262626;
+  --ink: #ede8df; --muted: #8a8578; --sand: #d4b896; --sand-light: #e8d5c0; --teal: #3a8a85;
   --radius: 6px;
   --font-display: 'Georgia', 'Noto Serif JP', 'Songti SC', serif;
   --font-body: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans', sans-serif;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: var(--bg); color: var(--ink); font-family: var(--font-body); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); line-height: 1.7; }
 .container { max-width: 860px; margin: 0 auto; padding: 0 32px; }
-
-nav {
-  position: sticky; top: 0; z-index: 100;
-  background: rgba(11,11,11,0.94); backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border); padding: 16px 0;
-}
+nav { position: sticky; top: 0; z-index: 100; background: rgba(11,11,11,0.94); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 16px 0; }
 nav .container { display: flex; justify-content: space-between; align-items: center; }
 .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
-.logo-diamond {
-  width: 28px; height: 28px;
-  background: linear-gradient(135deg, var(--sand) 0%, var(--sand-light) 100%);
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
-}
-.logo-diamond-inner {
-  width: 70%; height: 70%; background: var(--bg);
-  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
-  display: flex; align-items: center; justify-content: center;
-}
+.logo-diamond { width: 28px; height: 28px; background: linear-gradient(135deg, var(--sand) 0%, var(--sand-light) 100%); clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.logo-diamond-inner { width: 70%; height: 70%; background: var(--bg); clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); display: flex; align-items: center; justify-content: center; }
 .logo-diamond-char { color: var(--sand); font-family: var(--font-display); font-size: 9px; }
 .nav-name { font-family: var(--font-display); font-size: 16px; letter-spacing: 0.08em; }
 .nav-links { display: flex; gap: 24px; }
 .nav-links a { color: var(--muted); text-decoration: none; font-size: 12px; letter-spacing: 0.06em; transition: color 0.2s; }
 .nav-links a:hover { color: var(--sand); }
-
-.article-header {
-  padding: 80px 0 48px; border-bottom: 1px solid var(--border); text-align: center;
-}
-.article-header .ep-label {
-  display: inline-block; font-size: 10px; color: var(--sand);
-  letter-spacing: 0.14em; text-transform: uppercase;
-  border: 1px solid var(--sand); padding: 6px 16px; border-radius: 2px; margin-bottom: 20px;
-}
-.article-header h1 {
-  font-family: var(--font-display); font-size: clamp(24px, 5vw, 42px);
-  letter-spacing: 0.04em; line-height: 1.4; margin-bottom: 16px;
-}
+.article-header { padding: 80px 0 48px; border-bottom: 1px solid var(--border); text-align: center; }
+.article-header .ep-label { display: inline-block; font-size: 10px; color: var(--sand); letter-spacing: 0.14em; border: 1px solid var(--sand); padding: 6px 16px; border-radius: 2px; margin-bottom: 20px; }
+.article-header h1 { font-family: var(--font-display); font-size: clamp(24px, 5vw, 42px); letter-spacing: 0.04em; line-height: 1.4; margin-bottom: 16px; }
 .article-header .byline { color: var(--muted); font-size: 13px; }
-.article-header .byline span { color: var(--sand); }
-
-.article-body {
-  padding: 60px 0 80px;
-}
-.article-body h1 { font-family: var(--font-display); font-size: 28px; margin: 48px 0 20px; letter-spacing: 0.04em; }
-.article-body h2 { font-family: var(--font-display); font-size: 22px; margin: 40px 0 16px; color: var(--sand); letter-spacing: 0.04em; }
+.byline span { color: var(--sand); }
+.article-body { padding: 60px 0 80px; }
+.article-body h1 { font-family: var(--font-display); font-size: 28px; margin: 48px 0 20px; }
+.article-body h2 { font-family: var(--font-display); font-size: 22px; margin: 40px 0 16px; color: var(--sand); }
 .article-body h3 { font-size: 17px; margin: 32px 0 12px; color: var(--sand-light); }
-.article-body h4 { font-size: 15px; margin: 24px 0 10px; color: var(--muted); }
 .article-body p { margin-bottom: 18px; font-size: 15px; line-height: 1.85; }
-.article-body blockquote {
-  border-left: 3px solid var(--sand);
-  margin: 24px 0; padding: 16px 24px;
-  background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0;
-}
+.article-body blockquote { border-left: 3px solid var(--sand); margin: 24px 0; padding: 16px 24px; background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0; }
 .article-body blockquote p { color: var(--sand-light); font-style: italic; margin-bottom: 8px; }
 .article-body ul, .article-body ol { margin: 16px 0 24px 24px; }
-.article-body li { font-size: 14px; line-height: 1.9; margin-bottom: 6px; color: var(--ink); }
+.article-body li { font-size: 14px; line-height: 1.9; margin-bottom: 6px; }
 .article-body code { background: var(--surface); padding: 2px 6px; border-radius: 3px; font-size: 13px; color: var(--sand-light); }
-.article-body pre { background: var(--surface); padding: 20px 24px; border-radius: var(--radius); overflow-x: auto; margin: 20px 0; }
-.article-body pre code { background: none; padding: 0; }
 .article-body hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
 .article-body strong { color: var(--sand-light); }
-
-.article-body table {
-  width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13px;
-}
-.article-body th {
-  background: var(--surface); color: var(--sand);
-  padding: 10px 14px; text-align: left; font-weight: 600; font-size: 11px;
-  letter-spacing: 0.06em; text-transform: uppercase; border-bottom: 2px solid var(--border);
-}
-.article-body td {
-  padding: 10px 14px; border-bottom: 1px solid var(--border);
-  color: var(--muted); line-height: 1.6;
-}
-.article-body td strong { color: var(--ink); }
-.article-body tr:hover td { background: var(--surface); }
-
-.disclaimer {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius); padding: 24px 28px; margin: 60px 0;
-}
+.disclaimer { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 28px; margin: 60px 0; }
 .disclaimer p { font-size: 12px; color: var(--muted); margin-bottom: 8px; line-height: 1.8; }
-
-.article-footer {
-  padding: 60px 0; border-top: 1px solid var(--border); text-align: center;
-}
+.article-footer { padding: 60px 0; border-top: 1px solid var(--border); text-align: center; }
 .article-footer a { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; text-decoration: none; transition: color 0.2s; }
 .article-footer a:hover { color: var(--sand); }
 .article-footer .ft-brand { font-family: var(--font-display); font-size: 16px; color: var(--sand); letter-spacing: 0.1em; margin-top: 20px; }
-
-@media (max-width: 768px) {
-  .container { padding: 0 20px; }
-  .article-body h1 { font-size: 22px; }
-  .article-body h2 { font-size: 18px; }
-}
+@media (max-width: 768px) { .container { padding: 0 20px; } .article-body h1 { font-size: 22px; } .article-body h2 { font-size: 18px; } }
 </style>
 </head>
 <body>
-
 <nav>
   <div class="container">
     <a href="../index.html" class="nav-brand">
@@ -136,30 +68,28 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
     </div>
   </div>
 </nav>
-
 <header class="article-header">
   <div class="container">
     <div class="ep-label">EPISODE 04</div>
-    <h1>产权转移方式与持有方式</h1>
+    <h1>产权转移方式与持有形式</h1>
     <div class="byline">
       原始讲师：<span>Patrick J. Hogarty, MA</span> · Sacramento City College · 中文整理：<span>MOTOKI SADASHIGE · 筑沙 Tsukasa inc</span> · 2026年7月
     </div>
   </div>
 </header>
-
 <article class="article-body">
   <div class="container">
 <h1>加州房地产经纪人考试教程 — 第 4 讲：产权转移方式 · 持有形式 · 登记制度</h1>
 
 <blockquote>
-<p>本资料不以盈利为目的，完全免费提供，仅供学习参考。</p>
+<p><strong>本资料不以盈利为目的，完全免费提供，仅供学习参考。</strong></p>
 </blockquote>
 
-<p><strong>原始讲师：</strong> Patrick J. Hogarty, MA（Sacramento City College）</p>
-<p><strong>课程编号：</strong> RE 300 — California Real Estate Principles</p>
-<p><strong>原始播出：</strong> 2009 年 · <strong>时长：</strong> 59 分钟</p>
-<p><strong>本文整理：</strong> 2026 年 7 月</p>
-<p><strong>内容说明：</strong> 本文基于播客 Show 04 完整录音逐段整理，保留 Pat 全部教学内容。📌 = 2026 年最新数据与法规更新，💡 = Pat 经典原文。</p>
+<strong>原始讲师：</strong> Patrick J. Hogarty, MA（Sacramento City College）
+<strong>课程编号：</strong> RE 300 — California Real Estate Principles
+<strong>原始播出：</strong> 2009 年 · <strong>时长：</strong> 59 分钟
+<strong>本文整理：</strong> 2026 年 7 月
+<strong>内容说明：</strong> 本文基于播客 Show 04 完整录音逐段整理，保留 Pat 全部教学内容。📌 = 2026 年最新数据与法规更新，💡 = Pat 经典原文。
 
 <hr>
 
@@ -201,14 +131,14 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <p>💡 "I remember one of the interviews that I had with somebody and I thought to myself, if I ever had to work for this person to earn a living, I would rather stand on the street corner with a sign that says, 'I will dig ditches for food.'"</p>
 </blockquote>
 
-<p><strong>操作步骤：</strong></p>
+<strong>操作步骤：</strong>
 
-<ol>
+<ul>
 <li>登录 Blackboard → Course Materials → Professional Interview 说明</li>
 <li>下载问题清单（一系列标准问题，比如「你在这行做了多久？」「你的日常工作是什么？」）</li>
 <li>去找你想从事的方向的人——想做销售就找 broker/agent，想做估价就找 appraiser，想做贷款就找 loan officer，想去政府规划部门就找 county planner</li>
 <li>交一份 <strong>两页打字报告</strong>（不是手写），通常在第 2 次期中考试当天交</li>
-</ol>
+</ul>
 
 <p>📌 <strong>2026 年更新：</strong> 今天的房地产行业分工更细。除了传统四大方向（销售、估价、贷款、政府），2026 年还兴起了 proptech（房地产科技）、iBuying 数据分析、短租管理、绿色建筑认证顾问等新职业路径。访谈时可以多了解这些新方向。</p>
 
@@ -226,30 +156,11 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 
 <h3>2.1 三大隐含保证</h3>
 
-<table>
-<thead><tr>
-<th>#</th>
-<th>保证内容</th>
-<th>含义</th>
-</tr></thead>
-<tbody>
-<tr>
-<td>1</td>
-<td><strong>未转让给他人</strong></td>
-<td>出让人（grantor）声明自己从未将此物业转让给其他任何人。你不会买了房子一年后才发现卖给你的人根本不是真正的所有者。</td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong>无未披露的负担</strong></td>
-<td>物业除已向买方披露的 lien、判决、限制外，无其他产权负担（encumbrance）。卖方必须如实披露所有已知问题。</td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong>后获权利自动转移</strong></td>
-<td>如果卖方在交易完成后获得了与该物业相关的任何额外权利（after-acquired title），这些权利自动归属买方。卖方不能事后保留。</td>
-</tr>
-</tbody>
-</table>
+<p>| # | 保证内容 | 含义 |</p>
+<p>|---|---|---|</p>
+<p>| 1 | <strong>未转让给他人</strong> | 出让人（grantor）声明自己从未将此物业转让给其他任何人。你不会买了房子一年后才发现卖给你的人根本不是真正的所有者。 |</p>
+<p>| 2 | <strong>无未披露的负担</strong> | 物业除已向买方披露的 lien、判决、限制外，无其他产权负担（encumbrance）。卖方必须如实披露所有已知问题。 |</p>
+<p>| 3 | <strong>后获权利自动转移</strong> | 如果卖方在交易完成后获得了与该物业相关的任何额外权利（after-acquired title），这些权利自动归属买方。卖方不能事后保留。 |</p>
 
 <h3>2.2 Implied vs Expressed</h3>
 
@@ -283,34 +194,13 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 
 <p>Pat 给了一个在现实中经常发生的例子：</p>
 
-<table>
-<thead><tr>
-<th>时间线</th>
-<th>事件</th>
-</tr></thead>
-<tbody>
-<tr>
-<td>婚后</td>
-<td>丈夫和妻子在加州结婚。加州是 <strong>共同财产州（community property state）</strong>——婚后取得的任何财产，无论谁出的钱、谁赚的钱，都是夫妻各 50%。</td>
-</tr>
-<tr>
-<td>某天</td>
-<td>感情破裂，决定离婚。但离婚不是立即可办的——法律程序需要时间。</td>
-</tr>
-<tr>
-<td>离婚未 final</td>
-<td>妻子找了新男友，两人决定一起买房。但此时离婚还没正式生效，妻子在法律上仍然是已婚状态。</td>
-</tr>
-<tr>
-<td>问题</td>
-<td>新房的产权可能有丈夫的权益——因为婚后取得的财产是共同财产。</td>
-</tr>
-<tr>
-<td>解决</td>
-<td>丈夫签署 Quit Claim Deed，声明「我对这套房子没有任何权益」。这样产权就清晰了。</td>
-</tr>
-</tbody>
-</table>
+<p>| 时间线 | 事件 |</p>
+<p>|---|---|</p>
+<p>| 婚后 | 丈夫和妻子在加州结婚。加州是 <strong>共同财产州（community property state）</strong>——婚后取得的任何财产，无论谁出的钱、谁赚的钱，都是夫妻各 50%。 |</p>
+<p>| 某天 | 感情破裂，决定离婚。但离婚不是立即可办的——法律程序需要时间。 |</p>
+<p>| 离婚未 final | 妻子找了新男友，两人决定一起买房。但此时离婚还没正式生效，妻子在法律上仍然是已婚状态。 |</p>
+<p>| 问题 | 新房的产权可能有丈夫的权益——因为婚后取得的财产是共同财产。 |</p>
+<p>| 解决 | 丈夫签署 Quit Claim Deed，声明「我对这套房子没有任何权益」。这样产权就清晰了。 |</p>
 
 <blockquote>
 <p>💡 "You assume they were married but they're not...and all of a sudden you're getting ready to close the deal and bang you find out...we're really not married yet."</p>
@@ -322,10 +212,10 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 
 <p>Pat 讲到加州共同财产的两个例外：</p>
 
-<ol>
+<ul>
 <li><strong>继承所得（inheritance）：</strong> 有人去世留给你的财产，是你个人的单独财产（separate property）</li>
 <li><strong>赠与所得（gift）：</strong> 别人作为礼物送给你的财产，也是你的单独财产</li>
-</ol>
+</ul>
 
 <p>除此之外，婚后取得的任何财产都是共同财产（community property）。</p>
 
@@ -349,25 +239,10 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 
 <p>Pat 区分了两种遗嘱：</p>
 
-<table>
-<thead><tr>
-<th>类型</th>
-<th>英文</th>
-<th>含义</th>
-</tr></thead>
-<tbody>
-<tr>
-<td><strong>见证遗嘱</strong></td>
-<td>Witnessed Will</td>
-<td>由律师起草、打印，签署时有见证人在场确认签字者的身份。必须有见证人，因为文件是别人代写的。</td>
-</tr>
-<tr>
-<td><strong>自书遗嘱</strong></td>
-<td>Holographic Will</td>
-<td>立遗嘱人亲笔手写的遗嘱。不需要见证人——因为笔迹本身可以作为证据。💡 "Somebody has put in their own handwriting...that's in handwriting."</td>
-</tr>
-</tbody>
-</table>
+<p>| 类型 | 英文 | 含义 |</p>
+<p>|---|---|---|</p>
+<p>| <strong>见证遗嘱</strong> | Witnessed Will | 由律师起草、打印，签署时有见证人在场确认签字者的身份。必须有见证人，因为文件是别人代写的。 |</p>
+<p>| <strong>自书遗嘱</strong> | Holographic Will | 立遗嘱人亲笔手写的遗嘱。不需要见证人——因为笔迹本身可以作为证据。💡 "Somebody has put in their own handwriting...that's in handwriting." |</p>
 
 <h3>4.3 遗嘱认证（Probate）</h3>
 
@@ -379,28 +254,10 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 
 <p>Probate Court 会审查遗嘱的有效性，然后指派一个人来处理遗产：</p>
 
-<table>
-<thead><tr>
-<th>角色</th>
-<th>来源</th>
-<th>男性</th>
-<th>女性</th>
-</tr></thead>
-<tbody>
-<tr>
-<td><strong>遗嘱执行人</strong></td>
-<td>遗嘱中指定</td>
-<td>Executor</td>
-<td>Executrix</td>
-</tr>
-<tr>
-<td><strong>遗产管理人</strong></td>
-<td>法院指派（无遗嘱或执行人不履职）</td>
-<td>Administrator</td>
-<td>Administratrix</td>
-</tr>
-</tbody>
-</table>
+<p>| 角色 | 来源 | 男性 | 女性 |</p>
+<p>|---|---|---|---|</p>
+<p>| <strong>遗嘱执行人</strong> | 遗嘱中指定 | Executor | Executrix |</p>
+<p>| <strong>遗产管理人</strong> | 法院指派（无遗嘱或执行人不履职） | Administrator | Administratrix |</p>
 
 <p>执行人/管理人的工作包括：召集家庭成员、处理房产出售（可能需要聘请房地产经纪人）、分配资产。这不是一份轻松的工作——Pat 说他叔叔去世后处理遗产就涉及很多步骤，包括找可能的其他利益相关者签署弃权声明。</p>
 
@@ -449,46 +306,13 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 
 <p>Pat 把 Adverse Possession 的五个要求讲得很清楚：</p>
 
-<table>
-<thead><tr>
-<th>#</th>
-<th>要素</th>
-<th>英文</th>
-<th>含义</th>
-</tr></thead>
-<tbody>
-<tr>
-<td>1</td>
-<td><strong>公开且显著</strong></td>
-<td>Open and Notorious</td>
-<td>你的占有不能被隐藏——必须明显到原业主「开车经过就能看到」。不能偷偷摸摸，不能半夜来白天走。</td>
-</tr>
-<tr>
-<td>2</td>
-<td><strong>敌对性</strong></td>
-<td>Hostile</td>
-<td>不一定动刀动枪。只意味着你没有获得原业主的许可。如果你问了「我能停我的房车在你地上吗？」并且对方说可以——那就不满足 hostile 条件，Adverse Possession 不成立。</td>
-</tr>
-<tr>
-<td>3</td>
-<td><strong>连续五年</strong></td>
-<td>Continuous for 5 Years</td>
-<td>不能占一年、撤走两年、再回来占四年。必须是连续的五年。</td>
-</tr>
-<tr>
-<td>4</td>
-<td><strong>色权（Color of Title）</strong></td>
-<td>Color of Title</td>
-<td>你必须有一个合理的「我认为这块地是我的」理由。比如：叔叔说留了 Deed 但找不到、有一份有瑕疵的 Grant Deed 等。不是凭空说「我看这地没人用」。</td>
-</tr>
-<tr>
-<td>5</td>
-<td><strong>缴税五年</strong></td>
-<td>Paid All Taxes for 5 Years</td>
-<td>你必须连续五年支付该物业的全部不动产税。Pat 特别强调：<strong>一定要保留所有缴费记录</strong>，因为最终要上法院才能获得产权。</td>
-</tr>
-</tbody>
-</table>
+<p>| # | 要素 | 英文 | 含义 |</p>
+<p>|---|---|---|---|</p>
+<p>| 1 | <strong>公开且显著</strong> | Open and Notorious | 你的占有不能被隐藏——必须明显到原业主「开车经过就能看到」。不能偷偷摸摸，不能半夜来白天走。 |</p>
+<p>| 2 | <strong>敌对性</strong> | Hostile | 不一定动刀动枪。只意味着你没有获得原业主的许可。如果你问了「我能停我的房车在你地上吗？」并且对方说可以——那就不满足 hostile 条件，Adverse Possession 不成立。 |</p>
+<p>| 3 | <strong>连续五年</strong> | Continuous for 5 Years | 不能占一年、撤走两年、再回来占四年。必须是连续的五年。 |</p>
+<p>| 4 | <strong>色权（Color of Title）</strong> | Color of Title | 你必须有一个合理的「我认为这块地是我的」理由。比如：叔叔说留了 Deed 但找不到、有一份有瑕疵的 Grant Deed 等。不是凭空说「我看这地没人用」。 |</p>
+<p>| 5 | <strong>缴税五年</strong> | Paid All Taxes for 5 Years | 你必须连续五年支付该物业的全部不动产税。Pat 特别强调：<strong>一定要保留所有缴费记录</strong>，因为最终要上法院才能获得产权。 |</p>
 
 <p>📌 <strong>2026 年补充：</strong> CCP §325 规定了加州 Adverse Possession 的确切法律要求。五年期限 + 缴税是硬性条件。证明责任（burden of proof）在占有人一方，标准是 clear and convincing evidence。在实际操作中，adverse possession 案件的胜诉率不高，因为五个要素必须全部满足。</p>
 
@@ -496,31 +320,16 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 
 <p>与 Adverse Possession 几乎完全相同——五个要求里只差一个：</p>
 
-<table>
-<thead><tr>
-<th></th>
-<th>Adverse Possession</th>
-<th>Easement by Prescription</th>
-</tr></thead>
-<tbody>
-<tr>
-<td>获得什么</td>
-<td>完整的产权（Title）</td>
-<td>使用权（Easement）</td>
-</tr>
-<tr>
-<td>需缴税？</td>
-<td>✅ 必须缴五年税</td>
-<td>❌ 不需要缴税</td>
-</tr>
-</tbody>
-</table>
+<p>| | Adverse Possession | Easement by Prescription |</p>
+<p>|---|---|---|</p>
+<p>| 获得什么 | 完整的产权（Title） | 使用权（Easement） |</p>
+<p>| 需缴税？ | ✅ 必须缴五年税 | ❌ 不需要缴税 |</p>
 
 <blockquote>
 <p>💡 "Everything that you had underneath the other condition except for that one thing."</p>
 </blockquote>
 
-<p><strong>现实案例：</strong> 你住在后面一块地上，要到你的地必须开车穿过前面那块地。如果你已经这样走了五年以上，没有被阻止，而且没有获得许可——你可能已经获得了一个 Easement by Prescription。原业主仍然缴纳不动产税。</p>
+<strong>现实案例：</strong> 你住在后面一块地上，要到你的地必须开车穿过前面那块地。如果你已经这样走了五年以上，没有被阻止，而且没有获得许可——你可能已经获得了一个 Easement by Prescription。原业主仍然缴纳不动产税。
 
 <p>Pat 强调：作为房地产经纪人，你在挂牌或带客户看房时，必须问清楚这些潜在问题。特别是郊区或农村地区的物业、「这条路只有你一个人用、还是别人也在走？」、「围栏的位置对吗？」。如果你发现不对劲，建议客户做土地测绘（land survey）或标记地界。</p>
 
@@ -536,22 +345,10 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 <p>💡 "The developer or a builder is going to build a subdivision and maybe the county or the city turns around and says, we'll approve the subdivision but...the fire department needs to have a firehouse closer."</p>
 </blockquote>
 
-<table>
-<thead><tr>
-<th>类型</th>
-<th>含义</th>
-</tr></thead>
-<tbody>
-<tr>
-<td><strong>自愿奉献（Voluntary）</strong></td>
-<td>建商出于善意主动提供土地——「出于好心，我做这个」</td>
-</tr>
-<tr>
-<td><strong>强制奉献（Mandatory）</strong></td>
-<td>政府说「你不奉献我们就不批你的项目」——比如消防站用地、学校用地、公园用地、道路拓宽</td>
-</tr>
-</tbody>
-</table>
+<p>| 类型 | 含义 |</p>
+<p>|---|---|</p>
+<p>| <strong>自愿奉献（Voluntary）</strong> | 建商出于善意主动提供土地——「出于好心，我做这个」 |</p>
+<p>| <strong>强制奉献（Mandatory）</strong> | 政府说「你不奉献我们就不批你的项目」——比如消防站用地、学校用地、公园用地、道路拓宽 |</p>
 
 <hr>
 
@@ -563,78 +360,26 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 
 <p>Pat 把这一章的逻辑总结为三段论：</p>
 
-<ol>
+<ul>
 <li><strong>你拥有什么？</strong> — 是 Fee Simple？Life Estate？Leasehold？（上集讲过的 Estates）</li>
 <li><strong>怎么转移？</strong> — Grant Deed、Quit Claim Deed、遗嘱、继承……（本集上半部分）</li>
 <li><strong>怎么持有？</strong> — 你的名字怎么出现在 Deed 上（本集下半部分）</li>
-</ol>
+</ul>
 
-<p><strong>Vesting</strong> 的定义：将一个人或多人的名字写在 Deed 上，并注明他们持有产权的方式。</p>
+<strong>Vesting</strong> 的定义：将一个人或多人的名字写在 Deed 上，并注明他们持有产权的方式。
 
 <h3>5.1 六种持有方式全解析</h3>
 
 <p>Pat 展示了一张对比表，列明了六种方式及每种方式下「能不能立遗嘱留给别人（Will）」「能不能出售（Sell）」：</p>
 
-<table>
-<thead><tr>
-<th>#</th>
-<th>持有方式</th>
-<th>等额？</th>
-<th>Will?</th>
-<th>Sell?</th>
-<th>核心特征</th>
-</tr></thead>
-<tbody>
-<tr>
-<td><strong>1</strong></td>
-<td>Sole Ownership（单独所有）</td>
-<td>—</td>
-<td>✅</td>
-<td>✅</td>
-<td>只有一个人的名字在 Deed 上。单身购买、继承、赠与取得。可以写成 "Pat Hogarty, a single man" 或 "Pat Hogarty, a widower"。</td>
-</tr>
-<tr>
-<td><strong>2</strong></td>
-<td>Tenants in Common（普通共有）</td>
-<td>❌ 可以不均</td>
-<td>✅</td>
-<td>✅</td>
-<td>每人持有一个 <strong>不可分割的权益（undivided interest）</strong>——你不能说「Pat 拥有游泳池、Jim 拥有房子」。三个人的话可以 50/25/25，不强制均分。缺点是：任一人可以独立出售或遗嘱转让自己的份额——你可能一觉醒来发现新合伙人是完全不认识的人。Pat 建议配一份 <strong>合伙协议（partnership agreement）</strong> 来解决这个问题。</td>
-</tr>
-<tr>
-<td><strong>3</strong></td>
-<td>Joint Tenants（联合共有）</td>
-<td>✅ 必须均分</td>
-<td>❌</td>
-<td>✅ 可出售</td>
-<td>必须均分（两人各 50%、四人各 25%）。关键特征是 <strong>生存者权（right of survivorship）</strong>：一人去世，其份额自动转给其他存活者，不经过遗嘱、不经过 probate。这也是为什么 Will 那一栏是 ❌——因为永远不会进入遗嘱程序。</td>
-</tr>
-<tr>
-<td><strong>4</strong></td>
-<td>Tenancy in Partnership（合伙共有）</td>
-<td>varies</td>
-<td>❌</td>
-<td>❌</td>
-<td>合伙持有的物业，由合伙协议管辖。不能个人单方面遗嘱转让或出售。</td>
-</tr>
-<tr>
-<td><strong>5</strong></td>
-<td>Community Property（共同财产）</td>
-<td>各 50%</td>
-<td>✅</td>
-<td>❌</td>
-<td>仅限夫妻。婚后取得的财产各 50%。每人可以将自己的 50% 通过遗嘱留给继承人，但不能单方面出售（需要双方同意）。</td>
-</tr>
-<tr>
-<td><strong>6</strong></td>
-<td>Community Property with Right of Survivorship</td>
-<td>各 50%</td>
-<td>❌</td>
-<td>❌</td>
-<td>共同财产 + 生存者权。一人去世，自动转给在世的配偶。不经过 probate。这是 2001 年加州新增的选项。</td>
-</tr>
-</tbody>
-</table>
+<p>| # | 持有方式 | 等额？ | Will? | Sell? | 核心特征 |</p>
+<p>|---|---|---|---|---|---|</p>
+<p>| <strong>1</strong> | Sole Ownership（单独所有） | — | ✅ | ✅ | 只有一个人的名字在 Deed 上。单身购买、继承、赠与取得。可以写成 "Pat Hogarty, a single man" 或 "Pat Hogarty, a widower"。 |</p>
+<p>| <strong>2</strong> | Tenants in Common（普通共有） | ❌ 可以不均 | ✅ | ✅ | 每人持有一个 <strong>不可分割的权益（undivided interest）</strong>——你不能说「Pat 拥有游泳池、Jim 拥有房子」。三个人的话可以 50/25/25，不强制均分。缺点是：任一人可以独立出售或遗嘱转让自己的份额——你可能一觉醒来发现新合伙人是完全不认识的人。Pat 建议配一份 <strong>合伙协议（partnership agreement）</strong> 来解决这个问题。 |</p>
+<p>| <strong>3</strong> | Joint Tenants（联合共有） | ✅ 必须均分 | ❌ | ✅ 可出售 | 必须均分（两人各 50%、四人各 25%）。关键特征是 <strong>生存者权（right of survivorship）</strong>：一人去世，其份额自动转给其他存活者，不经过遗嘱、不经过 probate。这也是为什么 Will 那一栏是 ❌——因为永远不会进入遗嘱程序。 |</p>
+<p>| <strong>4</strong> | Tenancy in Partnership（合伙共有） | varies | ❌ | ❌ | 合伙持有的物业，由合伙协议管辖。不能个人单方面遗嘱转让或出售。 |</p>
+<p>| <strong>5</strong> | Community Property（共同财产） | 各 50% | ✅ | ❌ | 仅限夫妻。婚后取得的财产各 50%。每人可以将自己的 50% 通过遗嘱留给继承人，但不能单方面出售（需要双方同意）。 |</p>
+<p>| <strong>6</strong> | Community Property with Right of Survivorship | 各 50% | ❌ | ❌ | 共同财产 + 生存者权。一人去世，自动转给在世的配偶。不经过 probate。这是 2001 年加州新增的选项。 |</p>
 
 <blockquote>
 <p>💡 "You don't want to get down there and get ready to sign the deal that day...only to find out it's not going to go through because you haven't figured out how to title the property."</p>
@@ -665,26 +410,11 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 
 <h3>6.1 为什么要登记？</h3>
 
-<table>
-<thead><tr>
-<th>功能</th>
-<th>说明</th>
-</tr></thead>
-<tbody>
-<tr>
-<td><strong>公示</strong></td>
-<td>把文件放入永久公共记录，任何人去县登记处都能查到</td>
-</tr>
-<tr>
-<td><strong>证据</strong></td>
-<td>原件丢了可以去登记处调副本。Deed、出生证明、结婚证、死亡证明……都可能需要</td>
-</tr>
-<tr>
-<td><strong>优先权</strong></td>
-<td><strong>谁先登记谁优先。</strong> 第一抵押权不是因为金额大，而是因为登记最早</td>
-</tr>
-</tbody>
-</table>
+<p>| 功能 | 说明 |</p>
+<p>|---|---|</p>
+<p>| <strong>公示</strong> | 把文件放入永久公共记录，任何人去县登记处都能查到 |</p>
+<p>| <strong>证据</strong> | 原件丢了可以去登记处调副本。Deed、出生证明、结婚证、死亡证明……都可能需要 |</p>
+<p>| <strong>优先权</strong> | <strong>谁先登记谁优先。</strong> 第一抵押权不是因为金额大，而是因为登记最早 |</p>
 
 <blockquote>
 <p>💡 "You can have a first mortgage for ten thousand dollars and a second one for two hundred thousand. What makes it a first, second, or third is who recorded first, second, third."</p>
@@ -692,25 +422,10 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 
 <h3>6.2 两种通知类型</h3>
 
-<table>
-<thead><tr>
-<th>类型</th>
-<th>英文</th>
-<th>含义</th>
-</tr></thead>
-<tbody>
-<tr>
-<td><strong>推定通知</strong></td>
-<td>Constructive Notice</td>
-<td>法律推定你已经知道——因为文件已经登记在公共记录中，你去查就能查到。即使你没去查，法律也认为你「应该知道」。</td>
-</tr>
-<tr>
-<td><strong>实际通知</strong></td>
-<td>Actual Notice</td>
-<td>有人真的给了你一份通知——你确实知道了。</td>
-</tr>
-</tbody>
-</table>
+<p>| 类型 | 英文 | 含义 |</p>
+<p>|---|---|---|</p>
+<p>| <strong>推定通知</strong> | Constructive Notice | 法律推定你已经知道——因为文件已经登记在公共记录中，你去查就能查到。即使你没去查，法律也认为你「应该知道」。 |</p>
+<p>| <strong>实际通知</strong> | Actual Notice | 有人真的给了你一份通知——你确实知道了。 |</p>
 
 <h3>6.3 公证（Acknowledgement）</h3>
 
@@ -726,103 +441,40 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 
 <h2>七、本集核心概念清单</h2>
 
-<table>
-<thead><tr>
-<th>概念</th>
-<th>英文</th>
-<th>一句话</th>
-</tr></thead>
-<tbody>
-<tr>
-<td>Grant Deed 隐含保证</td>
-<td>Implied Warranties</td>
-<td>未转让他人、无未披露负担、后获权利自动转移</td>
-</tr>
-<tr>
-<td>Quit Claim Deed</td>
-<td>—</td>
-<td>放弃权利，不带任何保证</td>
-</tr>
-<tr>
-<td>见证遗嘱</td>
-<td>Witnessed Will</td>
-<td>律师起草+见证人确认</td>
-</tr>
-<tr>
-<td>自书遗嘱</td>
-<td>Holographic Will</td>
-<td>亲笔手写，不需见证人</td>
-</tr>
-<tr>
-<td>遗嘱认证</td>
-<td>Probate</td>
-<td>法院确认遗嘱有效性</td>
-</tr>
-<tr>
-<td>无遗嘱继承</td>
-<td>Intestate</td>
-<td>按法律规定的顺序继承</td>
-</tr>
-<tr>
-<td>逆权占有</td>
-<td>Adverse Possession</td>
-<td>公开+敌对+5年+色权+缴税</td>
-</tr>
-<tr>
-<td>时效地役权</td>
-<td>Easement by Prescription</td>
-<td>同上但不需缴税</td>
-</tr>
-<tr>
-<td>共有（普通）</td>
-<td>Tenants in Common</td>
-<td>可不均分，可单方面出售/遗嘱转让</td>
-</tr>
-<tr>
-<td>共有（联合）</td>
-<td>Joint Tenancy</td>
-<td>必须均分+生存者权</td>
-</tr>
-<tr>
-<td>共同财产</td>
-<td>Community Property</td>
-<td>仅限夫妻，各50%</td>
-</tr>
-<tr>
-<td>共同财产+生存者权</td>
-<td>Community Property w/ ROS</td>
-<td>夫妻版 Joint Tenancy + 更优税务待遇</td>
-</tr>
-<tr>
-<td>推定通知</td>
-<td>Constructive Notice</td>
-<td>公共记录=法律推定你知道</td>
-</tr>
-<tr>
-<td>Vesting</td>
-<td>—</td>
-<td>名字+持有方式写在 Deed 上</td>
-</tr>
-</tbody>
-</table>
+<p>| 概念 | 英文 | 一句话 |</p>
+<p>|---|---|---|</p>
+<p>| Grant Deed 隐含保证 | Implied Warranties | 未转让他人、无未披露负担、后获权利自动转移 |</p>
+<p>| Quit Claim Deed | — | 放弃权利，不带任何保证 |</p>
+<p>| 见证遗嘱 | Witnessed Will | 律师起草+见证人确认 |</p>
+<p>| 自书遗嘱 | Holographic Will | 亲笔手写，不需见证人 |</p>
+<p>| 遗嘱认证 | Probate | 法院确认遗嘱有效性 |</p>
+<p>| 无遗嘱继承 | Intestate | 按法律规定的顺序继承 |</p>
+<p>| 逆权占有 | Adverse Possession | 公开+敌对+5年+色权+缴税 |</p>
+<p>| 时效地役权 | Easement by Prescription | 同上但不需缴税 |</p>
+<p>| 共有（普通） | Tenants in Common | 可不均分，可单方面出售/遗嘱转让 |</p>
+<p>| 共有（联合） | Joint Tenancy | 必须均分+生存者权 |</p>
+<p>| 共同财产 | Community Property | 仅限夫妻，各50% |</p>
+<p>| 共同财产+生存者权 | Community Property w/ ROS | 夫妻版 Joint Tenancy + 更优税务待遇 |</p>
+<p>| 推定通知 | Constructive Notice | 公共记录=法律推定你知道 |</p>
+<p>| Vesting | — | 名字+持有方式写在 Deed 上 |</p>
 
 <hr>
 
 <h2>八、Pat 的金句</h2>
 
 <blockquote>
-<p>💡 "If I ever had to work for this person to earn a living, I would rather stand on the street corner with a sign that says, 'I will dig ditches for food.'"<br>
-— 关于为什么要在入行前多访谈几个人</p>
+<p>💡 "If I ever had to work for this person to earn a living, I would rather stand on the street corner with a sign that says, 'I will dig ditches for food.'"</p>
+<p>— 关于为什么要在入行前多访谈几个人</p>
 </blockquote>
 
 <blockquote>
-<p>💡 "I used to own airplanes like that...we would own them in a partnership because they're so expensive to operate."<br>
-— 用飞机合伙的例子解释 Tenants in Common 为什么需要补充合伙协议</p>
+<p>💡 "I used to own airplanes like that...we would own them in a partnership because they're so expensive to operate."</p>
+<p>— 用飞机合伙的例子解释 Tenants in Common 为什么需要补充合伙协议</p>
 </blockquote>
 
 <blockquote>
-<p>💡 "You don't want to get down there and get ready to sign the deal that day...only to find out it's not going to go through because you haven't figured out how to title the property."<br>
-— 提醒经纪人在交易早期就问客户 title 方式</p>
+<p>💡 "You don't want to get down there and get ready to sign the deal that day...only to find out it's not going to go through because you haven't figured out how to title the property."</p>
+<p>— 提醒经纪人在交易早期就问客户 title 方式</p>
 </blockquote>
 
 <blockquote>
@@ -831,23 +483,20 @@ nav .container { display: flex; justify-content: space-between; align-items: cen
 
 <hr>
 
-<p><strong>中文整理：MOTOKI · 筑沙 Tsukasa inc</strong> · 2026 年 7 月</p>
+<strong>中文整理：MOTOKI · 筑沙 Tsukasa inc</strong> · 2026 年 7 月
 
   </div>
 </article>
-
 <div class="container">
   <div class="disclaimer">
-    <p><strong>免责声明：</strong>本资料不以盈利为目的，完全免费提供，仅供学习参考。内容基于 Pat Hogarty 教授 RE 300 播客系列整理，2026 年数据更新仅供参考。加州房地产执照考试信息以 DRE 官网（dre.ca.gov）为准。</p>
+    <p><strong>免责声明：</strong>本资料不以盈利为目的，完全免费提供，仅供学习参考。内容基于 Pat Hogarty 教授 RE 300 播客系列整理。加州房地产执照考试信息以 DRE 官网（dre.ca.gov）为准。</p>
   </div>
 </div>
-
 <footer class="article-footer">
   <div class="container">
     <a href="index.html">← 返回 RE300 专题首页</a>
     <div class="ft-brand">筑 沙 TSUKASA</div>
   </div>
 </footer>
-
 </body>
 </html>
