@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="加州房地产执照考试中文教程 — RE 300 第8讲：产权负担进阶。含2026年最新DRE数据更新。">
+<meta property="og:title" content="加州房产执照考试｜中文精讲 EP08 — 筑沙 Tsukasa">
+<meta property="og:description" content="Patrick Hogarty RE300 中文精讲第8集：产权负担进阶——物理地役权、建筑限制与侵占">
+<meta property="og:type" content="article">
+<title>EP08 产权负担进阶——物理地役权、建筑限制与侵占全解 — RE300 加州房地产原理 — 筑沙 Tsukasa</title>
+<style>
+:root {
+  --bg: #0b0b0b; --surface: #161616; --border: #262626;
+  --ink: #ede8df; --muted: #8a8578; --sand: #d4b896; --sand-light: #e8d5c0; --teal: #3a8a85;
+  --radius: 6px;
+  --font-display: 'Georgia', 'Noto Serif JP', 'Songti SC', serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); line-height: 1.7; }
+.container { max-width: 860px; margin: 0 auto; padding: 0 32px; }
+nav { position: sticky; top: 0; z-index: 100; background: rgba(11,11,11,0.94); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 16px 0; }
+nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.logo-diamond { width: 28px; height: 28px; background: linear-gradient(135deg, var(--sand) 0%, var(--sand-light) 100%); clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.logo-diamond-inner { width: 70%; height: 70%; background: var(--bg); clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); display: flex; align-items: center; justify-content: center; }
+.logo-diamond-char { color: var(--sand); font-family: var(--font-display); font-size: 9px; }
+.nav-name { font-family: var(--font-display); font-size: 16px; letter-spacing: 0.08em; }
+.nav-links { display: flex; gap: 24px; }
+.nav-links a { color: var(--muted); text-decoration: none; font-size: 12px; letter-spacing: 0.06em; transition: color 0.2s; }
+.nav-links a:hover { color: var(--sand); }
+.article-header { padding: 80px 0 48px; border-bottom: 1px solid var(--border); text-align: center; }
+.article-header .ep-label { display: inline-block; font-size: 10px; color: var(--sand); letter-spacing: 0.14em; border: 1px solid var(--sand); padding: 6px 16px; border-radius: 2px; margin-bottom: 20px; }
+.article-header h1 { font-family: var(--font-display); font-size: clamp(24px, 5vw, 42px); letter-spacing: 0.04em; line-height: 1.4; margin-bottom: 16px; }
+.article-header .byline { color: var(--muted); font-size: 13px; }
+.byline span { color: var(--sand); }
+.article-body { padding: 60px 0 80px; }
+.article-body h1 { font-family: var(--font-display); font-size: 28px; margin: 48px 0 20px; }
+.article-body h2 { font-family: var(--font-display); font-size: 22px; margin: 40px 0 16px; color: var(--sand); }
+.article-body h3 { font-size: 17px; margin: 32px 0 12px; color: var(--sand-light); }
+.article-body p { margin-bottom: 18px; font-size: 15px; line-height: 1.85; }
+.article-body blockquote { border-left: 3px solid var(--sand); margin: 24px 0; padding: 16px 24px; background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0; }
+.article-body blockquote p { color: var(--sand-light); font-style: italic; margin-bottom: 8px; }
+.article-body ul, .article-body ol { margin: 16px 0 24px 24px; }
+.article-body li { font-size: 14px; line-height: 1.9; margin-bottom: 6px; }
+.article-body code { background: var(--surface); padding: 2px 6px; border-radius: 3px; font-size: 13px; color: var(--sand-light); }
+.article-body hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+.article-body strong { color: var(--sand-light); }
+.article-body pre { background: var(--surface); padding: 16px 24px; border-radius: var(--radius); margin: 20px 0; overflow-x: auto; }
+.article-body pre code { background: none; padding: 0; font-size: 13px; color: var(--ink); }
+.disclaimer { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 28px; margin: 60px 0; }
+.disclaimer p { font-size: 12px; color: var(--muted); margin-bottom: 8px; line-height: 1.8; }
+.article-footer { padding: 60px 0; border-top: 1px solid var(--border); text-align: center; }
+.article-footer a { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; text-decoration: none; transition: color 0.2s; }
+.article-footer a:hover { color: var(--sand); }
+.article-footer .ft-brand { font-family: var(--font-display); font-size: 16px; color: var(--sand); letter-spacing: 0.1em; margin-top: 20px; }
+@media (max-width: 768px) { .container { padding: 0 20px; } .article-body h1 { font-size: 22px; } .article-body h2 { font-size: 18px; } }
+</style>
+</head>
+<body>
+<nav>
+  <div class="container">
+    <a href="../index.html" class="nav-brand">
+      <div class="logo-diamond"><div class="logo-diamond-inner"><span class="logo-diamond-char">筑</span></div></div>
+      <span class="nav-name">筑沙 TSUKASA</span>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="index.html">RE300</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <div class="ep-label">EPISODE 08</div>
+    <h1>产权负担进阶——物理地役权、建筑限制与侵占全解</h1>
+    <div class="byline">
+      原始讲师：<span>Patrick J. Hogarty, MA</span> · Sacramento City College · 中文整理：<span>MOTOKI SADASHIGE · 筑沙 Tsukasa inc</span> · 2026年7月
+    </div>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+<h1>加州房地产经纪人考试教程 — 第 8 讲：产权负担进阶——物理地役权、建筑限制与侵占全解</h1>
+<blockquote>
+<p><strong>本资料不以盈利为目的，完全免费提供，仅供学习参考。</strong></p>
+</blockquote>
+<p><strong>原始讲师：</strong> Patrick J. Hogarty, MA（Sacramento City College）</p>
+<p><strong>课程编号：</strong> RE 300 — California Real Estate Principles</p>
+<p><strong>本文整理：</strong> 2026 年 7 月</p>
+<p><strong>内容说明：</strong> 第 8 讲基于第 7 讲内容，继续深入产权负担（Encumbrances）章节的后半部分，重点放在物理地役权、建筑限制、侵占及 Homestead 保护。📌 = 2026 年最新数据，💡 = Pat 原话。</p>
+<hr>
+<h2>一、开场与上期回顾</h2>
+<p>Pat 开场做了一件他常说的事——快速回顾上集内容帮大家串联知识体系。</p>
+<blockquote>
+<p>💡 "What I'd like to do is to quickly just talk a little bit about what we discussed the last time."</p>
+</blockquote>
+<h3>1.1 留置权四大类回顾</h3>
+<p>| # | 类型 | 自愿/非自愿 | 说明 |</p>
+<p>| 1 | <strong>Deed of Trust / Mortgage</strong> | 自愿 | 你借钱买房子，银行要求用房子做抵押。你没还钱，银行可以拍卖。加州用 Deed of Trust 而非传统 Mortgage，但日常大家仍然说"mortgage"。 |</p>
+<p>| 2 | <strong>Mechanic's Lien</strong> | 非自愿 | 木匠、电工、油漆工在你物业上做了活你没付钱——他们可以登记留置权。"cloud the property"，不付清买家不接手。 |</p>
+<p>| 3 | <strong>Judgments & Attachments</strong> | 非自愿 | 法院判决（judgment）或诉前财产扣留（attachment），记录在物业上。不付清就强制拍卖。 |</p>
+<p>| 4 | <strong>Tax Liens & Special Assessments</strong> | 非自愿 | 房产税（property tax）+ 特别评估税（如 Mello-Roos）。Prop 13 锁定基准税率 1%。 |</p>
+<blockquote>
+<p>💡 "Property taxes are going to be prorated when you get ready to buy the house."</p>
+</blockquote>
+<p>📌 <strong>2026 年补充：</strong> Prop 13 仍然是加州房产税基准（1% of assessed value，年增幅上限 2%）。2026 年部分县对 Mello-Roos 的披露要求更严格，买方在交易中会收到专门的 CFD（Community Facilities District）披露表。</p>
+<h3>1.2 产权报告：交易的"真相时刻"</h3>
+<p>Pat 详细解释了这些留置权如何在实际交易中被发现——初步产权报告（Preliminary Title Report）。</p>
+<p>交易流程：</p>
+<ol>
+<li>买方通过经纪人提交购买要约（Purchase Offer）</li>
+<li>双方协商 → 接受（Acceptance）</li>
+<li>托管（Escrow）开立 → Escrow Officer 联系 Title Company</li>
+<li>Title Officer 查询所有登记文件 → 产生 <strong>Preliminary Title Report</strong></li>
+<li>通常 3-4 天出具</li>
+</ol>
+<p>这份报告列出：真正的所有者是谁、持有方式、法律描述、房产税状态、所有 Deed of Trust/Mortgage、Mechanic's Lien、Judgment、IRS Lien、地役权（Easement）……</p>
+<blockquote>
+<p>💡 "That title report has to be reviewed by the buyer, reviewed by the seller, reviewed by both brokers, and then the buyer has to sign off."</p>
+</blockquote>
+<p><strong>买方的两个选择：</strong></p>
+<ul>
+<li>同意报告内容 → 交易继续</li>
+<li>发现问题太大 → 退出（如：后方有一条你不知道的水管线，你本来打算在那儿挖游泳池）</li>
+</ul>
+<p>📌 <strong>2026 年趋势：</strong> 越来越多 Title Company 提供数字化的 Preliminary Report，买方可在 escrow 平台上直接审阅和电子签收。但内容本质未变。</p>
+<hr>
+<h2>二、物理产权负担（Physical Encumbrances）</h2>
+<blockquote>
+<p>💡 "These are physical encumbrances, which are different. These are stopping you from possibly using some portion of your property."</p>
+</blockquote>
+<p>Pat 把物理负担分为三类：<strong>地役权（Easement）</strong>、<strong>建筑限制与分区（Building Restrictions & Zoning）</strong>、<strong>侵占（Encroachment）</strong>。</p>
+<hr>
+<h2>三、地役权深度解析</h2>
+<h3>3.1 定义</h3>
+<blockquote>
+<p>💡 "An easement is the right to use another's land. It is an interest, but it is not an estate."</p>
+</blockquote>
+<p>地役权是一个非常重要的概念——它是<strong>在他人物业上的使用权</strong>，但<strong>不是所有权</strong>。你没有 Fee Estate、没有 Life Estate、没有 Leasehold——你只有一个穿越别人土地的权利。</p>
+<p>三个空间方向：</p>
+<ul>
+<li><strong>地表以上：</strong> 电力线、电话线</li>
+<li><strong>地表：</strong> 车道、人行道</li>
+<li><strong>地表以下：</strong> 矿物开采权、管线</li>
+</ul>
+<h3>3.2 需役地与供役地</h3>
+<p>Pat 的经典图示：</p>
+<pre><code>  道路 ──────┬──────┬──────
+              │      │
+              │  B   │  ← 供役地（Servient Tenement）
+              │(前地)│     "服务"别人的那块地
+              │      │
+              ├──────┤
+              │  A   │  ← 需役地（Dominant Tenement）
+              │(后地)│     需要穿越 B 才能到道路
+              └──────┘</code></pre>
+<ul>
+<li><strong>Dominant Tenement（需役地）：</strong> 需要地役权的那一方</li>
+<li><strong>Servient Tenement（供役地）：</strong> 提供地役权、被穿越的那一方</li>
+</ul>
+<blockquote>
+<p>💡 "This guy serves that guy."</p>
+</blockquote>
+<h3>3.3 三种创设方式</h3>
+<p>| 方式 | 英文 | 说明 |</p>
+<p>| <strong>书面</strong> | By Writing | 在 Deed 中写明。"我卖了前面这块地，但保留穿过它的权利"。最好登记。 |</p>
+<p>| <strong>默示</strong> | Implied | 虽然没有书面文件，但「没有这个通道你就进不了家门」——法律推定地役权存在。 |</p>
+<p>| <strong>长期使用 / 时效取得</strong> | By Prescription | 连续五年 + 公开显著 + 敌对（无许可）+ 不间断 + 色权。和第 4 讲的 Easement by Prescription 完全相同。 |</p>
+<blockquote>
+<p>💡 "If I do it for a year and then I don't use it...I've had a break. It has to be for five consecutive years."</p>
+</blockquote>
+<p><strong>关键点：</strong> 如果你有地主的许可（口头或书面，甚至"你帮我剪草我就让你走"），就<strong>不满足 hostile 条件</strong>——你不能通过 prescription 取得地役权。</p>
+<h3>3.4 地役权的转移</h3>
+<p>地役权分为两种：</p>
+<p>| 类型 | 英文 | 转移性 |</p>
+<p>| <strong>从属性地役权</strong> | Easement Appurtenant | 随土地自动转移。地卖给谁，地役权就跟谁。 |</p>
+<p>| <strong>个人地役权</strong> | Easement in Gross | 只赋予特定个人或公司（如 PG&E 的电力线地役权），不随土地转移，除非有明示协议。 |</p>
+<blockquote>
+<p>💡 "Easements are transferred automatically if they are easements appurtenant."</p>
+</blockquote>
+<p>📌 <strong>经纪人职责：</strong> 如果你挂牌或带客户看房时发现明显的地役权（如：进入物业必须穿越别人的地），<strong>查 Preliminary Title Report</strong>。如果有地役权却没登记——这是个问题。</p>
+<h3>3.5 地役权的终止方式</h3>
+<p>| 方式 | 说明 |</p>
+<p>| <strong>合并（Merger）</strong> | 需役地主人把供役地也买了——你不需要自己的许可穿自己的地。 |</p>
+<p>| <strong>过度使用（Excessive Use）</strong> | 本来是家用车道，你开了个洗车行天天车来车往。 |</p>
+<p>| <strong>遗弃（Abandonment）</strong> | 长期不再使用，也无恢复使用的意图。 |</p>
+<blockquote>
+<p>💡 "If I buy this person's property, then I own the whole piece of property. I no longer have to get permission from myself."</p>
+</blockquote>
+<hr>
+<h2>四、建筑限制（Building Restrictions）</h2>
+<p>Pat 区分了两类限制：公共的（public）和私人的（private）。</p>
+<h3>4.1 公共限制：分区（Zoning）</h3>
+<p>分区法（Zoning Laws）决定了每块地能用来做什么：</p>
+<p>| 分区类型 | 实例 |</p>
+<p>| Residential（住宅） | 独栋、双拼、公寓 |</p>
+<p>| Retail / Commercial（零售/商业） | 小商铺、大型购物中心 |</p>
+<p>| Industrial（工业） | 工厂、仓储、铁路运输 |</p>
+<p>Zoning Code 里还有具体限制：房子不能超过几层、后院留多少呎、侧院 5 呎、退红线 20 呎……</p>
+<blockquote>
+<p>💡 "There's different types of areas that have been designated for certain types of uses."</p>
+</blockquote>
+<p>📌 <strong>2026 年更新：</strong> 加州近年大力推动 ADU（Accessory Dwelling Unit，附属住宅单元）合法化——SB 9 和 SB 10 允许在原本仅限独栋的用地上建造第二单元或分割地块。大多数城市的 Zoning Code 已更新以符合州法要求。2026 年部分城市进一步放宽了 ADU 高度和面积限制以应对住房危机。</p>
+<h3>4.2 私人限制：CC&Rs（Covenants, Conditions & Restrictions）</h3>
+<p>私人限制由开发商（Developer）在项目规划时制定，由业主协会（HOA）执行。</p>
+<p>Pat 用他儿子住的 Woodside Condominiums 举了个生动例子：</p>
+<blockquote>
+<p>💡 "The drapes that face the outside...all had to be white. The part that faced the outside had to have a white backing."</p>
+</blockquote>
+<blockquote>
+<p>💡 "It could be a brand new spanking, $50,000 beautiful looking truck...but the truck could not park on the grounds, but the old Volkswagen could."</p>
+</blockquote>
+<p>Pat 自己住的社区也有 CC&R：改房子颜色要 HOA 批准、屋顶必须是瓦顶不能是沥青瓦、垃圾箱周日晚上放出去周一晚上必须收回来、不能街边过夜停车……</p>
+<p>他讲了一件亲身经历：他种的一棵树，Zoning 没说树离围栏要多远，但 HOA 的 CC&R 规定必须 5 呎。他的树种在了 4 呎 10.5 吋——<strong>差了 1.5 吋，HOA 拿卷尺量完后让他把树挪了。</strong></p>
+<h3>4.3 公 vs 私：谁更严就听谁的</h3>
+<blockquote>
+<p>💡 "Whoever is the more restrictive of the two is who you have to follow."</p>
+</blockquote>
+<p>| 问题 | Zoning（公共） | CC&R（私人） | 听谁的？ |</p>
+<p>| 侧院退线 | 5 呎 | 6 呎 | CC&R（更严） |</p>
+<p>| 房子颜色 | 不管 | 必须 HOA 批准 | CC&R |</p>
+<p>| 树离围栏距离 | 不管 | 必须 5 呎 | CC&R |</p>
+<p>| 垃圾箱摆放 | 不管 | 有限制 | CC&R |</p>
+<p><strong>为什么有人愿意忍受这么多限制？</strong></p>
+<blockquote>
+<p>💡 "It has a dramatic effect on the value of the property."</p>
+</blockquote>
+<p>Pat 说得很直白：你开车经过某些社区，看到有人把废车停在草坪上、房子漆成粉色配紫色圆点、屋顶都快塌了——你会想住在这里吗？不会。HOA 的限制保护了所有人的物业价值。</p>
+<p>📌 <strong>2026 年：</strong> 加州 HOA 法规持续强化。Civil Code § 4000-6150（Davis-Stirling Act）规定了 HOA 的权力边界。2026 年新增条款要求 HOA 对罚款和违规通知采用更严格的书面程序，且租客也享有部分 HOA 权利（如使用公共设施）。</p>
+<hr>
+<h2>五、侵占（Encroachment）</h2>
+<h3>5.1 定义</h3>
+<blockquote>
+<p>💡 "An encroachment is the wrongful, unauthorized placement of improvements or permanent fixtures on a property by a non-owner of that property."</p>
+</blockquote>
+<p>简单说：邻居的东西建到了你的地上。最常见的是<strong>围栏（fence）</strong>。</p>
+<h3>5.2 三年诉讼时效</h3>
+<blockquote>
+<p>💡 "You must pursue the right to have the encroachment removed within three years or lose your right."</p>
+</blockquote>
+<p>如果你邻居的围栏建到了你的地上，你必须在 <strong>3 年内</strong> 起诉要求拆除，否则可能丧失追索权。</p>
+<h3>5.3 侵占的可能后果</h3>
+<ul>
+<li><strong>Adverse Possession（逆权占有）：</strong> 如果侵占持续 5 年以上 + 满足五个要素 → 邻居可能获得那块地的产权</li>
+<li><strong>Easement by Prescription（时效地役权）：</strong> 邻居可能获得合法使用权</li>
+</ul>
+<h3>5.4 经纪人应该做什么</h3>
+<blockquote>
+<p>💡 "If you're a good agent, you will normally contact the title insurance company and get something called a plat map."</p>
+</blockquote>
+<p>Pat 的建议：</p>
+<ol>
+<li>挂牌前向 Title Company 索取 <strong>Plat Map（法定地块图）</strong>——上面有精确的尺寸</li>
+<li>和业主一起核对：实际围栏位置和 Plat Map 一致吗？</li>
+<li>如果发现不对——在交易前解决，别等到 closing 前一天</li>
+</ol>
+<p>📌 <strong>2026 年工具：</strong> 如今很多 County Assessor 网站提供在线 GIS 地图，可以直接叠加地块边界和卫星图。虽然不能替代专业测绘，但经纪人可以用来做初步筛查。</p>
+<hr>
+<h2>六、Homestead 保护（宅地豁免）</h2>
+<h3>6.1 两种"Homestead"的区别</h3>
+<blockquote>
+<p>💡 "Most people think about homesteading in one of two ways."</p>
+</blockquote>
+<p>| 类型 | 内容 |</p>
+<p>| <strong>历史上的 Homestead Act</strong> | 1862 年联邦法案，鼓励人民西进定居。免费给地，住满一定年限就归你。俄克拉荷马的"Sooners"就是在枪响前偷跑的抢地者。 |</p>
+<p>| <strong>加州 Homestead 保护</strong> | 在现代加州房地产中使用——保护你的自住房不被强制拍卖以清偿某些债务。 |</p>
+<p>本课讨论的是第二种。</p>
+<h3>6.2 Homestead 保护的金额</h3>
+<p>| 类别 | 豁免金额 |</p>
+<p>| Head of Household（户主） | $75,000 |</p>
+<p>| 65 岁以上 / 残障 / 55 岁以上低收入 | $150,000 |</p>
+<p>| 其他居民 | $50,000 |</p>
+<p>📌 <strong>2026 年重要更新：</strong> 加州在 2020 年通过了 AB 1885，将 Homestead 豁免大幅提高。<strong>2026 年的最新金额已远超 Pat 当年说的数字：</strong></p>
+<p>| 类别 | 2026 年豁免金额 |</p>
+<p>| 一般 Homestead | 最低 $371,547，最高 $743,681（随 CPI 年度调整，取决于 County 房价中位数） |</p>
+<p>| 不再区分 Head of Household | 统一标准 |</p>
+<p>这和 Pat 讲的 2009 年版本有天壤之别——2026 年的保护力度是当年的 5-10 倍。</p>
+<h3>6.3 重要限制</h3>
+<blockquote>
+<p>💡 "A homestead does not protect a homeowner against foreclosure on a trustee, mechanics lien, or a lien filed prior to the filing of the homestead."</p>
+</blockquote>
+<p>Homestead 保护<strong>不适用于</strong>：</p>
+<ul>
+<li>你的房贷/Deed of Trust 的 foreclosure</li>
+<li>Mechanic's Lien</li>
+<li><strong>在 Homestead 登记之前</strong>已经存在的留置权</li>
+</ul>
+<p>你不能先惹了麻烦再去登记 Homestead——必须提前登记才有效。</p>
+<h3>6.4 申报要求</h3>
+<p>Homestead Declaration 必须：</p>
+<ul>
+<li>说明你是 Head of Household / 符合资格</li>
+<li>说明你实际居住在该物业（不能是出租房）</li>
+<li>包含物业法律描述和估计价值</li>
+<li>经公证 + 在 County Recorder 登记</li>
+</ul>
+<h3>6.5 如何终止</h3>
+<ul>
+<li>出售物业 → Homestead 自动终止</li>
+<li>主动放弃（Abandonment）→ 可以在新买的住房上重新申报</li>
+</ul>
+<hr>
+<h2>七、经纪人的行动指南</h2>
+<p>Pat 在本讲结尾给了一个非常实用的总结：</p>
+<blockquote>
+<p>💡 "When you get those title reports...read it. And all of the title reps...would be more than happy to sit down and go over that with you line item by line item."</p>
+</blockquote>
+<ol>
+<li><strong>拿到 Preliminary Title Report 立刻看，不要等到 closing 前一天</strong></li>
+<li>看不懂的——找 Escrow Officer 或 Title Officer 逐条解释</li>
+<li>发现问题（如：还清贷款但没登记 Reconveyance，付了 Mechanic 但没登记 Satisfaction）——主动去解决</li>
+<li>大部分 title 问题都是可以"cure"（修复）的——关键在于<strong>尽早发现</strong></li>
+</ol>
+<hr>
+<h2>八、关键术语中英对照</h2>
+<p>| 中文 | 英文 |</p>
+<p>| 产权负担 | Encumbrance |</p>
+<p>| 信托契据 | Deed of Trust |</p>
+<p>| 技工留置权 | Mechanic's Lien |</p>
+<p>| 判决留置权 | Judgment Lien |</p>
+<p>| 特别评估税 | Special Assessment |</p>
+<p>| 初步产权报告 | Preliminary Title Report |</p>
+<p>| 地役权 | Easement |</p>
+<p>| 需役地 | Dominant Tenement |</p>
+<p>| 供役地 | Servient Tenement |</p>
+<p>| 默示地役权 | Easement by Implication |</p>
+<p>| 时效地役权 | Easement by Prescription |</p>
+<p>| 从属性地役权 | Easement Appurtenant |</p>
+<p>| 个人地役权 | Easement in Gross |</p>
+<p>| 分区 | Zoning |</p>
+<p>| 契约条件与限制 | CC&Rs |</p>
+<p>| 业主协会 | Homeowners Association (HOA) |</p>
+<p>| 侵占 | Encroachment |</p>
+<p>| 宅地豁免 | Homestead |</p>
+<p>| 平面图 | Plat Map |</p>
+<p>| 再转让契据 | Deed of Reconveyance |</p>
+<hr>
+<h2>九、Pat 金句</h2>
+<blockquote>
+<p>💡 "It's easier to take care of that upfront."</p>
+</blockquote>
+<blockquote>
+<p>💡 "Don't wait until the last minute and the deal's getting ready to close to read the report. Look for that report right away."</p>
+</blockquote>
+<blockquote>
+<p>💡 "If you want to know why people accept all these restrictions, just drive through some neighborhoods...you start having people that have property or whatever they do become eyesores to the community."</p>
+</blockquote>
+<hr>
+<p><strong>中文整理：MOTOKI · 筑沙 Tsukasa inc</strong> · 2026 年 7 月</p>
+  </div>
+</article>
+<div class="container">
+  <div class="disclaimer">
+    <p><strong>免责声明：</strong>本资料不以盈利为目的，完全免费提供，仅供学习参考。内容基于 Pat Hogarty 教授 RE 300 播客系列整理。加州房地产执照考试信息以 DRE 官网（dre.ca.gov）为准。</p>
+  </div>
+</div>
+<footer class="article-footer">
+  <div class="container">
+    <a href="index.html">← 返回 RE300 专题首页</a>
+    <div class="ft-brand">筑 沙 TSUKASA</div>
+  </div>
+</footer>
+</body>
+</html>

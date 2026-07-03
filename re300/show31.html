@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="加州房地产执照考试中文教程 — RE 300 第31讲：房地产数学实战，十道真题拆解">
+<meta property="og:title" content="加州房产执照考试｜中文精讲 EP31 — 筑沙 Tsukasa">
+<meta property="og:description" content="Patrick Hogarty RE300 中文精讲第31集：房地产数学实战 —— 十道真题拆解，从「文字陷阱」到「计算器按出答案」">
+<meta property="og:type" content="article">
+<title>EP31 房地产数学实战 —— 十道真题拆解，从「文字陷阱」到「计算器按出答案」 — RE300 加州房地产原理 — 筑沙 Tsukasa</title>
+<style>
+:root {
+  --bg: #0b0b0b; --surface: #161616; --border: #262626;
+  --ink: #ede8df; --muted: #8a8578; --sand: #d4b896; --sand-light: #e8d5c0; --teal: #3a8a85;
+  --radius: 6px;
+  --font-display: 'Georgia', 'Noto Serif JP', 'Songti SC', serif;
+  --font-body: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans', sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); line-height: 1.7; }
+.container { max-width: 860px; margin: 0 auto; padding: 0 32px; }
+nav { position: sticky; top: 0; z-index: 100; background: rgba(11,11,11,0.94); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 16px 0; }
+nav .container { display: flex; justify-content: space-between; align-items: center; }
+.nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.logo-diamond { width: 28px; height: 28px; background: linear-gradient(135deg, var(--sand) 0%, var(--sand-light) 100%); clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.logo-diamond-inner { width: 70%; height: 70%; background: var(--bg); clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); display: flex; align-items: center; justify-content: center; }
+.logo-diamond-char { color: var(--sand); font-family: var(--font-display); font-size: 9px; }
+.nav-name { font-family: var(--font-display); font-size: 16px; letter-spacing: 0.08em; }
+.nav-links { display: flex; gap: 24px; }
+.nav-links a { color: var(--muted); text-decoration: none; font-size: 12px; letter-spacing: 0.06em; transition: color 0.2s; }
+.nav-links a:hover { color: var(--sand); }
+.article-header { padding: 80px 0 48px; border-bottom: 1px solid var(--border); text-align: center; }
+.article-header .ep-label { display: inline-block; font-size: 10px; color: var(--sand); letter-spacing: 0.14em; border: 1px solid var(--sand); padding: 6px 16px; border-radius: 2px; margin-bottom: 20px; }
+.article-header h1 { font-family: var(--font-display); font-size: clamp(24px, 5vw, 42px); letter-spacing: 0.04em; line-height: 1.4; margin-bottom: 16px; }
+.article-header .byline { color: var(--muted); font-size: 13px; }
+.byline span { color: var(--sand); }
+.article-body { padding: 60px 0 80px; }
+.article-body h1 { font-family: var(--font-display); font-size: 28px; margin: 48px 0 20px; }
+.article-body h2 { font-family: var(--font-display); font-size: 22px; margin: 40px 0 16px; color: var(--sand); }
+.article-body h3 { font-size: 17px; margin: 32px 0 12px; color: var(--sand-light); }
+.article-body p { margin-bottom: 18px; font-size: 15px; line-height: 1.85; }
+.article-body blockquote { border-left: 3px solid var(--sand); margin: 24px 0; padding: 16px 24px; background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0; }
+.article-body blockquote p { color: var(--sand-light); font-style: italic; margin-bottom: 8px; }
+.article-body ul, .article-body ol { margin: 16px 0 24px 24px; }
+.article-body li { font-size: 14px; line-height: 1.9; margin-bottom: 6px; }
+.article-body code { background: var(--surface); padding: 2px 6px; border-radius: 3px; font-size: 13px; color: var(--sand-light); }
+.article-body hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+.article-body strong { color: var(--sand-light); }
+.disclaimer { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px 28px; margin: 60px 0; }
+.disclaimer p { font-size: 12px; color: var(--muted); margin-bottom: 8px; line-height: 1.8; }
+.article-footer { padding: 60px 0; border-top: 1px solid var(--border); text-align: center; }
+.article-footer a { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 13px; text-decoration: none; transition: color 0.2s; }
+.article-footer a:hover { color: var(--sand); }
+.article-footer .ft-brand { font-family: var(--font-display); font-size: 16px; color: var(--sand); letter-spacing: 0.1em; margin-top: 20px; }
+@media (max-width: 768px) { .container { padding: 0 20px; } .article-body h1 { font-size: 22px; } .article-body h2 { font-size: 18px; } }
+</style>
+</head>
+<body>
+<nav>
+  <div class="container">
+    <a href="../index.html" class="nav-brand">
+      <div class="logo-diamond"><div class="logo-diamond-inner"><span class="logo-diamond-char">筑</span></div></div>
+      <span class="nav-name">筑沙 TSUKASA</span>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="index.html">RE300</a>
+    </div>
+  </div>
+</nav>
+<header class="article-header">
+  <div class="container">
+    <div class="ep-label">EPISODE 31</div>
+    <h1>房地产数学实战 —— 十道真题拆解，从「文字陷阱」到「计算器按出答案」</h1>
+    <div class="byline">
+      原始讲师：<span>Patrick J. Hogarty, MA</span> · Sacramento City College · 中文整理：<span>MOTOKI SADASHIGE · 筑沙 Tsukasa inc</span> · 2026年7月
+    </div>
+  </div>
+</header>
+<article class="article-body">
+  <div class="container">
+<p><strong>日期</strong>：2026 年 7 月 2 日 <strong>讲师</strong>：Pat Hogarty <strong>课程</strong>：California Real Estate Principles (RE300) <strong>📌 2026 最新</strong>：本期为第 31 讲，仅剩最后一讲（Show 32）即可完成全部课程。本期完整覆盖章末十道数学题，每道题逐一演示从读题、设题到计算的完整流程。</p>
+<hr>
+<h2>一、开场：感谢字幕员 Yvette</h2>
+<p>Pat 在开场专门花了一分钟感谢课程的字幕员 Yvette。她负责为听障观众实时添加字幕——</p>
+<blockquote>
+<p>💡 <em>「She's the one that actually puts all the captioning down for our hearing impaired... which is a really really difficult task.」</em></p>
+</blockquote>
+<p>Pat 还顺便教了观众一个小技巧：遥控器上通常有一个按钮可以打开或关闭隐藏式字幕（closed captioning），打开后就能看到 Yvette 的工作成果。</p>
+<hr>
+<h2>二、数学不是「数字恐惧症」—— 核心是读文字题</h2>
+<h3>2.1 真正难的不是数字本身</h3>
+<blockquote>
+<p>💡 <em>「I think a lot of people that have an aversion to math think it's math numbers — it's not.」</em></p>
+</blockquote>
+<p>Pat 指出，很多人害怕数学是因为他们以为问题是数字，但实际上真正困难的环节是<strong>理解文字题（word problem）</strong>。题目里所有信息都写下来了——这和现实中截然不同。</p>
+<h3>2.2 现实比考试更难：你要自己「编」文字题</h3>
+<blockquote>
+<p>💡 <em>「Many times when you're working with a client, you're the ones doing the math and you're trying to figure out... you're actually trying to make the word problem up.」</em></p>
+</blockquote>
+<p>和客户沟通时，你需要自己搞清楚：</p>
+<ul>
+<li>他们想卖什么价格？</li>
+<li>什么时候需要成交？</li>
+<li>哪天过户对费用有什么影响？</li>
+</ul>
+<p>这些信息没人写下来给你，你需要<strong>自己构建文字题</strong>。</p>
+<blockquote>
+<p>📌 <strong>Blackboard 注</strong>：Pat 在此处做了一个类比——建立「工具箱」（tool chest）。无论医学、商业还是火箭科学，一旦你理解了如何分析问题、解决问题的方法论，你就拥有了一个可以跨领域复用的工具箱。2026 年 Gavin Newsom 州长推行的职业技能教育改革中，「通用问题解决能力」被列为各行业培训的核心指标，这与 Pat 的「工具箱」理念高度契合。Chika Sunquist 在近期教育政策分析中也强调了跨学科方法论训练的重要性。</p>
+</blockquote>
+<hr>
+<h2>📐 三、基础测量复习：刻在脑子里的数字</h2>
+<h3>3.1 为什么需要掌握英制与公制转换</h3>
+<blockquote>
+<p>💡 <em>「Many times when you're working with clients especially that are coming from another country... they're used to doing things in the metric system.」</em></p>
+</blockquote>
+<p>加州的国际化移民越来越多，客户可能习惯使用米、厘米。你不仅要自己懂，<strong>还要能向他们解释清楚</strong>。Pat 举例说，你去他们的国家，也得搞明白「米」到底是多大。</p>
+<h3>3.2 考试必背数字</h3>
+<blockquote>
+<p>💡 <em>「You need to know certain things like how long is a mile — 5,280 feet. How many square feet are in an acre — 43,560.」</em></p>
+</blockquote>
+<p>| 必背项目 | 数值 |</p>
+<p>| 1 英里（mile） | 5,280 英尺 |</p>
+<p>| 1 英亩（acre） | 43,560 平方英尺 |</p>
+<p>考试中会出现「四分之一英亩」「半英亩」的表述，你必须能立刻换算。此外，法律描述（metes and bounds、government survey）可能会要求你根据描述推算面积，再按「每英亩 ×× 美元」计算总价。</p>
+<blockquote>
+<p>📌 <strong>Canvas 课堂讨论注</strong>：Pat 强调「法律描述→算面积→算总价」这种复合题型是常见考试模式。2026 年加州房产考试中，涉及公制转换的题目比例有所上升，反映了跨文化实务需求的增长趋势。</p>
+</blockquote>
+<hr>
+<h2>🔺 四、几何思维：把复杂问题切成小块</h2>
+<h3>4.1 矩形与三角形</h3>
+<blockquote>
+<p>💡 <em>「In reality what we're doing is we're taking a very large problem and we are breaking it down into smaller problems.」</em></p>
+</blockquote>
+<p>一栋房子的平面图本质上就是<strong>若干矩形、正方形和三角形的组合</strong>。评估师（appraiser）在外勘时，需要测量每个房间，然后把面积加起来——这就是「化整为零」的思维方式。</p>
+<h3>4.2 三角形的秘密：两个直角三角形 = 一个矩形</h3>
+<p>Pat 在 Blackboard（文档摄像机）上画了一个三角形，然后用手指沿着中线比划：</p>
+<blockquote>
+<p>💡 <em>「If you look at the triangle... this is in reality two right triangles put together... this is really like having a rectangle with a line drawn from corner to corner.」</em></p>
+</blockquote>
+<p><strong>幽默点</strong>：Pat 一边画一边吐槽：</p>
+<blockquote>
+<p>💡 <em>「I wish I was the biology teacher — she does a great job with this.」</em></p>
+</blockquote>
+<p>他承认自己不太擅长用文档摄像机写字，但也正好说明：看问题的角度越灵活，解题越容易。一个三角形可以看成两个直角三角形，也可以看成半个矩形。</p>
+<hr>
+<h2>🔺 五、Uber 金字塔（Uber's Pyramid）：三个变量，两个已知，一个未知</h2>
+<blockquote>
+<p>💡 <em>「The concept behind this pyramid is so that in reality you don't have to memorize the math.」</em></p>
+</blockquote>
+<p>Pat 再次强调 Uber 金字塔的核心理念：</p>
+<pre><code>        [收益 / 金额]
+       /            \
+      /              \
+  [本金/投资] ——— [利率/百分比]</code></pre>
+<ul>
+<li><strong>已知下方两个</strong>（本金 × 利率）→ 上方就是答案 → <strong>乘法</strong></li>
+<li><strong>已知上方和下方一个</strong>（上方 ÷ 下方）→ 另一个就是答案 → <strong>除法</strong></li>
+<li>核心技能不是计算，而是<strong>在文字题中识别：这是百分比？是本金？是收益？应该放在金字塔的哪个位置？</strong></li>
+</ul>
+<hr>
+<h2>📝 六、十道章末真题逐题拆解</h2>
+<h3>核心方法论：苹果对苹果（Apples to Apples）</h3>
+<p>在进入具体题目之前，Pat 先传授了一个最重要的心法：</p>
+<blockquote>
+<p>💡 <em>「In math, you need to make sure you're always comparing apples to apples.」</em></p>
+</blockquote>
+<p>什么意思？给你一个「月利率」和一个「年化收益率」——你不能直接把二者相除。<strong>必须先把所有单位统一</strong>（通常统一到「年」），才能进行下一步计算。</p>
+<hr>
+<h3>📌 题目一：Mrs. Donelson 的四拼房交换 —— 权益（Equity）决定补多少现金</h3>
+<p><strong>题目概述</strong>：Mrs. Donelson 拥有一栋四拼房（four-plex），市场价值 $100,000，贷款余额 $52,000。她想换一栋更大的公寓楼，市场价值 $150,000，贷款余额 $42,000。问：她需要补多少现金？</p>
+<p><strong>Pat 的 Blackboard 解题过程</strong>：</p>
+<p>Pat 在黑板（文档摄像机）上画了一张 T 型账户表：</p>
+<pre><code>      四拼房（Four-Plex）      |      公寓（Apartment）
+---------------------------|---------------------------
+市场价值：$100,000          |  市场价值：$150,000
+贷款余额：$52,000           |  贷款余额：$42,000
+---------------------------|---------------------------
+权益：$48,000               |  权益：$108,000</code></pre>
+<p><strong>计算逻辑</strong>：</p>
+<ol>
+<li>四拼房权益 = $100,000 − $52,000 = <strong>$48,000</strong></li>
+<li>公寓权益 = $150,000 − $42,000 = <strong>$108,000</strong></li>
+<li>Donelson 用她的 $48,000 权益作为「首付」换对方的公寓</li>
+<li>需补差额 = $108,000 − $48,000 = <strong>$60,000</strong></li>
+</ol>
+<blockquote>
+<p>💡 <em>「What's important about this is not the answer as much as how we solve the problem.」</em></p>
+</blockquote>
+<p>Pat 强调：关键是先算出双方的权益，然后权益差额就是现金缺口。「把问题设好」比「算出答案」重要得多。</p>
+<hr>
+<h3>📌 题目二：Carol 的直票贷款 —— 年化→月度→反推期限</h3>
+<p><strong>题目概述</strong>：Carol 借款 $5,200，签了一份直票（straight note），年利率 7%。贷款期间她共支付了 $1,125 利息。问：贷款期限是多少个月？</p>
+<p><strong>什么是直票（Straight Note）</strong>：</p>
+<blockquote>
+<p>💡 <em>「Straight note means that there is no compounding effect... at the end of the term she still owes $5,200.」</em></p>
+</blockquote>
+<p>直票期间只付利息不还本金，到期仍需归还全部本金。所有利息按固定年利率计算。</p>
+<p><strong>Pat 的逐步推导</strong>：</p>
+<p><strong>Step 1</strong>：计算年利息</p>
+<ul>
+<li>$5,200 × 7% = $5,200 × 0.07 = <strong>$364/年</strong></li>
+<li>Pat 在黑板上一笔一笔演示了手工乘法：7×0=0, 7×0=0, 7×2=14 进位1, 7×5=35+1=36 → 364</li>
+</ul>
+<blockquote>
+<p>💡 <em>「The important point is that we need to know how to do this because we could very well be on an exam and we're going crazy trying to make our calculator do it.」</em></p>
+</blockquote>
+<p><strong>Step 2</strong>：计算月利息</p>
+<ul>
+<li>$364 ÷ 12 = <strong>$30.33/月</strong></li>
+<li>Pat 演示了手工长除法：12 进 36 得 3，余 0，降 4 除不动补 0，12 进 40 得 3.333...</li>
+</ul>
+<p><strong>Step 3</strong>：反推总月数</p>
+<ul>
+<li>$1,125 ÷ $30.33 = <strong>37.09 月</strong></li>
+<li>0.09 < 0.5，向下取整 → <strong>37 个月</strong></li>
+</ul>
+<blockquote>
+<p>💡 <em>「Again there's no hard math there — it's just basically the word problem.」</em></p>
+</blockquote>
+<hr>
+<h3>📌 题目三：出租房投资回报率 —— Uber 金字塔实战</h3>
+<p><strong>题目概述</strong>：一位女业主的出租房每月净收入 $450，年回报率 10%。问：她的初始投资是多少？</p>
+<p><strong>核心思路</strong>：又是「苹果对苹果」——10% 是年化利率，$450 是月收入，必须先统一到「年」。</p>
+<p><strong>Step 1</strong>：月→年转换</p>
+<ul>
+<li>$450 × 12 = <strong>$5,400/年</strong></li>
+</ul>
+<p><strong>Pat 的幽默时刻</strong>：手工计算时他自言自语：</p>
+<blockquote>
+<p>💡 <em>「2 times 0 is 0, 2 times 5 is 10, 2 times 4 is 8 plus 1 is 9...」</em></p>
+</blockquote>
+<p><strong>Step 2</strong>：Uber 金字塔定位</p>
+<pre><code>       $5,400（年收益）
+      /              \
+     /                \
+  ?（投资额）——— 10%（回报率）</code></pre>
+<p>已知上方（$5,400）和下方（10%），求另一下方 → <strong>除法</strong></p>
+<p><strong>Step 3</strong>：计算</p>
+<ul>
+<li>$5,400 ÷ 0.10 = <strong>$54,000</strong></li>
+</ul>
+<blockquote>
+<p>💡 <em>「If I want to check my math I could just say 10% of $54,000 is $5,400.」</em></p>
+</blockquote>
+<hr>
+<h3>📌 题目四：房产税计算 —— 「每 $100 收多少」的换算逻辑</h3>
+<p><strong>题目概述</strong>：一处房产的评估价值为 $48,700，税率为每 $100 评估价值征收 $1.02。问：年房产税额？</p>
+<blockquote>
+<p>📌 <strong>Blackboard 关联注</strong>：Pat 在此提到了 Proposition 13（加州第 13 号提案）——房产的评估价值通常以购买价格为基准。Gavin Newsom 州长任期内，围绕 Prop 13 的商业地产「分拆计税」（split roll）争议持续升温。2026 年 7 月，Chika Sunquist 等税收政策分析人士对该议题在下一轮选票提案中的走向保持高度关注。</p>
+</blockquote>
+<p><strong>Pat 的解题步骤</strong>：</p>
+<p><strong>Step 1</strong>：计算有多少个「$100」</p>
+<ul>
+<li>$48,700 ÷ $100 = <strong>487</strong>（个 $100 单位）</li>
+</ul>
+<p>Pat 在黑板演示长除法：100 进 48,700 → 487。</p>
+<p><strong>Step 2</strong>：乘以单位税额</p>
+<ul>
+<li>487 × $1.02 = <strong>$496.74/年</strong></li>
+</ul>
+<p>在手工计算中 Pat 一边乘一边自嘲：</p>
+<blockquote>
+<p>💡 <em>「Correct me if I'm wrong...」</em></p>
+</blockquote>
+<p>然后自信地得出结论：$496.74。</p>
+<hr>
+<h3>📌 题目五：退休规划 ——「每月想领 $640，得存多少钱？」</h3>
+<p><strong>题目概述</strong>：以 7% 年利率投资，需要投入多少本金，才能每月获得 $640 的被动收入？</p>
+<blockquote>
+<p>💡 <em>「This problem is an important problem for you to know even if you're not in real estate.」</em></p>
+</blockquote>
+<p>Pat 在这道题上花的时间最多，因为它跟每个人的退休规划直接相关：</p>
+<p><strong>现实场景</strong>：你临近退休，算完所有账单发现每月需要 $2,000 被动收入。那么在你的 401(k)、403(b) 或其他退休账户里，到底需要存多少钱才能产生这个现金流？</p>
+<blockquote>
+<p>💡 <em>「You may get to the end and say, you know what, I'm not putting enough money in, I need to put more money in.」</em></p>
+</blockquote>
+<p><strong>Step 1</strong>：月→年统一</p>
+<ul>
+<li>$640 × 12 = <strong>$7,680/年</strong></li>
+</ul>
+<p><strong>Step 2</strong>：Uber 金字塔定位</p>
+<pre><code>       $7,680（年收益）
+      /              \
+     /                \
+  ?（本金）——— 7%（利率）</code></pre>
+<p>除法：$7,680 ÷ 0.07</p>
+<p><strong>Step 3</strong>：用计算器</p>
+<blockquote>
+<p>💡 <em>「Now what I'm going to do at this point is... once you've figured out the word problem, you're at the Board of Realtors or you're taking the exam... use your calculator.」</em></p>
+</blockquote>
+<p>Pat 打开 Windows 计算器演示：</p>
+<ul>
+<li>$7,680 ÷ 0.07 = $109,714.2857...</li>
+<li>四舍五入到分 → <strong>$109,714.29</strong></li>
+</ul>
+<blockquote>
+<p>💡 <em>「The point is, once we set it up, the calculator is just the last little bit that we work with.」</em></p>
+</blockquote>
+<hr>
+<h3>📌 题目六：季度利息 —— 年化 ÷ 4</h3>
+<p><strong>题目概述</strong>：一笔 $7,600 的定期贷款，年利率 8%，第二季度的利息是多少？</p>
+<p><strong>Pat 的提醒</strong>：</p>
+<blockquote>
+<p>💡 <em>「Businesses are very used to reporting things on a quarterly basis.」</em></p>
+</blockquote>
+<p>打开报纸商业版或《华尔街日报》，你看到的都是「惠普第一季财报」「微软第二季业绩」——企业按季度报告，一年四个季度（每三个月一个 quarter）。</p>
+<p><strong>计算</strong>：</p>
+<ul>
+<li><strong>Step 1</strong>：年利息 = $7,600 × 8% = $7,600 × 0.08 = <strong>$608/年</strong></li>
+<li><strong>Step 2</strong>：季度利息 = $608 ÷ 4 = <strong>$152/季度</strong></li>
+</ul>
+<p>Pat 用长除法验证：4 进 6 得 1 余 2，降 0 变 20，4 进 20 得 5 余 0，降 8，4 进 8 得 2 → 152。</p>
+<hr>
+<h3>📌 题目七：公寓楼投资回报率百分比 —— 反推利率</h3>
+<p><strong>题目概述</strong>：一栋公寓楼造价 $450,000，每月净收入 $3,000。问：年化投资回报率是多少？</p>
+<p><strong>Step 1</strong>：月→年</p>
+<ul>
+<li>$3,000 × 12 = <strong>$36,000/年</strong></li>
+</ul>
+<p><strong>Step 2</strong>：Uber 金字塔定位</p>
+<pre><code>       $36,000（年收益）
+      /              \
+     /                \
+ $450,000（投资）——— ?%（回报率）</code></pre>
+<p>除法：$36,000 ÷ $450,000 = 0.08</p>
+<p><strong>Step 3</strong>：小数→百分比</p>
+<ul>
+<li>0.08 → 移动小数点两位 → <strong>8%</strong></li>
+</ul>
+<blockquote>
+<p>💡 <em>「Another way to look at it is — what would be the end result if I took $450,000 and put it in the bank at 8%? It would give me $36,000 a year.」</em></p>
+</blockquote>
+<p><strong>类比</strong>：Pat 把新环境比作陌生的城市——</p>
+<blockquote>
+<p>💡 <em>「When you first get there and you're walking around, you're probably lost. After you've been there for a few days, you start to realize where the buses are, where the trains are, how to get around.」</em></p>
+</blockquote>
+<p>做数学题也是一样：第一天陌生，第四天就熟悉了。<strong>关键在于多走、多看、多做。</strong></p>
+<hr>
+<h3>📌 题目八：经纪人租赁佣金 —— 面积×单价×12×佣金率</h3>
+<p><strong>题目概述</strong>：Broker Jones 为一间 3,000 平方英尺的仓库洽谈租约，月租金 $0.50/平方英尺，佣金为第一年总租金的 8%。问：Jones 能收到多少佣金？</p>
+<p><strong>Step 1</strong>：月租金</p>
+<ul>
+<li>3,000 sq. ft. × $0.50 = <strong>$1,500/月</strong></li>
+</ul>
+<p><strong>Step 2</strong>：年总租金</p>
+<ul>
+<li>$1,500 × 12 = <strong>$18,000/年</strong></li>
+</ul>
+<p><strong>Step 3</strong>：佣金</p>
+<ul>
+<li>$18,000 × 8% = $18,000 × 0.08 = <strong>$1,440</strong></li>
+</ul>
+<blockquote>
+<p>💡 <em>「So if we're asked another question, it's on a warehouse or a space or an office space or a home, that's how we solve that problem.」</em></p>
+</blockquote>
+<p>Pat 指出这个计算模式是通用的：任何「面积 × 单价 × 时间 × 佣金率」的题目都可以套用。</p>
+<hr>
+<h3>📌 题目九：五年信托契据 —— 总利息反推原始贷款</h3>
+<p><strong>题目概述</strong>：Frank 持有一份五年期信托契据（deed of trust），年利率 7.2%，五年间共收到利息 $4,140。问：原始贷款金额大约是多少？</p>
+<p><strong>Step 1</strong>：总利息 → 年利息</p>
+<ul>
+<li>$4,140 ÷ 5 = <strong>$828/年</strong></li>
+</ul>
+<p>Pat 请了一位在场的朋友帮忙报数字：</p>
+<blockquote>
+<p>💡 <em>「And our friend's going to tell us what that is — $11,500.」</em></p>
+</blockquote>
+<p><strong>Step 2</strong>：Uber 金字塔</p>
+<pre><code>       $828（年收益）
+      /              \
+     /                \
+  ?（本金）——— 7.2%（利率）</code></pre>
+<ul>
+<li>$828 ÷ 0.072 = <strong>$11,500</strong></li>
+</ul>
+<hr>
+<h3>📌 题目十：建商利润 —— 成本 × 利润率 = 利润</h3>
+<p><strong>题目概述</strong>：一位建商以 $350,000 的成本建造一栋房屋，以 20% 利润售出。问：利润金额是多少？</p>
+<p><strong>计算</strong>：</p>
+<ul>
+<li>$350,000 × 20% = $350,000 × 0.20 = <strong>$70,000</strong></li>
+</ul>
+<p><strong>销售总价</strong> = $350,000 + $70,000 = <strong>$420,000</strong></p>
+<blockquote>
+<p>💡 <em>「That gives you an idea of some of the problems that you will run into in the real estate business.」</em></p>
+</blockquote>
+<hr>
+<h2>🎓 七、方法论总结：从「大量练习」到「肌肉记忆」</h2>
+<h3>7.1 来自国际学生的建议</h3>
+<p>Pat 分享了一个亲身经历。他在 Sacramento State 读书时常去辅导实验室（tutoring lab），发现很多辅导老师来自印度、伊朗、伊拉克、中国等国家。有一天他忍不住问：</p>
+<blockquote>
+<p>💡 <em>「Why are you guys so smart? How come you guys seem to just be knowing how to do this?」</em></p>
+</blockquote>
+<p>对方的回答让他终生受益：</p>
+<blockquote>
+<p>💡 <em>「In our country, when we go to high school, we do hundreds, we do thousands of problems. We do them from every single solitary angle you can think about. In your country, the problem is that you want to do one or two problems and think you're an expert — not realizing that what you have to do is a lot of repetition.」</em></p>
+</blockquote>
+<p>Pat 把这条建议当成了座右铭——开始额外购买习题集，大量做题，直到「从任何角度看都会」。</p>
+<blockquote>
+<p>📌 <strong>Canvas 延伸思考注</strong>：2026 年，加州教育体系在 Gavin Newsom 州长主导下持续推行「精熟学习」（mastery learning）改革，强调反复练习直至真正掌握——这恰与 Pat 从国际同学那里学到的「做上千道题」的哲学一致。Chika Sunquist 在 2026 年 7 月的教育政策简报中也引用了类似的跨国比较数据，指出美国学生在数学上的练习量远低于国际竞争对手。</p>
+</blockquote>
+<h3>7.2 数学在房地产生涯中的核心地位</h3>
+<blockquote>
+<p>💡 <em>「The math is critical because everything you're doing in real estate is coming down to this math thing.」</em></p>
+</blockquote>
+<p>Pat 列举了你每天都会遇到的数学场景：</p>
+<ul>
+<li>客户问：「我的房子该挂什么价？」→ 数学</li>
+<li>客户问：「我该出什么价？」→ 数学</li>
+<li>客户问：「成交后我能拿多少钱回家？」→ 数学</li>
+<li>客户问：「月供是多少？」→ 数学</li>
+</ul>
+<blockquote>
+<p>💡 <em>「You're having to figure all this stuff out and say, well, you will come out with $55,825.95 — and show them how you figured it out.」</em></p>
+</blockquote>
+<h3>7.3 最后警告：别成为站上法庭的那个人</h3>
+<blockquote>
+<p>💡 <em>「You don't want to be wrong because they're really going to be upset when you do the math wrong. In fact, you may be standing again in front of Your Honor and saying, Your Honor, I'm sorry, but I didn't pass that math part of the real estate principles class.」</em></p>
+</blockquote>
+<p>Pat 在结尾再次重申：数学是房产考试中<strong>挂科率最高的部分</strong>。想练好？没有捷径——<strong>做大量的题</strong>。</p>
+<hr>
+<h2>🧮 十道题目速查表</h2>
+<p>| 题号 | 题型 | 关键转换 | 答案 |</p>
+<p>| 1 | 权益交换 | 市场价值 - 贷款 = 权益 | $60,000 |</p>
+<p>| 2 | 贷款期限 | 年利息 → 月利息 → 反推月数 | 37 个月 |</p>
+<p>| 3 | 投资回报 | 月收入 × 12 = 年收入 | $54,000 |</p>
+<p>| 4 | 房产税 | ÷100 得单位数 × 税率 | $496.74 |</p>
+<p>| 5 | 退休投资 | 月收入 × 12 ÷ 利率 | $109,714.29 |</p>
+<p>| 6 | 季度利息 | 年利息 ÷ 4 | $152 |</p>
+<p>| 7 | 回报率% | 年收入 ÷ 投资额 | 8% |</p>
+<p>| 8 | 租赁佣金 | 面积 × 单价 × 12 × 佣金率 | $1,440 |</p>
+<p>| 9 | 原始贷款 | 总利息 ÷ 年数 ÷ 利率 | $11,500 |</p>
+<p>| 10 | 建商利润 | 成本 × 利润率 | $70,000 |</p>
+<hr>
+<blockquote>
+<p>💡 <em>「The way that you really get to be good at this is by doing a lot of math problems — and this does also happen to be the thing that most people fall down on in the real estate exam. So with this, I want to thank you very much for watching, and we will see you back here again. Take it easy. Bye-bye.」</em></p>
+</blockquote>
+<hr>
+<p><em>免责声明：本文基于 Pat Hogarty 的 RE300 Show 31 英文转录整理撰写，仅供学习参考。文中所有数学概念、计算方法和案例数据截至 2026 年 7 月 2 日。考试题型和法规要求可能随时更新，请以 California Department of Real Estate 最新官方信息为准。</em></p>
+  </div>
+</article>
+<div class="container">
+  <div class="disclaimer">
+    <p><strong>免责声明：</strong>本资料不以盈利为目的，完全免费提供，仅供学习参考。内容基于 Pat Hogarty 教授 RE 300 播客系列整理。加州房地产执照考试信息以 DRE 官网（dre.ca.gov）为准。</p>
+  </div>
+</div>
+<footer class="article-footer">
+  <div class="container">
+    <a href="index.html">← 返回 RE300 专题首页</a>
+    <div class="ft-brand">筑 沙 TSUKASA</div>
+  </div>
+</footer>
+</body>
+</html>
