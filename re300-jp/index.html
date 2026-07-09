@@ -4,57 +4,71 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RE300 日本語版 — 筑沙 Tsukasa</title>
+<meta name="description" content="カリフォルニア不動産ライセンス試験 日本語詳細解説 — Patrick J. Hogarty『California Real Estate Principles』RE300全32回シリーズ。">
 <style>
-:root { --bg: #0b0b0b; --surface: #161616; --border: #262626; --ink: #ede8df; --muted: #8a8578; --sand: #d4b896; --radius: 6px; }
+:root { --bg: #0b0b0b; --surface: #161616; --border: #262626; --ink: #ede8df; --muted: #8a8578; --sand: #d4b896; --radius: 6px; --font-display: 'Hiragino Mincho ProN', 'YuMincho', serif; --font-body: 'Hiragino Sans', -apple-system, sans-serif; }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: var(--bg); color: var(--ink); font-family: 'Hiragino Sans', -apple-system, sans-serif; line-height: 1.7; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); line-height: 1.7; }
 .container { max-width: 860px; margin: 0 auto; padding: 0 32px; }
-nav { position: sticky; top: 0; background: rgba(11,11,11,0.94); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 16px 0; }
+nav { position: sticky; top: 0; z-index: 100; background: rgba(11,11,11,0.94); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 16px 0; }
 nav .container { display: flex; justify-content: space-between; align-items: center; }
 .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
 .logo-diamond { width: 28px; height: 28px; background: linear-gradient(135deg, var(--sand), #e8d5c0); clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); }
-.logo-text { font-family: 'Hiragino Mincho ProN', serif; font-size: 14px; color: var(--sand); letter-spacing: 2px; }
+.logo-text { font-family: var(--font-display); font-size: 14px; color: var(--sand); letter-spacing: 2px; }
 .nav-links { display: flex; gap: 24px; }
 .nav-links a { color: var(--muted); text-decoration: none; font-size: 13px; }
 .nav-links a:hover, .nav-links a.active { color: var(--ink); }
 .nav-links a.active { color: var(--sand); }
 header { padding: 64px 0 40px; text-align: center; }
-h1 { font-family: 'Hiragino Mincho ProN', serif; font-size: 2.2rem; margin-bottom: 12px; }
+h1 { font-family: var(--font-display); font-size: 2.2rem; margin-bottom: 12px; }
 .subtitle { font-size: 15px; color: var(--muted); }
-.section-title { font-family: 'Hiragino Mincho ProN', serif; font-size: 1.1rem; color: var(--sand); margin: 40px 0 16px; padding-left: 14px; border-left: 3px solid var(--sand); }
+.section-title { font-family: var(--font-display); font-size: 1.1rem; color: var(--sand); margin: 40px 0 16px; padding-left: 14px; border-left: 3px solid var(--sand); }
 .ep-list { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
 .ep-row { display: flex; align-items: center; background: var(--surface); padding: 14px 20px; text-decoration: none; border-bottom: 1px solid var(--border); }
 .ep-row:last-child { border-bottom: none; }
 .ep-row:hover { background: rgba(212,184,150,0.06); }
-.ep-num { font-family: 'Hiragino Mincho ProN', serif; font-size: 13px; color: var(--sand); min-width: 50px; }
-.ep-title { flex: 1; font-size: 14px; }
+.ep-num { font-family: var(--font-display); font-size: 13px; color: var(--sand); min-width: 50px; }
+.ep-title { flex: 1; font-size: 14px; color: var(--ink); }
 .ep-badge { font-size: 11px; color: var(--muted); padding: 2px 8px; border: 1px solid var(--border); border-radius: 20px; }
 .ep-badge.ready { color: #3a8a85; border-color: #3a8a85; }
 .about { background: var(--surface); border-radius: var(--radius); padding: 28px; margin: 32px 0; border: 1px solid var(--border); }
-.about h3 { font-family: 'Hiragino Mincho ProN', serif; color: var(--sand); margin-bottom: 12px; }
+.about h3 { font-family: var(--font-display); color: var(--sand); margin-bottom: 12px; }
 .about p { color: var(--muted); font-size: 14px; margin: 8px 0; }
 footer { margin-top: 64px; padding: 40px 0; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: var(--muted); }
-footer .brand { font-family: 'Hiragino Mincho ProN', serif; color: var(--sand); }
+footer .brand { font-family: var(--font-display); color: var(--sand); }
 </style>
 </head>
 <body>
-<nav><div class="container">
-<a href="/tsukasaya-site/" class="nav-brand"><span class="logo-diamond"></span><span class="logo-text">筑沙 Tsukasa</span></a>
-<div class="nav-links">
-<a href="/tsukasaya-site/">Home</a><a href="/tsukasaya-site/re300/">RE300 中文</a><a href="/tsukasaya-site/re300-jp/" class="active">RE300 日本語</a>
-</div></div></nav>
+<nav>
+  <div class="container">
+    <a href="/tsukasaya-site/" class="nav-brand"><span class="logo-diamond"></span><span class="logo-text">筑沙 Tsukasa</span></a>
+    <div class="nav-links"><a href="/tsukasaya-site/">Home</a><a href="/tsukasaya-site/re300/">RE300 中文</a><a href="/tsukasaya-site/re300-jp/" class="active">RE300 日本語</a></div>
+  </div>
+</nav>
 <div class="container">
-<header><h1>RE300 日本語版</h1><div class="subtitle">Patrick Hogerty教授『California Real Estate Principles』<br>カリフォルニア不動産ライセンス試験 日本語解説 · 全32回</div></header>
+<header>
+  <h1>RE300 日本語版</h1>
+  <div class="subtitle">Patrick Hogerty教授『California Real Estate Principles』<br>カリフォルニア不動産ライセンス試験 日本語解説 · 全32回</div>
+</header>
 <p style="text-align:center;font-size:13px;color:var(--muted);font-style:italic">本資料は営利を目的とせず、完全無料で提供し、学習参考のみを目的としています。</p>
 <div class="about">
-<h3>📘 このシリーズについて</h3>
-<p>Sacramento City CollegeのPat Hogerty教授による「California Real Estate Principles（RE300）」を日本語で体系的に解説。各回の講義を日本語に翻訳整理し、2026年最新のDREデータ・法規制改正・ライセンス要件を補充。全講義に日英対照の重要用語集付き。</p>
-<p><strong>重要：</strong>DRE試験は英語のみで実施（B&P §10153）。Pat教授のオリジナル英語ポッドキャストの併聴を強く推奨します。</p>
+  <h3>このシリーズについて</h3>
+  <p>Sacramento City CollegeのPat Hogerty教授による「California Real Estate Principles（RE300）」を日本語で体系的に解説。各回の講義を日本語に翻訳整理し、2026年最新のDREデータ・法規制改正・ライセンス要件を補充。全講義に日英対照の重要用語集付き。</p>
+  <p><strong>重要：</strong>DRE試験は英語のみで実施（B&P §10153）。Pat教授のオリジナル英語ポッドキャストの併聴を強く推奨します。</p>
 </div>
 <h2 class="section-title">エピソード一覧</h2>
 <div class="ep-list">
-<a href="/tsukasaya-site/re300-jp/show01.html" class="ep-row"><span class="ep-num">EP01</span><span class="ep-title">コース概要と全章ガイド — 全20章の全体像、2026年CAデータ、試験ウエイト</span><span class="ep-badge ready">公開中</span></a>
-<div class="ep-row"><span class="ep-num">EP02</span><span class="ep-title">準備中 — 近日公開</span><span class="ep-badge">準備中</span></div>
+  <a href="/tsukasaya-site/re300-jp/show01.html" class="ep-row">
+    <span class="ep-num">EP01</span>
+    <span class="ep-title">コース概要と全章ガイド — 全20章の全体像、2026年CAデータ、試験ウエイト</span>
+    <span class="ep-badge ready">公開中</span>
+  </a>
+  <div class="ep-row"><span class="ep-num">EP02</span><span class="ep-title">準備中 — 近日公開</span><span class="ep-badge">準備中</span></div>
 </div>
-<footer><div class="brand">MOTOKI SADASHIGE · 筑沙 Tsukasa inc</div><div>DRE#02386309 · Gogo Realtors R.H Corp.</div></footer>
-</div></body></html>
+<footer>
+  <div class="brand">MOTOKI SADASHIGE · 筑沙 Tsukasa inc</div>
+  <div>DRE#02386309 · Gogo Realtors R.H Corp.</div>
+</footer>
+</div>
+</body>
+</html>
