@@ -3,162 +3,1477 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EP01 コース概要と全章ガイド — RE300 日本語版 — 筑沙 Tsukasa</title>
-<meta name="description" content="RE300 日本語版 第1回 — コース概要と全章ガイド。2026年最新DREデータ・日英対照用語集付き。">
+<meta name="description" content="カリフォルニア不動産ライセンス試験日本語深度教程 — Patrick J. Hogarty RE 300 第1講：コース概要と全章ガイド。2026年最新DREデータ、ライセンス新規制、19章速覧及び完全日英対照用語集付き。">
+<meta property="og:title" content="加州不動産ライセンス試験｜日本語精講 EP01 — 筑沙 Tsukasa">
+<meta property="og:description" content="Patrick Hogarty『California Real Estate Principles』日本語精講第1回：コース総覧 + 2026年業界データ + 19章速覧 + 完全日英対照用語集">
+<meta property="og:type" content="article">
+<title>EP01 コース概要と全章ガイド — RE300 カリフォルニア不動産原理 — 筑沙 Tsukasa</title>
 <style>
-:root { --bg: #0b0b0b; --surface: #161616; --border: #262626; --ink: #ede8df; --muted: #8a8578; --sand: #d4b896; --sand-light: #e8d5c0; --teal: #3a8a85; --radius: 6px; --font-display: 'Hiragino Mincho ProN', 'YuMincho', serif; --font-body: 'Hiragino Sans', -apple-system, sans-serif; }
+:root {
+  --bg: #0b0b0b;
+  --surface: #161616;
+  --border: #262626;
+  --ink: #ede8df;
+  --muted: #8a8578;
+  --sand: #d4b896;
+  --sand-light: #e8d5c0;
+  --teal: #3a8a85;
+  --radius: 6px;
+  --font-display: 'Hiragino Mincho ProN', 'YuMincho', 'Georgia', serif;
+  --font-body: 'Hiragino Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: var(--bg); color: var(--ink); font-family: var(--font-body); line-height: 1.85; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); line-height: 1.7; -webkit-font-smoothing: antialiased; }
 .container { max-width: 860px; margin: 0 auto; padding: 0 32px; }
-nav { position: sticky; top: 0; z-index: 100; background: rgba(11,11,11,0.94); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); padding: 16px 0; }
+
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(11,11,11,0.94); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border); padding: 16px 0;
+}
 nav .container { display: flex; justify-content: space-between; align-items: center; }
 .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
-.logo-diamond { width: 28px; height: 28px; background: linear-gradient(135deg, var(--sand), var(--sand-light)); clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%); }
-.logo-text { font-family: var(--font-display); font-size: 14px; color: var(--sand); letter-spacing: 2px; }
+.logo-diamond {
+  width: 28px; height: 28px;
+  background: linear-gradient(135deg, var(--sand) 0%, var(--sand-light) 100%);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.logo-diamond-inner {
+  width: 70%; height: 70%; background: var(--bg);
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex; align-items: center; justify-content: center;
+}
+.logo-diamond-char { color: var(--sand); font-family: var(--font-display); font-size: 9px; }
+.nav-name { font-family: var(--font-display); font-size: 16px; letter-spacing: 0.08em; }
 .nav-links { display: flex; gap: 24px; }
-.nav-links a { color: var(--muted); text-decoration: none; font-size: 13px; }
-.nav-links a:hover { color: var(--ink); }
-header { padding: 60px 0 36px; border-bottom: 1px solid var(--border); margin-bottom: 48px; }
-h1 { font-family: var(--font-display); font-size: 2rem; line-height: 1.35; margin-bottom: 12px; }
-.ep-label { font-family: var(--font-display); font-size: 13px; color: var(--sand); letter-spacing: 3px; margin-bottom: 8px; }
-.subtitle { font-size: 15px; color: var(--muted); margin-bottom: 24px; }
-.meta { display: flex; gap: 20px; font-size: 12px; color: var(--muted); }
-h2 { font-family: var(--font-display); font-size: 1.25rem; margin: 48px 0 16px; padding-left: 14px; border-left: 3px solid var(--sand); color: var(--sand-light); }
-p { margin: 12px 0; font-size: 15px; }
-strong { color: var(--sand); font-weight: 600; }
-em { color: var(--muted); }
-blockquote { background: rgba(212,184,150,0.06); border-left: 3px solid var(--sand); padding: 16px 20px; margin: 24px 0; border-radius: 0 var(--radius) var(--radius) 0; font-size: 14px; }
-table { border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 14px; }
-th, td { border: 1px solid var(--border); padding: 10px 16px; text-align: left; }
-th { background: rgba(212,184,150,0.08); color: var(--sand); font-family: var(--font-display); }
-.callout { background: rgba(212,184,150,0.08); border-radius: var(--radius); padding: 16px 20px; margin: 20px 0; font-size: 14px; }
-ul, ol { margin: 12px 0 12px 24px; font-size: 15px; }
-li { margin: 4px 0; }
-hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
-a { color: var(--sand); text-decoration: none; }
-a:hover { text-decoration: underline; }
-footer { margin-top: 64px; padding: 40px 0; border-top: 1px solid var(--border); text-align: center; font-size: 12px; color: var(--muted); }
-footer .brand { font-family: var(--font-display); color: var(--sand); }
-.disclaimer { font-size: 13px; color: var(--muted); font-style: italic; text-align: center; margin-bottom: 16px; }
+.nav-links a { color: var(--muted); text-decoration: none; font-size: 12px; letter-spacing: 0.06em; transition: color 0.2s; }
+.nav-links a:hover { color: var(--sand); }
+
+.article-header {
+  padding: 80px 0 48px; border-bottom: 1px solid var(--border); text-align: center;
+}
+.article-header .ep-label {
+  display: inline-block; font-size: 10px; color: var(--sand);
+  letter-spacing: 0.14em; text-transform: uppercase;
+  border: 1px solid var(--sand); padding: 6px 16px; border-radius: 2px; margin-bottom: 20px;
+}
+.article-header .breadcrumb { font-size: 11px; color: var(--muted); margin-bottom: 32px; }
+.article-header .breadcrumb a { color: var(--muted); text-decoration: none; }
+.article-header .breadcrumb a:hover { color: var(--sand); }
+.article-header h1 {
+  font-family: var(--font-display); font-size: clamp(24px, 5vw, 40px);
+  letter-spacing: 0.04em; line-height: 1.4; margin-bottom: 24px;
+}
+.article-header .meta {
+  display: flex; gap: 28px; justify-content: center; flex-wrap: wrap;
+  font-size: 11px; color: var(--muted); letter-spacing: 0.06em;
+}
+
+.article-layout { display: flex; gap: 48px; padding: 48px 0; align-items: flex-start; }
+.article-toc {
+  position: sticky; top: 100px; width: 200px; flex-shrink: 0;
+  font-size: 12px; line-height: 2;
+}
+.article-toc .toc-title {
+  font-family: var(--font-display); font-size: 13px;
+  color: var(--sand); letter-spacing: 0.08em; margin-bottom: 16px;
+}
+.article-toc a {
+  display: block; color: var(--muted); text-decoration: none;
+  padding: 2px 0; transition: color 0.2s;
+  border-left: 2px solid transparent; padding-left: 12px;
+}
+.article-toc a:hover, .article-toc a.active {
+  color: var(--ink); border-left-color: var(--sand);
+}
+.article-body { flex: 1; min-width: 0; }
+
+.article-section { margin-bottom: 48px; }
+.article-section h2 {
+  font-family: var(--font-display); font-size: 26px;
+  margin-bottom: 20px; padding-bottom: 12px;
+  border-bottom: 1px solid var(--border); letter-spacing: 0.04em;
+}
+.article-section h3 {
+  font-family: var(--font-display); font-size: 19px;
+  margin: 28px 0 12px; color: var(--sand); letter-spacing: 0.03em;
+}
+.article-section h4 {
+  font-size: 15px; margin: 20px 0 8px; color: var(--sand-light);
+}
+.article-section p {
+  font-size: 15px; color: var(--muted); line-height: 1.85; margin-bottom: 14px;
+}
+.article-section p strong { color: var(--ink); font-weight: 600; }
+.article-section ul, .article-section ol {
+  margin: 12px 0 16px 24px; font-size: 14px; color: var(--muted); line-height: 1.9;
+}
+.article-section li { margin-bottom: 4px; }
+.article-section li strong { color: var(--ink); font-weight: 600; }
+.article-section code {
+  background: var(--surface); padding: 2px 6px;
+  border-radius: 3px; font-size: 13px; color: var(--sand);
+  font-family: 'SF Mono', 'Fira Code', monospace;
+}
+.article-section blockquote {
+  border-left: 3px solid var(--sand);
+  padding: 16px 20px; margin: 20px 0;
+  background: var(--surface); border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 14px; color: var(--sand-light); line-height: 1.8; font-style: italic;
+}
+.article-section hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+.article-section table {
+  width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13px;
+}
+.article-section th {
+  background: var(--surface); color: var(--sand);
+  padding: 10px 14px; text-align: left; font-weight: 600; font-size: 11px;
+  letter-spacing: 0.06em; text-transform: uppercase; border-bottom: 2px solid var(--border);
+}
+.article-section td {
+  padding: 10px 14px; border-bottom: 1px solid var(--border);
+  color: var(--muted); line-height: 1.6;
+}
+.article-section td strong { color: var(--ink); }
+.article-section tr:hover td { background: var(--surface); }
+
+.page-footer { padding: 60px 0; border-top: 1px solid var(--border); text-align: center; }
+.page-footer .ft-nav { display: flex; gap: 32px; justify-content: center; margin-bottom: 24px; }
+.page-footer .ft-nav a { color: var(--muted); font-size: 13px; text-decoration: none; transition: color 0.2s; }
+.page-footer .ft-nav a:hover { color: var(--sand); }
+.page-footer .ft-logo { font-family: var(--font-display); font-size: 18px; color: var(--sand); letter-spacing: 0.1em; margin-bottom: 6px; }
+.page-footer .ft-sub { font-size: 10px; color: var(--muted); }
+
+.info-box { background: rgba(212,184,150,0.06); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 20px; margin: 20px 0; font-size: 14px; color: var(--muted); }
+.info-box p { margin-bottom: 8px; }
+.info-box a { color: var(--sand); }
+
+@media (max-width: 900px) {
+  .article-layout { flex-direction: column; }
+  .article-toc { position: static; width: 100%; margin-bottom: 32px; }
+  .article-toc a { display: inline-block; border-left: none; border-bottom: 2px solid transparent; padding: 4px 8px; margin-right: 8px; }
+  .article-toc a:hover, .article-toc a.active { border-left: none; border-bottom-color: var(--sand); }
+}
 </style>
 </head>
 <body>
-<nav><div class="container">
-<a href="/tsukasaya-site/" class="nav-brand"><span class="logo-diamond"></span><span class="logo-text">筑沙 Tsukasa</span></a>
-<div class="nav-links"><a href="/tsukasaya-site/">Home</a><a href="/tsukasaya-site/re300/">RE300 中文</a><a href="/tsukasaya-site/re300-jp/">RE300 日本語</a></div>
-</div></nav>
-<div class="container">
-<header>
-<div class="ep-label">RE300 日本語版 · 第1回</div>
-<h1>コース概要と全章ガイド</h1>
-<div class="subtitle">Patrick Hogerty教授『California Real Estate Principles』に基づく全32回日本語解説シリーズ</div>
-<div class="meta"><span>2026年7月8日</span><span>MOTOKI SADASHIGE · 筑沙 Tsukasa inc</span></div>
+
+<nav>
+  <div class="container">
+    <a href="/tsukasaya-site/" class="nav-brand">
+      <div class="logo-diamond"><div class="logo-diamond-inner"><span class="logo-diamond-char">筑</span></div></div>
+      <span class="nav-name">筑沙 TSUKASA</span>
+    </a>
+    <div class="nav-links">
+      <a href="/tsukasaya-site/">Home</a>
+      <a href="/tsukasaya-site/re300/">RE300 中文</a>
+      <a href="/tsukasaya-site/re300-jp/">RE300 日本語</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-header">
+  <div class="container">
+    <div class="ep-label">RE300 日本語版 · 第1回</div>
+    <div class="breadcrumb">
+      <a href="/tsukasaya-site/">筑沙</a> · 
+      <a href="/tsukasaya-site/re300-jp/">RE300 日本語シリーズ</a> · 
+      第1講
+    </div>
+    <h1>カリフォルニア不動産ブローカー試験教程<br>コース概要と全章ガイド</h1>
+    <div class="meta">
+      <span>📚 約35,000字</span>
+      <span>🎙️ Patrick J. Hogarty</span>
+      <span>📅 2026年7月</span>
+      <span>⏱️ 読了約50分</span>
+    </div>
+  </div>
 </header>
-<div class="disclaimer">本資料は営利を目的とせず、完全無料で提供し、学習参考のみを目的としています。</div>
 
-<p>2009年12月、Pat Hogerty氏は Sacramento City College のスタジオでこう言いました。「<strong>Good evening everybody — my name is Pat Hogerty and welcome to California Real Estate Principles — Real Estate 300</strong>。」これが全32回シリーズの始まりです。今回は26枚のスライドで教科書全20章を一望し、2026年最新データも盛り込みます。</p>
+<div class="container">
+  <div class="article-layout">
+    <aside class="article-toc">
+      <div class="toc-title">目次</div>
+      <a href="#section-0">前書き</a>
+      <a href="#section-1">第一部：授業前説明——このコースの学び方</a>
+      <a href="#section-2">第二部：シラバス実演</a>
+      <a href="#section-3">第三部：📊 カリフォルニア不動産業界の現状（2026年データ）</a>
+      <a href="#section-4">第四部：十五章逐一速覧</a>
+      <a href="#section-5">第五部：📌 2026年ライセンス取得パス速覧（完全版）</a>
+      <a href="#section-6">第六部：完全日英対照用語集</a>
+      <a href="#section-7">第七部：コース結語</a>
+      <a href="#section-8">補足リソース</a>
+    </aside>
+    <main class="article-body">
 
-<h2>1. このコースについて</h2>
-<p><strong>RE300「California Real Estate Principles」</strong>は、カリフォルニア州不動産セールスパーソンライセンス（<strong>Salesperson License</strong>）試験の3つの必修科目の1つ。転職希望者、新卒者、退職後のパートタイム希望者——背景は様々でも、目的は暗記ではなく業界構造の理解です。</p>
-<div class="callout">📌 <strong>2026年更新</strong>：DRE試験合格者の平均学習期間4.2ヶ月、最短6週間。初回合格率約54%。</div>
+<section class="article-section">
+<blockquote>本資料は営利を目的とせず、完全無料で提供し、学習参考のみを目的としています。</blockquote>
 
-<h2>2. 第1部 — 5つの学習方法</h2>
-<p>①対面受講（火木午後Sacramento City College）②図書館ビデオ視聴（現在Canvas等に移行）③インターネット配信（24時間視聴可）④ケーブルテレビ再放送（現在YouTube）⑤<strong>ポッドキャスト音声ダウンロード</strong>——Patは「iPodは不要、MP3プレーヤーなら何でも」と。2026年現在、オンライン録画+YouTubeが主流。</p>
+<p><strong>原講師：</strong> Patrick J. Hogarty, MA（Sacramento City College）</p>
+<p><strong>コース番号：</strong> RE 300 — California Real Estate Principles</p>
+<p><strong>初回放送：</strong> 2009年12月31日 · <strong>尺：</strong> 59分</p>
+<p><strong>本稿整理：</strong> 2026年7月</p>
+<p><strong>データ出典：</strong> カリフォルニア不動産局 DRE 公式サイト（dre.ca.gov）2026年4月公式統計 · NAR 2026年5月市場報告 · 連邦準備制度理事会公式サイト 2026年5月28日更新</p>
+<p><strong>内容説明：</strong> 本稿はポッドキャスト Show 01 完全録音に基づき逐次整理したもので、Pat Hogerty の解説、事例、比喩、忠告すべてを収録しています。文中 📌 は2026年最新法令・データに基づく更新を、💡 は Pat の原典内容（2009年収録のため一部技術的詳細は過去のものですが、教学論理は完全に有効です）を示します。</p>
 
-<h2>3. 第2部 — コースシラバス実演</h2>
-<p>Patは自費で構築したコースサイトを開き、全16講の目次を示しました。3つの主要リソース——<strong>教科書（Textbook）、シラバス（Syllabus）、学内ネットワーク（Blackboard→現在Canvas）</strong>——「この3つは永遠のツールキット」。</p>
-
-<h2>4. 成績評価と職業インタビュー</h2>
-<p>3回の試験、宿題（章末問題+<strong>Professional Interview Project</strong>）、授業参加で評価。Patが強調したのは「数学の試験が最大の成績下落原因——計算できないからじゃない、問題設定ができないから」。<strong>職業インタビュー</strong>：エージェント、鑑定士（<strong>Appraiser</strong>）、ローンオフィサー（<strong>Loan Officer</strong>）などに聞く——「最少の費用でできる最高のキャリア調査」。</p>
-
-<h2>5. 第3部 — カリフォルニア不動産業界の現状（2026年データ）</h2>
-<div class="callout">📌 <strong>2026年更新</strong></div>
-<ul><li>約<strong>43万8千人</strong>のライセンス保有者——全米最大</li><li>2025年住宅販売約27万戸（前年比-8%）</li><li>住宅価格中央値（<strong>Median Price</strong>）：2026年5月 <strong>$930,260</strong>（過去最高）</li><li>Sacramento約55万ドル、LA・SFベイエリア100万ドル超</li><li><strong>ADU</strong>簡易承認・<strong>SB9</strong>区画分割法案進行中</li><li>Chika Sunquist氏率いる<strong>DRE</strong>がオンライン試験試行中</li></ul>
-
-<h2>6. 全米市場の背景と試験ウエイト</h2>
-<div class="callout">📌 FRB議長<strong>Kevin Warsh</strong>氏、2026年6月FOMCで<strong>政策金利3.50%〜3.75%に据え置き</strong>。ドットプロットで年内利上げ示唆。30年固定住宅ローン約6.43%〜6.63%。</div>
-<p><strong>試験ウエイト</strong>：150問・3時間——<strong>不動産原則35%、実務35%、選択分野30%</strong>。つまりこの科目の全概念が約1/3の確率で出題。</p>
-
-<h2>7. 第1章 — 不動産序論（Introduction to Real Estate）</h2>
-<p><strong>不動産（Real Property）= 土地+付着物+権利の束（Bundle of Rights）</strong>。カリフォルニアの土地はスペイン領→メキシコ領→米国領。<strong>Spanish/Mexican Land Grants</strong>が今も権利連鎖（<strong>Chain of Title</strong>）に影響。不動産vs動産（<strong>Personal Property</strong>）——引越しで持っていくものが動産、残すものが不動産。ビルトイン家電は<strong>固定（Affixed）</strong>かどうかで判断。</p>
-
-<h2>8. 第2-3章 — 法的記載（Legal Descriptions）</h2>
-<p><strong>①Metes and Bounds</strong>（最古——「樫の木から東へ300フィート」）<strong>②Rectangular Survey System</strong>：主経線（<strong>Principal Meridian</strong>）+基線（<strong>Base Line</strong>）→タウンシップ（<strong>Township</strong>=6×6マイル=36セクション）→セクション（<strong>Section</strong>=1平方マイル=640エーカー）<strong>③Lot and Block</strong>（最も現代的）。全3方法、DRE試験必出。</p>
-
-<h2>9. 第4-5章 — 権利移転と所有形態</h2>
-<p><strong>Grant Deed</strong>（カリフォルニア最常用、2つの黙示的保証）· <strong>Quitclaim Deed</strong>（「私が持つものは譲るが保証しない」）· <strong>Warranty Deed</strong>。所有形態：<strong>Sole Ownership</strong>· <strong>Tenants in Common</strong>· <strong>Joint Tenancy</strong>（生存者権<strong>Right of Survivorship</strong>付）· <strong>Community Property</strong>。<strong>Adverse Possession</strong>：5年占有+税金支払いで合法的所有権の可能性。</p>
-
-<h2>10. 第6章 — 貸主と借主（Landlord and Tenant）</h2>
-<p>多くの人が最初に関わる不動産は賃貸。商業賃貸（<strong>Commercial Lease</strong>）と住宅賃貸（<strong>Residential Lease</strong>）の違い。<strong>AB 1482</strong>：年間家賃上昇上限5%+CPI。立ち退き（<strong>Eviction</strong>）は法的手続必須。敷金（<strong>Security Deposit</strong>）は退去後21日以内返還。</p>
-
-<h2>11. 第7-8章 — 権利負担（Encumbrances）</h2>
-<p>①<strong>留置権（Liens）</strong>：Mortgage、Tax Lien、<strong>Mechanic's Lien</strong>、Judgment Lien ②<strong>地役権（Easements）</strong>：<strong>Easement Appurtenant</strong>（土地に付随）、<strong>Prescriptive Easement</strong>（5年無断使用で権利化）。だから<strong>Title Insurance</strong>が重要。</p>
-
-<h2>12. 第9-10章 — ライセンス教育と協会</h2>
-<p><strong>DRE</strong>がライセンス発行。必修3科目+18歳以上+試験合格+ブローカー指導下。4年以内に45時間継続教育（<strong>Continuing Education</strong>）、以降4年毎更新。<strong>Realtor</strong>はNAR登録商標——<strong>Not every agent is a Realtor</strong>。3層構造：<strong>SAR→CAR→NAR</strong>。倫理規定違反は<strong>Peer Review</strong>。</p>
-
-<h2>13. 第11章 — 代理関係と責任（Agency and Responsibilities）</h2>
-<p><strong>Fiduciary Relationship</strong>——6つの責任：<strong>Loyalty· Obedience· Disclosure· Confidentiality· Reasonable Care and Diligence· Accounting</strong>。<strong>TDS（Transfer Disclosure Statement）</strong>カリフォルニア最厳格。ブローカー目視検査義務。信託口座（<strong>Trust Account</strong>）——自己資金と混在禁止。</p>
-
-<h2>14. 第12-13章 — 契約（Contracts）</h2>
-<p>有効契約の5要素：<strong>Offer· Acceptance· Consideration· Lawful Objective· Competent Parties</strong>。<strong>Statute of Frauds</strong>——不動産契約は書面+被訴当事者署名必須。リスティング3種：<strong>Exclusive Agency· Exclusive Right to Sell· Open Listing</strong>。<strong>Option</strong>と<strong>Right of First Refusal</strong>。</p>
-
-<h2>15. 第14章 — エスクローと権原保険（Escrow & Title Insurance）</h2>
-<p><strong>Escrow</strong>：中立的第三者が資金・書類を預かり条件充足まで保持。<strong>Joint Instructions</strong>。日割計算（<strong>Proration</strong>）。<strong>Title Insurance</strong>——一度限りの保険料で全所有期間カバー。Preliminary Reportの5核心。CLTA標準 vs ALTA拡張保険。</p>
-
-<h2>16. 第15章 — 不動産金融（Real Estate Finance）</h2>
-<p>「<strong>Interest rates and the ability for people to finance property is crucial to the entire industry</strong>」——Pat。<strong>Leverage</strong>（2万ドル頭金で10万ドルの家→11万ドルで売却=50%リターン）。<strong>Hypothecation</strong>。約束手形3種：<strong>Straight Note· Installment with Balloon· Fully Amortized</strong>。<strong>Deed of Trust</strong>=Trustor·Trustee·Beneficiaryの3当事者、<strong>Non-Judicial Foreclosure</strong>が可能。</p>
-
-<h2>17. 第16章 — 不動産評価（Appraisal）</h2>
-<p>3大手法：<strong>Market Approach</strong>（住宅向け）· <strong>Cost Approach</strong>（新築向け）· <strong>Income Approach</strong>（Cap Rate使用、投資向け）。評価報告書の必須9要素。<strong>BREA</strong>（旧OREA）4段階ライセンス、2,000時間実務経験。<strong>The Appraisal Foundation</strong>——S&L危機後に誕生。</p>
-
-<h2>18. 第17章 — 土地分割と政府規制</h2>
-<p><strong>Police Power</strong>（警察とは無関係、公衆の健康安全福祉のため）。<strong>Subdivision Map Act</strong>（地方管轄、2区画以上）· <strong>Subdivided Lands Act</strong>（DRE管轄、5区画以上、Public Report必須）。CIDの4タイプ：<strong>PUD· Community Apartment· Condo· Stock Co-op</strong>。公正住宅法：<strong>Redlining· Steering· Block Busting</strong>禁止。</p>
-
-<h2>19. 第18章 — 不動産税務（Taxation of Real Estate）</h2>
-<p><strong>Ad Valorem</strong>税。<strong>Prop 13</strong>：購入価格1%上限+年2%増、所有権変更時再評価。<strong>Prop 60&90</strong>：55歳以上税基盤移転可。税留置権タイムライン：1/1→11/1→12/10。<strong>Homeowner's Exemption</strong>：$7,000評価額免除→年約$70節約、<strong>要申請</strong>。<strong>Mello-Roos</strong>：新開発地区付加税。<strong>Documentary Transfer Tax</strong>：$1,000当たり$1.10。</p>
-
-<h2>20. 第19章 — 不動産数学（Real Estate Math）</h2>
-<p><strong>1エーカー=43,560平方フィート</strong>（暗記必須）。1マイル=5,280ft。1Township=6×6マイル=36Sections。1Section=640エーカー。<strong>利益は常に原価に対する%、売価に対する%ではない</strong>——DRE試験の古典的罠。<strong>Commission Split</strong>：総額→リスティング/セリング折半→個人/会社分割。利息はデフォルトで<strong>Simple Interest</strong>。</p>
-
-<h2>21. 2026年ライセンス取得パス</h2>
-<p><strong>Step 1</strong>：必修3科目（<strong>Real Estate Principles· Practice</strong>+選択1）<strong>Step 2</strong>：<strong>Live Scan</strong>指紋+身元調査 <strong>Step 3</strong>：DRE試験（<strong>150問·3時間·70%合格</strong>）<strong>Step 4</strong>：ブローカー指導下入行 <strong>Step 5</strong>：申請+納付。通常3〜6ヶ月。Broker志望：追加5科目+2年実務+Broker試験。<a href="https://dre.ca.gov">dre.ca.gov</a></p>
-
-<h2>22. 重要用語集 第1部</h2>
-<table><tr><th>日本語</th><th>英語</th></tr>
-<tr><td>不動産</td><td>Real Property</td></tr><tr><td>動産</td><td>Personal Property</td></tr>
-<tr><td>権利の束</td><td>Bundle of Rights</td></tr><tr><td>境界・自然標識法</td><td>Metes and Bounds</td></tr>
-<tr><td>矩形測量システム</td><td>Rectangular Survey System</td></tr><tr><td>区画・ブロック法</td><td>Lot and Block</td></tr>
-<tr><td>タウンシップ</td><td>Township（6×6マイル、36セクション）</td></tr><tr><td>セクション</td><td>Section（1平方マイル=640エーカー）</td></tr>
-<tr><td>譲渡証書</td><td>Grant Deed</td></tr><tr><td>放棄証書</td><td>Quitclaim Deed</td></tr>
-<tr><td>担保証書</td><td>Warranty Deed</td></tr><tr><td>単独所有</td><td>Sole Ownership</td></tr>
-<tr><td>普通共有</td><td>Tenants in Common</td></tr><tr><td>ジョイントテナンシー</td><td>Joint Tenancy（Right of Survivorship付）</td></tr>
-<tr><td>夫婦共有財産</td><td>Community Property</td></tr><tr><td>逆権利占有</td><td>Adverse Possession</td></tr>
-<tr><td>完全所有権</td><td>Fee Simple</td></tr><tr><td>賃借権</td><td>Leasehold</td></tr>
-<tr><td>権利負担</td><td>Encumbrance</td></tr><tr><td>留置権</td><td>Lien</td></tr><tr><td>地役権</td><td>Easement</td></tr></table>
-
-<h2>23. 重要用語集 第2部</h2>
-<table><tr><th>日本語</th><th>英語</th></tr>
-<tr><td>受託者責任（6項目）</td><td>Fiduciary Duty — Loyalty, Obedience, Disclosure, Confidentiality, Care, Accounting</td></tr>
-<tr><td>不動産譲渡開示声明書</td><td>TDS（Transfer Disclosure Statement）</td></tr>
-<tr><td>エスクロー</td><td>Escrow</td></tr><tr><td>積立口座</td><td>Impound Account</td></tr>
-<tr><td>権原保険</td><td>Title Insurance</td></tr><tr><td>CLTA / ALTA保険</td><td>CLTA Policy / ALTA Policy</td></tr>
-<tr><td>日割計算</td><td>Proration</td></tr><tr><td>信託証書（3当事者）</td><td>Deed of Trust — Trustor, Trustee, Beneficiary</td></tr>
-<tr><td>抵当権（2当事者）</td><td>Mortgage — Mortgagor, Mortgagee</td></tr>
-<tr><td>司法/非司法担保実行</td><td>Judicial / Non-Judicial Foreclosure</td></tr>
-<tr><td>約束手形</td><td>Promissory Note — Straight, Balloon, Fully Amortized</td></tr>
-<tr><td>市場/コスト/インカム</td><td>Market / Cost / Income Approach</td></tr>
-<tr><td>Prop 13 / 60&90 / Mello-Roos</td><td>Proposition 13 / 60&90 / Mello-Roos</td></tr>
-<tr><td>警察権/収用権/没収</td><td>Police Power / Eminent Domain / Escheat</td></tr>
-<tr><td>リアルター</td><td>Realtor（NAR登録商標）</td></tr>
-<tr><td>カリフォルニア州不動産局</td><td>DRE（California Dept. of Real Estate）</td></tr>
-<tr><td>全米不動産協会</td><td>NAR（National Association of Realtors）</td></tr></table>
-
-<h2>24. 補足リソース — Pat Hogerty オリジナル英語ポッドキャスト</h2>
-<blockquote>💡 DREライセンス試験は<strong>英語のみ</strong>で実施。<strong>B&P §10153</strong>：受験者に英語の読解・作文・スペリング能力を要求。</blockquote>
-<p>Pat教授のオリジナル英語ポッドキャスト併聴を強く推奨——不動産知識+業界英語力を同時習得。<strong>Apple Podcasts</strong>：「California Real Estate Principles」検索 · <strong>MP3</strong>：re-professor.com/podcast-audio/re-300 · <strong>試聴</strong>：LearnOutLoud</p>
 <hr>
-<p>この日本語解説シリーズはPat Hogerty教授のオリジナル講義をフレームワークとし、各講を日本語に翻訳整理、2026年最新法規制改正を補充しています。「聞いてから読む」あるいは「聞きながら日本語記事を対照する」——二重の学習効果を。</p>
-<p>私はMOTOKI。筑沙 Tsukasa inc所属。全シリーズ第1回をご視聴いただきありがとうございました。次回、第2回でお会いしましょう。</p>
-<footer><div class="brand">MOTOKI SADASHIGE · 筑沙 Tsukasa inc</div><div>DRE#02386309 · Gogo Realtors R.H Corp. · 2026年7月</div></footer>
-</div></body></html>
+</section>
+
+<section class="article-section">
+<h2 id="section-0">前書き</h2>
+
+<p>2009年12月のある夜、Pat Hogerty は Sacramento City College のスタジオに座り、カメラに向かってこう言いました：</p>
+
+<blockquote>"Good evening, everybody. My name is Pat Hogerty, and welcome to California Real Estate Principles, Real Estate 300."</blockquote>
+
+<p>これが RE 300「カリフォルニア不動産原理（California Real Estate Principles）」コースの第一回目の授業です。当日、Pat と同僚たちは実際に二回の新入生説明会を開催しました——午前10時から11時までは昼間部学生向け、午後4時から5時までは夜間部学生向けです。特筆すべきは、この説明会が RE 300（不動産原理）、RE 310（不動産実務 Real Estate Practice）、RE 320（不動産金融 Real Estate Finance）の三科目を同時にカバーしていたことです。三者は同一会場で連続して行われ、複数科目を履修する学生が一度にすべての説明を受けられるよう配慮されていました——何度も足を運ぶ手間を省くためです。</p>
+
+<p>📌 <strong>2026年読者へのお知らせ：</strong> 本稿は Pat の2009年のオリジナル教学内容に基づいて逐次整理されています。今日の学習環境は大きく変化しました——オンライン録画講義（Canvas等LMSプラットフォーム）、Zoomライブ配信、YouTubeが主流となっています。しかし Pat の教学の核心——専門用語（Terminology）、原理（Principles）、場面演習、そして業界の思考様式——は2026年においても完全に有効です。本稿は Pat のオリジナル教学内容をすべて保持した上で、各該当箇所に 📌 で2026年の最新法令、データ、業界変化を注記しています。</p>
+
+<hr>
+</section>
+
+<section class="article-section">
+<h2 id="section-1">第一部：授業前説明——このコースの学び方</h2>
+
+<h3>五つの受講方法</h3>
+
+<p>Pat はこのパートでかなりの時間を割いて学習チャンネルを説明しました。なぜなら彼のコースが対象とするのは、背景も時間的制約も異なる人々——フルタイム勤務者、長距離通学が必要な学生、遠隔地在住の学生——だからです。そのため、彼は五つの柔軟な学習方法を用意しました：</p>
+
+<p><strong>方法一：対面受講（Live Attendance）。</strong> 毎週火曜日と木曜日、午後5時30分から6時30分まで、Sacramento City College のスタジオでライブ配信。現場には実際の学生がいます——Pat は冗談めかしてこう言いました：「うちには本物のスター学生が現場にいるんだ。テレビで見たよ。ただし、水筒を持ち込まないでね——"水筒警察（Water Cup Police）"が見張ってるから。」</p>
+
+<p><strong>方法二：図書館でのビデオ視聴（Library Video Viewing）。</strong> 毎回の授業終了後、約15分でシニアエンジニアの Bob Bickley が録画済みの番組を図書館（スタジオの廊下向かい）に届けます。学生はいつでも図書館に行って座って視聴できます。💡 これは典型的な2009年の技術的解決策——VHSテープです。今日、この機能はLMS（学習管理システム、Learning Management System——Canvas、Blackboard等）の録画機能に完全に取って代わられました。</p>
+
+<p><strong>方法三：インターネット・オンデマンド配信（Internet On-Demand）。</strong> 授業終了後、動画はエンコードされてネット上にアップロードされます。学生はその後一両日中に Pat からのメール通知を受け取り、視聴リンクが記載されています。「このリンクは年中無休——一日24時間、週7日、年365日視聴可能です。今日の新入生説明会でアクセス方法をデモ済みです。」📌 今日、これが最も主流の学習方法となっています。</p>
+
+<p><strong>方法四：ケーブルテレビ再放送（Cable TV Replay）。</strong> Comcast または SureWest のケーブルテレビに加入していれば、翌週末に再放送を視聴できます。💡 このチャンネルは今日 YouTube などのストリーミングプラットフォームに取って代わられました。</p>
+
+<p><strong>方法五：ポッドキャスト音声ダウンロード（Podcast Audio Download）。</strong> これが最も先見性のある取り組みです。Pat はこう説明します：各回の番組終了後、制作チームが音声を MP3 形式に圧縮し、ネット上にアップロードしてダウンロード可能にします。「ポッドキャスティング（Podcasting）という名称は実は Apple の iPod——白いイヤホンをつけて街で踊ってるあの小さなガジェット——に由来しています。でも iPod を持っていなくても大丈夫、MP3 プレーヤーなら何でも使えます。」</p>
+
+<p>この機能は学生からの直接のフィードバックから生まれました。Pat はわざわざその裏話を語りました：「二人の若い女性学生が私のところに来て、『車で長時間かけて顧客訪問をしているので、車の中で講義を聴けたらいいのに』と言ったんです。私たちは彼女たちのためだけにこの仕組みを作りました。」</p>
+
+<p>さらにユーモアを交えてこう補足しました：「MP3 プレーヤーの操作方法がわからなければ、孫に聞いてください——孫たちはこういうのが得意ですから。ファイルを MP3 プレーヤーにダウンロードすれば、運転中でも、ジムで運動中でも、好きなように聴けます。」</p>
+
+<p>📌 今日、ポッドキャストは全面的に Apple Podcasts、Spotify、YouTube などのストリーミングプラットフォームへと進化しました。Pat が2009年に先取りしたこの取り組みは、まさに教育コンテンツ配信の未来の方向性を予見していたのです。</p>
+
+<h3>分校対応</h3>
+
+<p>遠隔地に住む学生向けに、Pat のコースは Davis、West Sacramento、Downtown Sacramento の三箇所に分校を設けていました。学生はこれらの場所に行って授業ビデオを視聴できますが、一つの前提条件があります：<strong>必ず事前に電話で予約すること。</strong> 相手が対応を渋っているからではなく、スタッフが待機し、施設が開いていることを確認する必要があるからです。</p>
+
+<hr>
+</section>
+
+<section class="article-section">
+<h2 id="section-2">第二部：コースシラバス実演</h2>
+
+<p>受講方法の説明を終えると、Pat はライブ中継の中で、2009年当時としてはかなり「ハイテク」なことをやってのけました——学校の学習管理システム Blackboard にその場でログインし、カメラの前でシラバス（Syllabus）ファイルをダウンロードして開き、項目ごとに学生に説明したのです。</p>
+
+<p>💡 彼が使用したプラットフォームは Blackboard でしたが、今日多くの学校が Canvas に移行しています。しかし操作のロジックは全く同じです：システムにログイン → 該当コースを探す → コース教材エリアに入る → シラバスファイルをダウンロード。</p>
+
+<p>"We're doing this show in such a way that we're going to be reusing the material again."——Pat は特に、これらの授業ビデオが将来の学生向けに再利用されることを説明しました。そのため、彼は具体的な日付や天気、「今日は暑いね」といった話題には一切触れません。彼の目標は教材に「永続性（Permanence）」を持たせることです。だからこそ、このポッドキャストが収録から十数年経った今でも価値を持ち続けているのです。</p>
+
+<h3>コース概要</h3>
+
+<p>シラバスに記載された公式のコース概要（Course Description）は次の通りです：</p>
+
+<blockquote>"This is a fundamental course in real estate covering the basic laws and principles of California real estate, giving understanding and background to the terminology necessary for more advanced study in specialized classes."</blockquote>
+
+<p>訳すと：「本コースはカリフォルニア不動産の基本法と原理を網羅する基礎的不動産講座であり、より高度な専門課程での学習に必要な専門用語（Terminology）の理解と背景知識を提供する。」</p>
+
+<p>Pat はこの公式説明に対して極めて重要な補足解釈を加えました——新しい分野に参入するとき、<strong>最大の壁は業界用語（Lingo）の習得だ</strong>、と。彼は教室にいるテレビ・音響システム設置の仕事をしている学生を指して言いました：「この学生の頭の中には何千もの業界用語が詰まっている。部外者にはまったく理解できない。医者もそう、弁護士もそう、会計士もそう——どの業界にも独自の専用語彙があって、わかる人にはわかる、わからない人にはまったくわからない。」</p>
+
+<p>だからこそ、Pat は以降の授業で繰り返し強調します：私たちは各分野を深く掘り下げるわけではありません——実際、コースの中の各章は、より上級のコースではそれぞれ独立した完全な一科目になります。例えば：</p>
+
+<ul>
+<li>不動産評価（Appraisal）は上級段階で二科目の深掘りコースがある</li>
+<li>不動産金融（Real Estate Finance）、エスクロー（Escrow）、権原（Title）等もそれぞれ独立した深掘りコースがある</li>
+</ul>
+
+<p>RE 300 の役割は、学生に<strong>各分野への初歩的な接触と理解を与え</strong>、業界用語を習得させ、今後の深い学習とライセンス試験の基礎を築くことです。</p>
+
+<h3>Pat の学習戦略：Study Guide を試験対策に使え</h3>
+
+<p>Pat は極めて効率的な学習戦略を提示しました。この戦略は今日でも完全に有効です：</p>
+
+<ol>
+<li><strong>Study Guide をダウンロードせよ。</strong> Pat はネット上に置いてある Study Guide が「本質的に試験問題と 99.99% 完全に一致する」と言います。</li>
+<li><strong>時間をかけて資料を調べ、答えを探せ。</strong>「100点を取れる」という心構えで準備する。</li>
+<li><strong>自分に正直であれ。</strong> たまたま当てたけど実はなぜ正解なのか理解していない問題があれば——印をつけて、教材に戻って理解し直す。</li>
+</ol>
+
+<p>Pat はこの方法を州政府試験の準備方法に例えました：「誰でも不動産業界に入るとき、得意な領域と blind spot（盲点）があるものだ。金融バックグラウンドが強くても、法定記載（Legal Description）に出くわしたら途端にわからなくなるかもしれない。あるいは権原保険会社で働いた経験があって法定記載には詳しいが、評価（Appraisal）になるとまったく頭が回らなくなるかもしれない。肝心なのは、正直に自分のわからないところを見つけ出して、それを理解することだ。」</p>
+
+<p>💡 Pat のコースには三回の学内試験（中間試験二回と期末試験一回）があり、Scantron 882 解答用紙と #2 鉛筆を使用します。これは彼個人のコースの具体的な運用であり、DRE 州試験の形式そのものではありません。しかし Pat のこの「まず自己テスト→盲点発見→狙い撃ち学習」という方法は、DRE の150問選択式試験対策に完全に通用します。</p>
+
+<p>📌 <strong>2026年 DRE セールスパーソン（Salesperson）州試験形式：</strong></p>
+<ul>
+<li>150問選択式</li>
+<li>合格ライン：70%（すなわち 105/150 問正解）</li>
+<li>試験方式：完全電子化コンピュータ試験（CBT）</li>
+<li>試験費用：$60</li>
+<li>五つの試験会場：Sacramento、Oakland、Fresno、La Palma（オレンジ郡）、San Diego</li>
+<li>付帯要件：Live Scan 指紋採取および FBI/DOJ 身元調査を完了していること</li>
+</ul>
+
+<h3>成績評価と課題</h3>
+
+<p>Pat のコースには三回の試験があります：</p>
+<ul>
+<li>第一回中間試験：最初の5章をカバー</li>
+<li>第二回中間試験：第6〜10章をカバー、同時に職業インタビューレポート（Professional Interview Report）を提出</li>
+<li>期末試験：後半5章をカバー</li>
+</ul>
+
+<p><strong>職業インタビュー（Professional Interview）：</strong> Pat はこれを「誰一人として完成できなかったことがない」簡単な課題と呼びます。学生は学期中に、自分が関心を持つ不動産分野の実務者——ブローカー、評価士（Appraiser）、ローンオフィサー（Loan Officer）など——を一人見つけ、面談の予約を取ります。面談では以下の質問を投げかけます：</p>
+<ul>
+<li>日常の仕事は具体的に何をしているのか？</li>
+<li>この業界の本当の姿はどのようなものか？</li>
+<li>この業界で本当に必要とされるスキルは何か？</li>
+<li>現在および今後直面する課題は何か？</li>
+</ul>
+
+<p>その上で2ページのレポートを書き、第二回中間試験時に提出します。📌 この課題の今日的な対応方法は：LinkedIn で業界人に連絡し informational interview を依頼することです。この課題の価値はまったく減じていません。</p>
+
+<h3>連絡方法——Pat の「事務所電話には絶対かけるな」伝説</h3>
+
+<p>Pat は自分の事務所住所——Sacramento City College ビジネススクール2階、学習リソースセンター（Learning Resource Center）東側——を伝えました。そして、伝説とも言うべき一言を放ちました：</p>
+
+<blockquote>"Now, one thing I want to mention about my office phone — now that you know what it is, don't ever call me there."</blockquote>
+
+<p>「私の事務所の電話番号がわかったところで言っておく——絶対にそこにはかけるな。」なぜか？理由は二つ：</p>
+
+<p><strong>第一に、時間の同期問題（Time Synchronization）。</strong> あなたにはあなたのスケジュールがあり、私には私のがある。あなたが朝6時に目が覚めて突然質問を思いついたとする——あなたが電話しても、私は絶対に出られない。でもメールをくれれば、私が朝8時に受信ボックスを開けたときにあなたのメールを見つけ、すぐに返信できる。これで「電話のかくれんぼ」をしなくて済む。</p>
+
+<p><strong>第二に、ボイスメールが聞き取れない。</strong> Pat は非常に生き生きとした場面を描写しました：「今や多くの人が運転中に電話で伝言を残す——私は彼らが高速道路を時速50、60、70マイルで飛ばしているのを聞き取れる。でも彼らが何を言っているのかまったく理解できない。なぜなら、電話の向こうに私がいて『ちょっと待って、今なんて言った？聞こえない、途切れてる』と言ってくれるわけではないからだ——彼らは伝言がちゃんと伝わったと思い込んでいるが、実際には伝わっていない。」</p>
+
+<p>結論はシンプルです：<strong>メールを送れ。</strong> 必ず返信する。</p>
+
+<hr>
+</section>
+
+<section class="article-section">
+<h2 id="section-3">第三部：📊 カリフォルニア不動産業界の現状（2026年データ）</h2>
+
+<p>Pat の章別速覧に入る前に、まずあなたが足を踏み入れようとしているこの業界の2026年時点の本当の姿を理解しておきましょう。以下のデータはすべてカリフォルニア不動産局（DRE）公式サイト発表の2026年4月公式統計に基づきます。</p>
+
+<h3>ライセンス保有者数統計</h3>
+
+<table>
+<tr><th>指標</th><th>2026年4月</th><th>2025年4月</th><th>2024年4月</th><th>変化傾向</th></tr>
+<tr><td>ブローカー（Broker）</td><td>117,423</td><td>121,404</td><td>124,264</td><td>↓ 二年累計 −5.5%</td></tr>
+<tr><td>セールスパーソン（Salesperson）</td><td>293,077</td><td>306,403</td><td>310,654</td><td>↓ 二年累計 −5.7%</td></tr>
+<tr><td><strong>カリフォルニア州ライセンス総数</strong></td><td><strong>410,500</strong></td><td><strong>427,807</strong></td><td><strong>434,918</strong></td><td><strong>↓ 二年累計 −5.6%</strong></td></tr>
+<tr><td>月間新規 Salesperson ライセンス</td><td>1,404</td><td>1,415</td><td>—</td><td>ほぼ横ばい</td></tr>
+<tr><td>月間 Salesperson 受験者数</td><td>2,546</td><td>2,404</td><td>—</td><td>ほぼ横ばい</td></tr>
+</table>
+
+<p><strong>読み解き：</strong> カリフォルニア州不動産ライセンス保有総数は、二年前の約43.5万人から2026年4月の約41万人へと減少し、二年間で純減約24,000人、減少率は5.6%です。この傾向は高金利環境下での業界淘汰（Exit）を反映しています——Pat が2009年に描写したサブプライム危機後の市場収縮と本質は同じですが、原因は金融危機から金利上昇による市場取引量の低下へと移り変わっています。</p>
+
+<p>しかしこれは業界に新人が入っていないという意味ではありません。毎月約1,400人が新たに Salesperson ライセンスを取得し、約2,500人が試験を受験しています。競争は依然として存在します。そして——最も重要なポイント——参入ハードルは Pat の時代の「まず試験に合格し、その後コースを補修」から、「三科目すべてを修了しなければライセンスを取得できない」へと引き上げられました。つまり、この業界に入ってくる人材は、すでにより堅固な基礎を備えているのです。</p>
+
+<h3>全国市場の背景</h3>
+
+<p>以下のデータは全米不動産協会（NAR: National Association of Realtors）2026年5月発表の報告書から：</p>
+
+<ul>
+<li>全米中古住宅販売年率換算：417万戸</li>
+<li>全米中古住宅価格中央値（Median Price）：<strong>$429,300</strong></li>
+<li>30年固定金利住宅ローン：約6.5%–7.0%</li>
+<li>フェデラルファンド金利（Federal Funds Rate）：3.50%–3.75%（FRB は2022–23年の急速利上げサイクル後、現在緩やかな利下げ局面へ移行中）</li>
+</ul>
+
+<p>📌 FRB 議長 <strong>Kevin Warsh</strong>（2026年就任）、2026年6月 FOMC で政策金利を <strong>3.50%〜3.75%</strong> に据え置き。ドットプロットでは年内追加利下げの可能性を示唆。30年固定住宅ローン金利は約 <strong>6.43%〜6.63%</strong> で推移。</p>
+
+<h3>カリフォルニア住宅市場データ</h3>
+
+<ul>
+<li>カリフォルニア州住宅価格中央値（Median Price）：2026年5月 <strong>$930,260</strong>（過去最高値、C.A.R. 発表）</li>
+<li>Sacramento エリア約55万ドル、LA・SFベイエリアは100万ドル超</li>
+<li>ADU（Accessory Dwelling Unit、付属住宅ユニット）簡易承認・SB9 区画分割法案進行中</li>
+<li>Chika Sunquist 氏率いる DRE がオンライン試験を試行中</li>
+</ul>
+
+<h3>2026年 Salesperson 州試験内容ウェイト</h3>
+
+<p>DRE は州試験の七領域のウェイト配分を公式に発表しています。以下の表では各領域の試験に占める割合と、Pat のコースで対応する章を特記しています：</p>
+
+<table>
+<tr><th>試験領域（英語）</th><th>試験領域（日本語）</th><th>配分</th><th>Pat コース対応章</th></tr>
+<tr><td>Practice of Real Estate &amp; Disclosures</td><td>不動産実務と情報開示（Disclosures）</td><td><strong>~25%</strong></td><td>第9–11章</td></tr>
+<tr><td>Laws of Agency &amp; Fiduciary Duties</td><td>代理法（Agency）と忠実義務（Fiduciary Duties）</td><td>~17%</td><td>第11章</td></tr>
+<tr><td>Property Ownership &amp; Land Use Controls</td><td>所有権（Property Ownership）と土地利用規制</td><td>~15%</td><td>第1–3、7–8章</td></tr>
+<tr><td>Property Valuation &amp; Financial Analysis</td><td>不動産評価（Valuation）と財務分析</td><td>~14%</td><td>第16、19章</td></tr>
+<tr><td>Contracts</td><td>契約（Contracts）</td><td>~12%</td><td>第12–13章</td></tr>
+<tr><td>Financing</td><td>金融（Financing）</td><td>~9%</td><td>第15章</td></tr>
+<tr><td>Transfer of Property</td><td>不動産譲渡（Transfer of Property）</td><td>~8%</td><td>第4–5、14章</td></tr>
+</table>
+
+<p>このウェイト表から読み取れるのは：<strong>実務操作と情報開示（25%）</strong>および<strong>代理法（17%）</strong>で全体の42%を占め、二大核心領域であること。残りの所有権、評価、契約、金融、譲渡の内容で全体の58%をカバーしています。Pat は本講で七領域すべての完全なプレビューを行っています——学習を進める中で、彼が重点的に解説する内容がまさに試験ウェイトと完全に対応していることに気づくでしょう。</p>
+
+<hr>
+</section>
+
+<section class="article-section">
+<h2 id="section-4">第四部：十五章逐一速覧</h2>
+
+<blockquote>以下は Pat が全十五章に対して行った逐一のプレビューです。彼がこれらの内容を説明する目的は、学生が学期開始時に「学期全体の内容に大まかな印象を持つ」ことです。彼は講義中、プラズマスクリーンとカメラに向かったスピーチの間を行き来しながら——まずスクリーンで章タイトルを表示し、それからカメラに向き直って解説します。私たちはこの全過程を完全な文字記録として整理しました。</blockquote>
+
+<hr>
+
+<h3>第一章：不動産序論（Introduction to Real Estate）</h3>
+
+<h4>一、カリフォルニア不動産の歴史的背景</h4>
+
+<p>Pat はまず、カリフォルニアがアメリカの一州となる以前、この土地が異なる政権——スペインとメキシコ——に相次いで属していたことを指摘します。そのため実際の不動産取引において、他州ではほとんど見られない歴史的土地権原（Land Title）文書に遭遇することがあります：</p>
+
+<ul>
+<li><strong>スペイン土地特許状（Spanish Land Grants）</strong></li>
+<li><strong>メキシコ土地特許状（Mexican Land Grants）</strong></li>
+<li><strong>アメリカ土地特許証（US Land Patents）</strong></li>
+</ul>
+
+<p>これらの用語を理解することは、カリフォルニアで不動産業務を行う上で極めて重要です。「歴史家になる必要はない」と Pat は言います、「でも、これらの単語に出会ったときに意味がわかる必要がある。」</p>
+
+<h4>二、不動産 vs. 動産——ブローカーにとって最も実用的な基本スキル</h4>
+
+<p>これは Pat が最も多くの紙幅を割いて解説した内容です。彼は不動産（Real Property）と動産（Personal Property）の区別こそが、すべての不動産ブローカーが身につけるべき最も基本的で最も実用的なスキルだと考えています。</p>
+
+<p>Pat が提示した場面はこうです：<strong>あなたはある住宅の売却依頼（Listing）を受けに行く。</strong> 売主と一緒に家中を一室ずつ見て回る中で、あなたは逐一確認しなければならない——何が残り、何が持ち去られるのか？</p>
+
+<p>彼は最もありふれた二つの物品を例に挙げます：</p>
+
+<p><strong>カーテン（Drapes）。</strong> カーテンは不動産かもしれないし、動産かもしれない。それが「物件に固定されている（Attached）」のか、「いつでも外せる」のかを見極めなければならない。一目でわかる問題ではない。</p>
+
+<p><strong>冷蔵庫（Refrigerator）。</strong> ビルトイン冷蔵庫（built-in）があれば、それは物件の一部であり、不動産に属する。独立型冷蔵庫もあり、それは動産に属し、売主が持ち去ることができる。しかし、あなたが質問せず、契約書にも明記されていなければ、買主と売主の間で紛争が生じうる——「冷蔵庫は物件価格に含まれていると思ってた！」「いいえ、ご自身で購入されるものだと思っていました。」</p>
+
+<p><strong>判断基準の核心は「固定方法（Method of Attachment）」です：</strong></p>
+<ul>
+<li>それはボルトで床や壁に固定されているか？</li>
+<li>セメントやグラウトで固着されているか？</li>
+<li>容易に取り外せるか？取り外すと物件構造を損傷するか？</li>
+</ul>
+
+<h4>三、住宅用不動産 vs. 商業用不動産——重要な区別</h4>
+
+<p>Pat はさらに踏み込んで指摘します：住宅用不動産と商業用不動産の区別を必ず理解しなければならない。住宅では、大量の物品（カーテン、ビルトイン家電、固定照明器具など）が不動産とみなされる可能性があります。しかし、あなたのクライアントがビデオレンタル店、アイスクリーム店、レストランであれば——それらの家具、棚、フライヤー、コンロ、ショーケースは、すべて動産です。</p>
+
+<p>なぜか？事業者が最初にそのスペースを賃借したとき、彼らは不動産所有者の許可を得てこれらを設置しました。賃貸借契約（Lease）が終了し、事業者が退去するとき、賃貸借契約はさらに、彼らに物件を原状復帰させることを要求するかもしれません——壁の穴を埋め、床を元の状態に戻すように。</p>
+
+<p><strong>試験対策としては、「固定方法」という判断基準が核心的な出題ポイントです。</strong> 実務においては、Pat のアドバイスはシンプルです：売却依頼の前に、売主と一緒に家中を一通り歩き、一品ずつ確認せよ。思い込みをするな——質問し、書き留めよ。</p>
+
+<hr>
+
+<h3>第二章と第三章：法定記載（Legal Descriptions）</h3>
+
+<p>Pat は単刀直入に、多くの人が真剣に考えたことのない問題を提起します：</p>
+
+<p>「あなたの家の住所は 2795 Wentworth Row、あるいは 123 Main Street——この住所はあなたに何を伝えているか？」</p>
+
+<p>答えは——<strong>郵便配達員が手紙をどこに届ければよいかしか教えてくれない。</strong> その住所は「物件の境界線を記述しない」。この土地がどれだけ広く、どれだけ奥行きがあり、具体的な範囲がどこからどこまでなのかを教えてくれないのです。「郵便配達員にとっては、2795 Wentworth Row で十分だ。しかし不動産取引にとっては——まったく足りない。」</p>
+
+<p>だからこそ、私たちは<strong>法定記載（Legal Description）</strong>——法的に有効な、不動産の範囲を精確に画定する方法——を必要とするのです。</p>
+
+<h4>三つの基本的な法定記載方式</h4>
+
+<p><strong>1. 区画・街区方式（Lot and Block、別名 Recorded Map 方式）</strong></p>
+
+<p>これが現代で最も一般的な方式であり、住宅地で広く使用されています。Pat の表現は非常にストレートです：「あなたは某住宅地の第25号区画を所有している。」県庁（County Recorder's Office）に記録された区画図（Plat Map）にはすでに各区画の境界線が描かれており、区画番号と図面番号を引用すれば十分です。</p>
+
+<p><strong>2. 境界・自然標識法（Metes and Bounds）</strong></p>
+
+<p>これはより古い方式です。Pat はこう描写します：「こういう言い回しを聞いたことがあるだろう——『あの古い樫の木から出発して、北に何フィート進み、それから東に何フィート曲がって……』」この方法は境界線のパスを逐次的に記述することで物件範囲を画定します。初期の土地測量で広く使われ、今日でも古い物件の権原書類に登場します。</p>
+
+<p><strong>3. 政府測量方式（Government Survey、矩形測量法 Rectangular Survey System）</strong></p>
+
+<p>アメリカ政府が構築した土地測量体系に基づく記述方式です。この体系は土地をタウンシップ（Township）とレンジ（Range）に分割し、グリッド状の参照システムを形成します。主経線（Principal Meridian）と基線（Base Line）を基準とし、タウンシップ（6マイル×6マイル＝36セクション）→セクション（Section、1平方マイル＝640エーカー）という階層構造です。</p>
+
+<h4>なぜブローカーは法定記載を理解しなければならないのか？</h4>
+
+<p>Pat の答えは：クライアントと一緒に権原報告書（Title Report）を精査するとき、地役権（Easements）、通行権（Rights of Way）などの問題に直面するからです。あなたはこれらの報告書を読解し、クライアントに説明できなければなりません。「クライアントは自分では調べない——彼らはあなたに頼ってこれらの情報を伝えてもらうのです。」</p>
+
+<p>📌 2026年試験の「所有権と土地利用規制」領域（全体の15%）は法定記載の出題ポイントを直接カバーしています。特に三つの記述方式間の区別、それぞれの適用場面は、選択問題での頻出ポイントです。</p>
+
+<hr>
+
+<h3>第四章と第五章：権原、譲渡と保有形態（Estates, Transfers &amp; Titles）</h3>
+
+<p>Pat はこのパートの冒頭で極めて重要な区別を行います：Estates、Transfers、Titles という三つの単語はしばしば混同されるが、それらの意味はまったく異なります。</p>
+
+<h4>第一部：Estates（権原類型）——あなたが「何を」所有しているか</h4>
+
+<p><strong>完全権原（Fee Estate、別名 Fee Simple または Fee Simple Absolute）</strong></p>
+
+<p>これが最も完全で最も一般的な権原形式です。あなたはただそこに住むだけでなく——売却し、抵当に入れ、遺言で子孫に残すことができます。「あなたが自宅に対して持っているのが Fee Estate です。」これが所有権の最高形式です。Pat の言い方を借りれば——観念的には、Fee Simple Absolute は「地球の中心から宇宙空間まで」すべてを所有する権利です。ただし現実には、各種の負担（Encumbrances）によって制約されています。</p>
+
+<p><strong>生涯権原（Life Estate）</strong></p>
+
+<p>Pat は古典的な場面を提示します：「あなたは、死後、あなたの息子が生涯にわたってその物件に住めるようにすることを決めた。彼はその中に住み、生活し、すべてを使用し享受できる——しかしこれは期限付きだ。彼が亡くなった後、この物件は他の人に移る。」この「彼の生存期間中」に彼が持つものが Life Estate です。その特徴は明確な期限性——人の寿命を限度とすること——にあります。Life Estate の終了後に権利を受け取る人を残余権者（Remainderman）と呼びます。</p>
+
+<p><strong>賃借権原（Leasehold Estate）</strong></p>
+
+<p>Pat は、多くの人が本能的に「リース」といえば月極あるいは年極のアパート契約を思い浮かべるが——実際には極めて長期間の商業リースが存在することを指摘します。「カリフォルニア州政府、Home Depot、Lowe's のような組織——彼らが物件を賃借する契約は25年にも及ぶことがある。この25年間、その物件は彼らの所有ではないが、彼らには排他的な使用権がある。」</p>
+
+<p>📌 ここで特に注意が必要です：Estates の三類型（Fee / Life / Leasehold）について、試験ではしばしば場面問題として出題されます——「某氏が有する権原は以下のうちどれか……」——そしてこの三つの概念を正確に区別することが正答の前提となります。</p>
+
+<h4>第二部：Transfers（譲渡方式）——権原がいかにして一人から別の人へ移るか</h4>
+
+<p>Pat はここで非常に巧みな比喩を用います——<strong>自動車の名義変更。</strong></p>
+
+<p>カリフォルニアでは、自動車の所有権証はあの「ピンクの紙」（Pink Slip）です。もしあなたがローンを完済し、完全にその車を所有しているなら、売却の際：あなたは売渡証（Bill of Sale）に署名し、買主があなたにお金を渡し、あなたはピンクの紙に署名して買主に手渡し、買主はピンクの紙を持って DMV（車両管理局）で名義変更手続きを行う——所有権があなたから買主へ移ります。これが自動車の名義変更の流れです。</p>
+
+<p>しかし不動産分野では、譲渡方式はまったく異なります。最もよく使われるのは：</p>
+
+<p><strong>譲渡証書（Grant Deed）</strong></p>
+
+<p>これは売買で最もよく使われる証書（Deed）です。"Grant" という単語の字義は「授与する」です。売主は Grant Deed を通じて権原を正式に買主に「授与」します。これには売主による権原に関する重要な保証が含まれています——売主は、それ以前に当該不動産を他者に譲渡していないことを約束します。Grant Deed には二つの黙示的保証（Implied Warranties）が含まれます：(1) 譲渡人がそれ以前に当該不動産を他者に譲渡していないこと、(2) 譲渡人の知る限り、当該不動産に未開示の負担がないこと。</p>
+
+<p><strong>権利放棄証書（Quitclaim Deed）</strong></p>
+
+<p>これと Grant Deed の間には本質的な違いがあります。Pat の説明は：「Quitclaim Deed に署名する人は何かを&#x27;授与&#x27;しているのではない——その人は『私がこの物件に対してどのような権利を持っているにせよ（もしあれば）、私はすべて放棄する』と言っているのです。」</p>
+
+<p>Pat は最も一般的な適用場面を挙げます：<strong>離婚（Divorce）。</strong></p>
+
+<p>カリフォルニアは「夫婦共有財産州（Community Property State）」です。もし婚姻関係の最終判決が下りる前に一方が不動産を購入した場合、その人はもう一方（すなわち法律上の配偶者）に Quitclaim Deed に署名してもらい、「私はこの物件に対していかなる権利も持たない」と宣言してもらう必要があります。これはもう一方に実際に何らかの権利があるからではなく——法律的には権原の明確性（Clear Title）を確保する必要があるからです。</p>
+
+<p><strong>その他の証書類型：</strong></p>
+<ul>
+<li>執行官証書（Sheriff's Deed）：法執行機関による競売を通じた譲渡</li>
+<li>受託者証書（Trustee's Deed）：担保権実行手続（Foreclosure）における受託者（Trustee）を通じた譲渡</li>
+<li>保証証書（Warranty Deed）：カリフォルニアではほとんど使われないが、他州では一般的。最も完全な保証を提供する。</li>
+</ul>
+
+<p>💡 Pat の「ピンクの紙」を使った比喩は非常に巧妙です。📌 カリフォルニア DMV は段階的に電子権原（Electronic Title）を導入しており、紙のピンクの紙は廃止されつつあります。しかし Pat の比喩が伝える論理——権原移転には正式な法的文書が必要であり、第三者機関による登記が必要であること——は不動産分野ではまったく変わりません。むしろ、この論理こそがピンクの紙そのものよりも記憶に値します。</p>
+
+<h4>第三部：Titles（保有形態）——あなたの名前が証書にどのような形式で記載されているか</h4>
+
+<p>Pat は学生に一つの問題を考えさせます：もしあなたが配偶者と一緒に家を買ったら、証書には「Pat Hogerty と Mary Hogerty」と記載される——この二つの名前の間の関係は？法的に、あなたたちの物件に対する権利はどのように画定されるのか？</p>
+
+<ul>
+<li><strong>共同保有（Joint Tenancy）：</strong> 二人以上の名前が証書に記載され、「生存者権（Right of Survivorship）」を持つ。一方が死亡した場合、その持分は自動的に生存しているもう一方に帰属する。遺言検認（Probate）手続きは不要。</li>
+</ul>
+
+<ul>
+<li><strong>夫婦共有財産（Community Property）：</strong> カリフォルニア州の婚姻財産制度のデフォルト。婚姻期間中に取得した財産は原則として夫婦の共有に属する。離婚時に分割される。</li>
+</ul>
+
+<ul>
+<li><strong>独立財産（Separate Property）：</strong> 結婚前にすでに所有していた財産、または婚姻期間中に相続、贈与によって取得した財産。これは自動的には夫婦共有に属さない。</li>
+</ul>
+
+<ul>
+<li><strong>共有持分（Tenants in Common）：</strong> 複数の名前が証書に記載されるが、各自が独立した、単独で譲渡可能な持分を有する。一方が死亡した場合、その持分は遺言検認（Probate）に入り、自動的には他の共有者に帰属しない。</li>
+</ul>
+
+<p>📌 AB 2170（2025年発効）は機関投資家による担保権実行物件（REO）購入後の権原保有方式に制約を課しました——これは個人の住宅購入者に直接影響するものではありませんが、カリフォルニア州の権原制度に対する継続的な法的関心を示しています。</p>
+
+<hr>
+
+<h3>第六章：貸主と借主（Landlord &amp; Tenant）</h3>
+
+<h4>なぜ二章飛ばして先にこれを講じるのか？</h4>
+
+<p>Pat は興味深い説明をしました：ほとんどの人にとって不動産との最初の接触は、購入ではなく——賃貸です。あなたは複数のアパートを見学し、敷金（Security Deposit）を納め、賃貸借契約書（Lease Agreement）に署名し、入居時検査（Move-in Inspection）を行いました。あなたは知っています——少なくとも理屈では——勝手にアパートの壁をピンク色に塗ってはいけないことを。</p>
+
+<p>だから Pat は学生が最もよく知っている場面から入ることにしたのです。「賃貸はあなたの不動産世界への第一歩です。」</p>
+
+<p>しかし彼はすぐに強調します：貸主と借主の関係は決して住宅に限りません。この領域は同じく以下をカバーします：</p>
+<ul>
+<li>ショッピングモール（Shopping Malls）</li>
+<li>オフィスビル（Office Buildings）</li>
+<li>工業倉庫（Industrial Warehouses）</li>
+<li>各種商業用不動産（Commercial Properties）</li>
+</ul>
+
+<p>これらすべてが賃貸借関係を含みます。そして商業賃貸借（Commercial Lease）では、条項は往々にして住宅賃貸借よりもはるかに複雑です——賃貸期間は十数年に及び、場合によっては25年に達し、維持管理責任の分担も非常に詳細です。</p>
+
+<p>📌 カリフォルニア州は全米で最も借主保護法規が厳格な州です。以下は2026年にブローカーが必ず理解しておくべき核心的法規です：</p>
+<ul>
+<li><strong>AB 1482（2019年通過）：</strong> 全州規模の家賃統制（年間家賃上昇上限 5% + CPI、最大10%まで）+ 正当理由立ち退き（Just Cause Eviction——家主は随意に賃貸借を終了できず、法律上の認められた理由が必要）。</li>
+<li><strong>2024年新法案：</strong> 立ち退き条件をさらに制限。特に借主が一時的経済困難に直面している場合。</li>
+<li><strong>地域 Rent Control 条例：</strong> 一部の都市（San Francisco、Los Angeles、Oakland 等）では州法よりも厳格な家賃統制規定がある。ブローカーは自分のサービスエリアの地域法規を把握しなければならない。</li>
+<li><strong>敷金（Security Deposit）返還：</strong> 退去後21日以内に借主へ返還しなければならない。</li>
+</ul>
+
+<hr>
+
+<h3>第七章と第八章：権原負担（Encumbrances）</h3>
+
+<h4>Encumbrance（権原負担）とは何か？</h4>
+
+<p>Pat が出した定義は極めて直感的です：<strong>あなたとあなたの不動産との間に立ちはだかり、あなたの完全な使用を阻止または制限する何か。</strong></p>
+
+<p>彼はこう対比します：</p>
+
+<p><strong>理想状態：Fee Simple Absolute（絶対的完全権原）</strong></p>
+<p>「概念上、あなたはこの土地を地球の中心から宇宙空間まですべて所有している。誰もあなたに『ノー』と言う権利はない。」これが所有権の究極形式——もっとも、現実にはほとんど存在しません。</p>
+
+<p><strong>現実状態：各種の Encumbrances</strong></p>
+<p>時間の経過と社会の発展に伴い、各種の法律、契約、実際の状況があなたの所有権に制限を加えていきます。これらの Encumbrances は二大類型に分けられます。</p>
+
+<h4>第一類：物理的負担（Physical Encumbrances）</h4>
+
+<p><strong>公共事業地役権（Utility Easements）</strong></p>
+
+<p>Pat は学生にシンプルな思考実験をするよう求めます：車で任意の住宅地を通り抜け、道路脇を注意深く観察せよ。たくさんの緑色の小さな箱が見えるはず——あるものは「変圧器（Transformer）」と書かれ、あるものはテレビケーブル接続箱、あるものは電話接続箱。これらは適当に置かれた装飾品ではありません。</p>
+
+<p>それらが存在する理由は：電力会社、ケーブルテレビ会社、電話会社があなたにサービスを提供するとき、あなたの所有権にはそれに応じて彼らのために一定のスペース——機器を設置し、線路を敷設するためのスペース——が留保されているからです。このスペースこそが Easement です。</p>
+
+<p>「『この変圧器が私のバラの邪魔だから、掘り出して別の場所に移動させよう』とは言えません。ダメです。これは法律上確認されているもので——あなたの不動産権原の一部であり、あなたの権原報告書上の一部でもあるのです。」</p>
+
+<p><strong>通行権（Right of Way）</strong></p>
+
+<p>Pat は別の場面を出します：「あなたは比較的人里離れた場所に住んでいるかもしれない。おじいさんが土地を持っていて、その土地の後ろに Joe の家がある。Joe の土地は完全に囲まれている（landlocked）——彼には自分の家に入る他の道がない。だから Joe は毎日おじいさんの私道を通って出入りする。これが Right of Way です。」</p>
+
+<p>このような状況は都市計画が整った新興住宅地ではあまり見られませんが、遠郊地区や古い区画ではなお存在します。Right of Way もまた権原報告書上の正式項目です。</p>
+
+<h4>第二類：金銭的負担（Monetary Encumbrances）</h4>
+
+<p><strong>信託証書（Deed of Trust）——カリフォルニアの主流の担保方式</strong></p>
+
+<p>Pat は自動車ローンを使って非常に適切な比喩を行います：あなたは車を買うときに銀行から融資を受ける。銀行はあなたがローンを完済するまであなたの「ピンクの紙」を保管している。もしあなたが期日通りに返済しなければ、銀行はレッカー車を呼んであなたの車を引き上げる（Repo：Repossession）。不動産分野において、この「ピンクの紙を保管する」仕組みが <strong>Deed of Trust</strong> です。</p>
+
+<p>Deed of Trust は三つの役割を導入します：</p>
+<ol>
+<li><strong>信託設定者（Trustor）/ 借主（Borrower）：</strong> あなた、住宅購入者。</li>
+<li><strong>受益者（Beneficiary）/ 貸主（Lender）：</strong> 銀行または貸付機関。</li>
+<li><strong>受託者（Trustee）：</strong> 中立の第三者。「裸の権原（bare legal title）」を保有し、借主が正常に返済している間はいかなる権力も行使しない。借主が債務不履行（Default）に陥ると、貸主は Trustee に担保権実行手続（Foreclosure）の開始を要求でき、受託者競売（Trustee's Sale）を通じて不動産を公開競売に付し、競売収入でローンを返済する。</li>
+</ol>
+
+<p>📌 カリフォルニア州は依然として非司法担保権実行（Non-Judicial Foreclosure）州——すなわち担保権実行は裁判所を経由する必要がなく（Judicial Foreclosure）、Trustee's Sale を通じて完了する。この区別は試験の核心的出題ポイントの一つです。「Judicial vs. Non-Judicial Foreclosure」は概念として選択問題によく登場します。</p>
+
+<p><strong>工匠留置権（Mechanic's Lien）</strong></p>
+
+<p>これも Pat がかなりの紙幅を割いて説明した概念です。場面はこうです：あなたは人を雇って屋根を修理した。工事が終わり、あなたは職人と揉めた——「この仕事は満足できない、金は払わない。」</p>
+
+<p>ではこの屋根職人（法律上彼は "Mechanic" と呼ばれる——注意：自動車整備士だけを指すのではなく、労働力や材料を提供して不動産を改良するすべての人を指す——配管工、電気技師、大工、建材供給業者、さらには Home Depot のような店舗も含む）は何をする権利があるのか？</p>
+
+<p>彼の権利は：当該不動産に対して <strong>Mechanic's Lien</strong> を登記することです。</p>
+
+<p>この留置権は極めて直接的な結果を生みます——<strong>それは権原を「曇らせる」（Cloud the Title）。</strong> どういう意味か？Mechanic's Lien が権原に付着している場合、いかなる貸付機関も留置権が解除されるまでは新たな融資を承認しません。つまり、あなたは借り換え（Refinance）ができず、基本的にこの不動産を売却することもできなくなります。結果として——あなたは「強制的に」この金を支払わされるのです。</p>
+
+<p>📌 カリフォルニア州法は Mechanic's Lien の登記時効について厳格な規定を設けており、これは試験に出る可能性のある細部の出題ポイントです。</p>
+
+<hr>
+
+<h3>第九章と第十章：ライセンス、教育と協会（Licensing, Education &amp; Associations）</h3>
+
+<p>「このパートは初日の学生が最も関心を持つ問題——ライセンスを取得するには一体何をすればいいのか？」Pat はここで話題を三つのサブテーマに分けました：ライセンス（Licensing）、教育（Education）、協会（Associations）。</p>
+
+<h4>⚠️ ライセンス取得パス：2009年 vs. 2026年（本教程最大の更新事項）</h4>
+
+<p><strong>💡 Pat が2009年に説明した旧制度：</strong></p>
+
+<p>Pat の当時の説明は：この RE 300 コースを修了すれば、州政府試験の受験を申請できます。試験に合格すれば、あなたは「18ヶ月の仮ライセンス（Probationary License）」を取得します。この18ヶ月以内に、あなたはさらに二科目——Real Estate Practice（必修）＋選択科目一つ——を修了しなければなりません。修了後、あなたのライセンスは有効期間4年の正式ライセンスに切り替わります。もし18ヶ月以内に達成できなければ——「あなたのライセンスは蒸発します。一からやり直しです。」</p>
+
+<p><strong>📌 2026年現行制度（DRE 公式サイトに基づく）：</strong></p>
+
+<p>2026年の制度は Pat が当時説明した旧制度と<strong>本質的な違い</strong>があります。現行要件は以下の通りです：</p>
+
+<p><strong>第一段階：三科目45時間コースを修了する（計135時間）。</strong></p>
+
+<p>この三科目は試験申請前にすべて修了していなければなりません。もはや Pat の時代のように「まず試験に合格し、18ヶ月の仮ライセンスを取ってから補修する」ことはできません。三科目は：</p>
+
+<ol>
+<li><strong>Real Estate Principles（不動産原理）</strong>——必修、45時間</li>
+<li><strong>Real Estate Practice（不動産実務）</strong>——必修、45時間</li>
+<li><strong>選択科目一つ</strong>——45時間。以下の8科目から選択：</li>
+</ol>
+<ul>
+<li>Real Estate Finance（不動産金融）</li>
+<li>Real Estate Economics（不動産経済学）</li>
+<li>Real Estate Appraisal（不動産評価）</li>
+<li>Real Estate Law（不動産法）</li>
+<li>Escrow（エスクロー）</li>
+<li>Title（権原）</li>
+<li>Property Management（不動産管理）</li>
+<li>Computer Applications in Real Estate（不動産コンピュータ応用）</li>
+</ul>
+
+<p>⚠️ <strong>2024年1月1日からの追加要件：</strong> Real Estate Practice コースには二つの新モジュールが必須：</p>
+<ul>
+<li><strong>Implicit Bias（暗黙の偏見）研修</strong></li>
+<li><strong>Fair Housing（公正住宅）研修</strong>——かつ公正住宅部分にはインタラクティブなロールプレイ（Role Play）が必須：受講者は消費者として、また不動産専門家として、模擬場面に参加しなければならない。単に「ビデオを見る」だけでは不可——必ず「実行」しなければならない。</li>
+</ul>
+
+<p><strong>第二段階：申請し州試験を受験する。</strong></p>
+<ul>
+<li>150問選択式</li>
+<li>70%（105/150）が合格ライン</li>
+<li>完全電子化コンピュータ試験</li>
+<li>試験費用：$60</li>
+<li>五つの指定試験会場のいずれかで受験：Sacramento、Oakland、Fresno、La Palma（オレンジ郡）、San Diego</li>
+<li>同時に Live Scan 指紋採取を完了し、FBI およびカリフォルニア州司法省（DOJ）の身元調査に使用</li>
+</ul>
+
+<p><strong>第三段階：ライセンス保有ブローカー（Broker）を見つけて所属する。</strong></p>
+
+<p>いかなる Salesperson も、一人の Broker の管理・監督下で働かなければなりません。Pat の当時の比喩は今日でも極めて正確です：</p>
+
+<blockquote>「これは飛行学校のようなものだ——私が座って飛行機の飛行原理を教えることができる。学期が終わったら私が『はい、鍵をあげるから、飛んで行って』と言う。あなたは『ちょっと待って、それは絶対におかしい』と言うだろう。あなたには学術部分——飛行機がなぜ飛べるのか、Deed of Trust がどう機能するのかを理解すること——が必要だが、同時に副操縦席に座ってくれるコーチも必要だ。初めての売却依頼に出かけるときに『ちょっと待って、全体の流れを全部私が一緒にやってみせよう』と言ってくれる人が。」</blockquote>
+
+<p>言い換えれば：試験合格 ≠ 独立開業可能。あなたにはライセンス取得後も実務を指導し続けてくれる Broker が必要なのです。</p>
+
+<p><strong>第四段階：ライセンス更新。</strong></p>
+
+<p>ライセンス有効期間は4年。毎回の更新には45時間の DRE 承認継続教育（Continuing Education：CE）の修了が必要です。この数字は Pat が当時説明したものと完全に一致し、今日まで変わりません。Pat のアドバイスは今でも実用的です——「更新期限直前に慌ててまったく興味のないコースを選ぶな。4年間かけて分散して学び、本当に役立つテーマを選べ。」地域の不動産協会（Sacramento Association of Realtors 等）は通常、大量のリーズナブルな価格の CE コースを提供しています。</p>
+
+<h4>特別免除</h4>
+
+<p><strong>カリフォルニア州弁護士（California State Bar 会員）：</strong> 法定免除により、すべてのライセンス前教育コースが免除され、直接試験を受験するのみ。</p>
+
+<p><strong>Salesperson → Broker への昇格条件：</strong></p>
+<ul>
+<li>大学学位なし：最低2年のフルタイム販売経験（ライセンス保有期間を基準）</li>
+<li>準学士号（2年制大学卒）：最低1年のフルタイム販売経験</li>
+<li>学士号（専攻不問）：経験要件自動充足</li>
+</ul>
+
+<h4>教育と協会</h4>
+
+<p><strong>二種類の教育：</strong></p>
+<ul>
+<li><strong>資格教育（Qualifying Education）：</strong> あなたが今履修している Principles、Practice 等のコース。</li>
+<li><strong>継続教育（Continuing Education：CE）：</strong> 4年ごとのライセンス更新時に45時間の DRE 承認コースを修了する必要がある。</li>
+</ul>
+
+<p><strong>三層協会体系：</strong></p>
+<ul>
+<li><strong>SAR（Sacramento Association of Realtors）</strong>：地域レベル、約7,000+会員、MLS システム、オープンハウスツアー、教育プログラムを提供。</li>
+<li><strong>CAR（California Association of Realtors）</strong>：全州レベル。</li>
+<li><strong>NAR（National Association of Realtors）</strong>：全国レベル、2025年末時点で約155万会員。</li>
+</ul>
+
+<p>⚠️ <strong>Realtor</strong> は NAR の登録商標です——<strong>すべてのエージェントが Realtor というわけではありません（Not every agent is a Realtor）。</strong> ライセンスを取得すればエージェント（Agent）です。NAR に加入し年会費を支払って初めて Realtor を名乗れます。倫理規定（Code of Ethics）違反は同僚審査（Peer Review）に付されます。</p>
+
+<p>📌 協会の機能は単なる交流や教育にとどまりません。Pat はこう言います：「議会で誰かが住宅ローン利子控除（Mortgage Interest Deduction）を廃止しようとするたびに、誰がワシントンで彼らと戦っていると思う？建設業協会と不動産ブローカー協会だ。」この状況は2026年も変わりません。</p>
+
+<p>📌 2024年の重大な出来事が協会運営の重要な側面を変えました：<strong>NAR が全国的な反トラスト集団訴訟（Sitzer/Burnett 事件）で和解。</strong> この和解は買主側代理人報酬（Buyer Agent Commission）の伝統的構造を変えました——この変化については第十一章で詳細に議論します。この変化は Pat が講義した2009年にはまったく存在しなかったものです。</p>
+
+<hr>
+
+<h3>第十一章：代理関係と責任（Agency &amp; Responsibilities）</h3>
+
+<p>Pat はこのパートで極めて明快な言葉で代理関係（Agency Relationship）を定義しました。彼はこう言います：</p>
+
+<p>「あなたが一人の不動産ブローカーとして、ある不動産の売却依頼（Listing）を受けに行き、その Listing Agreement に署名した瞬間——あなたと売主との間には<strong>法律上の代理関係（Agency Relationship）</strong>が成立する。これは単なる『家を売るのを手伝う』という以上のものだ。あなたは約束している：売主の利益がすべてに優先する——買主よりも、あなた自身よりも。」</p>
+
+<p>これこそが <strong>忠実義務（Fiduciary Duty）</strong> の核心——代理人（Agent）は委託者（Principal）に対して最高水準の誠実さと忠誠を維持しなければなりません。</p>
+
+<p>Pat は続けて三つの基本的な代理関係を説明します：</p>
+<ul>
+<li><strong>売主代理（Seller's Agency）：</strong> あなたは売主のためだけに働き、あなたの義務は売主の利益を保護すること。</li>
+<li><strong>買主代理（Buyer's Agency）：</strong> あなたは買主のためだけに働き、あなたの義務は買主の利益を保護すること。</li>
+<li><strong>双方代理（Dual Agency）：</strong> あなたは同時に売主と買主の双方を代表する。これは双方の利益を保護する必要があることを意味し、それに応じて、双方に対して十分な情報開示（Disclosure）を行わなければならない。</li>
+</ul>
+
+<p>Fiduciary Duty の六つの責任（頭文字 COLD-AC で覚える）：</p>
+<ul>
+<li><strong>C</strong>are（合理的注意・勤勉）</li>
+<li><strong>O</strong>bedience（服従——委託者の合法的指示に従う）</li>
+<li><strong>L</strong>oyalty（忠誠）</li>
+<li><strong>D</strong>isclosure（開示——すべての重要事実を）</li>
+<li><strong>A</strong>ccounting（会計——すべての資金を正確に報告）</li>
+<li><strong>C</strong>onfidentiality（守秘義務）</li>
+</ul>
+
+<p>📌 <strong>2024年の重大な変化——これはおそらく本教程全体の中で最も重要な業界アップデートです：</strong></p>
+
+<p>2024年、NAR は Sitzer/Burnett 等の全国的反トラスト集団訴訟で和解しました。この和解は買主側代理人報酬の伝統的運営方式を直接的に変えました。具体的な変化は以下を含みます：</p>
+
+<ol>
+<li><strong>買主側ブローカーは、買主へのサービス提供を開始する前に、買主と書面による買主代理契約（Buyer-Broker Agreement）を締結しなければならない。</strong> この契約では買主がブローカーに支払う報酬額を明確に約定しなければなりません。従来は、買主側ブローカーは通常、サービス開始時に買主と報酬契約を結ぶ必要はなく——報酬はクロージング（Closing）時に売主から Listing Broker を通じて買主側 Broker に支払われていました。</li>
+<li><strong>MLS（Multiple Listing Service、多重リスティングサービス）システムは、売主が買主側ブローカーに支払う意思のある報酬額を表示しなくなった。</strong> 従来は、MLS 上の各物件情報には一つのフィールド——"Cooperating Broker Compensation"——が含まれ、売主が買主側ブローカーのためにいくら支払う意思があるかを明示していました。この慣行は和解後に終了しました。</li>
+</ol>
+
+<p>Pat が講義した2009年には、報酬構造の慣行はこれらの制約をまったく受けていませんでした。今日、新しく業界に入るブローカーは誰でも、これらのすでに起こった変化を理解しておく必要があります。試験において、代理法（Agency Law）と Fiduciary Duty に関連する問題は全体の17%を占め、全領域中で二番目に高いウェイトです。</p>
+
+<hr>
+
+<h3>第十二章と第十三章：契約（Contracts）</h3>
+
+<h4>「不動産業界に入る＝契約作成業界に入る」</h4>
+
+<p>Pat はここで多くの人にとって意外かもしれない断定的な見解を示しました：</p>
+
+<blockquote>「あなたが気づいていないかもしれないのは：不動産という業界に入るとき、あなたは同時に契約作成業界に入っているのです。不動産分野では、すべてのことが書面で記録されなければなりません。」</blockquote>
+
+<p>彼は続けてブローカーが実際の仕事で遭遇する様々な契約を列挙しました：</p>
+
+<p><strong>1. Broker との雇用契約。</strong> これがあなたのキャリアで最初の契約です。あなたがある Broker のために働くことを決めた後、あなたたちは法的文書に署名します。その中には：あなたの行動規範、あなたの当番スケジュール（Floor Time）、あなたの物件管理責任、報酬の分配方法、各費用（広告費等）の負担者。これらすべての詳細は白黒はっきりと書かれていなければなりません。</p>
+
+<p><strong>2. 売却依頼契約（Listing Agreement）。</strong> あなたが不動産の売却依頼を受けに行くとき、あなたが記入する書類は法的拘束力を持つ契約です。その中には：依頼価格、依頼期間、物件とともに売却される物品（洗濯機は残す？乾燥機は？）、開示すべき物件状態（屋根に漏水はあるか？シロアリ問題は？）。Pat の経験則は：Broker の指導の下、Listing Agreement 一つだけで4〜8時間を費やすこともある。「なぜなら、そこに含まれる法条項があまりに多いからです。」</p>
+
+<p><strong>3. 買付申込書（Purchase Offer / Residential Purchase Agreement：RPA）。</strong> 買主が物件を気に入り、あなたに書面によるオファー（Offer）を提出——その中にはオファー価格、クロージング時期、付帯条件（Contingencies：ローン承認、住宅検査満足等）が明記される。</p>
+
+<p><strong>4. 賃貸借契約書（Lease / Rental Agreement）。</strong></p>
+
+<h4>契約の五つの基本要素</h4>
+
+<p>Pat は有効な契約（Valid Contract）を構成するために必須の五つの基本要素を特に講義しました。これらの要素は不動産試験における核心的出題ポイントです（契約領域は全体の12%を占める）：</p>
+
+<p><strong>1. 当事者能力（Capacity）</strong>——Pat はここで彼特有のブラックユーモアを使ってこの要素の重要性を示しました。</p>
+
+<p>「もし誰かがあなたのオフィスに入ってきて Listing Agreement に署名しようとしていて、その人が18歳に見えない——その人は署名できるのか？」</p>
+
+<p>「もしあなたたち夫婦の名前が権原に載っている——でもあなたは奥さんが刑務所にいると言う？私が直接刑務所に行って『すみません、この Listing Agreement に署名してください』と言えるか？いいえ——司法システムを通じて確認しなければならない。」</p>
+
+<p>「最も極端なケース：あなたは交渉のテーブルに座っている。本来は権原に二人の名前が載っているはず——でもそのうち一人がもういない。出張じゃない——亡くなっている。しかも権原は一度も正しく再登記されたことがない。あなたはその人を土の中から掘り出して署名させるわけにはいかないだろう？あなたは契約の法的枠組みの中でこの状況をどう処理すべきかを知る必要がある。」</p>
+
+<p><strong>2. 相互合意（Mutual Consent）</strong>——双方が自発的に、明確に契約の条項に同意しなければならない。一方が強制されて署名した契約は取消可能（Voidable）である。</p>
+
+<p><strong>3. 合法性（Legality / Lawful Objective）</strong>——契約の内容は合法でなければならない。あなたは「自分が所有していない不動産を売却する」契約を結ぶことはできない。</p>
+
+<p><strong>4. 約因（Consideration）</strong>——これは法律用語だが、Pat の訳はシンプル：「契約には『何らかの価値あるもの』が交換されていなければならない」。それは金銭かもしれないし、約束手形（Promissory Note）かもしれないし、ある種の約束——例えば「あなたが何かをするという約束」あるいは「あなたが何かをしないという約束」——かもしれない。約因のない契約は原則として無効である。</p>
+
+<p><strong>5. 適切な書面性（Proper Writing）</strong>——不動産分野では、口頭の合意は有効な不動産契約を構成しない（これは詐欺防止法 Statute of Frauds の核心的規定である）。書面形式を使用しなければならない。</p>
+
+<p><strong>Pat の契約に関する最後の忠告（精神能力が不十分な当事者について）：</strong></p>
+
+<p>「ある人が契約に署名し、すべて正常に見えた——そして突然止まって言う：『さっき火星人が窓の外を飛んでいくのを見なかった？』……その人が私のいとこの Leonard でない限り——あなたはこう尋ねる必要があるかもしれない：『大丈夫ですか？』なぜなら、ある人が法的文書に署名する精神的能力（Mental Capacity）を持っていなければ、この契約は法律上取消可能（Voidable）だからです。」</p>
+
+<p>📌 今日の契約実務で知っておくべきいくつかのポイント：</p>
+<ul>
+<li>CAR（カリフォルニア不動産ブローカー協会）は定期的に <strong>Residential Purchase Agreement（RPA）</strong> 等の標準書式を更新している。ブローカーは必ず最新バージョンを使用しなければならない。</li>
+<li><strong>電子署名（DocuSign、Adobe Sign 等）</strong> はカリフォルニア州の不動産取引において完全に合法かつ有効である。</li>
+<li>しかし契約の五大要素（Capacity / Mutual Consent / Legality / Consideration / Proper Writing）は法律上何の変化もない——Pat の講義内容は2026年においても完全に通用する。</li>
+</ul>
+
+<hr>
+
+<h3>第十四章：エスクローと権原保険（Escrow &amp; Title Insurance）</h3>
+
+<h4>エスクロー（Escrow）——カリフォルニア独自の制度</h4>
+
+<p>Pat は一つの戒めの物語でこの話題を導き出します：</p>
+
+<p>「あなたは週末に Open House を見に行く。なかなかよさそうな家を見つける。見知らぬ人が近づいてきて言う：『この家は普段40万ドルだけど、今日だけは20万ドル——現金小切手をくれれば、この家はあなたのものだ。』あなたは彼に小切手を渡し、そしてその人は——消えた。こういうことは実際に起きたことがある。しかも一度ではない。」</p>
+
+<p>これこそが私たちが Escrow を必要とする理由です。</p>
+
+<p><strong>カリフォルニア州は Escrow Officer を専属的に使用する。</strong></p>
+
+<p>カリフォルニア州の不動産取引は弁護士を通じて決済（Closing）されるのではありません。他の州——例えばニューヨーク——の慣行は、売買双方が弁護士事務所に行ってクロージングと署名を行うものです。しかしカリフォルニア州には独自の制度があります：あなたは署名済みの Purchase Offer の写し、買主が支払った手付金（Earnest Money Deposit）の小切手を Escrow 会社に預けます。次に、Escrow Officer の責務は極めて明確で、かつ極めてシンプルです：</p>
+
+<p><strong>契約に規定されたすべての条件が100%満たされるまで、一銭も放出せず、いかなる権原も移転しない。</strong></p>
+
+<p>これは何を意味するのか？Escrow 進行中、以下のすべての項目が契約要件に従って逐一完了しなければなりません：</p>
+<ul>
+<li>シロアリ検査（Termite Inspection）✓</li>
+<li>不動産評価（Appraisal）✓</li>
+<li>買主ローン着金 ✓</li>
+<li>契約に要求された物件瑕疵修復 ✓</li>
+<li>売買双方が共同で書面指示に署名して条件を変更しない限り、すべては厳格に原契約通りに執行される</li>
+</ul>
+
+<p>すべての条件が満たされて初めて、Escrow は「閉鎖（Close）」される——代金を売主に支払い、権原を買主に移転するのです。</p>
+
+<p>📌 カリフォルニア Escrow システムの独自性は州試験における重点出題ポイントです。「カリフォルニア州は Escrow を使用し、他の一部の州は弁護士によるクロージングを使用する」という区別は選択問題によく登場します。</p>
+
+<h4>権原保険（Title Insurance）——根本的な問いに答えるもの</h4>
+
+<p>「あなたはあれだけのお金を出して家を買った——あなたが最も確定させなければならない一つのことは何か？答えは：<strong>この人は本当にこの不動産を所有しているのか？</strong>」</p>
+
+<p>Title 会社の作業フロー：</p>
+<ol>
+<li><strong>権原検索（Title Search）</strong> を開始する。</li>
+<li>権原の歴史的連鎖（Chain of Title）を審査する：現在の所有者はいつ、どのような方式で権原を取得したか？</li>
+<li>未解除の Mechanic's Lien、裁判所判決（Judgments）、税務留置権（Tax Liens）、または権原の円滑な移転を妨げる可能性のあるその他の負担が存在しないか検査する。</li>
+<li><strong>予備的権原報告書（Preliminary Report）</strong> を作成する。</li>
+</ol>
+
+<p>買主は最終的な購入決定の前に、この Preliminary Report を注意深く精査しなければなりません。Pat の警告は率直そのものです：「家を買った後で、IRS（内国歳入庁）の留置権を背負っていることに気づきたくはない——あるいは前の所有者がまだ誰かにお金を借りていて、今度はあなたが返済する番になっていることに気づきたくはないでしょう。」</p>
+
+<p>権原が「クリーン（Clean）」と確認されれば、Title 会社は Title Insurance Policy（権原保険証券）を発行する——権原が報告書記載の通りであることを保証します。</p>
+
+<p>📌 <strong>2026年新リスク——売主なりすまし詐欺（Seller Impersonation Fraud）：</strong> DRE は2026年4月に特別な安全公告を発表し、日増しに猖獗を極める新種の詐欺——詐欺師が実際の不動産ブローカーの身分とライセンス情報を盗用し、ブローカーになりすまして無防備な買主と架空取引を行う——に対して警告しました。Title 会社はこのプロセスにおいてますます重要な防御的役割を果たしています——取引各当事者の身元を厳格に検証することでこの種の詐欺を防ぐのです。</p>
+
+<hr>
+
+<h3>第十五章：不動産金融（Real Estate Finance）</h3>
+
+<p>Pat はこのパートでまず、彼が身をもって経験した2007〜2008年のアメリカ住宅市場危機を用いて金融の力を説明します。</p>
+
+<h4>💡 Pat の歴史的事例：サブプライム危機前後の市場対比</h4>
+
+<p>「二、三年前（2006〜2007年頃を指す）、あなたが新聞を開くと、週末に新築住宅地のモデルハウスの前でテントを張って行列している人々が目に入った。家の中を見るために並んでいるんじゃない——抽選箱に名前を入れるために並んでいるんだ。自分が当選して家を一軒買えることを願って！」</p>
+
+<p>なぜこんなことが起きたのか？それは当時金利が極めて低かったから——住宅購入者は約4%の金利で30年固定金利住宅ローンを組むことができました。低コストの資金＝大量の人口が家を買える＝需要急増＝住宅価格高騰。</p>
+
+<p>そして連邦準備制度理事会（FRB：Federal Reserve Board）が介入しました。当時の議長グリーンスパン（Alan Greenspan）と後任のバーナンキ（Ben Bernanke）の相次ぐリーダーシップの下、FRB はインフレ抑制のため、連続13〜15回にわたってフェデラルファンド金利（Federal Funds Rate）を引き上げました。結果は：当初4%の金利で30万ドルの家を買えた人が、金利が6〜7%に上がった後では、同じ家を買う余裕がなくなった。住宅が売れ残り——売主は値下げを余儀なくされ——市場にはますます多くの「Price Reduced」のサインが現れ——ますます多くの人が担保権実行（Foreclosure）に陥った。</p>
+
+<p>これが金融です。</p>
+
+<h4>📌 2026年の金融環境対比</h4>
+
+<table>
+<tr><th>対比次元</th><th>Pat の時代（2009年前後）</th><th>2026年</th></tr>
+<tr><td>FRB 議長</td><td>Ben Bernanke（バーナンキ）</td><td><strong>Kevin Warsh</strong>（2026年就任）</td></tr>
+<tr><td>象徴的事件</td><td>サブプライム危機 / 大不況（Great Recession）</td><td>COVID 後インフレ急騰 + 2022–2023年急速利上げサイクル</td></tr>
+<tr><td>フェデラルファンド金利</td><td>危機後 0% 近辺</td><td>3.50%–3.75%（2026年6月現在、緩やかな利下げ局面）</td></tr>
+<tr><td>30年固定住宅ローン金利</td><td>4%–7%</td><td>約6.43%–6.63%（2026年）</td></tr>
+<tr><td>全米中古住宅価格中央値</td><td>約 $200,000</td><td>$429,300（NAR 2026年5月データ）</td></tr>
+<tr><td>カリフォルニア州ライセンス総数</td><td>歴史的ピーク約55万</td><td>410,500（継続的に減少中）</td></tr>
+</table>
+
+<p>歴史は単純に繰り返さないが、金融の論理は一貫しています：金利は不動産市場にとって最大の単一外部駆動力なのです。</p>
+
+<h4>金融機構と流通市場（Secondary Market）</h4>
+
+<p>Pat が列挙した金融機構類型は今日もなお通用します：</p>
+<ul>
+<li>商業銀行（Commercial Banks）</li>
+<li>貯蓄貸付組合（Savings &amp; Loans）</li>
+<li>モーゲージバンカー（Mortgage Bankers）</li>
+<li>モーゲージブローカー（Mortgage Brokers）</li>
+</ul>
+
+<p><strong>流通市場（Secondary Market）：Fannie Mae、Freddie Mac、Ginnie Mae</strong></p>
+
+<p>Pat は Georgetown という名の小さな町を使って流通市場の役割を講義します——この比喩は全授業中で最も優れた教学事例の一つです：</p>
+
+<p>Georgetown の町には銀行が一軒しかないと仮定しよう——たとえば Wells Fargo。すべての預金者がこの銀行にお金を預けている。誰かが30万ドルを借りて家を買いたいとき、この銀行は手元に十分な預金があって直接貸し出せるだろうか？おそらく足りない——預金総量は融資需要総量よりはるかに小さいからです。</p>
+
+<p>では銀行はどうするか？銀行は融資を拒否しない。融資を続けて実行し、その後で融資の束（たとえば100万ドル分を一括）を流通市場の機関——Fannie Mae（連邦住宅抵当公庫、ファニーメイ）、Freddie Mac（連邦住宅金融抵当公庫、フレディマック）、Ginnie Mae（政府住宅抵当公庫、ジニーメイ）——に売却する。流通市場の機関は代金を銀行に返金し、銀行はそのお金で次の住宅購入者に融資を続ける。この循環がシステム全体に流動性（Liquidity）をもたらすのです。</p>
+
+<p>流通市場のもう一つの重要な機能は<strong>リスク分散。</strong> Georgetown の例に戻ろう——もし大規模な山火事が町全体を焼き尽くし、町中の人々が同時に債務不履行（Default）に陥ったら、その地に集中していたこの銀行は倒産するだろう。しかし全国各地の融資が束ねられ、全国さらには全世界の投資家（年金基金 CalPERS や CalSTRS、保険会社等）によって分散保有されているため、いかなる単一地域の災害もシステム全体を破壊することはないのです。</p>
+
+<p>📌 <strong>2026年新規出題ポイント——ノンバンク金融機関（Non-Bank Lenders）と NMLS：</strong></p>
+
+<p>Pat がコースを収録した2009年、伝統的な銀行と S&amp;L が住宅ローンの主要提供者でした。2026年には、構図は根本的に変わりました：<strong>ノンバンク金融機関（Non-Bank Lenders）——</strong> Rocket Mortgage、LoanDepot、United Wholesale Mortgage 等——がアメリカの住宅ローン組成総額の60%以上を占めています。この変化は2008年 SAFE Act（Secure and Fair Enforcement for Mortgage Licensing Act、モーゲージライセンス安全公正執行法）の通過と実施に由来します。</p>
+
+<p>SAFE Act は、すべての住宅ローン組成に従事する個人（Mortgage Loan Originator：MLO）に対し、<strong>NMLS（Nationwide Multistate Licensing System &amp; Registry、全米多州モーゲージライセンスシステム）</strong> を通じて単独で登録しライセンスを保有することを要求しています。この制度は Pat の講義時代にはまだ存在しませんでした。今日、MLO と NMLS はすでにカリフォルニア不動産試験における金融領域の固定的出題ポイントとなっています。</p>
+
+<hr>
+
+<h3>第十六章：不動産評価（Appraisal）</h3>
+
+<p>Pat は冒頭で明言します：<strong>評価（Appraisal）は科学ではなく、アート（Art）である。</strong></p>
+
+<p>「あなたは本能的に、評価が非常に精確で、非常に科学的なプロセスだと思うかもしれない——しかし事実はまったく逆です。それは経験豊富な専門家が大量の物件と大量のデータを精査した後、専門的判断を下すことに依存しています。融資機関は自分で物件を見に来て『この家が30万ドルの価値があるかどうか』を判断したりはしません——彼らは評価士の専門的意見に全面的に依存しているのです。」</p>
+
+<h4>三つの基本的評価手法</h4>
+
+<p>Pat は極めて生活感あふれる例を使って三つの手法を講義します：</p>
+
+<p><strong>1. 市場比較法（Market Approach / Sales Comparison Approach）</strong></p>
+
+<p>「あなたは毎日市場比較法を使っている——自分では気づいていないかもしれないが。あなたは今日スーパーに買い物に行く——牛乳1クォート、食パン一斤、新しいオーディオ機器、新しい車——あなたは複数の店を比較する。何度か比較した後、あなたは自然とある種の感覚を形成する：『この品物はだいたいいくらぐらいの価値か。』これが市場比較法です。」</p>
+
+<p>不動産評価に応用すると：あなたが評価しようとしている物件は、大量の近時の比較可能販売事例（Comparable Sales、略してComps）があるエリアに位置している。あなたは大きさ、築年数、立地等で評価対象物件と類似する数軒の家を見つけ、それらの近時の成約価格を調べる。それから評価対象物件と比較可能物件の間の特徴の差異（面積がより広い？プールがある？内装の程度は？）に基づいて上方または下方への調整を行う。最終的に調整後のデータに基づき、あなたの専門的評価意見を導き出す。</p>
+
+<p><strong>2. 原価法（Cost Approach）</strong></p>
+
+<p>あなたの直面する物件が、大量の近時の販売比較可能データが存在する可能性が低いものである場合——例えば教会、消防署、あるいはユニークなカスタム住宅——どう評価するか？</p>
+
+<p>原価法の考え方はシンプルです：もし私がゼロからまったく同じ建物を新築するとしたら、いくらかかるかを計算する。それから完成時から現在までの使用年数による物理的減価（Physical Deterioration）を控除する。残りが評価額（プラス土地価格）です。</p>
+
+<p>原価法は売買評価だけに使われるのではありません。Pat は例を挙げます：家が焼けた——保険会社は再建費用を知る必要がある。離婚事件における財産分割——裁判所はこの物件が一体いくらなのかを知る必要がある。これらの場面では、原価法がしばしば唯一実行可能な選択肢となります。</p>
+
+<p><strong>3. 収益還元法（Income Approach）</strong></p>
+
+<p>「収益還元法を使うとき、あなたは他人が以前いくらで買ったかを気にしないし、これを作るのにいくらかかったかも気にしない——あなたが唯一気にするのは：これが私にいくら儲けさせてくれるか？」</p>
+
+<p>収益還元法の核心的ロジックは：物件が生み出すキャッシュフローを分析すること。例えば賃貸アパート一棟——あなたはその毎月の総賃料収入を計算し、運営費用、不動産管理費、債務返済支出を差し引く。残った純収入（Net Operating Income：NOI）を、あなたは資本還元率（Capitalization Rate：Cap Rate）を使ってこの建物の現在価値に「割り引く」のです。</p>
+
+<p>収益還元法が最もよく使われるのは：賃貸アパート、ショッピングモール、オフィスビル、工業倉庫——継続的収入を生み出すことを主目的とするあらゆる物件類型です。</p>
+
+<p>Pat は注意を促します：一人の評価士が同じ物件に対して三つの異なる手法を使うと、結果は三つの異なる数字になる可能性がある。評価士の任務は、自身の専門的判断に基づき、当該物件の真の市場価値を最もよく反映する指標を選択し、評価報告書の中で選択理由を明確に説明することです。</p>
+
+<p>📌 2026年新潮流：<strong>自動評価モデル（Automated Valuation Model：AVM）</strong>——Zillow の Zestimate——や AI 駆動の評価補助ツールがますます普及しています。しかし<strong>ライセンス保有評価士（Licensed Appraiser）の法律上の地位と融資承認プロセスにおける役割は完全に変わりません。</strong> 融資機関が正式に融資を実行する際には、依然としてライセンス保有評価士が署名した正式な評価報告書を必要とします。</p>
+
+<hr>
+
+<h3>第十七章：土地分割と政府規制（Subdivisions &amp; Government Control）</h3>
+
+<h4>一塊の土地が一つの住宅地になるまでの長い旅路</h4>
+
+<p>「ほとんどの人は気づいていない——あなたが今日車で通り過ぎたあの真新しい住宅地は、デベロッパーが二ヶ月前に急に思い立って建てることに決めたものではない。」</p>
+
+<p>Pat はこのプロセスの完全なタイムラインを描写しました：</p>
+<ol>
+<li>誰かが約50エーカー（またはそれ以上）の土地を所有している。自分で開発したいか、あるいはデベロッパーに売却した。</li>
+<li>デベロッパーは<strong>ライセンス保有エンジニア（Licensed Engineer）</strong>を雇って測量、計画、設計を行う——道路はどう配置するか？縁石と排水溝はどう設置するか？区画はどう分割するか？</li>
+<li>エンジニアは法定の区画図（Plat Map）を作成する。この図面上には各区画の境界線と寸法が精確に標記されている。</li>
+<li>区画図は管轄機関に提出されて審査される——もしこの土地が郡（County）の管轄範囲なら、郡政府を通さなければならない。市（City）の管轄内なら、市政府を通さなければならない。市の土木工学部門、計画部門が逐項審査する。</li>
+<li>通常、第一ラウンドで通過しない。区画図は複数回の修正（Revision）を経る。各ラウンドの修正には時間がかかる。</li>
+<li>最終バージョンが承認を得て登記・備案（Recorded）される。</li>
+<li>この時点で——<strong>すでに数ヶ月、場合によっては数年が経過している。</strong></li>
+</ol>
+
+<h4>核心的法規</h4>
+<ul>
+<li><strong>土地分割地図法（Subdivision Map Act）：</strong> あなたが実質的に「一つの新しい区画図を作成し登記している」——大きな土地をたくさんの小さな区画に分割しているからです。このプロセスは厳格な法定手続きの規制を受けます。</li>
+<li><strong>分割土地法（Subdivided Lands Act）：</strong> これにより消費者にとって極めて重要な文書——<strong>公共報告書（Public Report）</strong>——が作成される。</li>
+</ul>
+
+<h4>公共報告書（Public Report）</h4>
+
+<p>Public Report はカリフォルニア不動産局（DRE）によって発行されます。買主が全く新しいコンドミニアム（Condominium）、タウンハウス（Townhouse）、または一戸建て——これらの物件はそれまで誰も住んだことがない——を購入するたびに、買主はこの Public Report を受け取ります。</p>
+
+<p>報告書は住宅購入者に実質的な影響を及ぼす各種の条件をカバーします：その住宅地の HOA（Homeowners Association、管理組合）はどのようなものか？最寄りの消防署はどこにあるか？何か特別な条件や制約はあるか？</p>
+
+<p>買主は法律上「私はこの文書を読了した」という確認に署名しなければなりません。あなたはこの報告書についての試験を受ける必要はありませんが、あなたの署名は法律上、あなたがその内容を了知したことを示します。</p>
+
+<h4>用途地域（Zoning）</h4>
+
+<p>Pat は特に Zoning 知識のブローカーにとっての重要性を強調しました：あなたは調べ方を知っていなければならない。</p>
+
+<p>「もしあなたがクライアントに『この土地は商業用地（Commercial）です』と言っているなら——あなたはそれが本当に商業用地であることを知っている必要がある。単に誰かが商業用地だと言ったからという理由ではダメだ。あなたは郡政府や市政府の計画部門でどうやって調べるかを知らなければならない。これが不動産ブローカーの基本中の基本の宿題です。」</p>
+
+<p>そして知っておくべきは、その土地が何の用途地域かだけではない——その用途地域の下で具体的にどのような許可利用と制限条件があるかも知っておく必要がある。一部の一見「商業」に見える区画には大量の付帯条件がある可能性があります。</p>
+
+<p>📌 <strong>2026年カリフォルニア Zoning の最大トレンド——ADU（Accessory Dwelling Unit、付属住宅ユニット）：</strong> カリフォルニア州政府は住宅供給危機に対応するため、近年 ADU 関連法規を継続的に緩和しています。ADU は通称「裏庭の小さな家」あるいは「おばあちゃんハウス（Granny Flat）」——既存住宅の敷地内に独立した居住ユニットを増築するものです。法規は審査プロセスを簡素化し、建設ハードルを大幅に引き下げ、地方政府が ADU 申請を拒否する権限を制限しました。同時に、<strong>包容的用途地域（Inclusionary Zoning）</strong>——すなわち新築住宅プロジェクトに一定割合のアフォーダブル住宅（Affordable Housing）を含めることを義務付ける——がますます多くのカリフォルニア都市で強制要件となっています。これらは試験において「政府規制」領域の延長出題ポイントとして登場します。</p>
+
+<hr>
+
+<h3>第十八章：不動産税務（Taxation of Real Estate）</h3>
+
+<h4>すべての取引は税務イベント</h4>
+
+<p>Pat の重要な見解：あらゆる不動産取引は<strong>税務イベント（Tax Event）</strong>をトリガーする。あなたはこのことを意識しなければならない——たとえあなたが税務アドバイスを提供する責任を負わないとしても。</p>
+
+<h4>自宅キャピタルゲイン免除——Section 121</h4>
+
+<p>もしある不動産があなたの主たる居所（Primary Residence）であり、かつあなたが売却前の五年間のうち累計して当該不動産に<strong>実際に居住した期間が満二年</strong>であるならば：</p>
+<ul>
+<li>単身納税者：あなたが売却で得たキャピタルゲイン（Capital Gain）のうち上限 <strong>$250,000</strong> が非課税。</li>
+<li>既婚共同申告納税者：非課税枠は <strong>$500,000</strong>。</li>
+</ul>
+
+<p>「しかしこれには厳格な条件がある」と Pat は補足します。「一連の資格要件を満たす必要がある。」📌 Section 121 免除は1997年の通過以来基本的に変更されておらず、2026年現在も有効です。</p>
+
+<h4>投資用不動産——まったく異なるルール</h4>
+
+<p>上述の $250K / $500K 免除はあなたの主たる居所にのみ適用されます。もしあなたが売却するのが投資用不動産（賃貸物件、フリップ Flip 転売等）であれば、まったく異なる税務ルールが適用されます。</p>
+
+<h4>📌 カリフォルニア特有の税務要点（2026年補足）</h4>
+
+<p>カリフォルニア州の税務環境は全米で独特です。以下はあなたが知っておくべき重要な枠組みです：</p>
+
+<table>
+<tr><th>税目</th><th>2026年要点</th></tr>
+<tr><td>連邦キャピタルゲイン税</td><td>あなたの所得階層に応じて 0%、15% または 20% の税率を適用</td></tr>
+<tr><td>連邦 NIIT（Net Investment Income Tax、純投資所得税）</td><td>高所得納税者（単身 MAGI &gt; $20万 / 夫婦 &gt; $25万）に追加 3.8% 課税</td></tr>
+<tr><td>カリフォルニア州所得税</td><td>カリフォルニア州はキャピタルゲインを通常所得とみなして課税——<strong>最高限界税率 13.3%</strong>（全米最高）</td></tr>
+<tr><td>Prop 13（1978年第13号提案）</td><td>固定資産税の基礎評価額は購入時の価格に固定され、以後毎年の評価額の増加幅は上限 2%。但し所有権移転時に再評価（Reassessment）される。</td></tr>
+<tr><td>Prop 19（2020年第19号提案）</td><td>55歳以上の住宅所有者、重度障害者、自然災害被災者はカリフォルニア州内で<strong>三回</strong>まで、元の不動産の税務基数（Tax Base）を買い替え先の新不動産に移転可能（旧 Prop 60/90 は一回のみ、かつ一部の郡間のみ移転可能で、Prop 19 により取って代わられた）</td></tr>
+</table>
+
+<h4>Pat の最も重要な忠告</h4>
+
+<p>Pat は全第一回授業の中で、最も真剣な語調になった瞬間がこの話題で訪れました。彼はこう言います：</p>
+
+<blockquote>"Do not ever, under any circumstance, take what anybody else says is law and follow it."</blockquote>
+
+<p>「いかなる状況においても、他人の言うことを法律だと思ってそれに従ってはならない。」</p>
+
+<p>「私たち十人はまったく同じ不動産を所有できる——同じエリアで、同じ期間居住した——しかし私たち一人ひとりが直面する税務上の結果はまったく異なる可能性がある。なぜか？違いは——私たちが独身か既婚か？私たちの現在の所得税の状況は？私たちは合計でいくら稼いでいるか？」</p>
+
+<p>「だからこそ、今に至るまで、私にはまだ会計士（Accountant）がいる。重要な財務上の意思決定をするたびに、私はまず行動してから聞くのではない——私はまず座って会計士と話す。私はすべての書類を彼の前に並べて、こう尋ねる：『もし私がこうしたら、結果はどうなる？』あなたにも同じことを勧める。行動する前にまず尋ねよ——行動した後に莫大な税額を背負っていることに気づき、それから大粒の涙を流すことのないように。」</p>
+
+<p><strong>不動産ブローカーとしてのあなたの責務は：</strong> クライアントに注意喚起すること——あらゆる不動産取引は税務イベントをトリガーする。そして彼らに自身の会計士または税務専門家に相談するよう勧めること。あなたは<strong>税務アドバイスを提供しない</strong>——しかし税務が取引において無視できない一環であることを<strong>知って</strong>いなければならない。</p>
+
+<hr>
+
+<h3>第十九章：不動産数学（Real Estate Math）</h3>
+
+<h4>良いニュース：微積分は不要</h4>
+
+<p>Pat はまず学生をなだめます：「足し算、引き算、掛け算、割り算——それだけです。三角関数も、幾何証明も不要です。」</p>
+
+<h4>悪いニュース：難点はまったく計算ではない</h4>
+
+<p>「誰でも電卓は叩ける。真の難点は——<strong>問題が一体何を問うているのかを見極めること。</strong>」</p>
+
+<p>彼は実際の売却依頼場面で説明します：</p>
+
+<p>「あなたはある不動産の売却依頼を受けに行く。あなたはクライアントの家に入って十数分後、相手は一見シンプルな質問をしてくる——『この家、いくらで売れますか？』」</p>
+
+<p>「しかしあなたが本当に知る必要がある問題は——これが相手があなたに質問している問題ではない。相手が本当に知りたいのは：『すべての費用を清算した後、私はいくらポケットに入れてここを去れるか——次の家を買うため、あるいは他のことに使うために？』つまり、彼が実際に知りたいのはすべての費用を差し引いた後の純収入（Net Proceeds）です。」</p>
+
+<p>つまりあなたは座って計算を始める：</p>
+<ul>
+<li>予想売却価格はいくらか？</li>
+<li>コミッション（Commission）はいくらか？</li>
+<li>エスクロー費用（Escrow Fees）はいくらか？</li>
+<li>権原費用（Title Fees）はいくらか？</li>
+<li>もし相手がまだ住宅ローンを完済していなければ——残存貸付元本はいくらか？</li>
+<li>その他に清算すべき留置権や費用はあるか？</li>
+</ul>
+
+<h4>Pat の最も厳しい警告：ここが最もつまずきやすい</h4>
+
+<p>「毎年私は目にしている——学生たちの成績は前の数章までは高得点ゾーンで、平穏無事だ。この章に来ると——パッ、と真っ逆さまに落ちる。それは彼らが数学を理解していないからではない——彼らが真剣に『問題が何を問うているのか』を見極めていないからだ。あなたはぐるっと計算して、一つの数字を得た——しかしそれは間違ったパスに対応する答えだ。そして出題者はまさにその間違った答えを選択肢の中に入れている。」</p>
+
+<p>📌 2026年 DRE 試験で最もよく見られる数学問題の類型：</p>
+<ul>
+<li><strong>日割計算（Proration）：</strong> 固定資産税等を決済日（Closing Date）基準で売買双方間で日割り計算。</li>
+<li><strong>コミッション計算（Commission Calculation）：</strong> 所与の売却価格とコミッション比率からブローカーコミッションを計算。</li>
+<li><strong>LTV（Loan-to-Value Ratio、貸付評価額比率）：</strong> 貸付額 / 不動産評価額。</li>
+<li><strong>ディスカウントポイント（Discount Points）：</strong> 1 point = 貸付額の1%。金利引下げのため前払いで支払う。</li>
+<li><strong>Cap Rate / NOI（資本還元率 / 純営業収入）：</strong> 収益還元法評価の核心的計算。Cap Rate = NOI ÷ 不動産価格。</li>
+<li><strong>面積換算：</strong> 1 acre = 43,560 平方フィート。1 平方マイル = 640 エーカー。1 マイル = 5,280 フィート。これら基本換算は完全暗記必須。</li>
+<li><strong>利回り（Profit）：</strong> 利益は常に原価（Cost）に対するパーセント。売価に対するパーセントではない——DRE試験の古典的トラップ。</li>
+</ul>
+
+<hr>
+</section>
+
+<section class="article-section">
+<h2 id="section-5">第五部：📌 2026年ライセンス取得パス速覧（完全版）</h2>
+
+<div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px;font-family:'SF Mono','Fira Code',monospace;font-size:12px;line-height:1.8;color:var(--muted);white-space:pre-wrap;margin:20px 0;">
+┌──────────────────────────────────────────────────┐
+│                                                   │
+│   第1段階：三科目のライセンス前コースを修了            │
+│            （計135時間）                             │
+│   ┌─────────────────────────────────────────┐    │
+│   │ ① Real Estate Principles（不動産原理）    │    │
+│   │    45時間                                  │    │
+│   │ ② Real Estate Practice（不動産実務）      │    │
+│   │    45時間                                  │    │
+│   │    ⚠️ 2024年より必須：                      │    │
+│   │      · Implicit Bias（暗黙の偏見）研修      │    │
+│   │      · Fair Housing（公正住宅）研修         │    │
+│   │        インタラクティブ・ロールプレイ含む     │    │
+│   │ ③ 選択科目 1科目（45時間、8科目中1科目選択） │    │
+│   └─────────────────────────────────────────┘    │
+│                                                   │
+│   第2段階：申請・DRE 州試験受験                       │
+│   ┌─────────────────────────────────────────┐    │
+│   │ · 150問選択式                              │    │
+│   │ · 合格ライン：70%（105/150）                │    │
+│   │ · 試験費：$60                              │    │
+│   │ · 完全電子化 CBT                           │    │
+│   │ · 5試験会場：Sacramento / Oakland /       │    │
+│   │   Fresno / La Palma / San Diego           │    │
+│   │ · 同時に Live Scan 指紋採取完了必須         │    │
+│   │ · FBI + DOJ 身元調査                      │    │
+│   └─────────────────────────────────────────┘    │
+│                                                   │
+│   第3段階：ライセンス保有 Broker を見つけて所属         │
+│   ┌─────────────────────────────────────────┐    │
+│   │ Salesperson は必ず Broker の監督下で       │    │
+│   │ 業務を行わなければならない                   │    │
+│   └─────────────────────────────────────────┘    │
+│                                                   │
+│   第4段階：ライセンス受領 → 4年ごとに更新              │
+│   ┌─────────────────────────────────────────┐    │
+│   │ 4年ごとに DRE 承認 CE 45時間を修了          │    │
+│   └─────────────────────────────────────────┘    │
+│                                                   │
+└──────────────────────────────────────────────────┘
+</div>
+
+<h3>2009年 vs. 2026年：核心的区别</h3>
+
+<table>
+<tr><th>Pat 時代の旧制度（2009年）</th><th>現行制度（2026年）</th></tr>
+<tr><td>コース順序：先に試験を受けて後でコースを補修可能</td><td><strong>先に三科目をすべて修了しなければライセンスを取得できない</strong></td></tr>
+<tr><td>仮ライセンス：18ヶ月の仮ライセンス（Probationary License）あり</td><td><strong>仮ライセンス制度なし</strong></td></tr>
+<tr><td>受験タイミング：RE 300 修了後すぐ申請可能</td><td>三科目すべて修了後でなければ不可</td></tr>
+<tr><td>Practice コース内容：標準内容</td><td>Implicit Bias + Fair Housing + ロールプレイを新たに追加</td></tr>
+</table>
+
+<h3>Salesperson → Broker 昇格条件</h3>
+
+<table>
+<tr><th>条件</th><th>要件</th></tr>
+<tr><td>大学学位なし</td><td>最低2年のフルタイム販売経験（ライセンス有効期間を証拠として）</td></tr>
+<tr><td>準学士号（2年制）</td><td>最低1年のフルタイム販売経験</td></tr>
+<tr><td>学士号（専攻不問）</td><td>経験要件自動充足</td></tr>
+</table>
+
+<h3>DRE 料金表（2024年7月1日改定）</h3>
+
+<table>
+<tr><th>項目</th><th>金額</th></tr>
+<tr><td>Salesperson 試験料</td><td>$60</td></tr>
+<tr><td>再試験料</td><td>$60</td></tr>
+<tr><td>Salesperson ライセンス料（4年）</td><td>$350</td></tr>
+<tr><td>Broker 試験料</td><td>$95</td></tr>
+<tr><td>Broker ライセンス料（4年）</td><td>$350</td></tr>
+<tr><td>Live Scan 指紋採取</td><td>約$49（採取場所により異なる）</td></tr>
+</table>
+
+<hr>
+</section>
+
+<section class="article-section">
+<h2 id="section-6">第六部：完全日英対照用語集</h2>
+
+<p>以下の用語は Pat が本講で言及したすべての核心概念、および2026年試験の新規出題ポイント用語をカバーしています。⭐の数は試験における出題頻度の重要性を示します（⭐⭐⭐ = 高頻出ポイント）。</p>
+
+<h3>基礎概念</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Real Property</td><td>不動産</td><td>⭐⭐⭐</td></tr>
+<tr><td>Personal Property</td><td>動産</td><td>⭐⭐⭐</td></tr>
+<tr><td>Fixture</td><td>定着物（附属物）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Improvement</td><td>改良物（土地上の人工建造物または施設）</td><td>⭐⭐</td></tr>
+<tr><td>Bundle of Rights</td><td>権利の束</td><td>⭐⭐⭐</td></tr>
+</table>
+
+<h3>法定記載</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Legal Description</td><td>法定記載（法的記述）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Metes and Bounds</td><td>境界・自然標識法</td><td>⭐⭐⭐</td></tr>
+<tr><td>Lot and Block</td><td>区画・街区方式</td><td>⭐⭐</td></tr>
+<tr><td>Government Survey（Rectangular Survey）</td><td>政府測量方式（矩形測量法）</td><td>⭐⭐</td></tr>
+<tr><td>Plat Map</td><td>区画平面図</td><td>⭐⭐</td></tr>
+<tr><td>Principal Meridian</td><td>主経線</td><td>⭐⭐</td></tr>
+<tr><td>Base Line</td><td>基線</td><td>⭐⭐</td></tr>
+<tr><td>Township</td><td>タウンシップ（6×6マイル=36セクション）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Section</td><td>セクション（1平方マイル=640エーカー）</td><td>⭐⭐⭐</td></tr>
+</table>
+
+<h3>権原類型</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Estate</td><td>権原／不動産権</td><td>⭐⭐⭐</td></tr>
+<tr><td>Fee Estate / Fee Simple Absolute</td><td>完全権原／絶対的完全権原</td><td>⭐⭐⭐</td></tr>
+<tr><td>Life Estate</td><td>生涯権原</td><td>⭐⭐</td></tr>
+<tr><td>Leasehold Estate</td><td>賃借権原</td><td>⭐⭐⭐</td></tr>
+<tr><td>Remainder Interest</td><td>残余権（生涯権原終了後の帰属権利）</td><td>⭐⭐</td></tr>
+</table>
+
+<h3>権原譲渡と証書</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Grant Deed</td><td>譲渡証書</td><td>⭐⭐⭐</td></tr>
+<tr><td>Quitclaim Deed</td><td>権利放棄証書</td><td>⭐⭐⭐</td></tr>
+<tr><td>Sheriff's Deed</td><td>執行官証書</td><td>⭐⭐</td></tr>
+<tr><td>Trustee's Deed</td><td>受託者証書</td><td>⭐⭐</td></tr>
+<tr><td>Warranty Deed</td><td>保証証書</td><td>⭐⭐</td></tr>
+<tr><td>Deed of Trust</td><td>信託証書</td><td>⭐⭐⭐</td></tr>
+<tr><td>Alienation</td><td>権原譲渡（総称）</td><td>⭐⭐</td></tr>
+</table>
+
+<h3>保有形態</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Joint Tenancy</td><td>共同保有（Right of Survivorship 付）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Community Property</td><td>夫婦共有財産（カリフォルニア婚姻デフォルト制度）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Separate Property</td><td>独立財産</td><td>⭐⭐</td></tr>
+<tr><td>Tenants in Common</td><td>共有持分</td><td>⭐⭐</td></tr>
+<tr><td>Right of Survivorship</td><td>生存者権</td><td>⭐⭐⭐</td></tr>
+</table>
+
+<h3>権原負担</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Encumbrance</td><td>権原負担</td><td>⭐⭐⭐</td></tr>
+<tr><td>Easement</td><td>地役権</td><td>⭐⭐⭐</td></tr>
+<tr><td>Easement Appurtenant</td><td>付随地役権（土地に付随）</td><td>⭐⭐</td></tr>
+<tr><td>Prescriptive Easement</td><td>時効地役権（5年間の無断使用により権利化）</td><td>⭐⭐</td></tr>
+<tr><td>Right of Way</td><td>通行権</td><td>⭐⭐</td></tr>
+<tr><td>Mechanic's Lien</td><td>工匠留置権</td><td>⭐⭐⭐</td></tr>
+<tr><td>Cloud on Title</td><td>権原瑕疵／「曇った」権原</td><td>⭐⭐</td></tr>
+</table>
+
+<h3>担保権実行</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Foreclosure</td><td>担保権実行（差押え競売）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Judicial Foreclosure</td><td>司法担保権実行（裁判所経由）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Non-Judicial Foreclosure</td><td>非司法担保権実行（カリフォルニア=Trustee's Sale）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Trustee's Sale</td><td>受託者競売</td><td>⭐⭐⭐</td></tr>
+</table>
+
+<h3>ライセンスと協会</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Salesperson</td><td>セールスパーソン（販売員）</td><td>⭐⭐</td></tr>
+<tr><td>Broker</td><td>ブローカー</td><td>⭐⭐</td></tr>
+<tr><td>Probationary License</td><td>仮ライセンス（⚠️ 廃止済）</td><td>—</td></tr>
+<tr><td>Continuing Education（CE）</td><td>継続教育</td><td>⭐⭐</td></tr>
+<tr><td>DRE（Department of Real Estate）</td><td>カリフォルニア不動産局</td><td>⭐⭐</td></tr>
+<tr><td>SAR</td><td>サクラメント不動産ブローカー協会</td><td>⭐</td></tr>
+<tr><td>CAR</td><td>カリフォルニア不動産ブローカー協会</td><td>⭐⭐</td></tr>
+<tr><td>NAR</td><td>全米不動産ブローカー協会</td><td>⭐⭐</td></tr>
+<tr><td>MLS（Multiple Listing Service）</td><td>多重リスティングサービス</td><td>⭐⭐</td></tr>
+</table>
+
+<h3>代理関係</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Agency Relationship</td><td>代理関係</td><td>⭐⭐⭐</td></tr>
+<tr><td>Fiduciary Duty</td><td>忠実義務</td><td>⭐⭐⭐</td></tr>
+<tr><td>Principal</td><td>委託者</td><td>⭐⭐⭐</td></tr>
+<tr><td>Agent</td><td>代理人</td><td>⭐⭐⭐</td></tr>
+<tr><td>Seller's Agency</td><td>売主代理</td><td>⭐⭐⭐</td></tr>
+<tr><td>Buyer's Agency</td><td>買主代理</td><td>⭐⭐⭐</td></tr>
+<tr><td>Dual Agency</td><td>双方代理</td><td>⭐⭐⭐</td></tr>
+<tr><td>Buyer-Broker Agreement</td><td>買主ブローカー契約（📌 2024年新規制）</td><td>⭐⭐⭐</td></tr>
+</table>
+
+<h3>契約</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Contract</td><td>契約</td><td>⭐⭐⭐</td></tr>
+<tr><td>Capacity</td><td>当事者能力</td><td>⭐⭐⭐</td></tr>
+<tr><td>Mutual Consent</td><td>相互合意</td><td>⭐⭐⭐</td></tr>
+<tr><td>Legality（Lawful Objective）</td><td>合法性（適法目的）</td><td>⭐⭐</td></tr>
+<tr><td>Consideration</td><td>約因</td><td>⭐⭐⭐</td></tr>
+<tr><td>Statute of Frauds</td><td>詐欺防止法（土地契約に書面形式を要求）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Listing Agreement</td><td>売却依頼契約</td><td>⭐⭐</td></tr>
+<tr><td>Purchase Offer（RPA）</td><td>買付申込書（住宅購入契約書）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Voidable Contract</td><td>取消可能契約</td><td>⭐⭐</td></tr>
+</table>
+
+<h3>エスクローと権原</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Escrow</td><td>エスクロー（第三者預託、カリフォルニア特有）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Escrow Officer</td><td>エスクローオフィサー</td><td>⭐⭐</td></tr>
+<tr><td>Title Insurance</td><td>権原保険</td><td>⭐⭐⭐</td></tr>
+<tr><td>Title Search</td><td>権原検索</td><td>⭐⭐</td></tr>
+<tr><td>Preliminary Report</td><td>予備的権原報告書</td><td>⭐⭐⭐</td></tr>
+<tr><td>Chain of Title</td><td>権原連鎖</td><td>⭐⭐</td></tr>
+</table>
+
+<h3>金融</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Primary Market</td><td>一次市場</td><td>⭐⭐</td></tr>
+<tr><td>Secondary Market</td><td>流通市場（二次市場）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Fannie Mae</td><td>ファニーメイ（連邦住宅抵当公庫）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Freddie Mac</td><td>フレディマック（連邦住宅金融抵当公庫）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Ginnie Mae</td><td>ジニーメイ（政府住宅抵当公庫）</td><td>⭐⭐</td></tr>
+<tr><td>Federal Reserve（The Fed）</td><td>連邦準備制度理事会</td><td>⭐⭐</td></tr>
+<tr><td>Federal Funds Rate</td><td>フェデラルファンド金利</td><td>⭐⭐</td></tr>
+<tr><td>Non-Bank Lender</td><td>ノンバンク金融機関（📌 2026出題ポイント）</td><td>⭐⭐</td></tr>
+<tr><td>MLO（Mortgage Loan Originator）</td><td>モーゲージローン組成者</td><td>⭐⭐</td></tr>
+<tr><td>NMLS</td><td>全米多州モーゲージライセンスシステム（📌 2026出題ポイント）</td><td>⭐⭐</td></tr>
+<tr><td>SAFE Act</td><td>モーゲージライセンス安全公正執行法</td><td>⭐⭐</td></tr>
+<tr><td>Hypothecation</td><td>非占有担保（債務者が占有を継続しつつ担保に供する）</td><td>⭐⭐</td></tr>
+<tr><td>Leverage</td><td>レバレッジ（自己資金以上の投資効果）</td><td>⭐⭐</td></tr>
+</table>
+
+<h3>評価</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Appraisal</td><td>不動産評価</td><td>⭐⭐⭐</td></tr>
+<tr><td>Market Approach</td><td>市場比較法</td><td>⭐⭐⭐</td></tr>
+<tr><td>Cost Approach</td><td>原価法</td><td>⭐⭐⭐</td></tr>
+<tr><td>Income Approach</td><td>収益還元法</td><td>⭐⭐⭐</td></tr>
+<tr><td>Capitalization Rate（Cap Rate）</td><td>資本還元率</td><td>⭐⭐⭐</td></tr>
+<tr><td>Net Operating Income（NOI）</td><td>純営業収入</td><td>⭐⭐⭐</td></tr>
+<tr><td>AVM（Automated Valuation Model）</td><td>自動評価モデル（📌 2026トレンド）</td><td>⭐</td></tr>
+</table>
+
+<h3>土地規制と Zoning</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Subdivision Map Act</td><td>土地分割地図法</td><td>⭐⭐</td></tr>
+<tr><td>Subdivided Lands Act</td><td>分割土地法</td><td>⭐⭐</td></tr>
+<tr><td>Public Report</td><td>公共報告書</td><td>⭐⭐⭐</td></tr>
+<tr><td>Zoning</td><td>用途地域</td><td>⭐⭐⭐</td></tr>
+<tr><td>ADU（Accessory Dwelling Unit）</td><td>付属住宅ユニット（📌 2026出題ポイント）</td><td>⭐⭐</td></tr>
+<tr><td>Inclusionary Zoning</td><td>包容的用途地域（📌 2026トレンド）</td><td>⭐⭐</td></tr>
+<tr><td>Police Power</td><td>警察権（公衆の健康・安全・福祉のための政府権限）</td><td>⭐⭐</td></tr>
+</table>
+
+<h3>税務</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Capital Gain</td><td>キャピタルゲイン（資本利得）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Section 121 Exclusion</td><td>第121条免除（$250K/$500K）</td><td>⭐⭐⭐</td></tr>
+<tr><td>NIIT（Net Investment Income Tax）</td><td>純投資所得税（📌 2026出題ポイント）</td><td>⭐⭐</td></tr>
+<tr><td>Prop 13（1978）</td><td>第13号提案（固定資産税）</td><td>⭐⭐⭐</td></tr>
+<tr><td>Prop 19（2020）</td><td>第19号提案（税務基数移転）</td><td>⭐⭐⭐</td></tr>
+<tr><td>1031 Exchange</td><td>1031交換（同種交換、課税繰延戦略）</td><td>⭐⭐</td></tr>
+<tr><td>Homeowner's Exemption</td><td>住宅所有者免除（$7,000評価額免除）</td><td>⭐⭐</td></tr>
+</table>
+
+<h3>数学</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Proration</td><td>日割計算（費用の按分比例配分）</td><td>⭐⭐⭐</td></tr>
+<tr><td>LTV（Loan-to-Value Ratio）</td><td>貸付評価額比率</td><td>⭐⭐⭐</td></tr>
+<tr><td>Discount Points</td><td>ディスカウントポイント</td><td>⭐⭐</td></tr>
+<tr><td>1 Acre = 43,560 sq ft</td><td>1エーカー = 43,560平方フィート</td><td>⭐⭐⭐</td></tr>
+</table>
+
+<h3>2026年新規用語</h3>
+<table>
+<tr><th>英語</th><th>日本語</th><th>試験重要性</th></tr>
+<tr><td>Implicit Bias</td><td>暗黙の偏見</td><td>⭐⭐（2024年より必修）</td></tr>
+<tr><td>AB 1482</td><td>AB 1482法案（全州家賃統制）</td><td>⭐⭐</td></tr>
+<tr><td>Seller Impersonation Fraud</td><td>売主なりすまし詐欺</td><td>⭐⭐（2026年 DRE 警告）</td></tr>
+<tr><td>Live Scan</td><td>指紋採取システム</td><td>⭐⭐</td></tr>
+<tr><td>eLicensing</td><td>電子ライセンスシステム</td><td>⭐</td></tr>
+</table>
+
+<hr>
+</section>
+
+<section class="article-section">
+<h2 id="section-7">第七部：コース結語</h2>
+
+<p>授業の最後の数分間、Pat はいくつかのシンプルなことを行いました：</p>
+
+<ol>
+<li>オリエンテーションに参加できなかった学生に、授業後に残って短い補講を行うことを伝えた。</li>
+<li>Blackboard システム内のメールアドレスが最新であることを再三確認するよう強調——番組公開のお知らせとすべてのコース情報がメールで送信されるからである。</li>
+<li>できるだけ早く書店で教科書と Scantron 882 解答用紙を購入するよう促した。</li>
+<li>ユーモアあふれる告白で第一回の授業を締めくくった：</li>
+</ol>
+
+<blockquote>「もし現場での受講が可能なら、できるだけ来てください。来なければならないと言っているわけではありません——でも教室に実際の聴衆がいると、講義の効果は本当によくなるんです。私たち教師も、つまるところ役者ですから。もし私に歌えるいい声があったら、とっくにそっちをやっていて、こんなところでカメラに向かってしゃべってはいませんよ。」</blockquote>
+
+<p>それから——「質問があれば、今すぐここに来て聞いてください。さあどうぞ。」</p>
+
+<hr>
+
+<p><em>本教程は Patrick J. Hogarty, MA が主講する "California Real Estate Principles"（RE 300）ポッドキャストシリーズ Show 01 完全録音に基づいて逐次整理されたものです。教学内容は Pat が59分の授業で言及したすべての概念、事例、比喩、教学要点をカバーしています。2026年更新および補充内容は以下の出典に基づきます：</em></p>
+
+<ul>
+<li><em>カリフォルニア不動産局（DRE）公式サイト dre.ca.gov — 2026年4月ライセンス保有者数及び試験統計、ライセンス要件ページ、試験内容大綱ページ</em></li>
+<li><em>全米不動産ブローカー協会（NAR）nar.realtor — 2026年5月中古住宅販売及び価格中央値報告</em></li>
+<li><em>連邦準備制度理事会（FRB）公式サイト federalreserve.gov — 理事会メンバー名簿（2026年5月28日更新）</em></li>
+<li><em>カリフォルニア州議会立法情報 — AB 1482（2019）、AB 2170（2025）、Prop 13（1978）、Prop 19（2020）</em></li>
+<li><em>NAR 集団訴訟和解契約（Sitzer/Burnett 事件、2024年）</em></li>
+</ul>
+
+<p><em>本稿は学習参考のみを目的とします。すべての試験関連情報は DRE 公式サイト（dre.ca.gov）が現在発表している公式文書を基準としてください。税務関連内容は税務アドバイスを構成しません——Pat が言う通り、いかなる重要な財務的意思決定を行う前にも、ご自身の会計士に相談してください。</em></p>
+
+<hr>
+
+<p><em>次回予告：Show 02 — 不動産概論、カリフォルニア不動産局（DRE）の機能と構造、不動産 vs. 動産の深度解析、三つの法定記載方式（Lot &amp; Block / Metes &amp; Bounds / Government Survey）の第一部詳細解説。</em></p>
+
+</section>
+
+<section class="article-section">
+<h2 id="section-8">📚 補足リソース — Patrick Hogarty オリジナル英語ポッドキャスト</h2>
+
+<div class="info-box">
+<p>⚠️ <strong>DRE ライセンス試験は英語のみで提供されます</strong>（B&P Code §10153）。受験者には英語の読解、作文、スペリング能力が要求されます。読者の皆様には Pat Hogerty 教授のオリジナル英語ポッドキャストを同時に聴取されることを強くお勧めします。不動産知識の習得と同時に業界英語力も向上できます。</p>
+<p>🍎 <strong>Apple Podcasts</strong>：<a href="https://podcasts.apple.com/us/podcast/california-real-estate-principles/id327826829" target="_blank">California Real Estate Principles</a></p>
+<p>🌐 <strong>オリジナル MP3 ダウンロード</strong>：<a href="http://www.re-professor.com/podcast-audio/re-300/" target="_blank">re-professor.com/podcast-audio/re-300/</a></p>
+<p>📖 <strong>LearnOutLoud</strong>：<a href="https://www.learnoutloud.com/Catalog/Business/Real-Estate/California-Real-Estate-Principles-Podcast/85612" target="_blank">learnoutloud.com</a></p>
+<p>本日本語精講シリーズは Pat オリジナルポッドキャストをフレームワークとし、各講を日本語に翻訳整理し、2026年最新法規制改正を補充しています。「聴いてから読む」あるいは「聴きながら日本語記事を対照する」——二重の学習効果をお勧めします。</p>
+</div>
+
+</section>
+
+    </main>
+  </div>
+</div>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="ft-nav">
+      <a href="/tsukasaya-site/re300-jp/">← RE300 日本語シリーズトップ</a>
+      <a href="/tsukasaya-site/">筑沙ホーム</a>
+    </div>
+    <div class="ft-logo">筑 沙 TSUKASA</div>
+    <div class="ft-sub">MOTOKI SADASHIGE · DRE#02386309 · Gogo Realtors R.H Corp.</div>
+    <div class="ft-sub">AI · Real Estate · Education — RE300 Japanese Series EP01 — 2026年7月</div>
+  </div>
+</footer>
+
+</body>
+</html>
